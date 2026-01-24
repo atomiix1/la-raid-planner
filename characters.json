@@ -15,17 +15,17 @@
                     {
                         "name": "Armoche",
                         "difficulty": "Hard",
-                        "completion": true
+                        "completion": false
                     },
                     {
                         "name": "Kazeros",
                         "difficulty": "Hard",
-                        "completion": true
+                        "completion": false
                     },
                     {
                         "name": "Thaemine",
                         "difficulty": "Extreme",
-                        "completion": true
+                        "completion": false
                     }
                 ]
             },
@@ -37,14 +37,112 @@
                     {
                         "name": "Mordum",
                         "difficulty": "Hard",
-                        "completion": true
+                        "completion": false
+                    },
+                    {
+                        "name": "Armoche",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Kazeros",
+                        "difficulty": "Normal",
+                        "completion": false
+                    }
+                ]
+            },
+            {
+                "name": "Katoriix",
+                "iLvl": 1714,
+                "class": "Sharpshooter",
+                "raids": [
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Armoche",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                    {
+                        "name": "Kazeros",
+                        "difficulty": "Normal",
+                        "completion": false
+                    }
+                ]
+            },
+            {
+                "name": "Satoriix",
+                "iLvl": 1711,
+                "class": "Wardancer",
+                "raids": [
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Armoche",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                    {
+                        "name": "Kazeros",
+                        "difficulty": "Normal",
+                        "completion": false
+                    }
+                ]
+            },
+            {
+                "name": "Tomoriix",
+                "iLvl": 1710,
+                "class": "Deathblade",
+                "raids": [
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Armoche",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                    {
+                        "name": "Kazeros",
+                        "difficulty": "Normal",
+                        "completion": false
+                    }
+                ]
+            },
+            {
+                "name": "Feraliix",
+                "iLvl": 1710,
+                "class": "Wildsould",
+                "raids": [
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Armoche",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                    {
+                        "name": "Kazeros",
+                        "difficulty": "Normal",
+                        "completion": false
                     }
                 ]
             }
         ]
     },
     {
-        "account": "Baeto",
+        "account": "Beato",
         "characters": [
             {
                 "name": "Aedhe",
@@ -54,7 +152,132 @@
                     {
                         "name": "Mordum",
                         "difficulty": "Hard",
-                        "completion": true
+                        "completion": false
+                    },
+                    {
+                        "name": "Armoche",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Kazeros",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                    {
+                        "name": "Thaemine",
+                        "difficulty": "Extreme",
+                        "completion": false
+                    }
+                ]
+            },
+            {
+                "name": "Boreahl",
+                "iLvl": 1705,
+                "class": "Valkyrie",
+                "raids": [
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Armoche",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                    {
+                        "name": "Kazeros",
+                        "difficulty": "Normal",
+                        "completion": false
+                    }
+                ]
+            },
+            {
+                "name": "Lekhanar",
+                "iLvl": 1700,
+                "class": "Summoner",
+                "raids": [
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Armoche",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                    {
+                        "name": "Kazeros",
+                        "difficulty": "Normal",
+                        "completion": false
+                    }
+                ]
+            },
+            {
+                "name": "Nawinar",
+                "iLvl": 1700,
+                "class": "Artist",
+                "raids": [
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Armoche",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                    {
+                        "name": "Kazeros",
+                        "difficulty": "Normal",
+                        "completion": false
+                    }
+                ]
+            },
+            {
+                "name": "Dynwen",
+                "iLvl": 1686,
+                "class": "Wildsould",
+                "raids": [
+                    {
+                        "name": "Aegir",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Brelshaza",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                ]
+            },
+            {
+                "name": "Anseris",
+                "iLvl": 1672,
+                "class": "Aeromancer",
+                "raids": [
+                    {
+                        "name": "Behemoth",
+                        "difficulty": "Normal",
+                        "completion": false
+                    },
+                    {
+                        "name": "Aegir",
+                        "difficulty": "Hard",
+                        "completion": false
+                    },
+                    {
+                        "name": "Brelshaza",
+                        "difficulty": "Normal",
+                        "completion": false
                     }
                 ]
             }
