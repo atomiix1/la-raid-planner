@@ -11,6 +11,21 @@
                         "name": "Mordum",
                         "difficulty": "Hard",
                         "completion": false
+                    },
+                    {
+                        "name": "Armoche",
+                        "difficulty": "Hard",
+                        "completion": true
+                    },
+                    {
+                        "name": "Kazeros",
+                        "difficulty": "Hard",
+                        "completion": true
+                    },
+                    {
+                        "name": "Thaemine",
+                        "difficulty": "Extreme",
+                        "completion": true
                     }
                 ]
             },
