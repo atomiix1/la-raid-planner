@@ -125,7 +125,7 @@
     
     <script type="module">
         import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
-        import { getDatabase } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js';
+        import { getDatabase, ref, onValue, set } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js';
         
         // Configuración de Firebase
         const firebaseConfig = {
@@ -141,6 +141,9 @@
         // Inicializar Firebase
         const app = initializeApp(firebaseConfig);
         window.database = getDatabase(app);
+        
+        // Exportar funciones de Firebase al window para que index.js las pueda usar
+        window.firebaseDatabase = { ref, onValue, set };
         
         // Cargar el script principal
         const script = document.createElement('script');

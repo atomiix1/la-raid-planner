@@ -7,10 +7,14 @@ const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kaz
 function loadData() {
     if (typeof window.database === 'undefined') {
         console.error('Base de datos de Firebase no inicializada');
+        setTimeout(loadData, 100); // Reintentar después de 100ms
         return;
     }
     
-    window.database.ref('characters').on('value', (snapshot) => {
+    // Usar las funciones del SDK modular
+    const { ref, onValue } = window.firebaseDatabase;
+    
+    onValue(ref(window.database, 'characters'), (snapshot) => {
         if (snapshot.exists()) {
             data = snapshot.val();
             renderTables();
@@ -135,7 +139,9 @@ async function saveData() {
             console.error('Base de datos de Firebase no inicializada');
             return;
         }
-        await window.database.ref('characters').set(data);
+        
+        const { ref, set } = window.firebaseDatabase;
+        await set(ref(window.database, 'characters'), data);
         console.log('Datos guardados en Firebase');
     } catch (error) {
         console.error('Error saving data:', error);
