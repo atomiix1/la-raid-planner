@@ -122,12 +122,12 @@ function getCharacterStats(character) {
 }
 
 // Calcular estadísticas de una raid
-function getRaidStats(user, raidName) {
+function getRaidStats(user, raidName, raidDifficulty) {
     let total = 0;
     let completed = 0;
     
     user.characters.forEach(character => {
-        const raid = character.raids.find(r => r.name === raidName);
+        const raid = character.raids.find(r => r.name === raidName && r.difficulty === raidDifficulty);
         if (raid) {
             total++;
             if (raid.completion) completed++;
@@ -182,7 +182,7 @@ function renderTables() {
         const tbody = document.createElement('tbody');
         
         raidesWithDifficulty.forEach(raidInfo => {
-            const raidStats = getRaidStats(user, raidInfo.name);
+            const raidStats = getRaidStats(user, raidInfo.name, raidInfo.difficulty);
             const row = document.createElement('tr');
             
             const raidCell = document.createElement('td');
