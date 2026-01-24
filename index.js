@@ -1,5 +1,8 @@
 let data = [];
 
+// Orden específico de las raids
+const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kazeros', 'Thaemine'];
+
 // Cargar datos desde el archivo JSON
 async function loadData() {
     try {
@@ -11,17 +14,17 @@ async function loadData() {
     }
 }
 
-// Obtener todas las raids únicas
-function getAllRaids() {
-    const raids = new Set();
-    data.forEach(user => {
-        user.characters.forEach(character => {
-            character.raids.forEach(raid => {
-                raids.add(raid.name);
-            });
+// Obtener raids de un usuario específico en el orden correcto
+function getUserRaids(user) {
+    const userRaids = new Set();
+    user.characters.forEach(character => {
+        character.raids.forEach(raid => {
+            userRaids.add(raid.name);
         });
     });
-    return Array.from(raids);
+    
+    // Filtrar y ordenar según RAIDS_ORDER
+    return RAIDS_ORDER.filter(raid => userRaids.has(raid));
 }
 
 // Renderizar las tablas para cada usuario
@@ -29,9 +32,12 @@ function renderTables() {
     const content = document.getElementById('content');
     content.innerHTML = '';
     
-    const allRaids = getAllRaids();
-    
     data.forEach(user => {
+        const userRaids = getUserRaids(user);
+        
+        // Si el usuario no tiene raids, no mostrar su tabla
+        if (userRaids.length === 0) return;
+        
         const userSection = document.createElement('div');
         userSection.className = 'user-section';
         
@@ -62,7 +68,7 @@ function renderTables() {
         // Crear cuerpo de la tabla
         const tbody = document.createElement('tbody');
         
-        allRaids.forEach(raidName => {
+        userRaids.forEach(raidName => {
             const row = document.createElement('tr');
             
             const raidCell = document.createElement('td');
