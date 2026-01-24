@@ -14,17 +14,20 @@ function loadData() {
     // Usar las funciones del SDK modular
     const { ref, onValue } = window.firebaseDatabase;
     
-    onValue(ref(window.database, 'characters'), (snapshot) => {
+    console.log('Intentando cargar datos de Firebase...');
+    
+    onValue(ref(window.database), (snapshot) => {
+        console.log('Snapshot recibido:', snapshot.exists(), snapshot.val());
         if (snapshot.exists()) {
             data = snapshot.val();
             renderTables();
         } else {
-            console.log('No data available');
-            document.getElementById('content').innerHTML = '<div class="loading">No hay datos disponibles. Por favor, carga el archivo characters.json en Firebase.</div>';
+            console.log('No data available - La base de datos está vacía');
+            document.getElementById('content').innerHTML = '<div class="loading">❌ No hay datos en Firebase.<br><br><strong>Solución:</strong><br>1. Ve a <a href="https://console.firebase.google.com/" target="_blank">Firebase Console</a><br>2. Selecciona tu proyecto "la-planner"<br>3. Ve a Realtime Database<br>4. Haz clic en "Importar JSON"<br>5. Sube tu archivo characters.json</div>';
         }
     }, (error) => {
         console.error('Error loading data:', error);
-        document.getElementById('content').innerHTML = '<div class="loading">Error al cargar los datos. Verifica la configuración de Firebase.</div>';
+        document.getElementById('content').innerHTML = '<div class="loading">❌ Error al conectar con Firebase: ' + error.message + '</div>';
     });
 }
 
@@ -141,7 +144,7 @@ async function saveData() {
         }
         
         const { ref, set } = window.firebaseDatabase;
-        await set(ref(window.database, 'characters'), data);
+        await set(ref(window.database), data);
         console.log('Datos guardados en Firebase');
     } catch (error) {
         console.error('Error saving data:', error);
