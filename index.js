@@ -3,6 +3,22 @@ let data = [];
 // Orden específico de las raids
 const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kazeros', 'Thaemine'];
 
+// Configuración de raids con iLvl mínimo requerido
+const RAIDS_CONFIG = [
+    { name: 'Behemoth', difficulty: 'Normal', minILvl: 1640 },
+    { name: 'Aegir', difficulty: 'Normal', minILvl: 1660 },
+    { name: 'Aegir', difficulty: 'Hard', minILvl: 1680 },
+    { name: 'Brelshaza', difficulty: 'Normal', minILvl: 1670 },
+    { name: 'Brelshaza', difficulty: 'Hard', minILvl: 1690 },
+    { name: 'Mordum', difficulty: 'Normal', minILvl: 1680 },
+    { name: 'Mordum', difficulty: 'Hard', minILvl: 1700 },
+    { name: 'Armoche', difficulty: 'Normal', minILvl: 1700 },
+    { name: 'Armoche', difficulty: 'Hard', minILvl: 1720 },
+    { name: 'Kazeros', difficulty: 'Normal', minILvl: 1710 },
+    { name: 'Kazeros', difficulty: 'Hard', minILvl: 1730 },
+    { name: 'Thaemine', difficulty: 'Extreme', minILvl: 1730 }
+];
+
 // Verificar y ejecutar reset semanal (cada miércoles a las 9:00 AM UTC)
 function checkWeeklyReset() {
     const now = new Date();
@@ -171,7 +187,11 @@ function renderTables() {
         user.characters.forEach(character => {
             const charStats = getCharacterStats(character);
             const th = document.createElement('th');
-            th.innerHTML = `<div class="character-header"><span class="character-name">${character.name}</span><span class="character-ilvl" data-character-index="${user.characters.indexOf(character)}" data-user-index="${data.indexOf(user)}">${character.iLvl}</span></div><div class="character-info">${character.class}</div><div class="character-stats">[${charStats.remaining}/${charStats.total}]</div>`;
+            th.innerHTML = `<div class="character-header"><span class="character-name" style="cursor: pointer;" data-edit-raids="true">${character.name}</span><span class="character-ilvl" data-character-index="${user.characters.indexOf(character)}" data-user-index="${data.indexOf(user)}">${character.iLvl}</span></div><div class="character-info">${character.class}</div><div class="character-stats">[${charStats.remaining}/${charStats.total}]</div>`;
+            
+            // Agregar evento click al nombre para editar raids
+            const nameElement = th.querySelector('.character-name');
+            nameElement.addEventListener('click', () => openRaidSelector(user, character));
             
             // Agregar evento click al iLvl para editarlo
             const iLvlElement = th.querySelector('.character-ilvl');
@@ -280,6 +300,143 @@ function editILvl(iLvlElement, user, character) {
     
     // Guardar al perder el foco
     input.addEventListener('blur', saveChanges);
+}
+
+// Abrir selector de raids para un personaje
+function openRaidSelector(user, character) {
+    // Crear modal
+    const modal = document.createElement('div');
+    modal.className = 'modal-overlay';
+    
+    const modalContent = document.createElement('div');
+    modalContent.className = 'modal-content';
+    
+    // Header
+    const header = document.createElement('div');
+    header.className = 'modal-header';
+    header.innerHTML = `<h2>Editar raids: ${character.name}</h2><button class="modal-close">&times;</button>`;
+    modalContent.appendChild(header);
+    
+    // Información de iLvl
+    const info = document.createElement('div');
+    info.className = 'modal-info';
+    info.innerHTML = `<strong>iLvl actual:</strong> ${character.iLvl}`;
+    modalContent.appendChild(info);
+    
+    // Contenedor de raids
+    const raidsContainer = document.createElement('div');
+    raidsContainer.className = 'raids-container';
+    
+    // Agrupar raids por nombre
+    const raidsByName = {};
+    RAIDS_CONFIG.forEach(raid => {
+        if (!raidsByName[raid.name]) {
+            raidsByName[raid.name] = [];
+        }
+        raidsByName[raid.name].push(raid);
+    });
+    
+    // Crear checkboxes para cada raid
+    RAIDS_ORDER.forEach(raidName => {
+        if (raidsByName[raidName]) {
+            const raidSection = document.createElement('div');
+            raidSection.className = 'raid-section';
+            
+            const raidTitle = document.createElement('div');
+            raidTitle.className = 'raid-section-title';
+            raidTitle.textContent = raidName;
+            raidSection.appendChild(raidTitle);
+            
+            raidsByName[raidName].forEach(raidConfig => {
+                const checkboxDiv = document.createElement('div');
+                checkboxDiv.className = 'checkbox-item';
+                
+                const currentRaid = character.raids.find(r => r.name === raidConfig.name && r.difficulty === raidConfig.difficulty);
+                const isAvailable = character.iLvl >= raidConfig.minILvl;
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = `raid-${raidConfig.name}-${raidConfig.difficulty}`;
+                checkbox.checked = !!currentRaid;
+                checkbox.disabled = !isAvailable;
+                checkbox.dataset.raidName = raidConfig.name;
+                checkbox.dataset.difficulty = raidConfig.difficulty;
+                checkbox.dataset.minILvl = raidConfig.minILvl;
+                
+                const label = document.createElement('label');
+                label.htmlFor = checkbox.id;
+                label.innerHTML = `${raidConfig.difficulty} (${raidConfig.minILvl})`;
+                
+                if (!isAvailable) {
+                    label.className = 'disabled';
+                }
+                
+                checkboxDiv.appendChild(checkbox);
+                checkboxDiv.appendChild(label);
+                
+                // Event listener para cambios
+                checkbox.addEventListener('change', () => {
+                    handleRaidCheckboxChange(checkbox, character, raidsByName[raidName]);
+                });
+                
+                raidSection.appendChild(checkboxDiv);
+            });
+            
+            raidsContainer.appendChild(raidSection);
+        }
+    });
+    
+    modalContent.appendChild(raidsContainer);
+    
+    // Footer con botón guardar
+    const footer = document.createElement('div');
+    footer.className = 'modal-footer';
+    const saveButton = document.createElement('button');
+    saveButton.textContent = 'Guardar';
+    saveButton.className = 'modal-button';
+    saveButton.addEventListener('click', () => {
+        saveData();
+        renderTables();
+        modal.remove();
+    });
+    footer.appendChild(saveButton);
+    modalContent.appendChild(footer);
+    
+    modal.appendChild(modalContent);
+    
+    // Cerrar modal al hacer clic en X
+    modal.querySelector('.modal-close').addEventListener('click', () => modal.remove());
+    
+    // Cerrar modal al hacer clic fuera
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.remove();
+    });
+    
+    document.body.appendChild(modal);
+}
+
+// Manejar cambio de checkbox de raid
+function handleRaidCheckboxChange(checkbox, character, diffsInRaid) {
+    const raidName = checkbox.dataset.raidName;
+    const difficulty = checkbox.dataset.difficulty;
+    
+    if (checkbox.checked) {
+        // Agregar raid
+        const newRaid = RAIDS_CONFIG.find(r => r.name === raidName && r.difficulty === difficulty);
+        if (newRaid && !character.raids.find(r => r.name === raidName && r.difficulty === difficulty)) {
+            // Remover otras dificultades de la misma raid
+            character.raids = character.raids.filter(r => r.name !== raidName);
+            // Agregar la nueva
+            character.raids.push({
+                name: raidName,
+                difficulty: difficulty,
+                completion: false
+            });
+        }
+    } else {
+        // Remover raid
+        character.raids = character.raids.filter(r => !(r.name === raidName && r.difficulty === difficulty));
+    }
 }
 
 // Guardar datos en Firebase
