@@ -3,15 +3,20 @@ let data = [];
 // Orden específico de las raids
 const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kazeros', 'Thaemine'];
 
-// Cargar datos desde el archivo JSON
-async function loadData() {
-    try {
-        const response = await fetch('characters.json');
-        data = await response.json();
-        renderTables();
-    } catch (error) {
+// Cargar datos desde Firebase
+function loadData() {
+    database.ref('characters').on('value', (snapshot) => {
+        if (snapshot.exists()) {
+            data = snapshot.val();
+            renderTables();
+        } else {
+            console.log('No data available');
+            document.getElementById('content').innerHTML = '<div class="loading">No hay datos disponibles. Por favor, carga el archivo characters.json en Firebase.</div>';
+        }
+    }, (error) => {
         console.error('Error loading data:', error);
-    }
+        document.getElementById('content').innerHTML = '<div class="loading">Error al cargar los datos. Verifica la configuración de Firebase.</div>';
+    });
 }
 
 // Obtener raids de un usuario específico en el orden correcto
@@ -118,14 +123,14 @@ function toggleRaidCompletion(user, character, raid, button) {
     saveData();
 }
 
-// Guardar datos en el archivo JSON
-function saveData() {
-    // En un navegador no podemos guardar directamente en el sistema de archivos
-    // Esto requeriría un backend o una API
-    console.log('Datos actualizados:', JSON.stringify(data, null, 2));
-    
-    // Para desarrollo local, puedes usar localStorage como alternativa
-    localStorage.setItem('raidTrackerData', JSON.stringify(data));
+// Guardar datos en Firebase
+async function saveData() {
+    try {
+        await database.ref('characters').set(data);
+        console.log('Datos guardados en Firebase');
+    } catch (error) {
+        console.error('Error saving data:', error);
+    }
 }
 
 // Cargar datos al iniciar
