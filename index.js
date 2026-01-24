@@ -85,6 +85,45 @@ function getUserRaids(user) {
     return RAIDS_ORDER.filter(raid => userRaids.has(raid));
 }
 
+// Calcular estadísticas de un usuario
+function getUserStats(user) {
+    let totalRaids = 0;
+    let completedRaids = 0;
+    
+    user.characters.forEach(character => {
+        character.raids.forEach(raid => {
+            totalRaids++;
+            if (raid.completion) completedRaids++;
+        });
+    });
+    
+    return { completed: completedRaids, total: totalRaids };
+}
+
+// Calcular estadísticas de un personaje
+function getCharacterStats(character) {
+    let totalRaids = character.raids.length;
+    let completedRaids = character.raids.filter(raid => raid.completion).length;
+    
+    return { completed: completedRaids, total: totalRaids };
+}
+
+// Calcular estadísticas de una raid
+function getRaidStats(user, raidName) {
+    let total = 0;
+    let completed = 0;
+    
+    user.characters.forEach(character => {
+        const raid = character.raids.find(r => r.name === raidName);
+        if (raid) {
+            total++;
+            if (raid.completion) completed++;
+        }
+    });
+    
+    return { completed, total };
+}
+
 // Renderizar las tablas para cada usuario
 function renderTables() {
     const content = document.getElementById('content');
@@ -96,12 +135,13 @@ function renderTables() {
         // Si el usuario no tiene raids, no mostrar su tabla
         if (userRaids.length === 0) return;
         
+        const userStats = getUserStats(user);
         const userSection = document.createElement('div');
         userSection.className = 'user-section';
         
         const userTitle = document.createElement('div');
         userTitle.className = 'user-title';
-        userTitle.textContent = `👤 ${user.account}`;
+        userTitle.innerHTML = `👤 ${user.account} <span class="stats">[${userStats.completed}/${userStats.total}]</span>`;
         userSection.appendChild(userTitle);
         
         const table = document.createElement('table');
@@ -115,8 +155,9 @@ function renderTables() {
         headerRow.appendChild(raidHeaderCell);
         
         user.characters.forEach(character => {
+            const charStats = getCharacterStats(character);
             const th = document.createElement('th');
-            th.innerHTML = `<div class="character-name">${character.name}</div><div class="character-info">${character.class} - ${character.iLvl}</div>`;
+            th.innerHTML = `<div class="character-name">${character.name}</div><div class="character-info">${character.class} - ${character.iLvl}</div><div class="character-stats">[${charStats.completed}/${charStats.total}]</div>`;
             headerRow.appendChild(th);
         });
         
@@ -127,10 +168,11 @@ function renderTables() {
         const tbody = document.createElement('tbody');
         
         userRaids.forEach(raidName => {
+            const raidStats = getRaidStats(user, raidName);
             const row = document.createElement('tr');
             
             const raidCell = document.createElement('td');
-            raidCell.textContent = raidName;
+            raidCell.innerHTML = `${raidName}<div class="raid-stats">[${raidStats.completed}/${raidStats.total}]</div>`;
             row.appendChild(raidCell);
             
             user.characters.forEach(character => {
