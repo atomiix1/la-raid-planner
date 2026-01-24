@@ -5,7 +5,12 @@ const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kaz
 
 // Cargar datos desde Firebase
 function loadData() {
-    database.ref('characters').on('value', (snapshot) => {
+    if (typeof window.database === 'undefined') {
+        console.error('Base de datos de Firebase no inicializada');
+        return;
+    }
+    
+    window.database.ref('characters').on('value', (snapshot) => {
         if (snapshot.exists()) {
             data = snapshot.val();
             renderTables();
@@ -126,7 +131,11 @@ function toggleRaidCompletion(user, character, raid, button) {
 // Guardar datos en Firebase
 async function saveData() {
     try {
-        await database.ref('characters').set(data);
+        if (typeof window.database === 'undefined') {
+            console.error('Base de datos de Firebase no inicializada');
+            return;
+        }
+        await window.database.ref('characters').set(data);
         console.log('Datos guardados en Firebase');
     } catch (error) {
         console.error('Error saving data:', error);

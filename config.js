@@ -10,6 +10,10 @@ const firebaseConfig = {
     appId: "1:922350103987:web:a546e04e3b57b867bc6fc6"
 };
 
-// Inicializar Firebase
-firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
+// Inicializar Firebase cuando esté disponible
+if (typeof firebase !== 'undefined') {
+    firebase.initializeApp(firebaseConfig);
+    window.database = firebase.database();
+} else {
+    console.error('Firebase SDK no cargado correctamente');
+}
