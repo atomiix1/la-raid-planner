@@ -171,7 +171,12 @@ function renderTables() {
         user.characters.forEach(character => {
             const charStats = getCharacterStats(character);
             const th = document.createElement('th');
-            th.innerHTML = `<div class="character-name">${character.name}</div><div class="character-info">${character.class} - ${character.iLvl}</div><div class="character-stats">[${charStats.remaining}/${charStats.total}]</div>`;
+            th.innerHTML = `<div class="character-name">${character.name}</div><div class="character-info">${character.class}</div><div class="character-ilvl" data-character-index="${user.characters.indexOf(character)}" data-user-index="${data.indexOf(user)}">${character.iLvl}</div><div class="character-stats">[${charStats.remaining}/${charStats.total}]</div>`;
+            
+            // Agregar evento click al iLvl para editarlo
+            const iLvlElement = th.querySelector('.character-ilvl');
+            iLvlElement.addEventListener('click', () => editILvl(iLvlElement, user, character));
+            
             headerRow.appendChild(th);
         });
         
@@ -231,6 +236,50 @@ function toggleRaidCompletion(user, character, raid, button) {
     }
     
     saveData();
+}
+
+// Editar iLvl de un personaje
+function editILvl(iLvlElement, user, character) {
+    const currentILvl = character.iLvl;
+    
+    // Crear input para editar
+    const input = document.createElement('input');
+    input.type = 'number';
+    input.value = currentILvl;
+    input.min = '0';
+    input.step = '1';
+    input.className = 'ilvl-input';
+    
+    // Reemplazar el elemento con el input
+    iLvlElement.innerHTML = '';
+    iLvlElement.appendChild(input);
+    input.focus();
+    input.select();
+    
+    // Función para guardar cambios
+    function saveChanges() {
+        const newILvl = parseInt(input.value);
+        
+        if (isNaN(newILvl) || newILvl < 0) {
+            // Si es inválido, restaurar el valor anterior
+            iLvlElement.textContent = currentILvl;
+        } else {
+            character.iLvl = newILvl;
+            iLvlElement.textContent = newILvl;
+            saveData();
+            renderTables();
+        }
+    }
+    
+    // Guardar al presionar Enter
+    input.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            saveChanges();
+        }
+    });
+    
+    // Guardar al perder el foco
+    input.addEventListener('blur', saveChanges);
 }
 
 // Guardar datos en Firebase
