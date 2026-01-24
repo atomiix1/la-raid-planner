@@ -3,6 +3,47 @@ let data = [];
 // Orden específico de las raids
 const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kazeros', 'Thaemine'];
 
+// Verificar y ejecutar reset semanal (cada miércoles a las 9:00 AM UTC)
+function checkWeeklyReset() {
+    const now = new Date();
+    const utcDay = now.getUTCDay(); // 0 = domingo, 3 = miércoles
+    const utcHours = now.getUTCHours();
+    const utcMinutes = now.getUTCMinutes();
+    
+    // Verificar si es miércoles (3) y si la hora es entre las 9:00 y 9:59
+    const isWednesday = utcDay === 3;
+    const isResetTime = utcHours === 9;
+    
+    if (isWednesday && isResetTime) {
+        const lastResetDate = localStorage.getItem('lastWeeklyResetDate');
+        const today = now.toISOString().split('T')[0]; // YYYY-MM-DD
+        
+        // Solo resetear si no se ha hecho hoy
+        if (lastResetDate !== today) {
+            console.log('🔄 Ejecutando reset semanal...');
+            resetAllRaids();
+            localStorage.setItem('lastWeeklyResetDate', today);
+        }
+    }
+}
+
+// Resetear todas las raids a no completadas
+function resetAllRaids() {
+    if (!data || data.length === 0) return;
+    
+    data.forEach(user => {
+        user.characters.forEach(character => {
+            character.raids.forEach(raid => {
+                raid.completion = false;
+            });
+        });
+    });
+    
+    saveData();
+    renderTables();
+    console.log('✅ Todas las raids han sido reseteadas');
+}
+
 // Cargar datos desde Firebase
 function loadData() {
     if (typeof window.database === 'undefined') {
@@ -153,3 +194,9 @@ async function saveData() {
 
 // Cargar datos al iniciar
 loadData();
+
+// Verificar reset semanal cada minuto
+setInterval(checkWeeklyReset, 60000); // Cada 60 segundos
+
+// También verificar al cargar la página
+checkWeeklyReset();
