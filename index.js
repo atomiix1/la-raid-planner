@@ -420,6 +420,9 @@ function handleRaidCheckboxChange(checkbox, character, diffsInRaid) {
     const raidName = checkbox.dataset.raidName;
     const difficulty = checkbox.dataset.difficulty;
     
+    // Obtener la modal para actualizar otros checkboxes
+    const modal = document.querySelector('.modal-content');
+    
     if (checkbox.checked) {
         // Agregar raid
         const newRaid = RAIDS_CONFIG.find(r => r.name === raidName && r.difficulty === difficulty);
@@ -432,10 +435,29 @@ function handleRaidCheckboxChange(checkbox, character, diffsInRaid) {
                 difficulty: difficulty,
                 completion: false
             });
+            
+            // Desactivar otros checkboxes de la misma raid
+            if (modal) {
+                modal.querySelectorAll(`input[data-raid-name="${raidName}"]`).forEach(cb => {
+                    if (cb !== checkbox) {
+                        cb.disabled = true;
+                    }
+                });
+            }
         }
     } else {
         // Remover raid
         character.raids = character.raids.filter(r => !(r.name === raidName && r.difficulty === difficulty));
+        
+        // Reactivar otros checkboxes de la misma raid si el iLvl lo permite
+        if (modal) {
+            modal.querySelectorAll(`input[data-raid-name="${raidName}"]`).forEach(cb => {
+                if (cb !== checkbox) {
+                    const minILvl = parseInt(cb.dataset.minILvl);
+                    cb.disabled = character.iLvl < minILvl;
+                }
+            });
+        }
     }
 }
 
