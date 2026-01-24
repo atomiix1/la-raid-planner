@@ -171,7 +171,7 @@ function renderTables() {
         user.characters.forEach(character => {
             const charStats = getCharacterStats(character);
             const th = document.createElement('th');
-            th.innerHTML = `<div class="character-name">${character.name}</div><div class="character-info">${character.class}</div><div class="character-ilvl" data-character-index="${user.characters.indexOf(character)}" data-user-index="${data.indexOf(user)}">${character.iLvl}</div><div class="character-stats">[${charStats.remaining}/${charStats.total}]</div>`;
+            th.innerHTML = `<div class="character-header"><span class="character-name">${character.name}</span><span class="character-ilvl" data-character-index="${user.characters.indexOf(character)}" data-user-index="${data.indexOf(user)}">${character.iLvl}</span></div><div class="character-info">${character.class}</div><div class="character-stats">[${charStats.remaining}/${charStats.total}]</div>`;
             
             // Agregar evento click al iLvl para editarlo
             const iLvlElement = th.querySelector('.character-ilvl');
