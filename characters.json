@@ -1,0 +1,48 @@
+[
+    {
+        "account": "Atomiix",
+        "characters": [
+            {
+                "name": "Naromiix",
+                "iLvl": 1733,
+                "class": "Bard",
+                "raids": [
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Hard",
+                        "completion": false
+                    }
+                ]
+            },
+            {
+                "name": "Atomiix",
+                "iLvl": 1720,
+                "class": "Artillerist",
+                "raids": [
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Hard",
+                        "completion": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "account": "Baeto",
+        "characters": [
+            {
+                "name": "Aedhe",
+                "iLvl": 1730,
+                "class": "Sorceress",
+                "raids": [
+                    {
+                        "name": "Mordum",
+                        "difficulty": "Hard",
+                        "completion": true
+                    }
+                ]
+            }
+        ]
+    }
+]
