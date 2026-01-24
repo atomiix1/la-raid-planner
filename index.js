@@ -72,17 +72,32 @@ function loadData() {
     });
 }
 
-// Obtener raids de un usuario específico en el orden correcto
-function getUserRaids(user) {
-    const userRaids = new Set();
+// Obtener raids de un usuario específico ordenadas por nombre y agrupadas por dificultad
+function getUserRaidsByDifficulty(user) {
+    const raidsByDifficulty = {};
+    
     user.characters.forEach(character => {
         character.raids.forEach(raid => {
-            userRaids.add(raid.name);
+            if (RAIDS_ORDER.includes(raid.name)) {
+                if (!raidsByDifficulty[raid.difficulty]) {
+                    raidsByDifficulty[raid.difficulty] = new Set();
+                }
+                raidsByDifficulty[raid.difficulty].add(raid.name);
+            }
         });
     });
     
-    // Filtrar y ordenar según RAIDS_ORDER
-    return RAIDS_ORDER.filter(raid => userRaids.has(raid));
+    // Convertir a objeto ordenado
+    const result = {};
+    ['Normal', 'Hard', 'Extreme'].forEach(difficulty => {
+        if (raidsByDifficulty[difficulty]) {
+            result[difficulty] = Array.from(raidsByDifficulty[difficulty]).sort((a, b) => 
+                RAIDS_ORDER.indexOf(a) - RAIDS_ORDER.indexOf(b)
+            );
+        }
+    });
+    
+    return result;
 }
 
 // Calcular estadísticas de un usuario
@@ -97,15 +112,17 @@ function getUserStats(user) {
         });
     });
     
-    return { completed: completedRaids, total: totalRaids };
+    const remainingRaids = totalRaids - completedRaids;
+    return { remaining: remainingRaids, total: totalRaids };
 }
 
 // Calcular estadísticas de un personaje
 function getCharacterStats(character) {
     let totalRaids = character.raids.length;
     let completedRaids = character.raids.filter(raid => raid.completion).length;
+    const remainingRaids = totalRaids - completedRaids;
     
-    return { completed: completedRaids, total: totalRaids };
+    return { remaining: remainingRaids, total: totalRaids };
 }
 
 // Calcular estadísticas de una raid
@@ -121,7 +138,8 @@ function getRaidStats(user, raidName) {
         }
     });
     
-    return { completed, total };
+    const remaining = total - completed;
+    return { remaining, total };
 }
 
 // Renderizar las tablas para cada usuario
@@ -130,10 +148,10 @@ function renderTables() {
     content.innerHTML = '';
     
     data.forEach(user => {
-        const userRaids = getUserRaids(user);
+        const raidsByDifficulty = getUserRaidsByDifficulty(user);
         
         // Si el usuario no tiene raids, no mostrar su tabla
-        if (userRaids.length === 0) return;
+        if (Object.keys(raidsByDifficulty).length === 0) return;
         
         const userStats = getUserStats(user);
         const userSection = document.createElement('div');
@@ -141,64 +159,77 @@ function renderTables() {
         
         const userTitle = document.createElement('div');
         userTitle.className = 'user-title';
-        userTitle.innerHTML = `👤 ${user.account} <span class="stats">[${userStats.completed}/${userStats.total}]</span>`;
+        userTitle.innerHTML = `👤 ${user.account} <span class="stats">[${userStats.remaining}/${userStats.total}]</span>`;
         userSection.appendChild(userTitle);
         
-        const table = document.createElement('table');
-        
-        // Crear encabezado
-        const thead = document.createElement('thead');
-        const headerRow = document.createElement('tr');
-        
-        const raidHeaderCell = document.createElement('th');
-        raidHeaderCell.textContent = 'Raid';
-        headerRow.appendChild(raidHeaderCell);
-        
-        user.characters.forEach(character => {
-            const charStats = getCharacterStats(character);
-            const th = document.createElement('th');
-            th.innerHTML = `<div class="character-name">${character.name}</div><div class="character-info">${character.class} - ${character.iLvl}</div><div class="character-stats">[${charStats.completed}/${charStats.total}]</div>`;
-            headerRow.appendChild(th);
-        });
-        
-        thead.appendChild(headerRow);
-        table.appendChild(thead);
-        
-        // Crear cuerpo de la tabla
-        const tbody = document.createElement('tbody');
-        
-        userRaids.forEach(raidName => {
-            const raidStats = getRaidStats(user, raidName);
-            const row = document.createElement('tr');
+        // Crear tablas por dificultad
+        Object.entries(raidsByDifficulty).forEach(([difficulty, raids]) => {
+            const difficultySection = document.createElement('div');
+            difficultySection.className = 'difficulty-section';
             
-            const raidCell = document.createElement('td');
-            raidCell.innerHTML = `${raidName}<div class="raid-stats">[${raidStats.completed}/${raidStats.total}]</div>`;
-            row.appendChild(raidCell);
+            const difficultyTitle = document.createElement('div');
+            difficultyTitle.className = `difficulty-title difficulty-${difficulty.toLowerCase()}`;
+            difficultyTitle.textContent = difficulty;
+            difficultySection.appendChild(difficultyTitle);
+            
+            const table = document.createElement('table');
+            
+            // Crear encabezado
+            const thead = document.createElement('thead');
+            const headerRow = document.createElement('tr');
+            
+            const raidHeaderCell = document.createElement('th');
+            raidHeaderCell.textContent = 'Raid';
+            headerRow.appendChild(raidHeaderCell);
             
             user.characters.forEach(character => {
-                const cell = document.createElement('td');
-                const raid = character.raids.find(r => r.name === raidName);
-                
-                if (raid) {
-                    const button = document.createElement('button');
-                    button.className = `raid-button ${raid.completion ? 'complete' : 'incomplete'}`;
-                    button.textContent = raid.difficulty;
-                    button.addEventListener('click', () => toggleRaidCompletion(user, character, raid, button));
-                    cell.appendChild(button);
-                } else {
-                    cell.textContent = '-';
-                    cell.style.textAlign = 'center';
-                    cell.style.color = '#666';
-                }
-                
-                row.appendChild(cell);
+                const charStats = getCharacterStats(character);
+                const th = document.createElement('th');
+                th.innerHTML = `<div class="character-name">${character.name}</div><div class="character-info">${character.class} - ${character.iLvl}</div><div class="character-stats">[${charStats.remaining}/${charStats.total}]</div>`;
+                headerRow.appendChild(th);
             });
             
-            tbody.appendChild(row);
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+            
+            // Crear cuerpo de la tabla
+            const tbody = document.createElement('tbody');
+            
+            raids.forEach(raidName => {
+                const raidStats = getRaidStats(user, raidName);
+                const row = document.createElement('tr');
+                
+                const raidCell = document.createElement('td');
+                raidCell.innerHTML = `${raidName}<div class="raid-stats">[${raidStats.remaining}/${raidStats.total}]</div>`;
+                row.appendChild(raidCell);
+                
+                user.characters.forEach(character => {
+                    const cell = document.createElement('td');
+                    const raid = character.raids.find(r => r.name === raidName);
+                    
+                    if (raid) {
+                        const button = document.createElement('button');
+                        button.className = `raid-button ${raid.completion ? 'complete' : 'incomplete'}`;
+                        button.textContent = raid.completion ? 'Hecho' : 'Pendiente';
+                        button.addEventListener('click', () => toggleRaidCompletion(user, character, raid, button));
+                        cell.appendChild(button);
+                    } else {
+                        cell.textContent = '-';
+                        cell.style.textAlign = 'center';
+                        cell.style.color = '#666';
+                    }
+                    
+                    row.appendChild(cell);
+                });
+                
+                tbody.appendChild(row);
+            });
+            
+            table.appendChild(tbody);
+            difficultySection.appendChild(table);
+            userSection.appendChild(difficultySection);
         });
         
-        table.appendChild(tbody);
-        userSection.appendChild(table);
         content.appendChild(userSection);
     });
 }
