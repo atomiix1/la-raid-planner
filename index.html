@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Raid Planner</title>
     <style>
         * {
@@ -124,11 +123,29 @@
         <div id="content" class="loading">Cargando datos...</div>
     </div>
     
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js"></script>
-    
-    <script src="config.js"></script>
-    <script src="index.js"></script>
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
+        import { getDatabase } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js';
+        
+        // Configuración de Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyC61vsWUjfVHQOFuejgmXl9Lk4ZEKNQr04",
+            authDomain: "la-planner.firebaseapp.com",
+            databaseURL: "https://la-planner-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "la-planner",
+            storageBucket: "la-planner.firebasestorage.app",
+            messagingSenderId: "922350103987",
+            appId: "1:922350103987:web:a546e04e3b57b867bc6fc6"
+        };
+        
+        // Inicializar Firebase
+        const app = initializeApp(firebaseConfig);
+        window.database = getDatabase(app);
+        
+        // Cargar el script principal
+        const script = document.createElement('script');
+        script.src = 'index.js';
+        document.body.appendChild(script);
+    </script>
 </body>
 </html>
