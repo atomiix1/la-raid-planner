@@ -376,12 +376,172 @@
             font-size: 18px;
             color: #ffffff;
         }
+
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .header-title {
+            flex: 1;
+            text-align: center;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 0;
+            background-color: #1a73e8;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-btn:hover {
+            background-color: #2b7de9;
+        }
+
+        .raid-search-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .raid-search-modal.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .raid-search-content {
+            background-color: #2d2d2d;
+            padding: 30px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 700px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .raid-search-content h2 {
+            color: #64b5f6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .raid-select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #353535;
+            color: #e0e0e0;
+            border: 1px solid #454545;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .raid-select:focus {
+            outline: none;
+            border-color: #64b5f6;
+            box-shadow: 0 0 5px rgba(100, 181, 246, 0.3);
+        }
+
+        .raid-matches {
+            margin-top: 20px;
+        }
+
+        .raid-match-group {
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #353535;
+            border-radius: 4px;
+            border-left: 4px solid #64b5f6;
+        }
+
+        .raid-match-account {
+            font-weight: bold;
+            color: #64b5f6;
+            margin-bottom: 8px;
+        }
+
+        .raid-match-character {
+            font-size: 13px;
+            padding: 6px 0;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .character-class-badge {
+            background-color: #1a73e8;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 11px;
+            color: white;
+        }
+
+        .no-matches {
+            text-align: center;
+            color: #999;
+            padding: 20px;
+        }
+
+        .close-search-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: #e0e0e0;
+            font-size: 24px;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .close-search-btn:hover {
+            color: #fff;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🗡️ Raid Planner</h1>
+        <div class="header-container">
+            <div class="header-title">
+                <h1>🗡️ Raid Planner</h1>
+            </div>
+            <button class="search-btn" onclick="openRaidSearch()" title="Buscar quién puede hacer cada raid">
+                🔍
+            </button>
+        </div>
         <div id="content" class="loading">Cargando datos...</div>
+    </div>
+
+    <!-- Modal de búsqueda de raids -->
+    <div id="raidSearchModal" class="raid-search-modal">
+        <div class="raid-search-content">
+            <button class="close-search-btn" onclick="closeRaidSearch()">✕</button>
+            <h2>Búsqueda de Raids</h2>
+            <select id="raidSelect" class="raid-select" onchange="updateRaidMatches()">
+                <option value="">Selecciona una raid...</option>
+            </select>
+            <div id="raidMatches" class="raid-matches"></div>
+        </div>
     </div>
     
     <script type="module">

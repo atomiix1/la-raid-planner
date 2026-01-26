@@ -485,3 +485,121 @@ setInterval(checkWeeklyReset, 60000); // Cada 60 segundos
 
 // También verificar al cargar la página
 checkWeeklyReset();
+// ===== FUNCIONES DE BÚSQUEDA DE RAIDS =====
+
+// Abrir modal de búsqueda
+function openRaidSearch() {
+    const modal = document.getElementById('raidSearchModal');
+    modal.classList.add('active');
+    
+    // Llenar el select con todas las raids disponibles
+    const raidSelect = document.getElementById('raidSelect');
+    raidSelect.innerHTML = '<option value="">Selecciona una raid...</option>';
+    
+    const allRaids = new Set();
+    data.forEach(user => {
+        user.characters.forEach(character => {
+            character.raids.forEach(raid => {
+                allRaids.add(`${raid.name}_${raid.difficulty}`);
+            });
+        });
+    });
+    
+    // Ordenar raids según RAIDS_ORDER
+    const sortedRaids = Array.from(allRaids).sort((a, b) => {
+        const nameA = a.split('_')[0];
+        const nameB = b.split('_')[0];
+        const indexA = RAIDS_ORDER.indexOf(nameA);
+        const indexB = RAIDS_ORDER.indexOf(nameB);
+        
+        if (indexA !== indexB) {
+            return indexA - indexB;
+        }
+        
+        // Si son el mismo raid, ordenar por dificultad
+        const diffOrder = { 'Normal': 0, 'Hard': 1, 'Extreme': 2 };
+        const diffA = a.split('_')[1];
+        const diffB = b.split('_')[1];
+        return diffOrder[diffA] - diffOrder[diffB];
+    });
+    
+    sortedRaids.forEach(raidKey => {
+        const [raidName, difficulty] = raidKey.split('_');
+        const option = document.createElement('option');
+        option.value = raidKey;
+        option.textContent = `${raidName} - ${difficulty}`;
+        raidSelect.appendChild(option);
+    });
+}
+
+// Cerrar modal de búsqueda
+function closeRaidSearch() {
+    const modal = document.getElementById('raidSearchModal');
+    modal.classList.remove('active');
+}
+
+// Actualizar resultados de búsqueda
+function updateRaidMatches() {
+    const raidSelect = document.getElementById('raidSelect');
+    const raidKey = raidSelect.value;
+    const matchesContainer = document.getElementById('raidMatches');
+    
+    if (!raidKey) {
+        matchesContainer.innerHTML = '';
+        return;
+    }
+    
+    const [selectedRaidName, selectedDifficulty] = raidKey.split('_');
+    
+    // Encontrar quién puede hacer esta raid y NO la ha completado
+    const matchesMap = new Map(); // account -> caracteres
+    
+    data.forEach(user => {
+        const characters = user.characters.filter(char => {
+            const raidData = char.raids.find(raid => 
+                raid.name === selectedRaidName && raid.difficulty === selectedDifficulty
+            );
+            // Solo mostrar si tiene la raid Y no está completada
+            return raidData && !raidData.completion;
+        });
+        
+        if (characters.length > 0) {
+            matchesMap.set(user.account, characters);
+        }
+    });
+    
+    // Renderizar resultados
+    if (matchesMap.size === 0) {
+        matchesContainer.innerHTML = '<div class="no-matches">¡Todos han completado esta raid esta semana!</div>';
+        return;
+    }
+    
+    let html = '';
+    matchesMap.forEach((characters, accountName) => {
+        html += `<div class="raid-match-group">`;
+        html += `<div class="raid-match-account">${accountName}</div>`;
+        
+        characters.forEach(character => {
+            html += `<div class="raid-match-character">
+                <span>${character.name} (${character.iLvl})</span>
+                <span class="character-class-badge">${character.class}</span>
+            </div>`;
+        });
+        
+        html += `</div>`;
+    });
+    
+    matchesContainer.innerHTML = html;
+}
+
+// Cerrar modal al hacer clic fuera
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('raidSearchModal');
+    if (modal) {
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                closeRaidSearch();
+            }
+        });
+    }
+});
