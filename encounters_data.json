@@ -1,0 +1,7070 @@
+﻿{
+  "Thaemine": {
+    "2026-01-28": [
+      {
+        "boss": "Kaltaya, the Blooming Chaos",
+        "players": [
+          {
+            "name": "Nidafist",
+            "level": 304
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "MÔscheny",
+            "level": 405
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 279.5
+      },
+      {
+        "boss": "Rakathus, the Lurking Arrogance",
+        "players": [
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Nidafist",
+            "level": 304
+          },
+          {
+            "name": "MÔscheny",
+            "level": 405
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 279.5
+      },
+      {
+        "boss": "Firehorn, Trampler of Earth",
+        "players": [
+          {
+            "name": "Nidafist",
+            "level": 304
+          },
+          {
+            "name": "MÔscheny",
+            "level": 405
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 279.5
+      },
+      {
+        "boss": "Kaltaya, the Blooming Chaos",
+        "players": [
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Libalia",
+            "level": 404
+          },
+          {
+            "name": "Twistedfakke",
+            "level": 202
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 253.8
+      },
+      {
+        "boss": "Rakathus, the Lurking Arrogance",
+        "players": [
+          {
+            "name": "Libalia",
+            "level": 404
+          },
+          {
+            "name": "Twistedfakke",
+            "level": 202
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 253.8
+      },
+      {
+        "boss": "Firehorn, Trampler of Earth",
+        "players": [
+          {
+            "name": "Libalia",
+            "level": 404
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Twistedfakke",
+            "level": 202
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 253.8
+      },
+      {
+        "boss": "Kaltaya, the Blooming Chaos",
+        "players": [
+          {
+            "name": "Rainerh",
+            "level": 102
+          },
+          {
+            "name": "Pelaoenfadao",
+            "level": 104
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 153.8
+      },
+      {
+        "boss": "Rakathus, the Lurking Arrogance",
+        "players": [
+          {
+            "name": "Rainerh",
+            "level": 102
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Pelaoenfadao",
+            "level": 104
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 153.8
+      },
+      {
+        "boss": "Firehorn, Trampler of Earth",
+        "players": [
+          {
+            "name": "Rainerh",
+            "level": 102
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Pelaoenfadao",
+            "level": 104
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 153.8
+      }
+    ]
+  },
+  "Kazeros": {
+    "2026-01-28": [
+      {
+        "boss": "Tienis",
+        "players": [
+          {
+            "name": "Raillekirambo",
+            "level": 504
+          },
+          {
+            "name": "Syegfryed",
+            "level": 104
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Undinnee",
+            "level": 602
+          }
+        ],
+        "avg_level": 428.5
+      },
+      {
+        "boss": "Prunya",
+        "players": [
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Raillekirambo",
+            "level": 504
+          },
+          {
+            "name": "Syegfryed",
+            "level": 104
+          },
+          {
+            "name": "Undinnee",
+            "level": 602
+          }
+        ],
+        "avg_level": 428.5
+      },
+      {
+        "boss": "Lauriel",
+        "players": [
+          {
+            "name": "Raillekirambo",
+            "level": 504
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Syegfryed",
+            "level": 104
+          },
+          {
+            "name": "Undinnee",
+            "level": 602
+          }
+        ],
+        "avg_level": 428.5
+      },
+      {
+        "boss": "Tienis",
+        "players": [
+          {
+            "name": "Neikooru",
+            "level": 305
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Pyvanni",
+            "level": 603
+          },
+          {
+            "name": "Caballerosolar",
+            "level": 105
+          }
+        ],
+        "avg_level": 353.8
+      },
+      {
+        "boss": "Prunya",
+        "players": [
+          {
+            "name": "Neikooru",
+            "level": 305
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Pyvanni",
+            "level": 603
+          },
+          {
+            "name": "Caballerosolar",
+            "level": 105
+          }
+        ],
+        "avg_level": 353.8
+      },
+      {
+        "boss": "Lauriel",
+        "players": [
+          {
+            "name": "Neikooru",
+            "level": 305
+          },
+          {
+            "name": "Pyvanni",
+            "level": 603
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Caballerosolar",
+            "level": 105
+          }
+        ],
+        "avg_level": 353.8
+      },
+      {
+        "boss": "Tienis",
+        "players": [
+          {
+            "name": "Abuafiestas",
+            "level": 603
+          },
+          {
+            "name": "Twistedfakke",
+            "level": 202
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Strelie",
+            "level": 602
+          }
+        ],
+        "avg_level": 452.2
+      },
+      {
+        "boss": "Prunya",
+        "players": [
+          {
+            "name": "Abuafiestas",
+            "level": 603
+          },
+          {
+            "name": "Twistedfakke",
+            "level": 202
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Strelie",
+            "level": 602
+          }
+        ],
+        "avg_level": 452.2
+      },
+      {
+        "boss": "Lauriel",
+        "players": [
+          {
+            "name": "Abuafiestas",
+            "level": 603
+          },
+          {
+            "name": "Twistedfakke",
+            "level": 202
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Strelie",
+            "level": 602
+          }
+        ],
+        "avg_level": 452.2
+      },
+      {
+        "boss": "Tienis",
+        "players": [
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Sasongye",
+            "level": 603
+          },
+          {
+            "name": "Shanay",
+            "level": 403
+          },
+          {
+            "name": "Buntnessel",
+            "level": 105
+          }
+        ],
+        "avg_level": 403.8
+      },
+      {
+        "boss": "Prunya",
+        "players": [
+          {
+            "name": "Shanay",
+            "level": 403
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Sasongye",
+            "level": 603
+          },
+          {
+            "name": "Buntnessel",
+            "level": 105
+          }
+        ],
+        "avg_level": 403.8
+      },
+      {
+        "boss": "Lauriel",
+        "players": [
+          {
+            "name": "Shanay",
+            "level": 403
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Sasongye",
+            "level": 603
+          },
+          {
+            "name": "Buntnessel",
+            "level": 105
+          }
+        ],
+        "avg_level": 403.8
+      },
+      {
+        "boss": "Tienis",
+        "players": [
+          {
+            "name": "Feitenn",
+            "level": 305
+          },
+          {
+            "name": "Finalscope",
+            "level": 512
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Lonelyflover",
+            "level": 602
+          }
+        ],
+        "avg_level": 480.8
+      },
+      {
+        "boss": "Prunya",
+        "players": [
+          {
+            "name": "Feitenn",
+            "level": 305
+          },
+          {
+            "name": "Finalscope",
+            "level": 512
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Lonelyflover",
+            "level": 602
+          }
+        ],
+        "avg_level": 480.8
+      },
+      {
+        "boss": "Lauriel",
+        "players": [
+          {
+            "name": "Feitenn",
+            "level": 305
+          },
+          {
+            "name": "Finalscope",
+            "level": 512
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Lonelyflover",
+            "level": 602
+          }
+        ],
+        "avg_level": 480.8
+      }
+    ]
+  },
+  "Armoche": {
+    "2026-01-28": [
+      {
+        "boss": "Sonavel",
+        "players": [
+          {
+            "name": "Controlglaive",
+            "level": 305
+          },
+          {
+            "name": "Twistedfakke",
+            "level": 202
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Pjsartist",
+            "level": 602
+          }
+        ],
+        "avg_level": 377.8
+      }
+    ]
+  },
+  "Mordum": {
+    "2026-01-28": [
+      {
+        "boss": "Kyzra",
+        "players": [
+          {
+            "name": "Scrattchy",
+            "level": 504
+          },
+          {
+            "name": "Fienza",
+            "level": 205
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Vermothispally",
+            "level": 105
+          }
+        ],
+        "avg_level": 304.0
+      },
+      {
+        "boss": "Kaishur",
+        "players": [
+          {
+            "name": "Scrattchy",
+            "level": 504
+          },
+          {
+            "name": "Fienza",
+            "level": 205
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Vermothispally",
+            "level": 105
+          }
+        ],
+        "avg_level": 304.0
+      }
+    ]
+  },
+  "Brelshaza": {
+    "2026-01-28": [
+      {
+        "boss": "Dark Mountain Predator",
+        "players": [
+          {
+            "name": "Kenjinwoo",
+            "level": 313
+          },
+          {
+            "name": "Drakolyte",
+            "level": 102
+          },
+          {
+            "name": "Wencuff",
+            "level": 403
+          },
+          {
+            "name": "Higellan",
+            "level": 503
+          },
+          {
+            "name": "Kimeesoo",
+            "level": 603
+          },
+          {
+            "name": "Mastodontiix",
+            "level": 104
+          },
+          {
+            "name": "Niteguard",
+            "level": 105
+          },
+          {
+            "name": "Sekretos",
+            "level": 105
+          }
+        ],
+        "avg_level": 279.8
+      },
+      {
+        "boss": "Ravaged Tyrant of Beasts",
+        "players": [
+          {
+            "name": "Kenjinwoo",
+            "level": 313
+          },
+          {
+            "name": "Kimeesoo",
+            "level": 603
+          },
+          {
+            "name": "Higellan",
+            "level": 503
+          },
+          {
+            "name": "Drakolyte",
+            "level": 102
+          },
+          {
+            "name": "Wencuff",
+            "level": 403
+          },
+          {
+            "name": "Mastodontiix",
+            "level": 104
+          },
+          {
+            "name": "Niteguard",
+            "level": 105
+          },
+          {
+            "name": "Sekretos",
+            "level": 105
+          }
+        ],
+        "avg_level": 279.8
+      },
+      {
+        "boss": "Lazaram, the Trailblazer",
+        "players": [
+          {
+            "name": "Libalia",
+            "level": 404
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Twistedfakke",
+            "level": 202
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 253.8
+      },
+      {
+        "boss": "Dark Mountain Predator",
+        "players": [
+          {
+            "name": "Twistedfakke",
+            "level": 202
+          },
+          {
+            "name": "Prushko",
+            "level": 502
+          },
+          {
+            "name": "Rayzx",
+            "level": 403
+          },
+          {
+            "name": "Frierehm",
+            "level": 205
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Assasesina",
+            "level": 402
+          },
+          {
+            "name": "Seraedo",
+            "level": 204
+          },
+          {
+            "name": "Nyõntõ",
+            "level": 602
+          }
+        ],
+        "avg_level": 378.0
+      },
+      {
+        "boss": "Ravaged Tyrant of Beasts",
+        "players": [
+          {
+            "name": "Twistedfakke",
+            "level": 202
+          },
+          {
+            "name": "Rayzx",
+            "level": 403
+          },
+          {
+            "name": "Frierehm",
+            "level": 205
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Assasesina",
+            "level": 402
+          },
+          {
+            "name": "Seraedo",
+            "level": 204
+          },
+          {
+            "name": "Nyõntõ",
+            "level": 602
+          }
+        ],
+        "avg_level": 360.3
+      },
+      {
+        "boss": "Dark Mountain Predator",
+        "players": [
+          {
+            "name": "Raphtalyß",
+            "level": 603
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Fenilefrina",
+            "level": 112
+          },
+          {
+            "name": "Aykaross",
+            "level": 102
+          },
+          {
+            "name": "Devoraneitor",
+            "level": 405
+          },
+          {
+            "name": "Sadserax",
+            "level": 603
+          },
+          {
+            "name": "S´lial",
+            "level": 602
+          },
+          {
+            "name": "Gudangsig",
+            "level": 602
+          }
+        ],
+        "avg_level": 428.9
+      },
+      {
+        "boss": "Ravaged Tyrant of Beasts",
+        "players": [
+          {
+            "name": "Raphtalyß",
+            "level": 603
+          },
+          {
+            "name": "Fenilefrina",
+            "level": 112
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Devoraneitor",
+            "level": 405
+          },
+          {
+            "name": "Aykaross",
+            "level": 102
+          },
+          {
+            "name": "Sadserax",
+            "level": 603
+          },
+          {
+            "name": "S´lial",
+            "level": 602
+          },
+          {
+            "name": "Gudangsig",
+            "level": 602
+          }
+        ],
+        "avg_level": 428.9
+      },
+      {
+        "boss": "Lazaram, the Trailblazer",
+        "players": [
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Rainerh",
+            "level": 102
+          },
+          {
+            "name": "Pelaoenfadao",
+            "level": 104
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 153.8
+      }
+    ]
+  },
+  "Unknown": {
+    "2026-01-28": [
+      {
+        "boss": "Gargadeth",
+        "players": [
+          {
+            "name": "RatoncitopÚrez",
+            "level": 404
+          },
+          {
+            "name": "Kazutsumi",
+            "level": 512
+          },
+          {
+            "name": "Sungwoonn",
+            "level": 313
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 358.2
+      },
+      {
+        "boss": "Gehenna Helkasirs",
+        "players": [
+          {
+            "name": "Veylorr",
+            "level": 504
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Lancefist",
+            "level": 305
+          },
+          {
+            "name": "Jejetot´toz",
+            "level": 403
+          },
+          {
+            "name": "Reapersixnine",
+            "level": 405
+          },
+          {
+            "name": "E´lÚÞn",
+            "level": 512
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "P÷mpeya",
+            "level": 204
+          }
+        ],
+        "avg_level": 342.8
+      },
+      {
+        "boss": "Ashtarot",
+        "players": [
+          {
+            "name": "Veylorr",
+            "level": 504
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Lancefist",
+            "level": 305
+          },
+          {
+            "name": "Jejetot´toz",
+            "level": 403
+          },
+          {
+            "name": "Reapersixnine",
+            "level": 405
+          },
+          {
+            "name": "E´lÚÞn",
+            "level": 512
+          },
+          {
+            "name": "P÷mpeya",
+            "level": 204
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 342.8
+      },
+      {
+        "boss": "Primordial Nightmare",
+        "players": [
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Skaibreaker",
+            "level": 313
+          },
+          {
+            "name": "Csapkodos",
+            "level": 112
+          },
+          {
+            "name": "OmnivaÚn",
+            "level": 205
+          },
+          {
+            "name": "Soultricky",
+            "level": 304
+          },
+          {
+            "name": "Leoeatodavinci",
+            "level": 405
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Eternalharmony",
+            "level": 204
+          }
+        ],
+        "avg_level": 244.0
+      },
+      {
+        "boss": "Evolved Maurug",
+        "players": [
+          {
+            "name": "Miikho",
+            "level": 405
+          },
+          {
+            "name": "Metwo",
+            "level": 512
+          },
+          {
+            "name": "Colorblindenjoy",
+            "level": 603
+          },
+          {
+            "name": "Aiiralvaro",
+            "level": 502
+          },
+          {
+            "name": "Anydesk",
+            "level": 205
+          },
+          {
+            "name": "Rainark",
+            "level": 313
+          },
+          {
+            "name": "Lumettorm",
+            "level": 204
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 368.5
+      },
+      {
+        "boss": "Lord of Degradation Akkan",
+        "players": [
+          {
+            "name": "Miikho",
+            "level": 405
+          },
+          {
+            "name": "Colorblindenjoy",
+            "level": 603
+          },
+          {
+            "name": "Anydesk",
+            "level": 205
+          },
+          {
+            "name": "Metwo",
+            "level": 512
+          },
+          {
+            "name": "Rainark",
+            "level": 313
+          },
+          {
+            "name": "Aiiralvaro",
+            "level": 502
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Lumettorm",
+            "level": 204
+          }
+        ],
+        "avg_level": 368.5
+      },
+      {
+        "boss": "Plague Legion Commander Akkan",
+        "players": [
+          {
+            "name": "Miikho",
+            "level": 405
+          },
+          {
+            "name": "Rainark",
+            "level": 313
+          },
+          {
+            "name": "Metwo",
+            "level": 512
+          },
+          {
+            "name": "Aiiralvaro",
+            "level": 502
+          },
+          {
+            "name": "Colorblindenjoy",
+            "level": 603
+          },
+          {
+            "name": "Anydesk",
+            "level": 205
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Lumettorm",
+            "level": 204
+          }
+        ],
+        "avg_level": 368.5
+      },
+      {
+        "boss": "Gehenna Helkasirs",
+        "players": [
+          {
+            "name": "Gunlordthree",
+            "level": 503
+          },
+          {
+            "name": "Scaniaeurotrzy",
+            "level": 603
+          },
+          {
+            "name": "Tobikage",
+            "level": 502
+          },
+          {
+            "name": "Kuoman",
+            "level": 603
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Subjectdawn",
+            "level": 404
+          },
+          {
+            "name": "Hellnitexxdd",
+            "level": 105
+          },
+          {
+            "name": "Ayoyoyoyoyoyo",
+            "level": 602
+          }
+        ],
+        "avg_level": 478.2
+      },
+      {
+        "boss": "Ashtarot",
+        "players": [
+          {
+            "name": "Scaniaeurotrzy",
+            "level": 603
+          },
+          {
+            "name": "Gunlordthree",
+            "level": 503
+          },
+          {
+            "name": "Tobikage",
+            "level": 502
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Kuoman",
+            "level": 603
+          },
+          {
+            "name": "Subjectdawn",
+            "level": 404
+          },
+          {
+            "name": "Ayoyoyoyoyoyo",
+            "level": 602
+          },
+          {
+            "name": "Hellnitexxdd",
+            "level": 105
+          }
+        ],
+        "avg_level": 478.2
+      },
+      {
+        "boss": "Primordial Nightmare",
+        "players": [
+          {
+            "name": "Gunlordthree",
+            "level": 503
+          },
+          {
+            "name": "Scaniaeurotrzy",
+            "level": 603
+          },
+          {
+            "name": "Tobikage",
+            "level": 502
+          },
+          {
+            "name": "Kuoman",
+            "level": 603
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Subjectdawn",
+            "level": 404
+          },
+          {
+            "name": "Hellnitexxdd",
+            "level": 105
+          },
+          {
+            "name": "Ayoyoyoyoyoyo",
+            "level": 602
+          }
+        ],
+        "avg_level": 478.2
+      },
+      {
+        "boss": "Covetous Devourer Vykas",
+        "players": [
+          {
+            "name": "Dragsuke",
+            "level": 313
+          },
+          {
+            "name": "Frierehm",
+            "level": 205
+          },
+          {
+            "name": "Manteek",
+            "level": 312
+          },
+          {
+            "name": "Chiribella",
+            "level": 205
+          },
+          {
+            "name": "Raphtalyß",
+            "level": 603
+          },
+          {
+            "name": "S´lial",
+            "level": 602
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Seraedo",
+            "level": 204
+          }
+        ],
+        "avg_level": 368.5
+      },
+      {
+        "boss": "Covetous Legion Commander Vykas",
+        "players": [
+          {
+            "name": "Dragsuke",
+            "level": 313
+          },
+          {
+            "name": "Frierehm",
+            "level": 205
+          },
+          {
+            "name": "Raphtalyß",
+            "level": 603
+          },
+          {
+            "name": "Manteek",
+            "level": 312
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Chiribella",
+            "level": 205
+          },
+          {
+            "name": "Seraedo",
+            "level": 204
+          },
+          {
+            "name": "S´lial",
+            "level": 602
+          }
+        ],
+        "avg_level": 368.5
+      },
+      {
+        "boss": "Evolved Maurug",
+        "players": [
+          {
+            "name": "Shadowkaynmain",
+            "level": 405
+          },
+          {
+            "name": "Neikooru",
+            "level": 305
+          },
+          {
+            "name": "Pyvanni",
+            "level": 603
+          },
+          {
+            "name": "S´egh",
+            "level": 104
+          },
+          {
+            "name": "Shadowparcaxxc",
+            "level": 405
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "BlueheÓrt",
+            "level": 105
+          },
+          {
+            "name": "Dailywoman",
+            "level": 602
+          }
+        ],
+        "avg_level": 366.4
+      },
+      {
+        "boss": "Lord of Degradation Akkan",
+        "players": [
+          {
+            "name": "Shadowkaynmain",
+            "level": 405
+          },
+          {
+            "name": "Neikooru",
+            "level": 305
+          },
+          {
+            "name": "Shadowparcaxxc",
+            "level": 405
+          },
+          {
+            "name": "S´egh",
+            "level": 104
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Pyvanni",
+            "level": 603
+          },
+          {
+            "name": "BlueheÓrt",
+            "level": 105
+          },
+          {
+            "name": "Dailywoman",
+            "level": 602
+          }
+        ],
+        "avg_level": 366.4
+      },
+      {
+        "boss": "Plague Legion Commander Akkan",
+        "players": [
+          {
+            "name": "Shadowkaynmain",
+            "level": 405
+          },
+          {
+            "name": "Neikooru",
+            "level": 305
+          },
+          {
+            "name": "Shadowparcaxxc",
+            "level": 405
+          },
+          {
+            "name": "S´egh",
+            "level": 104
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Pyvanni",
+            "level": 603
+          },
+          {
+            "name": "BlueheÓrt",
+            "level": 105
+          },
+          {
+            "name": "Dailywoman",
+            "level": 602
+          }
+        ],
+        "avg_level": 366.4
+      },
+      {
+        "boss": "Gargadeth",
+        "players": [
+          {
+            "name": "Lyramittsu",
+            "level": 302
+          },
+          {
+            "name": "Smashbruva",
+            "level": 313
+          },
+          {
+            "name": "AlÔnnÓ",
+            "level": 112
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 232.8
+      },
+      {
+        "boss": "Evolved Maurug",
+        "players": [
+          {
+            "name": "Berkaro",
+            "level": 313
+          },
+          {
+            "name": "Colorblindenjoy",
+            "level": 603
+          },
+          {
+            "name": "Kascola",
+            "level": 112
+          },
+          {
+            "name": "Naritiah",
+            "level": 205
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Imnotpunchyjoan",
+            "level": 503
+          },
+          {
+            "name": "Wyldehelene",
+            "level": 204
+          },
+          {
+            "name": "Strelie",
+            "level": 602
+          }
+        ],
+        "avg_level": 368.0
+      },
+      {
+        "boss": "Lord of Degradation Akkan",
+        "players": [
+          {
+            "name": "Berkaro",
+            "level": 313
+          },
+          {
+            "name": "Colorblindenjoy",
+            "level": 603
+          },
+          {
+            "name": "Kascola",
+            "level": 112
+          },
+          {
+            "name": "Naritiah",
+            "level": 205
+          },
+          {
+            "name": "Imnotpunchyjoan",
+            "level": 503
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Wyldehelene",
+            "level": 204
+          },
+          {
+            "name": "Strelie",
+            "level": 602
+          }
+        ],
+        "avg_level": 368.0
+      },
+      {
+        "boss": "Plague Legion Commander Akkan",
+        "players": [
+          {
+            "name": "Naritiah",
+            "level": 205
+          },
+          {
+            "name": "Berkaro",
+            "level": 313
+          },
+          {
+            "name": "Colorblindenjoy",
+            "level": 603
+          },
+          {
+            "name": "Kascola",
+            "level": 112
+          },
+          {
+            "name": "Imnotpunchyjoan",
+            "level": 503
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Strelie",
+            "level": 602
+          },
+          {
+            "name": "Wyldehelene",
+            "level": 204
+          }
+        ],
+        "avg_level": 368.0
+      },
+      {
+        "boss": "Gehenna Helkasirs",
+        "players": [
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Yo¨ngster",
+            "level": 405
+          },
+          {
+            "name": "Riczardkafuiyoh",
+            "level": 112
+          },
+          {
+            "name": "Pinkniuniu",
+            "level": 312
+          },
+          {
+            "name": "Veblade",
+            "level": 402
+          },
+          {
+            "name": "Djiu",
+            "level": 303
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Cabadita",
+            "level": 204
+          }
+        ],
+        "avg_level": 268.4
+      },
+      {
+        "boss": "Ashtarot",
+        "players": [
+          {
+            "name": "Yo¨ngster",
+            "level": 405
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Pinkniuniu",
+            "level": 312
+          },
+          {
+            "name": "Riczardkafuiyoh",
+            "level": 112
+          },
+          {
+            "name": "Veblade",
+            "level": 402
+          },
+          {
+            "name": "Djiu",
+            "level": 303
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Cabadita",
+            "level": 204
+          }
+        ],
+        "avg_level": 268.4
+      },
+      {
+        "boss": "Primordial Nightmare",
+        "players": [
+          {
+            "name": "Yo¨ngster",
+            "level": 405
+          },
+          {
+            "name": "Riczardkafuiyoh",
+            "level": 112
+          },
+          {
+            "name": "Pinkniuniu",
+            "level": 312
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Djiu",
+            "level": 303
+          },
+          {
+            "name": "Veblade",
+            "level": 402
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Cabadita",
+            "level": 204
+          }
+        ],
+        "avg_level": 268.4
+      },
+      {
+        "boss": "Gehenna Helkasirs",
+        "players": [
+          {
+            "name": "Bouffylatueuse",
+            "level": 112
+          },
+          {
+            "name": "Senkukogetsu",
+            "level": 402
+          },
+          {
+            "name": "Cunteye",
+            "level": 503
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Ogerbrecher",
+            "level": 112
+          },
+          {
+            "name": "Finolyn",
+            "level": 403
+          },
+          {
+            "name": "Kenniip",
+            "level": 105
+          },
+          {
+            "name": "Lumettorm",
+            "level": 204
+          }
+        ],
+        "avg_level": 280.4
+      },
+      {
+        "boss": "Ashtarot",
+        "players": [
+          {
+            "name": "Senkukogetsu",
+            "level": 402
+          },
+          {
+            "name": "Bouffylatueuse",
+            "level": 112
+          },
+          {
+            "name": "Cunteye",
+            "level": 503
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Ogerbrecher",
+            "level": 112
+          },
+          {
+            "name": "Finolyn",
+            "level": 403
+          },
+          {
+            "name": "Lumettorm",
+            "level": 204
+          },
+          {
+            "name": "Kenniip",
+            "level": 105
+          }
+        ],
+        "avg_level": 280.4
+      },
+      {
+        "boss": "Primordial Nightmare",
+        "players": [
+          {
+            "name": "Zayrix",
+            "level": 112
+          },
+          {
+            "name": "Xemnaslol",
+            "level": 403
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Lekhanar",
+            "level": 203
+          },
+          {
+            "name": "Rubyyyyumei",
+            "level": 405
+          },
+          {
+            "name": "Lapalca",
+            "level": 405
+          },
+          {
+            "name": "Gunhyld",
+            "level": 602
+          },
+          {
+            "name": "Almakseke",
+            "level": 105
+          }
+        ],
+        "avg_level": 342.4
+      },
+      {
+        "boss": "Sigmund the Immortal",
+        "players": [
+          {
+            "name": "Emmathotson",
+            "level": 112
+          },
+          {
+            "name": "TrÚnd",
+            "level": 313
+          },
+          {
+            "name": "Sucreine",
+            "level": 203
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 208.0
+      },
+      {
+        "boss": "Saydon",
+        "players": [
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Lexyelyxe",
+            "level": 303
+          },
+          {
+            "name": "Benjorrrrrr",
+            "level": 402
+          },
+          {
+            "name": "Zoompal",
+            "level": 105
+          }
+        ],
+        "avg_level": 328.5
+      },
+      {
+        "boss": "Kakul",
+        "players": [
+          {
+            "name": "Lexyelyxe",
+            "level": 303
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Benjorrrrrr",
+            "level": 402
+          },
+          {
+            "name": "Zoompal",
+            "level": 105
+          }
+        ],
+        "avg_level": 328.5
+      },
+      {
+        "boss": "Killineza the Dark Worshipper",
+        "players": [
+          {
+            "name": "Feraliix",
+            "level": 604
+          }
+        ],
+        "avg_level": 604.0
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Shadowparcaxxc",
+            "level": 405
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Orkhanar",
+            "level": 405
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 232.2
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Shadowparcaxxc",
+            "level": 405
+          },
+          {
+            "name": "Orkhanar",
+            "level": 405
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 232.2
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Beeterfly",
+            "level": 604
+          },
+          {
+            "name": "Pu±odedios",
+            "level": 313
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Selyny",
+            "level": 205
+          },
+          {
+            "name": "Gallcii",
+            "level": 304
+          },
+          {
+            "name": "Hmmoodca",
+            "level": 505
+          },
+          {
+            "name": "J·juu",
+            "level": 602
+          },
+          {
+            "name": "BrunildÔ",
+            "level": 113
+          }
+        ],
+        "avg_level": 393.5
+      },
+      {
+        "boss": "Akkan, Lord of Death",
+        "players": [
+          {
+            "name": "Shadowparcaxxc",
+            "level": 405
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Animajind",
+            "level": 604
+          },
+          {
+            "name": "Crisostoma",
+            "level": 402
+          },
+          {
+            "name": "Dutzzcampfire",
+            "level": 105
+          },
+          {
+            "name": "Moonechoo",
+            "level": 602
+          }
+        ],
+        "avg_level": 391.9
+      },
+      {
+        "boss": "Aegir, the Oppressor",
+        "players": [
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Shadowparcaxxc",
+            "level": 405
+          },
+          {
+            "name": "Crisostoma",
+            "level": 402
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Animajind",
+            "level": 604
+          },
+          {
+            "name": "Moonechoo",
+            "level": 602
+          },
+          {
+            "name": "Dutzzcampfire",
+            "level": 105
+          }
+        ],
+        "avg_level": 391.9
+      },
+      {
+        "boss": "Drextalas",
+        "players": [
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Superherooo",
+            "level": 105
+          }
+        ],
+        "avg_level": 208.5
+      },
+      {
+        "boss": "Krathios",
+        "players": [
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 231.5
+      },
+      {
+        "boss": "Drextalas",
+        "players": [
+          {
+            "name": "Orejittas",
+            "level": 604
+          },
+          {
+            "name": "Caliih",
+            "level": 313
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Niyuli",
+            "level": 204
+          }
+        ],
+        "avg_level": 405.8
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Orkhan",
+            "level": 313
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 196.0
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Orkhan",
+            "level": 313
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 196.0
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Czerstwyyyyyyyy",
+            "level": 603
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 232.0
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Czerstwyyyyyyyy",
+            "level": 603
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 232.0
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Czerstwyyyyyyyy",
+            "level": 603
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 232.0
+      },
+      {
+        "boss": "Akkan, Lord of Death",
+        "players": [
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Dan¯kha",
+            "level": 305
+          },
+          {
+            "name": "Kiersah",
+            "level": 303
+          },
+          {
+            "name": "Lekhanar",
+            "level": 203
+          },
+          {
+            "name": "Hiymeko",
+            "level": 112
+          },
+          {
+            "name": "Vvanesa",
+            "level": 604
+          },
+          {
+            "name": "Ybarlibg",
+            "level": 204
+          },
+          {
+            "name": "Pathshiva",
+            "level": 204
+          }
+        ],
+        "avg_level": 279.6
+      },
+      {
+        "boss": "Aegir, the Oppressor",
+        "players": [
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Kiersah",
+            "level": 303
+          },
+          {
+            "name": "Hiymeko",
+            "level": 112
+          },
+          {
+            "name": "Dan¯kha",
+            "level": 305
+          },
+          {
+            "name": "Lekhanar",
+            "level": 203
+          },
+          {
+            "name": "Vvanesa",
+            "level": 604
+          },
+          {
+            "name": "Pathshiva",
+            "level": 204
+          },
+          {
+            "name": "Ybarlibg",
+            "level": 204
+          }
+        ],
+        "avg_level": 279.6
+      },
+      {
+        "boss": "Abyss Lord Kazeros",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Neysouleater",
+            "level": 405
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 207.5
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Sefar¯na",
+            "level": 603
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Stillfarming",
+            "level": 105
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          }
+        ],
+        "avg_level": 344.4
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Oyk",
+            "level": 603
+          },
+          {
+            "name": "Vescythe",
+            "level": 405
+          },
+          {
+            "name": "Zukka",
+            "level": 403
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Superhulk",
+            "level": 103
+          },
+          {
+            "name": "Qinshihuangg",
+            "level": 313
+          },
+          {
+            "name": "Partimebard",
+            "level": 204
+          },
+          {
+            "name": "Hoikusai",
+            "level": 602
+          }
+        ],
+        "avg_level": 366.9
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Kadell",
+            "level": 104
+          },
+          {
+            "name": "Unknownbear",
+            "level": 103
+          },
+          {
+            "name": "Orkhanx",
+            "level": 503
+          },
+          {
+            "name": "Ustuncan",
+            "level": 502
+          },
+          {
+            "name": "Crystillines",
+            "level": 112
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Saathe",
+            "level": 204
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 267.1
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Nerr¶",
+            "level": 312
+          },
+          {
+            "name": "Clawpaw",
+            "level": 604
+          },
+          {
+            "name": "Bsissalance",
+            "level": 305
+          },
+          {
+            "name": "Ailreeeeee",
+            "level": 205
+          },
+          {
+            "name": "Maccheimpiccione",
+            "level": 103
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Doctormartin",
+            "level": 105
+          },
+          {
+            "name": "Curopocomacuro",
+            "level": 602
+          }
+        ],
+        "avg_level": 342.2
+      },
+      {
+        "boss": "Archdemon Kazeros",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Orkhan",
+            "level": 313
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 196.0
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Orkhanaw",
+            "level": 604
+          },
+          {
+            "name": "Liduvina",
+            "level": 113
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Shõyka",
+            "level": 113
+          }
+        ],
+        "avg_level": 284.0
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Orkhanaw",
+            "level": 604
+          },
+          {
+            "name": "Liduvina",
+            "level": 113
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Shõyka",
+            "level": 113
+          }
+        ],
+        "avg_level": 284.0
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Orkhanx",
+            "level": 503
+          },
+          {
+            "name": "Pu±odedios",
+            "level": 313
+          },
+          {
+            "name": "Xlhakulx",
+            "level": 104
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Willda",
+            "level": 512
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          }
+        ],
+        "avg_level": 344.5
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Orkhanx",
+            "level": 503
+          },
+          {
+            "name": "Willda",
+            "level": 512
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Xlhakulx",
+            "level": 104
+          },
+          {
+            "name": "Pu±odedios",
+            "level": 313
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 344.5
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Orkhanx",
+            "level": 503
+          },
+          {
+            "name": "Xlhakulx",
+            "level": 104
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Willda",
+            "level": 512
+          },
+          {
+            "name": "Pu±odedios",
+            "level": 313
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 344.5
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Kadell",
+            "level": 104
+          },
+          {
+            "name": "Rukiry",
+            "level": 312
+          },
+          {
+            "name": "Orkhanx",
+            "level": 503
+          },
+          {
+            "name": "Eviwitch",
+            "level": 603
+          },
+          {
+            "name": "Shimmmer",
+            "level": 504
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Keitera",
+            "level": 204
+          }
+        ],
+        "avg_level": 354.9
+      },
+      {
+        "boss": "Abyss Lord Kazeros",
+        "players": [
+          {
+            "name": "Mastertetinger",
+            "level": 512
+          },
+          {
+            "name": "Mathematics",
+            "level": 104
+          },
+          {
+            "name": "Derath",
+            "level": 205
+          },
+          {
+            "name": "Lanskuala",
+            "level": 303
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          }
+        ],
+        "avg_level": 305.9
+      },
+      {
+        "boss": "Archdemon Kazeros",
+        "players": [
+          {
+            "name": "Derath",
+            "level": 205
+          },
+          {
+            "name": "Mastertetinger",
+            "level": 512
+          },
+          {
+            "name": "Mathematics",
+            "level": 104
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Lanskuala",
+            "level": 303
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 305.9
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "═nfern¾",
+            "level": 302
+          },
+          {
+            "name": "Gnz÷",
+            "level": 313
+          },
+          {
+            "name": "UmÚmiya",
+            "level": 313
+          },
+          {
+            "name": "Michaelxscofield",
+            "level": 105
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Pritamin",
+            "level": 304
+          },
+          {
+            "name": "Hvumon",
+            "level": 204
+          },
+          {
+            "name": "Anamaz",
+            "level": 105
+          }
+        ],
+        "avg_level": 256.0
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Ciucciabecca",
+            "level": 205
+          },
+          {
+            "name": "Pantsuaki",
+            "level": 603
+          },
+          {
+            "name": "Yllionora",
+            "level": 603
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Jintsune",
+            "level": 604
+          },
+          {
+            "name": "Shadowwmourne",
+            "level": 403
+          },
+          {
+            "name": "Hyac¯nthus",
+            "level": 113
+          },
+          {
+            "name": "Geomnuna",
+            "level": 113
+          }
+        ],
+        "avg_level": 380.8
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Ciucciabecca",
+            "level": 205
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Pantsuaki",
+            "level": 603
+          },
+          {
+            "name": "Jintsune",
+            "level": 604
+          },
+          {
+            "name": "Yllionora",
+            "level": 603
+          },
+          {
+            "name": "Shadowwmourne",
+            "level": 403
+          },
+          {
+            "name": "Hyac¯nthus",
+            "level": 113
+          },
+          {
+            "name": "Geomnuna",
+            "level": 113
+          }
+        ],
+        "avg_level": 380.8
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Siunlia",
+            "level": 303
+          },
+          {
+            "name": "Rikuscythe",
+            "level": 405
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Mozanwheelchair",
+            "level": 504
+          },
+          {
+            "name": "Aquilinasi",
+            "level": 404
+          },
+          {
+            "name": "Alexanderinas",
+            "level": 403
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          },
+          {
+            "name": "Juels",
+            "level": 105
+          }
+        ],
+        "avg_level": 391.0
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Aquilinasi",
+            "level": 404
+          },
+          {
+            "name": "Siunlia",
+            "level": 303
+          },
+          {
+            "name": "Alexanderinas",
+            "level": 403
+          },
+          {
+            "name": "Rikuscythe",
+            "level": 405
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Mozanwheelchair",
+            "level": 504
+          },
+          {
+            "name": "Juels",
+            "level": 105
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          }
+        ],
+        "avg_level": 391.0
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Summomnom",
+            "level": 203
+          },
+          {
+            "name": "Hanreye",
+            "level": 402
+          },
+          {
+            "name": "Nylvia",
+            "level": 203
+          },
+          {
+            "name": "Urmiris",
+            "level": 205
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Getcachorred",
+            "level": 313
+          },
+          {
+            "name": "Nocyrja",
+            "level": 113
+          },
+          {
+            "name": "Raahar",
+            "level": 105
+          }
+        ],
+        "avg_level": 268.5
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Valkittee",
+            "level": 113
+          },
+          {
+            "name": "Siephyr",
+            "level": 403
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Sangry",
+            "level": 113
+          },
+          {
+            "name": "XolßnÝ",
+            "level": 404
+          },
+          {
+            "name": "┴elita",
+            "level": 603
+          },
+          {
+            "name": "Letmebrushit",
+            "level": 602
+          },
+          {
+            "name": "Shawelll",
+            "level": 602
+          }
+        ],
+        "avg_level": 430.5
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Irribear",
+            "level": 604
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "AsÔri",
+            "level": 603
+          },
+          {
+            "name": "Xeobs",
+            "level": 405
+          },
+          {
+            "name": "Sorzlul",
+            "level": 205
+          },
+          {
+            "name": "Seansku",
+            "level": 405
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          },
+          {
+            "name": "Spleeneah",
+            "level": 204
+          }
+        ],
+        "avg_level": 454.0
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Irribear",
+            "level": 604
+          },
+          {
+            "name": "AsÔri",
+            "level": 603
+          },
+          {
+            "name": "Seansku",
+            "level": 405
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Xeobs",
+            "level": 405
+          },
+          {
+            "name": "Sorzlul",
+            "level": 205
+          },
+          {
+            "name": "Spleeneah",
+            "level": 204
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          }
+        ],
+        "avg_level": 454.0
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Rßchelzane",
+            "level": 512
+          },
+          {
+            "name": "Princesswildsoul",
+            "level": 604
+          },
+          {
+            "name": "DÛvide",
+            "level": 203
+          },
+          {
+            "name": "Wiiiman",
+            "level": 303
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "B¯l¯y",
+            "level": 503
+          },
+          {
+            "name": "Tikerti",
+            "level": 602
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          }
+        ],
+        "avg_level": 466.4
+      },
+      {
+        "boss": "Behemoth, the Storm Commander",
+        "players": [
+          {
+            "name": "Olycho",
+            "level": 104
+          },
+          {
+            "name": "Orkhanx",
+            "level": 503
+          },
+          {
+            "name": "B¯xxx",
+            "level": 603
+          },
+          {
+            "name": "MÔx¶usÔ",
+            "level": 302
+          },
+          {
+            "name": "Onimaso",
+            "level": 313
+          },
+          {
+            "name": "Shenerah",
+            "level": 205
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Lirikha",
+            "level": 204
+          },
+          {
+            "name": "Kajfarik",
+            "level": 604
+          },
+          {
+            "name": "Ryuzisky",
+            "level": 103
+          },
+          {
+            "name": "Uriangera",
+            "level": 202
+          },
+          {
+            "name": "Sayerjin",
+            "level": 105
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          },
+          {
+            "name": "Caccchin",
+            "level": 204
+          }
+        ],
+        "avg_level": 360.2
+      },
+      {
+        "boss": "Behemoth, Cruel Storm Slayer",
+        "players": [
+          {
+            "name": "Olycho",
+            "level": 104
+          },
+          {
+            "name": "Orkhanx",
+            "level": 503
+          },
+          {
+            "name": "B¯xxx",
+            "level": 603
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Shenerah",
+            "level": 205
+          },
+          {
+            "name": "MÔx¶usÔ",
+            "level": 302
+          },
+          {
+            "name": "Lirikha",
+            "level": 204
+          },
+          {
+            "name": "Kajfarik",
+            "level": 604
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Onimaso",
+            "level": 313
+          },
+          {
+            "name": "Uriangera",
+            "level": 202
+          },
+          {
+            "name": "Ryuzisky",
+            "level": 103
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Sayerjin",
+            "level": 105
+          },
+          {
+            "name": "Caccchin",
+            "level": 204
+          }
+        ],
+        "avg_level": 360.2
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Orkhanavalk",
+            "level": 113
+          },
+          {
+            "name": "Hmoodchi",
+            "level": 502
+          },
+          {
+            "name": "Sicarioclownss",
+            "level": 303
+          },
+          {
+            "name": "Souljugs",
+            "level": 405
+          },
+          {
+            "name": "Dynwen",
+            "level": 604
+          },
+          {
+            "name": "Luciuszogratis",
+            "level": 203
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 304.9
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Kadell",
+            "level": 104
+          },
+          {
+            "name": "Ellievan",
+            "level": 402
+          },
+          {
+            "name": "Orkhanx",
+            "level": 503
+          },
+          {
+            "name": "Arzuji",
+            "level": 305
+          },
+          {
+            "name": "Kenshihans",
+            "level": 504
+          },
+          {
+            "name": "Andriimoon",
+            "level": 205
+          },
+          {
+            "name": "Malerinna",
+            "level": 602
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 353.6
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Kadell",
+            "level": 104
+          },
+          {
+            "name": "Vermilionbird",
+            "level": 205
+          },
+          {
+            "name": "Vid÷cq",
+            "level": 502
+          },
+          {
+            "name": "Zyaneh",
+            "level": 404
+          },
+          {
+            "name": "Orkhanx",
+            "level": 503
+          },
+          {
+            "name": "Itsforme",
+            "level": 302
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Paleolithic",
+            "level": 105
+          }
+        ],
+        "avg_level": 291.1
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Orkhanaw",
+            "level": 604
+          },
+          {
+            "name": "Sircracked",
+            "level": 503
+          },
+          {
+            "name": "Auriennne",
+            "level": 113
+          },
+          {
+            "name": "Vaen÷ra",
+            "level": 602
+          }
+        ],
+        "avg_level": 381.5
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Quoppy",
+            "level": 305
+          },
+          {
+            "name": "Qqqqqqqqqqqqqqqq",
+            "level": 102
+          },
+          {
+            "name": "Ayayakamisato",
+            "level": 603
+          },
+          {
+            "name": "Thober",
+            "level": 302
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Keijiiii",
+            "level": 112
+          },
+          {
+            "name": "Rebellenmonarch",
+            "level": 105
+          },
+          {
+            "name": "Kuromarry",
+            "level": 602
+          }
+        ],
+        "avg_level": 316.6
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Quoppy",
+            "level": 305
+          },
+          {
+            "name": "Thober",
+            "level": 302
+          },
+          {
+            "name": "Ayayakamisato",
+            "level": 603
+          },
+          {
+            "name": "Qqqqqqqqqqqqqqqq",
+            "level": 102
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Keijiiii",
+            "level": 112
+          },
+          {
+            "name": "Rebellenmonarch",
+            "level": 105
+          },
+          {
+            "name": "Kuromarry",
+            "level": 602
+          }
+        ],
+        "avg_level": 316.6
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Xdarknesss",
+            "level": 402
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Sestarti",
+            "level": 504
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Starkyllerx",
+            "level": 112
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Valkisu",
+            "level": 113
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 245.4
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Xdarknesss",
+            "level": 402
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Starkyllerx",
+            "level": 112
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Sestarti",
+            "level": 504
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Valkisu",
+            "level": 113
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 245.4
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Xdarknesss",
+            "level": 402
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Sestarti",
+            "level": 504
+          },
+          {
+            "name": "Starkyllerx",
+            "level": 112
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Valkisu",
+            "level": 113
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 245.4
+      },
+      {
+        "boss": "Abyss Lord Kazeros",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Goodclassx",
+            "level": 405
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 207.2
+      },
+      {
+        "boss": "Archdemon Kazeros",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Goodclassx",
+            "level": 405
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 207.2
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Pu±odedios",
+            "level": 313
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 195.8
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Pu±odedios",
+            "level": 313
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 195.8
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Liduvina",
+            "level": 113
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Auriennne",
+            "level": 113
+          }
+        ],
+        "avg_level": 197.2
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Liduvina",
+            "level": 113
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Auriennne",
+            "level": 113
+          }
+        ],
+        "avg_level": 197.2
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "AÙsson",
+            "level": 302
+          },
+          {
+            "name": "Lekhanar",
+            "level": 203
+          },
+          {
+            "name": "Uriangera",
+            "level": 202
+          },
+          {
+            "name": "Deemcard",
+            "level": 202
+          },
+          {
+            "name": "Shadowayayaa",
+            "level": 602
+          },
+          {
+            "name": "Gutslil",
+            "level": 105
+          }
+        ],
+        "avg_level": 290.4
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Molae",
+            "level": 402
+          },
+          {
+            "name": "Kiersah",
+            "level": 303
+          },
+          {
+            "name": "Talaxia",
+            "level": 202
+          },
+          {
+            "name": "Crisostoma",
+            "level": 402
+          },
+          {
+            "name": "Zukka",
+            "level": 403
+          },
+          {
+            "name": "Shadowayayaa",
+            "level": 602
+          },
+          {
+            "name": "RosÙita",
+            "level": 602
+          }
+        ],
+        "avg_level": 402.2
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Kiersah",
+            "level": 303
+          },
+          {
+            "name": "Molae",
+            "level": 402
+          },
+          {
+            "name": "Talaxia",
+            "level": 202
+          },
+          {
+            "name": "Zukka",
+            "level": 403
+          },
+          {
+            "name": "Crisostoma",
+            "level": 402
+          },
+          {
+            "name": "RosÙita",
+            "level": 602
+          },
+          {
+            "name": "Shadowayayaa",
+            "level": 602
+          }
+        ],
+        "avg_level": 402.2
+      },
+      {
+        "boss": "Mordum, the Abyssal Punisher",
+        "players": [
+          {
+            "name": "Molae",
+            "level": 402
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Kiersah",
+            "level": 303
+          },
+          {
+            "name": "Talaxia",
+            "level": 202
+          },
+          {
+            "name": "Zukka",
+            "level": 403
+          },
+          {
+            "name": "Crisostoma",
+            "level": 402
+          },
+          {
+            "name": "Shadowayayaa",
+            "level": 602
+          },
+          {
+            "name": "RosÙita",
+            "level": 602
+          }
+        ],
+        "avg_level": 402.2
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Leanbear",
+            "level": 604
+          },
+          {
+            "name": "Qaddis",
+            "level": 512
+          },
+          {
+            "name": "Kitsumichi",
+            "level": 405
+          },
+          {
+            "name": "Scrapplyn",
+            "level": 303
+          },
+          {
+            "name": "Elrichard",
+            "level": 313
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "PalÚtoiles",
+            "level": 105
+          },
+          {
+            "name": "SabÛrr",
+            "level": 113
+          }
+        ],
+        "avg_level": 369.9
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Leanbear",
+            "level": 604
+          },
+          {
+            "name": "Kitsumichi",
+            "level": 405
+          },
+          {
+            "name": "Scrapplyn",
+            "level": 303
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Qaddis",
+            "level": 512
+          },
+          {
+            "name": "Elrichard",
+            "level": 313
+          },
+          {
+            "name": "PalÚtoiles",
+            "level": 105
+          },
+          {
+            "name": "SabÛrr",
+            "level": 113
+          }
+        ],
+        "avg_level": 369.9
+      },
+      {
+        "boss": "Abyss Lord Kazeros",
+        "players": [
+          {
+            "name": "Soniachna",
+            "level": 402
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Tjelvarrr",
+            "level": 104
+          },
+          {
+            "name": "Schwarzl´´icht",
+            "level": 405
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Ruubinaa",
+            "level": 204
+          }
+        ],
+        "avg_level": 280.1
+      },
+      {
+        "boss": "Archdemon Kazeros",
+        "players": [
+          {
+            "name": "Tjelvarrr",
+            "level": 104
+          },
+          {
+            "name": "Soniachna",
+            "level": 402
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Schwarzl´´icht",
+            "level": 405
+          },
+          {
+            "name": "Ruubinaa",
+            "level": 204
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          }
+        ],
+        "avg_level": 280.1
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Lilsauge",
+            "level": 102
+          },
+          {
+            "name": "Badroach",
+            "level": 202
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Luneryn",
+            "level": 405
+          },
+          {
+            "name": "Mort´c´an",
+            "level": 602
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 304.8
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Lilsauge",
+            "level": 102
+          },
+          {
+            "name": "Badroach",
+            "level": 202
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Luneryn",
+            "level": 405
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Mort´c´an",
+            "level": 602
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 304.8
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Badroach",
+            "level": 202
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Lilsauge",
+            "level": 102
+          },
+          {
+            "name": "Luneryn",
+            "level": 405
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Mort´c´an",
+            "level": 602
+          }
+        ],
+        "avg_level": 304.8
+      },
+      {
+        "boss": "Abyss Lord Kazeros",
+        "players": [
+          {
+            "name": "Ghowonty",
+            "level": 403
+          },
+          {
+            "name": "Scarletgurbet",
+            "level": 402
+          },
+          {
+            "name": "Lilsy",
+            "level": 402
+          },
+          {
+            "name": "Creyber",
+            "level": 102
+          },
+          {
+            "name": "Dadrot",
+            "level": 313
+          },
+          {
+            "name": "Throwtechnique",
+            "level": 502
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Chiz¹r¹",
+            "level": 204
+          }
+        ],
+        "avg_level": 316.5
+      },
+      {
+        "boss": "Archdemon Kazeros",
+        "players": [
+          {
+            "name": "Ghowonty",
+            "level": 403
+          },
+          {
+            "name": "Creyber",
+            "level": 102
+          },
+          {
+            "name": "Scarletgurbet",
+            "level": 402
+          },
+          {
+            "name": "Lilsy",
+            "level": 402
+          },
+          {
+            "name": "Throwtechnique",
+            "level": 502
+          },
+          {
+            "name": "Dadrot",
+            "level": 313
+          },
+          {
+            "name": "Chiz¹r¹",
+            "level": 204
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 316.5
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Isruna",
+            "level": 303
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Orkhanaw",
+            "level": 604
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Raulard",
+            "level": 204
+          }
+        ],
+        "avg_level": 293.8
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Isruna",
+            "level": 303
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Orkhanaw",
+            "level": 604
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Raulard",
+            "level": 204
+          }
+        ],
+        "avg_level": 293.8
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Isruna",
+            "level": 303
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Orkhanaw",
+            "level": 604
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Raulard",
+            "level": 204
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          }
+        ],
+        "avg_level": 293.8
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Orkhanaw",
+            "level": 604
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          }
+        ],
+        "avg_level": 283.0
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Orkhanaw",
+            "level": 604
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 283.0
+      },
+      {
+        "boss": "Abyss Lord Kazeros",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Orkhan",
+            "level": 313
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 195.9
+      },
+      {
+        "boss": "Archdemon Kazeros",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Orkhan",
+            "level": 313
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 195.9
+      },
+      {
+        "boss": "Abyss Lord Kazeros",
+        "players": [
+          {
+            "name": "ShÝsumÝ",
+            "level": 302
+          },
+          {
+            "name": "ArcanÝs",
+            "level": 112
+          },
+          {
+            "name": "Highcarb",
+            "level": 205
+          },
+          {
+            "name": "MykÔsa",
+            "level": 405
+          },
+          {
+            "name": "NolifÙ",
+            "level": 505
+          },
+          {
+            "name": "Briseris",
+            "level": 205
+          },
+          {
+            "name": "Elfanara",
+            "level": 204
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 267.8
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Kadell",
+            "level": 104
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Orkhanavalk",
+            "level": 113
+          },
+          {
+            "name": "Shyelanderr",
+            "level": 404
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Aloerion",
+            "level": 403
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 206.2
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Kadell",
+            "level": 104
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Shyelanderr",
+            "level": 404
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Aloerion",
+            "level": 403
+          },
+          {
+            "name": "Hellfirei",
+            "level": 102
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 204.9
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Zelidrs",
+            "level": 503
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Magischesau",
+            "level": 205
+          },
+          {
+            "name": "Grillkõse",
+            "level": 403
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Baelesh",
+            "level": 105
+          }
+        ],
+        "avg_level": 305.4
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Zelidrs",
+            "level": 503
+          },
+          {
+            "name": "Magischesau",
+            "level": 205
+          },
+          {
+            "name": "Grillkõse",
+            "level": 403
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Baelesh",
+            "level": 105
+          }
+        ],
+        "avg_level": 305.4
+      },
+      {
+        "boss": "Abyss Lord Kazeros",
+        "players": [
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Booooooooooya",
+            "level": 203
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Bigmacking",
+            "level": 313
+          },
+          {
+            "name": "Chapslays",
+            "level": 403
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Raulyrie",
+            "level": 113
+          }
+        ],
+        "avg_level": 269.6
+      },
+      {
+        "boss": "Archdemon Kazeros",
+        "players": [
+          {
+            "name": "Booooooooooya",
+            "level": 203
+          },
+          {
+            "name": "Chapslays",
+            "level": 403
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Bigmacking",
+            "level": 313
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Raulyrie",
+            "level": 113
+          }
+        ],
+        "avg_level": 269.6
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Katarinnn",
+            "level": 512
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Violencea",
+            "level": 405
+          },
+          {
+            "name": "Koeset",
+            "level": 204
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 270.9
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Katarinnn",
+            "level": 512
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Violencea",
+            "level": 405
+          },
+          {
+            "name": "Koeset",
+            "level": 204
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 270.9
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Katarinnn",
+            "level": 512
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Violencea",
+            "level": 405
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Koeset",
+            "level": 204
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 270.9
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Friskbear",
+            "level": 312
+          },
+          {
+            "name": "Ssjbreaker",
+            "level": 313
+          },
+          {
+            "name": "SoisÚ",
+            "level": 602
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 345.5
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Iliennn",
+            "level": 403
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Georathor",
+            "level": 512
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Heimerzdonger",
+            "level": 504
+          },
+          {
+            "name": "Stayclose",
+            "level": 113
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          }
+        ],
+        "avg_level": 345.1
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Eregassassin",
+            "level": 403
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Univerzze",
+            "level": 205
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Orkhanar",
+            "level": 405
+          },
+          {
+            "name": "Liduvina",
+            "level": 113
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Albertebierstadt",
+            "level": 602
+          }
+        ],
+        "avg_level": 367.1
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Eregassassin",
+            "level": 403
+          },
+          {
+            "name": "Univerzze",
+            "level": 205
+          },
+          {
+            "name": "Orkhanar",
+            "level": 405
+          },
+          {
+            "name": "Liduvina",
+            "level": 113
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Albertebierstadt",
+            "level": 602
+          }
+        ],
+        "avg_level": 367.1
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Eregassassin",
+            "level": 403
+          },
+          {
+            "name": "Univerzze",
+            "level": 205
+          },
+          {
+            "name": "Orkhanar",
+            "level": 405
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Liduvina",
+            "level": 113
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Albertebierstadt",
+            "level": 602
+          }
+        ],
+        "avg_level": 367.1
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Sanxtia",
+            "level": 113
+          },
+          {
+            "name": "Haansoohe",
+            "level": 402
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Liduvina",
+            "level": 113
+          },
+          {
+            "name": "Peachbabka",
+            "level": 202
+          },
+          {
+            "name": "Orkhanar",
+            "level": 405
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          }
+        ],
+        "avg_level": 367.6
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Sanxtia",
+            "level": 113
+          },
+          {
+            "name": "Liduvina",
+            "level": 113
+          },
+          {
+            "name": "Peachbabka",
+            "level": 202
+          },
+          {
+            "name": "Haansoohe",
+            "level": 402
+          },
+          {
+            "name": "Orkhanar",
+            "level": 405
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Yudellia",
+            "level": 602
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          }
+        ],
+        "avg_level": 367.6
+      },
+      {
+        "boss": "Archdemon Kazeros",
+        "players": [
+          {
+            "name": "Beargobrrr",
+            "level": 604
+          },
+          {
+            "name": "Malanox",
+            "level": 512
+          },
+          {
+            "name": "Turtlekingz",
+            "level": 205
+          },
+          {
+            "name": "Daikõ",
+            "level": 113
+          },
+          {
+            "name": "Schniiii",
+            "level": 205
+          },
+          {
+            "name": "Yuanyuanowo",
+            "level": 303
+          },
+          {
+            "name": "Lisiada",
+            "level": 105
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 281.4
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "ZerbÔ",
+            "level": 313
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Darkhorizon",
+            "level": 502
+          },
+          {
+            "name": "Erzascarlettx",
+            "level": 402
+          },
+          {
+            "name": "Holynea",
+            "level": 113
+          },
+          {
+            "name": "Shaoryx",
+            "level": 602
+          },
+          {
+            "name": "Princessencarton",
+            "level": 204
+          }
+        ],
+        "avg_level": 392.6
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "ZerbÔ",
+            "level": 313
+          },
+          {
+            "name": "Erzascarlettx",
+            "level": 402
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Holynea",
+            "level": 113
+          },
+          {
+            "name": "Darkhorizon",
+            "level": 502
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Shaoryx",
+            "level": 602
+          },
+          {
+            "name": "Princessencarton",
+            "level": 204
+          }
+        ],
+        "avg_level": 392.6
+      },
+      {
+        "boss": "Akkan, Lord of Death",
+        "players": [
+          {
+            "name": "Metroshootin",
+            "level": 512
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Dan¯kha",
+            "level": 305
+          },
+          {
+            "name": "Lekhanar",
+            "level": 203
+          },
+          {
+            "name": "Whuaadaahh",
+            "level": 303
+          },
+          {
+            "name": "Yaulla",
+            "level": 405
+          },
+          {
+            "name": "DÝaochßn",
+            "level": 113
+          },
+          {
+            "name": "Haaakiiiiiiii",
+            "level": 105
+          }
+        ],
+        "avg_level": 281.0
+      },
+      {
+        "boss": "Aegir, the Oppressor",
+        "players": [
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Metroshootin",
+            "level": 512
+          },
+          {
+            "name": "Dan¯kha",
+            "level": 305
+          },
+          {
+            "name": "Lekhanar",
+            "level": 203
+          },
+          {
+            "name": "Yaulla",
+            "level": 405
+          },
+          {
+            "name": "Whuaadaahh",
+            "level": 303
+          },
+          {
+            "name": "DÝaochßn",
+            "level": 113
+          },
+          {
+            "name": "Haaakiiiiiiii",
+            "level": 105
+          }
+        ],
+        "avg_level": 281.0
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Dan¯kha",
+            "level": 305
+          },
+          {
+            "name": "Shiroimancer",
+            "level": 603
+          },
+          {
+            "name": "Uriangera",
+            "level": 202
+          },
+          {
+            "name": "Destroyerwarrio",
+            "level": 103
+          },
+          {
+            "name": "Justinwang",
+            "level": 602
+          },
+          {
+            "name": "Joanpradels",
+            "level": 105
+          }
+        ],
+        "avg_level": 353.1
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Dan¯kha",
+            "level": 305
+          },
+          {
+            "name": "Shiroimancer",
+            "level": 603
+          },
+          {
+            "name": "Destroyerwarrio",
+            "level": 103
+          },
+          {
+            "name": "Uriangera",
+            "level": 202
+          },
+          {
+            "name": "Joanpradels",
+            "level": 105
+          },
+          {
+            "name": "Justinwang",
+            "level": 602
+          }
+        ],
+        "avg_level": 353.1
+      },
+      {
+        "boss": "Mordum, the Abyssal Punisher",
+        "players": [
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Dan¯kha",
+            "level": 305
+          },
+          {
+            "name": "Shiroimancer",
+            "level": 603
+          },
+          {
+            "name": "Uriangera",
+            "level": 202
+          },
+          {
+            "name": "Destroyerwarrio",
+            "level": 103
+          },
+          {
+            "name": "Joanpradels",
+            "level": 105
+          },
+          {
+            "name": "Justinwang",
+            "level": 602
+          }
+        ],
+        "avg_level": 353.1
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Kudiya",
+            "level": 402
+          },
+          {
+            "name": "Bamzz",
+            "level": 102
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Riftkyrie",
+            "level": 112
+          },
+          {
+            "name": "Mamalidya",
+            "level": 113
+          },
+          {
+            "name": "Siephyr",
+            "level": 403
+          },
+          {
+            "name": "Keshiyo",
+            "level": 602
+          },
+          {
+            "name": "BÚrnddasbrot",
+            "level": 602
+          }
+        ],
+        "avg_level": 354.8
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Kudiya",
+            "level": 402
+          },
+          {
+            "name": "Bamzz",
+            "level": 102
+          },
+          {
+            "name": "Riftkyrie",
+            "level": 112
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Siephyr",
+            "level": 403
+          },
+          {
+            "name": "Mamalidya",
+            "level": 113
+          },
+          {
+            "name": "BÚrnddasbrot",
+            "level": 602
+          },
+          {
+            "name": "Keshiyo",
+            "level": 602
+          }
+        ],
+        "avg_level": 354.8
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Kudiya",
+            "level": 402
+          },
+          {
+            "name": "Riftkyrie",
+            "level": 112
+          },
+          {
+            "name": "Bamzz",
+            "level": 102
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Siephyr",
+            "level": 403
+          },
+          {
+            "name": "Mamalidya",
+            "level": 113
+          },
+          {
+            "name": "Keshiyo",
+            "level": 602
+          },
+          {
+            "name": "BÚrnddasbrot",
+            "level": 602
+          }
+        ],
+        "avg_level": 354.8
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Cynßne",
+            "level": 112
+          },
+          {
+            "name": "Piqapiq",
+            "level": 512
+          },
+          {
+            "name": "Horissßn",
+            "level": 302
+          },
+          {
+            "name": "Arzsoul",
+            "level": 604
+          },
+          {
+            "name": "Momsheee",
+            "level": 302
+          },
+          {
+            "name": "Steelsoveriegn",
+            "level": 112
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          }
+        ],
+        "avg_level": 343.8
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Piqapiq",
+            "level": 512
+          },
+          {
+            "name": "Cynßne",
+            "level": 112
+          },
+          {
+            "name": "Horissßn",
+            "level": 302
+          },
+          {
+            "name": "Momsheee",
+            "level": 302
+          },
+          {
+            "name": "Arzsoul",
+            "level": 604
+          },
+          {
+            "name": "Steelsoveriegn",
+            "level": 112
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          }
+        ],
+        "avg_level": 343.8
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Cynßne",
+            "level": 112
+          },
+          {
+            "name": "Piqapiq",
+            "level": 512
+          },
+          {
+            "name": "Horissßn",
+            "level": 302
+          },
+          {
+            "name": "Steelsoveriegn",
+            "level": 112
+          },
+          {
+            "name": "Momsheee",
+            "level": 302
+          },
+          {
+            "name": "Arzsoul",
+            "level": 604
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          },
+          {
+            "name": "Nawinar",
+            "level": 602
+          }
+        ],
+        "avg_level": 343.8
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Shiorisdruide",
+            "level": 604
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          }
+        ],
+        "avg_level": 270.2
+      },
+      {
+        "boss": "Armoche, Sentinel of the Abyss",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Shiorisdruide",
+            "level": 604
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          }
+        ],
+        "avg_level": 270.2
+      },
+      {
+        "boss": "Abyss Lord Kazeros",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "DerviÚtnamese",
+            "level": 603
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Se÷lhyu",
+            "level": 405
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 244.4
+      },
+      {
+        "boss": "Archdemon Kazeros",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "DerviÚtnamese",
+            "level": 603
+          },
+          {
+            "name": "Se÷lhyu",
+            "level": 405
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 244.4
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "LÔ´r",
+            "level": 403
+          },
+          {
+            "name": "LightangÞl",
+            "level": 405
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Ghostcha",
+            "level": 404
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 255.9
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "LightangÞl",
+            "level": 405
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "LÔ´r",
+            "level": 403
+          },
+          {
+            "name": "Ghostcha",
+            "level": 404
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          }
+        ],
+        "avg_level": 255.9
+      },
+      {
+        "boss": "Mordum, the Abyssal Punisher",
+        "players": [
+          {
+            "name": "Mj÷lnn",
+            "level": 103
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "LÔ´r",
+            "level": 403
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Ghostcha",
+            "level": 404
+          },
+          {
+            "name": "LightangÞl",
+            "level": 405
+          },
+          {
+            "name": "Luminarys",
+            "level": 113
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 255.9
+      },
+      {
+        "boss": "Abyss Lord Kazeros",
+        "players": [
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Dem¶ns¶ull",
+            "level": 405
+          },
+          {
+            "name": "Headshotpewpew",
+            "level": 512
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Naaosu",
+            "level": 602
+          }
+        ],
+        "avg_level": 356.1
+      },
+      {
+        "boss": "Archdemon Kazeros",
+        "players": [
+          {
+            "name": "Nymcognito",
+            "level": 404
+          },
+          {
+            "name": "Dem¶ns¶ull",
+            "level": 405
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "MarlÙne",
+            "level": 602
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          }
+        ],
+        "avg_level": 342.6
+      },
+      {
+        "boss": "Narok the Butcher",
+        "players": [
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Fistibombo",
+            "level": 304
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "RatoncitopÚrez",
+            "level": 404
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 293.8
+      },
+      {
+        "boss": "Infernas",
+        "players": [
+          {
+            "name": "Kadell",
+            "level": 104
+          },
+          {
+            "name": "Fabsaudra",
+            "level": 603
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Bastito",
+            "level": 105
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          }
+        ],
+        "avg_level": 331.1
+      },
+      {
+        "boss": "Blossoming Fear, Naitreya",
+        "players": [
+          {
+            "name": "Kadell",
+            "level": 104
+          },
+          {
+            "name": "Fabsaudra",
+            "level": 603
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Bastito",
+            "level": 105
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          }
+        ],
+        "avg_level": 331.1
+      },
+      {
+        "boss": "Flash of Punishment",
+        "players": [
+          {
+            "name": "Kadell",
+            "level": 104
+          },
+          {
+            "name": "Fabsaudra",
+            "level": 603
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Bastito",
+            "level": 105
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          }
+        ],
+        "avg_level": 331.1
+      },
+      {
+        "boss": "Brelshaza, Ember in the Ashes",
+        "players": [
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Dinoyayaya",
+            "level": 603
+          },
+          {
+            "name": "Dhaniria",
+            "level": 113
+          },
+          {
+            "name": "Chinandos",
+            "level": 304
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Liduvina",
+            "level": 113
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Khaenys",
+            "level": 602
+          }
+        ],
+        "avg_level": 380.9
+      }
+    ]
+  },
+  "Aegir": {
+    "2026-01-28": [
+      {
+        "boss": "Phantom Legion Commander Brelshaza",
+        "players": [
+          {
+            "name": "Akiraqo",
+            "level": 112
+          },
+          {
+            "name": "Aedhe",
+            "level": 205
+          },
+          {
+            "name": "Hamnkapten",
+            "level": 205
+          },
+          {
+            "name": "Rajet",
+            "level": 102
+          },
+          {
+            "name": "Shelyrin",
+            "level": 403
+          },
+          {
+            "name": "Mushiin",
+            "level": 312
+          },
+          {
+            "name": "Fatocato",
+            "level": 602
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 268.1
+      },
+      {
+        "boss": "Phantom Legion Commander Brelshaza",
+        "players": [
+          {
+            "name": "Bowlady",
+            "level": 502
+          },
+          {
+            "name": "Zoctis",
+            "level": 502
+          },
+          {
+            "name": "Veszetarcu",
+            "level": 502
+          },
+          {
+            "name": "Berserkziel",
+            "level": 102
+          },
+          {
+            "name": "BrÛakÚr",
+            "level": 313
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Lumettorm",
+            "level": 204
+          },
+          {
+            "name": "Twoinchenough",
+            "level": 105
+          }
+        ],
+        "avg_level": 329.0
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Beeterfly",
+            "level": 604
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Pu±odedios",
+            "level": 313
+          },
+          {
+            "name": "Selyny",
+            "level": 205
+          },
+          {
+            "name": "Gallcii",
+            "level": 304
+          },
+          {
+            "name": "Hmmoodca",
+            "level": 505
+          },
+          {
+            "name": "BrunildÔ",
+            "level": 113
+          },
+          {
+            "name": "J·juu",
+            "level": 602
+          }
+        ],
+        "avg_level": 393.5
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Sefar¯na",
+            "level": 603
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Atomiix",
+            "level": 504
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Stillfarming",
+            "level": 105
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          }
+        ],
+        "avg_level": 344.4
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Oyk",
+            "level": 603
+          },
+          {
+            "name": "Vescythe",
+            "level": 405
+          },
+          {
+            "name": "Superhulk",
+            "level": 103
+          },
+          {
+            "name": "Zukka",
+            "level": 403
+          },
+          {
+            "name": "Qinshihuangg",
+            "level": 313
+          },
+          {
+            "name": "Hoikusai",
+            "level": 602
+          },
+          {
+            "name": "Partimebard",
+            "level": 204
+          }
+        ],
+        "avg_level": 366.9
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Clawpaw",
+            "level": 604
+          },
+          {
+            "name": "Nerr¶",
+            "level": 312
+          },
+          {
+            "name": "Bsissalance",
+            "level": 305
+          },
+          {
+            "name": "Ailreeeeee",
+            "level": 205
+          },
+          {
+            "name": "Maccheimpiccione",
+            "level": 103
+          },
+          {
+            "name": "Katoriix",
+            "level": 502
+          },
+          {
+            "name": "Curopocomacuro",
+            "level": 602
+          },
+          {
+            "name": "Doctormartin",
+            "level": 105
+          }
+        ],
+        "avg_level": 342.2
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "═nfern¾",
+            "level": 302
+          },
+          {
+            "name": "Gnz÷",
+            "level": 313
+          },
+          {
+            "name": "UmÚmiya",
+            "level": 313
+          },
+          {
+            "name": "Michaelxscofield",
+            "level": 105
+          },
+          {
+            "name": "Pritamin",
+            "level": 304
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Hvumon",
+            "level": 204
+          },
+          {
+            "name": "Anamaz",
+            "level": 105
+          }
+        ],
+        "avg_level": 256.0
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Summomnom",
+            "level": 203
+          },
+          {
+            "name": "Hanreye",
+            "level": 402
+          },
+          {
+            "name": "Urmiris",
+            "level": 205
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Nylvia",
+            "level": 203
+          },
+          {
+            "name": "Getcachorred",
+            "level": 313
+          },
+          {
+            "name": "Nocyrja",
+            "level": 113
+          },
+          {
+            "name": "Raahar",
+            "level": 105
+          }
+        ],
+        "avg_level": 268.5
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Orkhanavalk",
+            "level": 113
+          },
+          {
+            "name": "Hmoodchi",
+            "level": 502
+          },
+          {
+            "name": "Sicarioclownss",
+            "level": 303
+          },
+          {
+            "name": "Souljugs",
+            "level": 405
+          },
+          {
+            "name": "Dynwen",
+            "level": 604
+          },
+          {
+            "name": "Luciuszogratis",
+            "level": 203
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          },
+          {
+            "name": "Naromiix",
+            "level": 204
+          }
+        ],
+        "avg_level": 304.9
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Kickhiminthenuts",
+            "level": 504
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Orkhanaw",
+            "level": 604
+          },
+          {
+            "name": "Auriennne",
+            "level": 113
+          },
+          {
+            "name": "Juicybuffs",
+            "level": 602
+          }
+        ],
+        "avg_level": 381.6
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "AÙsson",
+            "level": 302
+          },
+          {
+            "name": "Lekhanar",
+            "level": 203
+          },
+          {
+            "name": "Uriangera",
+            "level": 202
+          },
+          {
+            "name": "Deemcard",
+            "level": 202
+          },
+          {
+            "name": "Gutslil",
+            "level": 105
+          },
+          {
+            "name": "Shadowayayaa",
+            "level": 602
+          }
+        ],
+        "avg_level": 290.4
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Friskbear",
+            "level": 312
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Ssjbreaker",
+            "level": 313
+          },
+          {
+            "name": "SoisÚ",
+            "level": 602
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 345.5
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Iliennn",
+            "level": 403
+          },
+          {
+            "name": "Georathor",
+            "level": 512
+          },
+          {
+            "name": "Alavhel",
+            "level": 112
+          },
+          {
+            "name": "Tomoriix",
+            "level": 402
+          },
+          {
+            "name": "Heimerzdonger",
+            "level": 504
+          },
+          {
+            "name": "Boreahl",
+            "level": 113
+          },
+          {
+            "name": "Stayclose",
+            "level": 113
+          },
+          {
+            "name": "Chalinda",
+            "level": 602
+          }
+        ],
+        "avg_level": 345.1
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "Vriytra",
+            "level": 405
+          },
+          {
+            "name": "Satoriix",
+            "level": 302
+          },
+          {
+            "name": "Zukka",
+            "level": 403
+          },
+          {
+            "name": "Smooover",
+            "level": 503
+          },
+          {
+            "name": "Lekhanar",
+            "level": 203
+          },
+          {
+            "name": "Meiliinn",
+            "level": 603
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "HÙraclÙs",
+            "level": 105
+          }
+        ],
+        "avg_level": 328.6
+      },
+      {
+        "boss": "Phantom Manifester Brelshaza",
+        "players": [
+          {
+            "name": "RatoncitopÚrez",
+            "level": 404
+          },
+          {
+            "name": "Ne´zha",
+            "level": 112
+          },
+          {
+            "name": "Eir s",
+            "level": 113
+          },
+          {
+            "name": "Feraliix",
+            "level": 604
+          },
+          {
+            "name": "Fistibombo",
+            "level": 304
+          },
+          {
+            "name": "Katsushiika",
+            "level": 603
+          },
+          {
+            "name": "Eskkol",
+            "level": 105
+          },
+          {
+            "name": "Sebadi",
+            "level": 105
+          }
+        ],
+        "avg_level": 293.8
+      }
+    ]
+  }
+}
