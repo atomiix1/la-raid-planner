@@ -214,6 +214,17 @@
             const dataBySpec = {};
             const raidGlobals = {};
             
+            // Calcular raidGlobals
+            for (const col of COLUMNS) {
+                const key = `${col.raid}${col.gate}Main`;
+                const data = allData[key]?.stats || [];
+
+                raidGlobals[key] = {
+                    median: data.reduce((s, d) => s + d.median, 0) / data.length,
+                    q3: data.reduce((s, d) => s + d.q3, 0) / data.length
+                };
+            }
+
             // Recolectar todos los specs
             for (const col of COLUMNS) {
                 const key = `${col.raid}${col.gate}Alt`;
@@ -230,16 +241,6 @@
                         dataBySpec[specKey][key] = stat.median; // Guardar median DPS
                     }
                 }
-            }
-
-            for (const col of COLUMNS) {
-                const key = `${col.raid}${col.gate}Main`;
-                const data = allData[key]?.stats || [];
-
-                raidGlobals[key] = {
-                    median: data.reduce((s, d) => s + d.median, 0) / data.length,
-                    q3: data.reduce((s, d) => s + d.q3, 0) / data.length
-                };
             }
             
             // Normalizar valores por columna (0-1)
