@@ -242,6 +242,7 @@
         let specs = new Set();
         let raidGlobals = {};
         let rtaRanking = [];
+        let globalMean = 1;
         
         async function loadData() {
             try {
@@ -284,7 +285,7 @@
             return map;
         }
 
-        const globalMean = rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
+        globalMean = rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
 
         function getTierByRTA(avg) {
             if (avg >= globalMean + 0.08) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
