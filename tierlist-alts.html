@@ -185,7 +185,7 @@
                 // Cargar todos los datos necesarios
                 for (const col of COLUMNS) {
                     const key = `${col.raid}${col.gate}Alt`;
-                    const response = await fetch(`tierlist/${col.raid}${col.gate}Alt.json`);
+                    const response = await fetch(`tierlist/${col.raid.toLowerCase()}${col.gate}Alt.json`);
                     if (response.ok) {
                         allData[key] = await response.json();
                     }
