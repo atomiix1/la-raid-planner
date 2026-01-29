@@ -270,7 +270,7 @@
             const medianNorm = stat.median / raidStats.median;
             const q3Norm = stat.q3 / raidStats.q3;
 
-            const base = 0.6 * medianNorm + 0.4 * q3Norm;
+            const base = 0.7 * medianNorm + 0.3 * q3Norm;
 
             const consistencia = (stat.q3 - stat.q1) / stat.median;
             const ajustado = base * (1 - consistencia * 0.1);
