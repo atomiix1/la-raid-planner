@@ -313,9 +313,6 @@
             const dataBySpec = {};
             const raidGlobals = {};
 
-            // render inicial
-            renderWithFilter('all');
-
             // Calcular raidGlobals
             for (const col of COLUMNS) {
                 const key = `${col.raid}${col.gate}Main`;
@@ -480,6 +477,10 @@
                 document.getElementById('content').innerHTML =
                     rankingHtml + '<br>' + rtaHtml + '<br>' + tierVisualHtml;
             }
+
+            
+            // render inicial
+            renderWithFilter('all');
 
             function renderTierVisualTable(tiersMap) {
                 let html = `
