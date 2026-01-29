@@ -159,12 +159,6 @@
         <a href="index.html" class="back-link">← Volver</a>
         <h1>Tierlist DPS - Mains</h1>
         
-        <div class="tabs">
-            <button class="tab-btn active" onclick="switchRaid('G1')">G1</button>
-            <button class="tab-btn" onclick="switchRaid('G2')">G2</button>
-            <button class="tab-btn" onclick="switchRaid('G3')">G3</button>
-        </div>
-        
         <div id="content" class="loading">Cargando datos...</div>
         
         <div class="legend">
@@ -175,42 +169,27 @@
     </div>
     
     <script>
-        const RAIDS = ['Mordum', 'Armoche', 'Kazeros'];
-        const ALL_GATES = ['G1', 'G2', 'G3'];
-        let availableGates = [];
-        let currentGate = 'G1';
+        const COLUMNS = [
+            { raid: 'Mordum', gate: 'G1' },
+            { raid: 'Mordum', gate: 'G2' },
+            { raid: 'Mordum', gate: 'G3' },
+            { raid: 'Armoche', gate: 'G1' },
+            { raid: 'Armoche', gate: 'G2' },
+            { raid: 'Kazeros', gate: 'G1' },
+            { raid: 'Kazeros', gate: 'G2' }
+        ];
         let allData = {};
         
         async function loadData() {
             try {
-                // Cargar todos los datos disponibles
-                for (const gate of ALL_GATES) {
-                    for (const raid of RAIDS) {
-                        const key = `${raid}${gate}Main`;
-                        const response = await fetch(`tierlist/${raid}${gate}Main.json`);
-                        if (response.ok) {
-                            allData[key] = await response.json();
-                            if (!availableGates.includes(gate)) {
-                                availableGates.push(gate);
-                            }
-                        }
+                // Cargar todos los datos necesarios
+                for (const col of COLUMNS) {
+                    const key = `${col.raid}${col.gate}Main`;
+                    const response = await fetch(`tierlist/${col.raid}${col.gate}Main.json`);
+                    if (response.ok) {
+                        allData[key] = await response.json();
                     }
                 }
-                
-                availableGates.sort();
-                currentGate = availableGates[0] || 'G1';
-                
-                // Recrear tabs dinámicamente
-                const tabsContainer = document.querySelector('.tabs');
-                tabsContainer.innerHTML = '';
-                for (const gate of availableGates) {
-                    const btn = document.createElement('button');
-                    btn.className = 'tab-btn' + (gate === currentGate ? ' active' : '');
-                    btn.textContent = gate;
-                    btn.onclick = () => switchRaid(gate);
-                    tabsContainer.appendChild(btn);
-                }
-                
                 renderTable();
             } catch (error) {
                 document.getElementById('content').innerHTML = `<div class="error">Error al cargar datos: ${error.message}</div>`;
@@ -218,20 +197,13 @@
             }
         }
         
-        function switchRaid(gate) {
-            currentGate = gate;
-            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-            renderTable();
-        }
-        
         function renderTable() {
             const specs = new Set();
             const dataBySpec = {};
             
             // Recolectar todos los specs
-            for (const raid of RAIDS) {
-                const key = `${raid}${currentGate}Main`;
+            for (const col of COLUMNS) {
+                const key = `${col.raid}${col.gate}Main`;
                 const data = allData[key];
                 if (data && data.stats) {
                     for (const stat of data.stats) {
@@ -240,29 +212,30 @@
                         if (!dataBySpec[specKey]) {
                             dataBySpec[specKey] = {};
                         }
-                        dataBySpec[specKey][raid] = stat.median;
+                        dataBySpec[specKey][key] = stat.median;
                     }
                 }
             }
             
             // Ordenar specs por DPS promedio descendente
             const sortedSpecs = Array.from(specs).sort((a, b) => {
-                const avgA = RAIDS.reduce((sum, raid) => sum + (dataBySpec[a][raid] || 0), 0) / RAIDS.length;
-                const avgB = RAIDS.reduce((sum, raid) => sum + (dataBySpec[b][raid] || 0), 0) / RAIDS.length;
+                const avgA = COLUMNS.reduce((sum, col) => sum + (dataBySpec[a][`${col.raid}${col.gate}Main`] || 0), 0) / COLUMNS.length;
+                const avgB = COLUMNS.reduce((sum, col) => sum + (dataBySpec[b][`${col.raid}${col.gate}Main`] || 0), 0) / COLUMNS.length;
                 return avgB - avgA;
             });
             
             // Construir tabla
             let html = '<div class="table-wrapper"><table><thead><tr><th>Spec</th>';
-            for (const raid of RAIDS) {
-                html += `<th>${raid} ${currentGate}</th>`;
+            for (const col of COLUMNS) {
+                html += `<th>${col.raid} ${col.gate}</th>`;
             }
             html += '</tr></thead><tbody>';
             
             for (const specKey of sortedSpecs) {
                 html += `<tr><td class="spec-name">${specKey}</td>`;
-                for (const raid of RAIDS) {
-                    const dps = dataBySpec[specKey][raid];
+                for (const col of COLUMNS) {
+                    const key = `${col.raid}${col.gate}Main`;
+                    const dps = dataBySpec[specKey][key];
                     const formattedDps = dps ? (dps / 1000000).toFixed(1) + 'M' : '-';
                     html += `<td class="dps-value">${formattedDps}</td>`;
                 }
