@@ -285,8 +285,6 @@
             return map;
         }
 
-        globalMean = rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
-
         function getTierByRTA(avg) {
             if (avg >= globalMean + 0.08) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
             if (avg >= globalMean + 0.04) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
@@ -373,6 +371,7 @@
         }
 
         function renderWithFilter(mode) {
+            globalMean = rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
             const ranking = buildRTARanking(mode);
             const tiersMap = buildTiersMap(ranking);
 
