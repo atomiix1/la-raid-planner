@@ -204,25 +204,13 @@
             flex-direction: column;
             align-items: center;
         }
-        .delta {
-            font-size: 11px;
-            font-weight: bold;
-            opacity: 0.85;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <a href="index.html" class="back-link">← Volver</a>
         <h1>Tierlist DPS - Mains</h1>
-        <div style="display:flex; justify-content:flex-end; margin-bottom:10px;">
-            <div style="display:flex; justify-content:flex-end; margin-bottom:10px;">
-                <select id="gateFilter" class="tab-btn">
-                    <option value="all">Todas las puertas</option>
-                    <option value="trimmed">Todas menos mejor y peor</option>
-                </select>
-            </div>
-        </div>
+        
         <div id="content" class="loading">Cargando datos...</div>
         
         <div class="legend">
@@ -243,14 +231,6 @@
             { raid: 'Kazeros', gate: 'G2' }
         ];
         let allData = {};
-        let sortedSpecs = [];
-        let dataBySpec = {};
-        let specs = new Set();
-        let raidGlobals = {};
-        let rtaRanking = [];
-        let globalMean = 1;
-        let baselineRanking = buildRTARanking('all');
-        let baselinePositions = {};
         
         async function loadData() {
             try {
@@ -271,182 +251,16 @@
                         cont.style.display = cont.style.display === 'none' ? 'block' : 'none';
                     });
                 }, 0);
-
-                const gateFilter = document.getElementById('gateFilter');
-                gateFilter.addEventListener('change', e => {
-                    renderWithFilter(e.target.value);
-                });
             } catch (error) {
                 document.getElementById('content').innerHTML = `<div class="error">Error al cargar datos: ${error.message}</div>`;
                 console.error(error);
             }
         }
 
-        function buildTiersMap(ranking) {
-            const map = { 5:[],4:[],3:[],2:[],1:[] };
-
-            ranking.forEach(item => {
-                const tier = getTierByRTA(item.avg);
-                map[tier.stars].push({ ...item, tier });
-            });
-
-            return map;
-        }
-
-        function getTierByRTA(avg) {
-            if (avg >= globalMean + 0.08) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
-            if (avg >= globalMean + 0.04) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
-            if (avg >= globalMean - 0.03) return { stars: 3, label: 'B', color: 'rgba(33,150,243,0.25)' };
-            if (avg >= globalMean - 0.08) return { stars: 2, label: 'C', color: 'rgba(255,152,0,0.25)' };
-            return { stars: 1, label: 'D', color: 'rgba(244,67,54,0.25)' };
-        }
-
-        function renderRTATable(rtaRanking) {
-            let rtaHtml = '<div class="table-wrapper"><table><thead><tr>';
-            rtaHtml += '<th style="text-align:center;">#</th>';
-            rtaHtml += '<th style="text-align:left;">Spec</th>';
-
-            for (const col of COLUMNS) {
-                rtaHtml += `<th>${col.raid} ${col.gate}</th>`;
-            }
-            rtaHtml += '<th>Promedio</th></tr></thead><tbody>';
-
-            let pos = 1;
-            for (const item of rtaRanking) {
-                const { specKey, avg, avgConsistency, tier } = item;
-
-                rtaHtml += `<tr style="background-color:${tier.color};">`;
-                rtaHtml += `<td style="text-align:center;font-weight:bold;">
-                    ${item.position}
-                    ${
-                        item.delta > 0
-                            ? `<span style="color:#81c784;"> ↑${item.delta}</span>`
-                            : item.delta < 0
-                                ? `<span style="color:#e57373;"> ↓${Math.abs(item.delta)}</span>`
-                                : `<span style="opacity:0.6;"> –</span>`
-                    }
-                </td>`;
-                rtaHtml += `<td class="spec-name">${specKey}</td>`;
-
-                for (const col of COLUMNS) {
-                    const key = `${col.raid}${col.gate}Main`;
-                    const val = dataBySpec[specKey].rta[key];
-                    rtaHtml += `<td class="dps-value">${val ? val.toFixed(3) : '-'}</td>`;
-                }
-
-                rtaHtml += `<td style="font-weight:bold;">${avg.toFixed(3)}</td>`;
-                rtaHtml += `<td style="font-weight:bold;">${'⭐'.repeat(tier.stars)}</td>`;
-                rtaHtml += '</tr>';
-
-                pos++;
-            }
-
-            rtaHtml += '</tbody></table></div>';
-            return rtaHtml;
-        }
-
-        function buildRTARanking(mode) {
-            const ranking = [];
-            const consistencies = [];
-
-            for (const specKey of sortedSpecs) {
-                const rtaByGate = dataBySpec[specKey].rta;
-                const values = getFilteredRTAValues(rtaByGate, mode);
-                if (!values.length) continue;
-
-                const avg = values.reduce((a,b)=>a+b,0) / values.length;
-                // Si está trimmed debo recalcular consistencia
-                consistencies.length = 0;
-                if (mode === 'trimmed') {
-                    const filteredCols = COLUMNS.filter(col => {
-                        const key = `${col.raid}${col.gate}Main`;
-                        const val = rtaByGate[key];
-                        return val && val !== Math.max(...Object.values(rtaByGate)) && val !== Math.min(...Object.values(rtaByGate));
-                    });
-
-                    for (const col of filteredCols) {
-                        const key = `${col.raid}${col.gate}Main`;
-                        const stat = allData[key]?.stats?.find(
-                            s => `${s.class} - ${s.spec}` === specKey
-                        );
-                        if (stat) {
-                            consistencies.push((stat.q3 - stat.q1) / stat.median);
-                        }
-                    }
-                } else {
-                    for (const col of COLUMNS) {
-                        const key = `${col.raid}${col.gate}Main`;
-                        const stat = allData[key]?.stats?.find(
-                            s => `${s.class} - ${s.spec}` === specKey
-                        );
-                        if (stat) {
-                            consistencies.push((stat.q3 - stat.q1) / stat.median);
-                        }
-                    }
-                }
-
-                // Consistencia media
-                const avgConsistency =
-                    consistencies.reduce((a, b) => a + b, 0) / consistencies.length;
-
-                ranking.push({
-                    specKey,
-                    avg,
-                    avgConsistency: avgConsistency,
-                    tier: getTierByRTA(avg)
-                });
-            }
-
-            // recentrar
-            const mean = ranking.reduce((s,r)=>s+r.avg,0) / ranking.length;
-            ranking.forEach(r => r.avg /= mean);
-
-            ranking.sort((a,b)=>b.avg-a.avg);
-
-            // posición y delta
-            ranking.forEach((item, index) => {
-                item.position = index + 1;
-                item.delta =
-                    baselinePositions[item.specKey]
-                    ? baselinePositions[item.specKey] - item.position
-                    : 0;
-            });
-
-            return ranking;
-        }
-
-
-        function renderWithFilter(mode) {
-            const ranking = buildRTARanking(mode);
-            globalMean = ranking.reduce((s, r) => s + r.avg, 0) / ranking.length;
-
-            const tiersMap = buildTiersMap(ranking);
-
-            const rtaHtml = renderRTATable(ranking);          // la tabla numérica
-            const tierVisualHtml = renderTierVisualTable(tiersMap);
-
-            document.getElementById('content').innerHTML =
-                tierVisualHtml + '<br>' + rtaHtml;
-        }
-
         function specToImagePath(specKey) {
             const sanitized = specKey.replace(/:/g, '');
             return `specIcons/${sanitized}.jpg`;
         }
-
-        function getFilteredRTAValues(rtaByGate, mode) {
-            const values = Object.values(rtaByGate);
-
-            if (mode !== 'trimmed' || values.length <= 2) {
-                return values;
-            }
-
-            const max = Math.max(...values);
-            const min = Math.min(...values);
-
-            return values.filter(v => v !== max && v !== min);
-        }
-
 
         function needsWarning(consistency) {
             return consistency >= 0.35; // ajustable
@@ -463,80 +277,11 @@
 
             return ajustado;
         }
-
-        function renderTierVisualTable(tiersMap) {
-                let html = `
-                <div style="margin-bottom:12px;">
-                    <button id="toggleTiers" class="tab-btn active">
-                        Mostrar / Ocultar Tiers Visuales
-                    </button>
-                </div>
-                <div id="tierVisualContainer" class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th style="width:110px; text-align:left;">Tier</th>
-                            <th style="text-align:left;">Specs</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                `;
-
-                for (let stars = 5; stars >= 1; stars--) {
-                    const specs = tiersMap[stars];
-                    const tierLabel = '⭐'.repeat(stars);
-
-                    html += `<tr>
-                        <td style="font-weight:bold;text-align:center;">${tierLabel}</td>
-                        <td class="tier-specs">
-                    `;
-
-                    if (!specs.length) {
-                        html += `<span style="opacity:0.5;font-style:italic;">(Vacío)</span>`;
-                    }
-
-                    for (const item of specs) {
-                        const delta = ((item.avg - globalMean) * 100).toFixed(1);
-                        const warn = needsWarning(item.avgConsistency);
-
-                        html += `
-                        <figure class="spec-icon"
-                            title="
-            ${item.specKey}
-            RTA medio: ${item.avg.toFixed(3)}
-            Δ vs ${globalMean.toFixed(2)}: ${delta}%
-            Consistencia: ${item.avgConsistency.toFixed(2)}
-                            ">
-                            <img src="${specToImagePath(item.specKey)}"
-                                alt="${item.specKey}">
-                            <figcaption>
-                                ${item.specKey}
-                                <div class="delta">
-                                    ${
-                                        item.delta > 0
-                                            ? `↑${item.delta}`
-                                            : item.delta < 0
-                                                ? `↓${Math.abs(item.delta)}`
-                                                : '–'
-                                    }
-                                </div>
-                                <div class="badge ${delta >= 0 ? 'pos' : 'neg'}">
-                                    ${delta >= 0 ? '+' : ''}${delta}%
-                                </div>
-                                ${warn ? '<div class="warn">⚠️</div>' : ''}
-                            </figcaption>
-                        </figure>
-                        `;
-                    }
-
-                    html += '</td></tr>';
-                }
-
-                html += '</tbody></table></div>';
-                return html;
-            }
         
         function renderTable() {
+            const specs = new Set();
+            const dataBySpec = {};
+            const raidGlobals = {};
 
             // Calcular raidGlobals
             for (const col of COLUMNS) {
@@ -597,9 +342,9 @@
             }
             
             ranking.sort((a, b) => b.total - a.total);
-            sortedSpecs = ranking.map(r => r.specKey);
+            const sortedSpecs = ranking.map(r => r.specKey);
 
-            rtaRanking = sortedSpecs.map(specKey => {
+            const rtaRanking = sortedSpecs.map(specKey => {
                 const rtaEntries = dataBySpec[specKey].rta;
                 const values = Object.values(rtaEntries || {});
                 const avg = values.reduce((a, b) => a + b, 0) / values.length;
@@ -624,6 +369,17 @@
 
             rtaRanking.sort((a, b) => b.avg - a.avg);
 
+            const globalMean =
+            rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
+
+            function getTierByRTA(avg) {
+            if (avg >= globalMean + 0.08) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
+            if (avg >= globalMean + 0.04) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
+            if (avg >= globalMean - 0.03) return { stars: 3, label: 'B', color: 'rgba(33,150,243,0.25)' };
+            if (avg >= globalMean - 0.08) return { stars: 2, label: 'C', color: 'rgba(255,152,0,0.25)' };
+            return { stars: 1, label: 'D', color: 'rgba(244,67,54,0.25)' };
+        }
+
             rtaRanking.forEach((item, index) => {
                 item.tier = getTierByRTA(item.avg);
             });
@@ -635,7 +391,7 @@
                 2: [],
                 1: []
             };
-            globalMean = rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
+
             rtaRanking.forEach(item => {
                 const tier = getTierByRTA(item.avg);
                 tiersMap[tier.stars].push({
@@ -644,15 +400,103 @@
                 });
             });
 
-            baselineRanking.forEach((item, index) => {
-                baselinePositions[item.specKey] = index + 1;
-            });
+function renderTierVisualTable(tiersMap) {
+            let html = `
+            <div style="margin-bottom:12px;">
+                <button id="toggleTiers" class="tab-btn active">
+                    Mostrar / Ocultar Tiers Visuales
+                </button>
+            </div>
+            <div id="tierVisualContainer" class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width:110px; text-align:left;">Tier</th>
+                        <th style="text-align:left;">Specs</th>
+                    </tr>
+                </thead>
+                <tbody>
+            `;
+
+            for (let stars = 5; stars >= 1; stars--) {
+                const specs = tiersMap[stars];
+                const tierLabel = '⭐'.repeat(stars);
+
+                html += `<tr>
+                    <td style="font-weight:bold;text-align:center;">${tierLabel}</td>
+                    <td class="tier-specs">
+                `;
+
+                if (!specs.length) {
+                    html += `<span style="opacity:0.5;font-style:italic;">(Vacío)</span>`;
+                }
+
+                for (const item of specs) {
+                    const delta = ((item.avg - globalMean) * 100).toFixed(1);
+                    const warn = needsWarning(item.avgConsistency);
+
+                    html += `
+                    <figure class="spec-icon"
+                        title="
+        ${item.specKey}
+        RTA medio: ${item.avg.toFixed(3)}
+        Δ vs ${globalMean.toFixed(2)}: ${delta}%
+        Consistencia: ${item.avgConsistency.toFixed(2)}
+                        ">
+                        <img src="${specToImagePath(item.specKey)}"
+                            alt="${item.specKey}">
+                        <figcaption>
+                            ${item.specKey}
+                            <div class="badge ${delta >= 0 ? 'pos' : 'neg'}">
+                                ${delta >= 0 ? '+' : ''}${delta}%
+                            </div>
+                            ${warn ? '<div class="warn">⚠️</div>' : ''}
+                        </figcaption>
+                    </figure>
+                    `;
+                }
+
+                html += '</td></tr>';
+            }
+
+            html += '</tbody></table></div>';
+            return html;
+        }
             
-            // render inicial
-            renderWithFilter('all');
+            let rtaHtml = '<div class="table-wrapper"><table><thead><tr>';
+            rtaHtml += '<th style="text-align:center;">#</th>';
+            rtaHtml += '<th style="text-align:left;">Spec</th>';
+
+            for (const col of COLUMNS) {
+                rtaHtml += `<th>${col.raid} ${col.gate}</th>`;
+            }
+            rtaHtml += '<th>Promedio</th></tr></thead><tbody>';
+
+            let pos = 1;
+            for (const item of rtaRanking) {
+                const { specKey, avg, tier } = item;
+
+                rtaHtml += `<tr style="background-color:${tier.color};">`;
+                rtaHtml += `<td style="text-align:center;font-weight:bold;">${pos}</td>`;
+                rtaHtml += `<td class="spec-name">${specKey}</td>`;
+
+                for (const col of COLUMNS) {
+                    const key = `${col.raid}${col.gate}Main`;
+                    const val = dataBySpec[specKey].rta[key];
+                    rtaHtml += `<td class="dps-value">${val ? val.toFixed(3) : '-'}</td>`;
+                }
+
+                rtaHtml += `<td style="font-weight:bold;">${avg.toFixed(3)}</td>`;
+                rtaHtml += `<td style="font-weight:bold;">${'⭐'.repeat(tier.stars)}</td>`;
+                rtaHtml += '</tr>';
+
+                pos++;
+            }
+
+            rtaHtml += '</tbody></table></div>';
 
             const tierVisualHtml = renderTierVisualTable(tiersMap);
-            document.getElementById('content').innerHTML = tierVisualHtml;
+            document.getElementById('content').innerHTML = tierVisualHtml + '<br>' + rtaHtml;
         }
         
         loadData();
