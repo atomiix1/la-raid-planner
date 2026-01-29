@@ -540,6 +540,7 @@ function renderTierVisualTable(tiersMap) {
             }
             
             dataHtml += '</tbody></table></div>';
+            const tierVisualHtml = renderTierVisualTable(tiersMap);
             document.getElementById('content').innerHTML = tierVisualHtml + '<br>' + rtaHtml;
         }
         
