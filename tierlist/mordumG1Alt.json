@@ -1,0 +1,957 @@
+{
+    "timestamp": "2026-01-29T10:54:15Z",
+    "stats": [
+        {
+            "class": "Artist",
+            "spec": "Full Bloom",
+            "q1": 210696172.25,
+            "median": 258116248,
+            "q3": 314647702.75,
+            "max": 593949669,
+            "count": 4088,
+            "lowerWhisker": 54768876.5,
+            "upperWhisker": 470574998.5,
+            "topEncounters": [
+                {
+                    "id": "nXtGF3f",
+                    "dps": 3093357,
+                    "udps": 3093357,
+                    "bdps": 593949669,
+                    "gearScore": "1720",
+                    "combatPower": "2747.49",
+                    "timestamp": 1768543988005
+                },
+                {
+                    "id": "WKDOdYf",
+                    "dps": 3783697,
+                    "udps": 3783697,
+                    "bdps": 570544177,
+                    "gearScore": "1717.83",
+                    "combatPower": "2927.44",
+                    "timestamp": 1769202798965
+                },
+                {
+                    "id": "vRs78Cz",
+                    "dps": 3968410,
+                    "udps": 3968410,
+                    "bdps": 567217093,
+                    "gearScore": "1725",
+                    "combatPower": "2574.47",
+                    "timestamp": 1768954030489
+                },
+                {
+                    "id": "itXYL72",
+                    "dps": 2626642,
+                    "udps": 2626642,
+                    "bdps": 557873056,
+                    "gearScore": "1720",
+                    "combatPower": "3001.9",
+                    "timestamp": 1768549491653
+                },
+                {
+                    "id": "pZ3vQq0",
+                    "dps": 2390556,
+                    "udps": 2390556,
+                    "bdps": 537355770,
+                    "gearScore": "1729.16",
+                    "combatPower": "3012.08",
+                    "timestamp": 1769229535443
+                },
+                {
+                    "id": "NnQPGcB",
+                    "dps": 3127981,
+                    "udps": 3127981,
+                    "bdps": 533597287,
+                    "gearScore": "1726.66",
+                    "combatPower": "2061.01",
+                    "timestamp": 1769092555694
+                },
+                {
+                    "id": "vavNrCz",
+                    "dps": 3115012,
+                    "udps": 3115012,
+                    "bdps": 525849959,
+                    "gearScore": "1724.5",
+                    "combatPower": "2606.45",
+                    "timestamp": 1768669969866
+                },
+                {
+                    "id": "21Hevko",
+                    "dps": 3359176,
+                    "udps": 3359176,
+                    "bdps": 524683741,
+                    "gearScore": "1711.16",
+                    "combatPower": "2207.55",
+                    "timestamp": 1769270710457
+                },
+                {
+                    "id": "vRHYqCz",
+                    "dps": 3153002,
+                    "udps": 3153002,
+                    "bdps": 522495346,
+                    "gearScore": "1721.16",
+                    "combatPower": "2693.56",
+                    "timestamp": 1769367497829
+                },
+                {
+                    "id": "Pe5ywrf",
+                    "dps": 3829766,
+                    "udps": 3829766,
+                    "bdps": 521930927,
+                    "gearScore": "1727.5",
+                    "combatPower": "3245.38",
+                    "timestamp": 1768453311830
+                },
+                {
+                    "id": "I42d8Lm",
+                    "dps": 13530096,
+                    "udps": 13530096,
+                    "bdps": 521269833,
+                    "gearScore": "1720.5",
+                    "combatPower": "2413.65",
+                    "timestamp": 1769659874592
+                },
+                {
+                    "id": "G77M2gi",
+                    "dps": 3143728,
+                    "udps": 3143728,
+                    "bdps": 519036876,
+                    "gearScore": "1724",
+                    "combatPower": "3037.08",
+                    "timestamp": 1769618199707
+                },
+                {
+                    "id": "hJ3ZPBo",
+                    "dps": 3754857,
+                    "udps": 3754857,
+                    "bdps": 516577799,
+                    "gearScore": "1711.83",
+                    "combatPower": "2172.51",
+                    "timestamp": 1769196572368
+                },
+                {
+                    "id": "qwGH3hc",
+                    "dps": 2799928,
+                    "udps": 2799928,
+                    "bdps": 512325216,
+                    "gearScore": "1712.5",
+                    "combatPower": "2151.64",
+                    "timestamp": 1769298640277
+                },
+                {
+                    "id": "G7fASgi",
+                    "dps": 12639653,
+                    "udps": 12639653,
+                    "bdps": 508725824,
+                    "gearScore": "1710",
+                    "combatPower": "2401.42",
+                    "timestamp": 1769436532939
+                },
+                {
+                    "id": "vRseoCz",
+                    "dps": 2100215,
+                    "udps": 2100215,
+                    "bdps": 506020380,
+                    "gearScore": "1726.66",
+                    "combatPower": "2328.03",
+                    "timestamp": 1768937660595
+                },
+                {
+                    "id": "Qewe2Pm",
+                    "dps": 3627044,
+                    "udps": 3627044,
+                    "bdps": 505219113,
+                    "gearScore": "1725.83",
+                    "combatPower": "3876.16",
+                    "timestamp": 1769441260482
+                },
+                {
+                    "id": "Kpwil0t",
+                    "dps": 14034865,
+                    "udps": 14034865,
+                    "bdps": 498696804,
+                    "gearScore": "1724.16",
+                    "combatPower": "2534.31",
+                    "timestamp": 1768513840261
+                },
+                {
+                    "id": "c3UgPbn",
+                    "dps": 3409086,
+                    "udps": 3409086,
+                    "bdps": 497775790,
+                    "gearScore": "1711.16",
+                    "combatPower": "2042.12",
+                    "timestamp": 1768687151780
+                },
+                {
+                    "id": "ijV2t72",
+                    "dps": 3430273,
+                    "udps": 3430273,
+                    "bdps": 494003191,
+                    "gearScore": "1727.5",
+                    "combatPower": "2101.86",
+                    "timestamp": 1769640980863
+                },
+                {
+                    "id": "7skoMuM",
+                    "dps": 3100066,
+                    "udps": 3100066,
+                    "bdps": 491675587,
+                    "gearScore": "1720",
+                    "combatPower": "2024.42",
+                    "timestamp": 1769394198893
+                },
+                {
+                    "id": "3fEJxS2",
+                    "dps": 2687520,
+                    "udps": 2687520,
+                    "bdps": 491493071,
+                    "gearScore": "1725.83",
+                    "combatPower": "2378.68",
+                    "timestamp": 1768924523479
+                },
+                {
+                    "id": "4a6G2vC",
+                    "dps": 3761361,
+                    "udps": 3761361,
+                    "bdps": 489239755,
+                    "gearScore": "1721",
+                    "combatPower": "3153.41",
+                    "timestamp": 1768787493113
+                },
+                {
+                    "id": "rH8RIWt",
+                    "dps": 4040341,
+                    "udps": 4040341,
+                    "bdps": 486866655,
+                    "gearScore": "1720",
+                    "combatPower": "2257.74",
+                    "timestamp": 1768488433138
+                },
+                {
+                    "id": "uszSuNO",
+                    "dps": 3098833,
+                    "udps": 3098833,
+                    "bdps": 486154570,
+                    "gearScore": "1710",
+                    "combatPower": "2477.39",
+                    "timestamp": 1768588996289
+                }
+            ]
+        },
+        {
+            "class": "Bard",
+            "spec": "Desperate Salvation",
+            "q1": 214928446.75,
+            "median": 262349124,
+            "q3": 326101258.5,
+            "max": 604381438,
+            "count": 3680,
+            "lowerWhisker": 48169229.125,
+            "upperWhisker": 492860476.125,
+            "topEncounters": [
+                {
+                    "id": "CRBNK2Y",
+                    "dps": 3125605,
+                    "udps": 3125605,
+                    "bdps": 604381438,
+                    "gearScore": "1722.5",
+                    "combatPower": "3330.64",
+                    "timestamp": 1768492218493
+                },
+                {
+                    "id": "3fTYJS2",
+                    "dps": 1869262,
+                    "udps": 1869262,
+                    "bdps": 602286161,
+                    "gearScore": "1713.33",
+                    "combatPower": "3208",
+                    "timestamp": 1768694412916
+                },
+                {
+                    "id": "WKD7VYf",
+                    "dps": 3042132,
+                    "udps": 3042132,
+                    "bdps": 583261424,
+                    "gearScore": "1720",
+                    "combatPower": "2583.4",
+                    "timestamp": 1769199979598
+                },
+                {
+                    "id": "MPzDH1A",
+                    "dps": 2911709,
+                    "udps": 2911709,
+                    "bdps": 578864983,
+                    "gearScore": "1723.33",
+                    "combatPower": "3170.49",
+                    "timestamp": 1769035874350
+                },
+                {
+                    "id": "Y0lw944",
+                    "dps": 1859991,
+                    "udps": 1859991,
+                    "bdps": 575623159,
+                    "gearScore": "1725.33",
+                    "combatPower": "3373.43",
+                    "timestamp": 1769341939892
+                },
+                {
+                    "id": "IY1dlLm",
+                    "dps": 2556442,
+                    "udps": 2556442,
+                    "bdps": 569877646,
+                    "gearScore": "1721.66",
+                    "combatPower": "1904",
+                    "timestamp": 1768592524958
+                },
+                {
+                    "id": "RQbtHM8",
+                    "dps": 2669574,
+                    "udps": 2669574,
+                    "bdps": 564932656,
+                    "gearScore": "1720.16",
+                    "combatPower": "3416.99",
+                    "timestamp": 1769183401159
+                },
+                {
+                    "id": "QlBN5Pm",
+                    "dps": 2570268,
+                    "udps": 2570268,
+                    "bdps": 563495885,
+                    "gearScore": "1720",
+                    "combatPower": "2943.81",
+                    "timestamp": 1768631370045
+                },
+                {
+                    "id": "I4pt9Lm",
+                    "dps": 11885941,
+                    "udps": 11885941,
+                    "bdps": 557765686,
+                    "gearScore": "1721.66",
+                    "combatPower": "2939.54",
+                    "timestamp": 1769216672425
+                },
+                {
+                    "id": "YKrHY44",
+                    "dps": 2113572,
+                    "udps": 2113572,
+                    "bdps": 557190448,
+                    "gearScore": "1720",
+                    "combatPower": "3260.94",
+                    "timestamp": 1768602432751
+                },
+                {
+                    "id": "MPpGV1A",
+                    "dps": 3396843,
+                    "udps": 3396843,
+                    "bdps": 553009685,
+                    "gearScore": "1713.33",
+                    "combatPower": "2535.61",
+                    "timestamp": 1769359793243
+                },
+                {
+                    "id": "BJ9o1Qp",
+                    "dps": 1908770,
+                    "udps": 1908770,
+                    "bdps": 549772902,
+                    "gearScore": "1720",
+                    "combatPower": "2879.68",
+                    "timestamp": 1768566498329
+                },
+                {
+                    "id": "BlCzDQp",
+                    "dps": 2351534,
+                    "udps": 2351534,
+                    "bdps": 545911644,
+                    "gearScore": "1713.33",
+                    "combatPower": "2583.33",
+                    "timestamp": 1769013980581
+                },
+                {
+                    "id": "c3Cujbn",
+                    "dps": 3729858,
+                    "udps": 3729858,
+                    "bdps": 541325587,
+                    "gearScore": "1728.33",
+                    "combatPower": "3182.93",
+                    "timestamp": 1769225847997
+                },
+                {
+                    "id": "WFByJYf",
+                    "dps": 3299476,
+                    "udps": 3299476,
+                    "bdps": 540977030,
+                    "gearScore": "1719.16",
+                    "combatPower": "3031.28",
+                    "timestamp": 1768562974628
+                },
+                {
+                    "id": "BJp5LQp",
+                    "dps": 2195535,
+                    "udps": 2195535,
+                    "bdps": 538283819,
+                    "gearScore": "1723.33",
+                    "combatPower": "2445.82",
+                    "timestamp": 1768594606477
+                },
+                {
+                    "id": "QeDRSPm",
+                    "dps": 2376048,
+                    "udps": 2376048,
+                    "bdps": 535702747,
+                    "gearScore": "1726.83",
+                    "combatPower": "3440.78",
+                    "timestamp": 1769100385333
+                },
+                {
+                    "id": "Y0DiW44",
+                    "dps": 3122392,
+                    "udps": 3122392,
+                    "bdps": 534875280,
+                    "gearScore": "1723.83",
+                    "combatPower": "2736.16",
+                    "timestamp": 1769184949922
+                },
+                {
+                    "id": "ijN3i72",
+                    "dps": 3882953,
+                    "udps": 3882953,
+                    "bdps": 530983087,
+                    "gearScore": "1722.5",
+                    "combatPower": "2068.09",
+                    "timestamp": 1768714592175
+                },
+                {
+                    "id": "PHsIvrf",
+                    "dps": 2966526,
+                    "udps": 2966526,
+                    "bdps": 529632522,
+                    "gearScore": "1720",
+                    "combatPower": "2936.54",
+                    "timestamp": 1769062820234
+                },
+                {
+                    "id": "z6Izti4",
+                    "dps": 2428171,
+                    "udps": 2428171,
+                    "bdps": 525637195,
+                    "gearScore": "1721.66",
+                    "combatPower": "3411.93",
+                    "timestamp": 1768515258802
+                },
+                {
+                    "id": "ztBP2i4",
+                    "dps": 2922521,
+                    "udps": 2922521,
+                    "bdps": 522767520,
+                    "gearScore": "1720",
+                    "combatPower": "2408.23",
+                    "timestamp": 1769137532475
+                },
+                {
+                    "id": "CRQTf2Y",
+                    "dps": 2313902,
+                    "udps": 2313902,
+                    "bdps": 519165750,
+                    "gearScore": "1720.83",
+                    "combatPower": "3051.96",
+                    "timestamp": 1768501021531
+                },
+                {
+                    "id": "9EvWBpv",
+                    "dps": 3287614,
+                    "udps": 3287614,
+                    "bdps": 518248500,
+                    "gearScore": "1712.5",
+                    "combatPower": "3071.83",
+                    "timestamp": 1769040624604
+                },
+                {
+                    "id": "xkPsGfY",
+                    "dps": 3834937,
+                    "udps": 3834937,
+                    "bdps": 515503571,
+                    "gearScore": "1720",
+                    "combatPower": "2945.69",
+                    "timestamp": 1769236787417
+                }
+            ]
+        },
+        {
+            "class": "Paladin",
+            "spec": "Blessed Aura",
+            "q1": 206984460.75,
+            "median": 251657365,
+            "q3": 305627395,
+            "max": 569082377,
+            "count": 3784,
+            "lowerWhisker": 59020059.375,
+            "upperWhisker": 453591796.375,
+            "topEncounters": [
+                {
+                    "id": "UTh0MmR",
+                    "dps": 4185625,
+                    "udps": 4185625,
+                    "bdps": 569082377,
+                    "gearScore": "1727.5",
+                    "combatPower": "3106",
+                    "timestamp": 1769013021175
+                },
+                {
+                    "id": "1rAWco7",
+                    "dps": 14279685,
+                    "udps": 14279685,
+                    "bdps": 526091591,
+                    "gearScore": "1720.83",
+                    "combatPower": "2469.87",
+                    "timestamp": 1768798974513
+                },
+                {
+                    "id": "uVCbqNO",
+                    "dps": 2989346,
+                    "udps": 2989346,
+                    "bdps": 511969735,
+                    "gearScore": "1724.16",
+                    "combatPower": "2794.27",
+                    "timestamp": 1769263247048
+                },
+                {
+                    "id": "ztkoRi4",
+                    "dps": 2936354,
+                    "udps": 2936354,
+                    "bdps": 502297977,
+                    "gearScore": "1710",
+                    "combatPower": "1865.44",
+                    "timestamp": 1769539046293
+                },
+                {
+                    "id": "guMc5Do",
+                    "dps": 4392378,
+                    "udps": 4392378,
+                    "bdps": 499412394,
+                    "gearScore": "1720.83",
+                    "combatPower": "3329.02",
+                    "timestamp": 1769126528061
+                },
+                {
+                    "id": "BJNYtQp",
+                    "dps": 4083360,
+                    "udps": 4083360,
+                    "bdps": 494496602,
+                    "gearScore": "1710",
+                    "combatPower": "1935.59",
+                    "timestamp": 1768406965393
+                },
+                {
+                    "id": "PHs0Brf",
+                    "dps": 3056463,
+                    "udps": 3056463,
+                    "bdps": 492417226,
+                    "gearScore": "1727.5",
+                    "combatPower": "2399.52",
+                    "timestamp": 1769060830923
+                },
+                {
+                    "id": "Ql9mQPm",
+                    "dps": 13537824,
+                    "udps": 13537824,
+                    "bdps": 491635833,
+                    "gearScore": "1721.66",
+                    "combatPower": "2175.84",
+                    "timestamp": 1768539990836
+                },
+                {
+                    "id": "QegYbPm",
+                    "dps": 3846057,
+                    "udps": 3846057,
+                    "bdps": 490398590,
+                    "gearScore": "1721.66",
+                    "combatPower": "2137.52",
+                    "timestamp": 1769227778595
+                },
+                {
+                    "id": "G7RoEgi",
+                    "dps": 3382209,
+                    "udps": 3382209,
+                    "bdps": 486879405,
+                    "gearScore": "1725.83",
+                    "combatPower": "2129.15",
+                    "timestamp": 1769122740563
+                },
+                {
+                    "id": "LvkLJAE",
+                    "dps": 2846180,
+                    "udps": 2846180,
+                    "bdps": 486138438,
+                    "gearScore": "1726.66",
+                    "combatPower": "2387.57",
+                    "timestamp": 1769664210274
+                },
+                {
+                    "id": "lOoEAeu",
+                    "dps": 2622808,
+                    "udps": 2622808,
+                    "bdps": 485360960,
+                    "gearScore": "1720.83",
+                    "combatPower": "2794.24",
+                    "timestamp": 1769037659496
+                },
+                {
+                    "id": "sAFnUV8",
+                    "dps": 3596373,
+                    "udps": 3596373,
+                    "bdps": 483325074,
+                    "gearScore": "1721.66",
+                    "combatPower": "2385.3",
+                    "timestamp": 1769153470397
+                },
+                {
+                    "id": "21jJDko",
+                    "dps": 2253801,
+                    "udps": 2253801,
+                    "bdps": 481457099,
+                    "gearScore": "1721.66",
+                    "combatPower": "2672.96",
+                    "timestamp": 1768755604106
+                },
+                {
+                    "id": "f64lSz6",
+                    "dps": 3742949,
+                    "udps": 3742949,
+                    "bdps": 481219107,
+                    "gearScore": "1720",
+                    "combatPower": "2883.68",
+                    "timestamp": 1769359191382
+                },
+                {
+                    "id": "PHvmlrf",
+                    "dps": 2839119,
+                    "udps": 2839119,
+                    "bdps": 478797354,
+                    "gearScore": "1723.33",
+                    "combatPower": "2443.8",
+                    "timestamp": 1768838845102
+                },
+                {
+                    "id": "4awgfvC",
+                    "dps": 3643708,
+                    "udps": 3643708,
+                    "bdps": 477772843,
+                    "gearScore": "1724.16",
+                    "combatPower": "3095.29",
+                    "timestamp": 1769231595178
+                },
+                {
+                    "id": "QejoFPm",
+                    "dps": 13255918,
+                    "udps": 13255918,
+                    "bdps": 476286971,
+                    "gearScore": "1720",
+                    "combatPower": "2189.22",
+                    "timestamp": 1769062637876
+                },
+                {
+                    "id": "BJ84OQp",
+                    "dps": 14175422,
+                    "udps": 14175422,
+                    "bdps": 474737478,
+                    "gearScore": "1727.5",
+                    "combatPower": "2858.4",
+                    "timestamp": 1768527594559
+                },
+                {
+                    "id": "Bl3w5Qp",
+                    "dps": 3739771,
+                    "udps": 3739771,
+                    "bdps": 473817474,
+                    "gearScore": "1723.5",
+                    "combatPower": "2656.06",
+                    "timestamp": 1769112436518
+                },
+                {
+                    "id": "ahJjURm",
+                    "dps": 3993947,
+                    "udps": 3993947,
+                    "bdps": 472074738,
+                    "gearScore": "1721.66",
+                    "combatPower": "2358.39",
+                    "timestamp": 1768506758981
+                },
+                {
+                    "id": "PHJ4drf",
+                    "dps": 2522127,
+                    "udps": 2522127,
+                    "bdps": 471927594,
+                    "gearScore": "1710.83",
+                    "combatPower": "1810.25",
+                    "timestamp": 1769401598510
+                },
+                {
+                    "id": "4a0unvC",
+                    "dps": 18632030,
+                    "udps": 18632030,
+                    "bdps": 470465957,
+                    "gearScore": "1720.33",
+                    "combatPower": "2757.06",
+                    "timestamp": 1769607310865
+                },
+                {
+                    "id": "SfneqTM",
+                    "dps": 3534040,
+                    "udps": 3534040,
+                    "bdps": 466656931,
+                    "gearScore": "1720",
+                    "combatPower": "2858.79",
+                    "timestamp": 1768598682551
+                },
+                {
+                    "id": "0qJN5ar",
+                    "dps": 4160803,
+                    "udps": 4160803,
+                    "bdps": 464682851,
+                    "gearScore": "1725.83",
+                    "combatPower": "2817.41",
+                    "timestamp": 1768514144766
+                }
+            ]
+        },
+        {
+            "class": "Valkyrie",
+            "spec": "Liberator",
+            "q1": 224259166,
+            "median": 271603912,
+            "q3": 326956081.5,
+            "max": 579221979,
+            "count": 2983,
+            "lowerWhisker": 70213792.75,
+            "upperWhisker": 481001454.75,
+            "topEncounters": [
+                {
+                    "id": "CMEmj2Y",
+                    "dps": 4421110,
+                    "udps": 4421110,
+                    "bdps": 579221979,
+                    "gearScore": "1724.16",
+                    "combatPower": "3556.33",
+                    "timestamp": 1769145392851
+                },
+                {
+                    "id": "0hryvar",
+                    "dps": 3160383,
+                    "udps": 3160383,
+                    "bdps": 559779406,
+                    "gearScore": "1714.16",
+                    "combatPower": "2216.59",
+                    "timestamp": 1769665729043
+                },
+                {
+                    "id": "zt55vi4",
+                    "dps": 3094443,
+                    "udps": 3094443,
+                    "bdps": 555242964,
+                    "gearScore": "1727.33",
+                    "combatPower": "2638.94",
+                    "timestamp": 1769019155518
+                },
+                {
+                    "id": "PePcerf",
+                    "dps": 4288343,
+                    "udps": 4288343,
+                    "bdps": 553681333,
+                    "gearScore": "1722.5",
+                    "combatPower": "2850.44",
+                    "timestamp": 1768672188616
+                },
+                {
+                    "id": "H9xHwF0",
+                    "dps": 3350616,
+                    "udps": 3350616,
+                    "bdps": 547158106,
+                    "gearScore": "1723.33",
+                    "combatPower": "2397.5",
+                    "timestamp": 1769118915754
+                },
+                {
+                    "id": "QlUf9Pm",
+                    "dps": 4563411,
+                    "udps": 4563411,
+                    "bdps": 545611339,
+                    "gearScore": "1720",
+                    "combatPower": "3211.62",
+                    "timestamp": 1768440850562
+                },
+                {
+                    "id": "pEcUtq0",
+                    "dps": 3826544,
+                    "udps": 3826544,
+                    "bdps": 531088230,
+                    "gearScore": "1727.5",
+                    "combatPower": "2501.54",
+                    "timestamp": 1768496793417
+                },
+                {
+                    "id": "H9qrfF0",
+                    "dps": 2563452,
+                    "udps": 2563452,
+                    "bdps": 523595584,
+                    "gearScore": "1710",
+                    "combatPower": "2175.38",
+                    "timestamp": 1769643450793
+                },
+                {
+                    "id": "I4QasLm",
+                    "dps": 3350214,
+                    "udps": 3350214,
+                    "bdps": 520910916,
+                    "gearScore": "1725.83",
+                    "combatPower": "3193.63",
+                    "timestamp": 1769365383814
+                },
+                {
+                    "id": "pZ2wlq0",
+                    "dps": 3252358,
+                    "udps": 3252358,
+                    "bdps": 520051009,
+                    "gearScore": "1714.16",
+                    "combatPower": "2205.8",
+                    "timestamp": 1769060037726
+                },
+                {
+                    "id": "7svqhuM",
+                    "dps": 2955594,
+                    "udps": 2955594,
+                    "bdps": 519163542,
+                    "gearScore": "1713.33",
+                    "combatPower": "1752.93",
+                    "timestamp": 1769268170527
+                },
+                {
+                    "id": "zt29Oi4",
+                    "dps": 15975861,
+                    "udps": 15975861,
+                    "bdps": 514993755,
+                    "gearScore": "1720.83",
+                    "combatPower": "2242.37",
+                    "timestamp": 1769410105792
+                },
+                {
+                    "id": "NVInOcB",
+                    "dps": 3686765,
+                    "udps": 3686765,
+                    "bdps": 505381330,
+                    "gearScore": "1720",
+                    "combatPower": "0",
+                    "timestamp": 1768435971578
+                },
+                {
+                    "id": "SfsCLTM",
+                    "dps": 3275804,
+                    "udps": 3275804,
+                    "bdps": 503428710,
+                    "gearScore": "1720.83",
+                    "combatPower": "2909.79",
+                    "timestamp": 1768575072091
+                },
+                {
+                    "id": "guZFzDo",
+                    "dps": 3338762,
+                    "udps": 3338762,
+                    "bdps": 493982914,
+                    "gearScore": "1723.5",
+                    "combatPower": "3133.16",
+                    "timestamp": 1768751393407
+                },
+                {
+                    "id": "ore95yR",
+                    "dps": 4267225,
+                    "udps": 4267225,
+                    "bdps": 493299366,
+                    "gearScore": "1721.66",
+                    "combatPower": "2251.06",
+                    "timestamp": 1768449370099
+                },
+                {
+                    "id": "yYBigIy",
+                    "dps": 3083871,
+                    "udps": 3083871,
+                    "bdps": 492638982,
+                    "gearScore": "1722.5",
+                    "combatPower": "2755.66",
+                    "timestamp": 1769321421355
+                },
+                {
+                    "id": "Av0amXz",
+                    "dps": 3769749,
+                    "udps": 3769749,
+                    "bdps": 488751349,
+                    "gearScore": "1710",
+                    "combatPower": "2624.51",
+                    "timestamp": 1768458743348
+                },
+                {
+                    "id": "Nnst3cB",
+                    "dps": 2775072,
+                    "udps": 2775072,
+                    "bdps": 483398398,
+                    "gearScore": "1721",
+                    "combatPower": "2310.01",
+                    "timestamp": 1769487439238
+                },
+                {
+                    "id": "6yHF5tb",
+                    "dps": 1865973,
+                    "udps": 1865973,
+                    "bdps": 482839955,
+                    "gearScore": "1720",
+                    "combatPower": "2373.12",
+                    "timestamp": 1769211641066
+                },
+                {
+                    "id": "CMHnF2Y",
+                    "dps": 3646264,
+                    "udps": 3646264,
+                    "bdps": 482702475,
+                    "gearScore": "1720",
+                    "combatPower": "2299.16",
+                    "timestamp": 1769288683961
+                },
+                {
+                    "id": "oWp3iyR",
+                    "dps": 3545888,
+                    "udps": 3545888,
+                    "bdps": 482578329,
+                    "gearScore": "1720",
+                    "combatPower": "2171.86",
+                    "timestamp": 1769279174771
+                },
+                {
+                    "id": "MPbF01A",
+                    "dps": 2416702,
+                    "udps": 2416702,
+                    "bdps": 481869923,
+                    "gearScore": "1720",
+                    "combatPower": "2498.3",
+                    "timestamp": 1769150184879
+                },
+                {
+                    "id": "CMEQY2Y",
+                    "dps": 3450228,
+                    "udps": 3450228,
+                    "bdps": 480844366,
+                    "gearScore": "1720",
+                    "combatPower": "2494.86",
+                    "timestamp": 1769149223517
+                },
+                {
+                    "id": "bS3jyUS",
+                    "dps": 4248912,
+                    "udps": 4248912,
+                    "bdps": 480618416,
+                    "gearScore": "1720.83",
+                    "combatPower": "2520.79",
+                    "timestamp": 1769570579422
+                }
+            ]
+        }
+    ]
+}

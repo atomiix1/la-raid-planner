@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierlist DPS - Mains</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #454545;
+        }
+        
+        .tab-btn {
+            padding: 12px 20px;
+            background-color: transparent;
+            border: none;
+            color: #b0b0b0;
+            cursor: pointer;
+            font-weight: bold;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-btn.active {
+            color: #64b5f6;
+            border-bottom-color: #64b5f6;
+        }
+        
+        .tab-btn:hover {
+            color: #e0e0e0;
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #353535;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            padding: 12px;
+            border: 1px solid #454545;
+            text-align: right;
+        }
+        
+        th {
+            background-color: #1a73e8;
+            color: white;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        
+        tr:hover {
+            background-color: #404040;
+        }
+        
+        .spec-name {
+            text-align: left;
+            font-weight: bold;
+            color: #81c784;
+            min-width: 200px;
+            position: sticky;
+            left: 0;
+            background-color: #353535;
+            z-index: 1;
+        }
+        
+        tr:hover .spec-name {
+            background-color: #404040;
+        }
+        
+        .dps-value {
+            font-family: 'Courier New', monospace;
+            color: #ffb74d;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 18px;
+            color: #fff;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 20px;
+            background-color: #d32f2f;
+            color: white;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .legend {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #b0b0b0;
+        }
+        
+        .legend-item {
+            margin-bottom: 8px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 12px;
+            background-color: #64b5f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background-color: #42a5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Volver</a>
+        <h1>Tierlist DPS - Mains</h1>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchRaid('G1')">G1</button>
+            <button class="tab-btn" onclick="switchRaid('G2')">G2</button>
+            <button class="tab-btn" onclick="switchRaid('G3')">G3</button>
+        </div>
+        
+        <div id="content" class="loading">Cargando datos...</div>
+        
+        <div class="legend">
+            <div class="legend-item"><strong>Median DPS por Spec:</strong> Daño medio de cada especialización en cada raid</div>
+            <div class="legend-item"><strong>G1, G2, G3:</strong> Gates/Fases de la raid</div>
+            <div class="legend-item">Los valores están normalizados y ordenados de mayor a menor DPS</div>
+        </div>
+    </div>
+    
+    <script>
+        const RAIDS = ['Mordum', 'Armoche', 'Kazeros'];
+        const ALL_GATES = ['G1', 'G2', 'G3'];
+        let availableGates = [];
+        let currentGate = 'G1';
+        let allData = {};
+        
+        async function loadData() {
+            try {
+                // Cargar todos los datos disponibles
+                for (const gate of ALL_GATES) {
+                    for (const raid of RAIDS) {
+                        const key = `${raid}${gate}Main`;
+                        const response = await fetch(`tierlist/${raid}${gate}Main.json`);
+                        if (response.ok) {
+                            allData[key] = await response.json();
+                            if (!availableGates.includes(gate)) {
+                                availableGates.push(gate);
+                            }
+                        }
+                    }
+                }
+                
+                availableGates.sort();
+                currentGate = availableGates[0] || 'G1';
+                
+                // Recrear tabs dinámicamente
+                const tabsContainer = document.querySelector('.tabs');
+                tabsContainer.innerHTML = '';
+                for (const gate of availableGates) {
+                    const btn = document.createElement('button');
+                    btn.className = 'tab-btn' + (gate === currentGate ? ' active' : '');
+                    btn.textContent = gate;
+                    btn.onclick = () => switchRaid(gate);
+                    tabsContainer.appendChild(btn);
+                }
+                
+                renderTable();
+            } catch (error) {
+                document.getElementById('content').innerHTML = `<div class="error">Error al cargar datos: ${error.message}</div>`;
+                console.error(error);
+            }
+        }
+        
+        function switchRaid(gate) {
+            currentGate = gate;
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            renderTable();
+        }
+        
+        function renderTable() {
+            const specs = new Set();
+            const dataBySpec = {};
+            
+            // Recolectar todos los specs
+            for (const raid of RAIDS) {
+                const key = `${raid}${currentGate}Main`;
+                const data = allData[key];
+                if (data && data.stats) {
+                    for (const stat of data.stats) {
+                        const specKey = `${stat.class} - ${stat.spec}`;
+                        specs.add(specKey);
+                        if (!dataBySpec[specKey]) {
+                            dataBySpec[specKey] = {};
+                        }
+                        dataBySpec[specKey][raid] = stat.median;
+                    }
+                }
+            }
+            
+            // Ordenar specs por DPS promedio descendente
+            const sortedSpecs = Array.from(specs).sort((a, b) => {
+                const avgA = RAIDS.reduce((sum, raid) => sum + (dataBySpec[a][raid] || 0), 0) / RAIDS.length;
+                const avgB = RAIDS.reduce((sum, raid) => sum + (dataBySpec[b][raid] || 0), 0) / RAIDS.length;
+                return avgB - avgA;
+            });
+            
+            // Construir tabla
+            let html = '<div class="table-wrapper"><table><thead><tr><th>Spec</th>';
+            for (const raid of RAIDS) {
+                html += `<th>${raid} ${currentGate}</th>`;
+            }
+            html += '</tr></thead><tbody>';
+            
+            for (const specKey of sortedSpecs) {
+                html += `<tr><td class="spec-name">${specKey}</td>`;
+                for (const raid of RAIDS) {
+                    const dps = dataBySpec[specKey][raid];
+                    const formattedDps = dps ? (dps / 1000000).toFixed(1) + 'M' : '-';
+                    html += `<td class="dps-value">${formattedDps}</td>`;
+                }
+                html += '</tr>';
+            }
+            
+            html += '</tbody></table></div>';
+            document.getElementById('content').innerHTML = html;
+        }
+        
+        loadData();
+    </script>
+</body>
+</html>
