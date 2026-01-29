@@ -377,6 +377,13 @@
 
             rtaRanking.sort((a, b) => b.avg - a.avg);
 
+            const globalMean =
+            rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
+
+            rtaRanking.forEach(r => {
+                r.avg = r.avg / globalMean;
+            });
+
             rtaRanking.forEach((item, index) => {
                 item.tier = getTierByRTA(item.avg);
             });
