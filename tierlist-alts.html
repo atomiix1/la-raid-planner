@@ -197,11 +197,11 @@
             }
         }
 
-        function getTierByPercentile(p) {
-            if (p >= 0.8) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
-            if (p >= 0.6) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
-            if (p >= 0.4) return { stars: 3, label: 'B', color: 'rgba(33,150,243,0.25)' };
-            if (p >= 0.2) return { stars: 2, label: 'C', color: 'rgba(255,152,0,0.25)' };
+        function getTierByRTA(avg) {
+            if (avg >= 1.08) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
+            if (avg >= 1.04) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
+            if (avg >= 0.97) return { stars: 3, label: 'B', color: 'rgba(33,150,243,0.25)' };
+            if (avg >= 0.92) return { stars: 2, label: 'C', color: 'rgba(255,152,0,0.25)' };
             return { stars: 1, label: 'D', color: 'rgba(244,67,54,0.25)' };
         }
 
@@ -293,8 +293,7 @@
             rtaRanking.sort((a, b) => b.avg - a.avg);
 
             rtaRanking.forEach((item, index) => {
-                item.percentile = 1 - index / rtaRanking.length;
-                item.tier = getTierByPercentile(item.percentile);
+                item.tier = getTierByRTA(item.avg);
             });
             
             let rtaHtml = '<div class="table-wrapper"><table><thead><tr>';
