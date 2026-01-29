@@ -197,6 +197,11 @@
             }
         }
 
+        function specToImagePath(specKey) {
+            const sanitized = specKey.replace(/:/g, '');
+            return `specIcons/${sanitized}.jpg`;
+        }
+
         function getTierByRTA(avg) {
             if (avg >= 1.08) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
             if (avg >= 1.04) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
@@ -295,6 +300,48 @@
             rtaRanking.forEach((item, index) => {
                 item.tier = getTierByRTA(item.avg);
             });
+
+            const tiersMap = {
+                5: [],
+                4: [],
+                3: [],
+                2: [],
+                1: []
+            };
+
+            rtaRanking.forEach(item => {
+                const tier = getTierByRTA(item.avg);
+                tiersMap[tier.stars].push(item.specKey);
+            });
+
+            function renderTierVisualTable(tiersMap) {
+                let html = '<div class="table-wrapper"><table>';
+                html += '<thead><tr><th style="width:120px;">Tier</th><th>Specs</th></tr></thead><tbody>';
+
+                for (let stars = 5; stars >= 1; stars--) {
+                    const specs = tiersMap[stars];
+                    if (!specs.length) continue;
+
+                    html += '<tr>';
+                    html += `<td style="font-weight:bold;text-align:center;">${'⭐'.repeat(stars)}</td>`;
+                    html += '<td class="tier-specs">';
+
+                    for (const specKey of specs) {
+                        const imgPath = specToImagePath(specKey);
+                        html += `
+                            <figure class="spec-icon">
+                                <img src="${imgPath}" alt="${specKey}" loading="lazy">
+                                <figcaption>${specKey}</figcaption>
+                            </figure>
+                        `;
+                    }
+
+                    html += '</td></tr>';
+                }
+
+                html += '</tbody></table></div>';
+                return html;
+            }
             
             let rtaHtml = '<div class="table-wrapper"><table><thead><tr>';
             rtaHtml += '<th style="text-align:center;">#</th>';
@@ -370,7 +417,9 @@
             }
             
             dataHtml += '</tbody></table></div>';
-            document.getElementById('content').innerHTML = rtaHtml + '<br>' + rankingHtml + '<br>' + dataHtml;
+
+            const tierVisualHtml = renderTierVisualTable(tiersMap);
+            document.getElementById('content').innerHTML = tierVisualHtml + '<br>' + rtaHtml + '<br>' + rankingHtml + '<br>' + dataHtml;
         }
         
         loadData();
