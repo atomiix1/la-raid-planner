@@ -197,6 +197,14 @@
             }
         }
 
+        function getTierByPercentile(p) {
+            if (p >= 0.8) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
+            if (p >= 0.6) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
+            if (p >= 0.4) return { stars: 3, label: 'B', color: 'rgba(33,150,243,0.25)' };
+            if (p >= 0.2) return { stars: 2, label: 'C', color: 'rgba(255,152,0,0.25)' };
+            return { stars: 1, label: 'D', color: 'rgba(244,67,54,0.25)' };
+        }
+
         function rendimientoTipicoAjustado(stat, raidStats) {
             const medianNorm = stat.median / raidStats.median;
             const q3Norm = stat.q3 / raidStats.q3;
@@ -274,8 +282,23 @@
             
             ranking.sort((a, b) => b.total - a.total);
             const sortedSpecs = ranking.map(r => r.specKey);
+
+            const rtaRanking = sortedSpecs.map(specKey => {
+                const values = Object.values(dataBySpec[specKey].rta || {});
+                const avg = values.reduce((a, b) => a + b, 0) / values.length;
+
+                return { specKey, avg };
+            });
+
+            rtaRanking.sort((a, b) => b.avg - a.avg);
+
+            rtaRanking.forEach((item, index) => {
+                item.percentile = 1 - index / rtaRanking.length;
+                item.tier = getTierByPercentile(item.percentile);
+            });
             
             let rtaHtml = '<div class="table-wrapper"><table><thead><tr>';
+            rtaHtml += '<th style="text-align:center;">#</th>';
             rtaHtml += '<th style="text-align:left;">Spec</th>';
 
             for (const col of COLUMNS) {
@@ -283,27 +306,25 @@
             }
             rtaHtml += '<th>Promedio</th></tr></thead><tbody>';
 
-            for (const specKey of sortedSpecs) {
-                let sum = 0;
-                let count = 0;
+            let pos = 1;
+            for (const item of rtaRanking) {
+                const { specKey, avg, tier } = item;
 
-                rtaHtml += `<tr><td class="spec-name">${specKey}</td>`;
+                rtaHtml += `<tr style="background-color:${tier.color};">`;
+                rtaHtml += `<td style="text-align:center;font-weight:bold;">${pos}</td>`;
+                rtaHtml += `<td class="spec-name">${specKey}</td>`;
 
                 for (const col of COLUMNS) {
                     const key = `${col.raid}${col.gate}Alt`;
                     const val = dataBySpec[specKey].rta[key];
-
-                    if (val !== undefined) {
-                        sum += val;
-                        count++;
-                        rtaHtml += `<td class="dps-value">${val.toFixed(3)}</td>`;
-                    } else {
-                        rtaHtml += `<td>-</td>`;
-                    }
+                    rtaHtml += `<td class="dps-value">${val ? val.toFixed(3) : '-'}</td>`;
                 }
 
-                const avg = count ? sum / count : 0;
-                rtaHtml += `<td style="font-weight:bold;color:#81c784;">${avg.toFixed(3)}</td></tr>`;
+                rtaHtml += `<td style="font-weight:bold;">${avg.toFixed(3)}</td>`;
+                rtaHtml += `<td style="font-weight:bold;">${'⭐'.repeat(tier.stars)}</td>`;
+                rtaHtml += '</tr>';
+
+                pos++;
             }
 
             rtaHtml += '</tbody></table></div>';
