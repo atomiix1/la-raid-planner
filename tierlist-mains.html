@@ -266,14 +266,6 @@
             return consistency >= 0.35; // ajustable
         }
 
-        function getTierByRTA(avg) {
-            if (avg >= 1.08) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
-            if (avg >= 1.04) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
-            if (avg >= 0.97) return { stars: 3, label: 'B', color: 'rgba(33,150,243,0.25)' };
-            if (avg >= 0.92) return { stars: 2, label: 'C', color: 'rgba(255,152,0,0.25)' };
-            return { stars: 1, label: 'D', color: 'rgba(244,67,54,0.25)' };
-        }
-
         function rendimientoTipicoAjustado(stat, raidStats) {
             const medianNorm = stat.median / raidStats.median;
             const q3Norm = stat.q3 / raidStats.q3;
@@ -380,9 +372,13 @@
             const globalMean =
             rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
 
-            rtaRanking.forEach(r => {
-                r.avg = r.avg / globalMean;
-            });
+            function getTierByRTA(avg) {
+            if (avg >= globalMean + 0.08) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
+            if (avg >= globalMean + 0.04) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
+            if (avg >= globalMean - 0.03) return { stars: 3, label: 'B', color: 'rgba(33,150,243,0.25)' };
+            if (avg >= globalMean - 0.08) return { stars: 2, label: 'C', color: 'rgba(255,152,0,0.25)' };
+            return { stars: 1, label: 'D', color: 'rgba(244,67,54,0.25)' };
+        }
 
             rtaRanking.forEach((item, index) => {
                 item.tier = getTierByRTA(item.avg);
@@ -436,7 +432,7 @@ function renderTierVisualTable(tiersMap) {
                 }
 
                 for (const item of specs) {
-                    const delta = ((item.avg - 1) * 100).toFixed(1);
+                    const delta = ((item.avg - globalMean) * 100).toFixed(1);
                     const warn = needsWarning(item.avgConsistency);
 
                     html += `
