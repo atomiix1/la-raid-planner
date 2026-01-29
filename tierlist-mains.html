@@ -421,6 +421,69 @@
 
             return ajustado;
         }
+
+        function renderTierVisualTable(tiersMap) {
+                let html = `
+                <div style="margin-bottom:12px;">
+                    <button id="toggleTiers" class="tab-btn active">
+                        Mostrar / Ocultar Tiers Visuales
+                    </button>
+                </div>
+                <div id="tierVisualContainer" class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:110px; text-align:left;">Tier</th>
+                            <th style="text-align:left;">Specs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                `;
+
+                for (let stars = 5; stars >= 1; stars--) {
+                    const specs = tiersMap[stars];
+                    const tierLabel = '⭐'.repeat(stars);
+
+                    html += `<tr>
+                        <td style="font-weight:bold;text-align:center;">${tierLabel}</td>
+                        <td class="tier-specs">
+                    `;
+
+                    if (!specs.length) {
+                        html += `<span style="opacity:0.5;font-style:italic;">(Vacío)</span>`;
+                    }
+
+                    for (const item of specs) {
+                        const delta = ((item.avg - globalMean) * 100).toFixed(1);
+                        const warn = needsWarning(item.avgConsistency);
+
+                        html += `
+                        <figure class="spec-icon"
+                            title="
+            ${item.specKey}
+            RTA medio: ${item.avg.toFixed(3)}
+            Δ vs ${globalMean.toFixed(2)}: ${delta}%
+            Consistencia: ${item.avgConsistency.toFixed(2)}
+                            ">
+                            <img src="${specToImagePath(item.specKey)}"
+                                alt="${item.specKey}">
+                            <figcaption>
+                                ${item.specKey}
+                                <div class="badge ${delta >= 0 ? 'pos' : 'neg'}">
+                                    ${delta >= 0 ? '+' : ''}${delta}%
+                                </div>
+                                ${warn ? '<div class="warn">⚠️</div>' : ''}
+                            </figcaption>
+                        </figure>
+                        `;
+                    }
+
+                    html += '</td></tr>';
+                }
+
+                html += '</tbody></table></div>';
+                return html;
+            }
         
         function renderTable() {
 
@@ -532,69 +595,6 @@
             
             // render inicial
             renderWithFilter('all');
-
-            function renderTierVisualTable(tiersMap) {
-                let html = `
-                <div style="margin-bottom:12px;">
-                    <button id="toggleTiers" class="tab-btn active">
-                        Mostrar / Ocultar Tiers Visuales
-                    </button>
-                </div>
-                <div id="tierVisualContainer" class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th style="width:110px; text-align:left;">Tier</th>
-                            <th style="text-align:left;">Specs</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                `;
-
-                for (let stars = 5; stars >= 1; stars--) {
-                    const specs = tiersMap[stars];
-                    const tierLabel = '⭐'.repeat(stars);
-
-                    html += `<tr>
-                        <td style="font-weight:bold;text-align:center;">${tierLabel}</td>
-                        <td class="tier-specs">
-                    `;
-
-                    if (!specs.length) {
-                        html += `<span style="opacity:0.5;font-style:italic;">(Vacío)</span>`;
-                    }
-
-                    for (const item of specs) {
-                        const delta = ((item.avg - globalMean) * 100).toFixed(1);
-                        const warn = needsWarning(item.avgConsistency);
-
-                        html += `
-                        <figure class="spec-icon"
-                            title="
-            ${item.specKey}
-            RTA medio: ${item.avg.toFixed(3)}
-            Δ vs ${globalMean.toFixed(2)}: ${delta}%
-            Consistencia: ${item.avgConsistency.toFixed(2)}
-                            ">
-                            <img src="${specToImagePath(item.specKey)}"
-                                alt="${item.specKey}">
-                            <figcaption>
-                                ${item.specKey}
-                                <div class="badge ${delta >= 0 ? 'pos' : 'neg'}">
-                                    ${delta >= 0 ? '+' : ''}${delta}%
-                                </div>
-                                ${warn ? '<div class="warn">⚠️</div>' : ''}
-                            </figcaption>
-                        </figure>
-                        `;
-                    }
-
-                    html += '</td></tr>';
-                }
-
-                html += '</tbody></table></div>';
-                return html;
-            }
 
             const tierVisualHtml = renderTierVisualTable(tiersMap);
             document.getElementById('content').innerHTML = tierVisualHtml;
