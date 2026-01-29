@@ -244,13 +244,13 @@
                 }
                 renderTable();
                 setTimeout(() => {
-                const btn = document.getElementById('toggleTiers');
-                const cont = document.getElementById('tierVisualContainer');
+                    const btn = document.getElementById('toggleTiers');
+                    const cont = document.getElementById('tierVisualContainer');
 
-                btn.addEventListener('click', () => {
-                    cont.style.display = cont.style.display === 'none' ? 'block' : 'none';
-                });
-            }, 0);
+                    btn.addEventListener('click', () => {
+                        cont.style.display = cont.style.display === 'none' ? 'block' : 'none';
+                    });
+                }, 0);
             } catch (error) {
                 document.getElementById('content').innerHTML = `<div class="error">Error al cargar datos: ${error.message}</div>`;
                 console.error(error);
