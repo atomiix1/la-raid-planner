@@ -262,9 +262,6 @@
                 gateFilter.addEventListener('change', e => {
                     renderWithFilter(e.target.value);
                 });
-
-                // render inicial
-                renderWithFilter('all');
             } catch (error) {
                 document.getElementById('content').innerHTML = `<div class="error">Error al cargar datos: ${error.message}</div>`;
                 console.error(error);
@@ -315,6 +312,9 @@
             const specs = new Set();
             const dataBySpec = {};
             const raidGlobals = {};
+
+            // render inicial
+            renderWithFilter('all');
 
             // Calcular raidGlobals
             for (const col of COLUMNS) {
@@ -480,8 +480,6 @@
                 document.getElementById('content').innerHTML =
                     rankingHtml + '<br>' + rtaHtml + '<br>' + tierVisualHtml;
             }
-
-
 
             function renderTierVisualTable(tiersMap) {
                 let html = `
