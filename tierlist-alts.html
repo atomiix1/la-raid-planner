@@ -212,6 +212,7 @@
         function renderTable() {
             const specs = new Set();
             const dataBySpec = {};
+            const raidGlobals = {};
             
             // Recolectar todos los specs
             for (const col of COLUMNS) {
@@ -231,7 +232,6 @@
                 }
             }
 
-            const raidGlobals = {};
             for (const col of COLUMNS) {
                 const key = `${col.raid}${col.gate}Main`;
                 const data = allData[key]?.stats || [];
