@@ -282,19 +282,6 @@
             }
         }
 
-        function getFilteredRTAValues(rtaByGate, mode) {
-            const values = Object.values(rtaByGate);
-
-            if (mode !== 'trimmed' || values.length <= 2) {
-                return values;
-            }
-
-            const max = Math.max(...values);
-            const min = Math.min(...values);
-
-            return values.filter(v => v !== max && v !== min);
-        }
-
         function buildTiersMap(ranking) {
             const map = { 5:[],4:[],3:[],2:[],1:[] };
 
@@ -472,19 +459,14 @@
         function getFilteredRTAValues(rtaByGate, mode) {
             const values = Object.values(rtaByGate);
 
-            if (values.length <= 2) return values; // no se puede recortar
-
-            if (mode === 'no-best') {
-                const max = Math.max(...values);
-                return values.filter(v => v !== max);
+            if (mode !== 'trimmed' || values.length <= 2) {
+                return values;
             }
 
-            if (mode === 'no-worst') {
-                const min = Math.min(...values);
-                return values.filter(v => v !== min);
-            }
+            const max = Math.max(...values);
+            const min = Math.min(...values);
 
-            return values;
+            return values.filter(v => v !== max && v !== min);
         }
 
 
