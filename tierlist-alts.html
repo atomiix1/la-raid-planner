@@ -273,6 +273,7 @@
             }
             
             ranking.sort((a, b) => b.total - a.total);
+            const sortedSpecs = ranking.map(r => r.specKey);
             
             let rtaHtml = '<div class="table-wrapper"><table><thead><tr>';
             rtaHtml += '<th style="text-align:left;">Spec</th>';
@@ -331,8 +332,6 @@
             rankingHtml += '</tbody></table></div>';
             
             // Tabla de datos original
-            const sortedSpecs = ranking.map(r => r.specKey);
-            
             let dataHtml = '<div class="table-wrapper"><table><thead><tr><th style="text-align:left;">Spec</th>';
             for (const col of COLUMNS) {
                 dataHtml += `<th>${col.raid} ${col.gate}</th>`;
