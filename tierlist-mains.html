@@ -432,6 +432,7 @@
 
             function buildRTARanking(filterMode) {
                 const ranking = [];
+                const consistencies = [];
 
                 for (const specKey of sortedSpecs) {
                     const rtaByGate = dataBySpec[specKey].rta;
@@ -440,11 +441,25 @@
                     if (!values.length) continue;
 
                     const avg = values.reduce((a,b)=>a+b,0) / values.length;
+                    for (const col of COLUMNS) {
+                        const key = `${col.raid}${col.gate}Main`;
+                        const stat = allData[key]?.stats?.find(
+                            s => `${s.class} - ${s.spec}` === specKey
+                        );
+                        if (stat) {
+                            consistencies.push((stat.q3 - stat.q1) / stat.median);
+                        }
+                    }
 
+                    const avgConsistency =
+                        consistencies.length
+                            ? consistencies.reduce((a,b)=>a+b,0) / consistencies.length
+                            : 0;
+                            
                     ranking.push({
                         specKey,
                         avg,
-                        avgConsistency: dataBySpec[specKey].avgConsistency,
+                        avgConsistency: avgConsistency,
                         tier: getTierByRTA(avg)
                     });
                 }
