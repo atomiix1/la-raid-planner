@@ -196,6 +196,18 @@
                 console.error(error);
             }
         }
+
+        function rendimientoTipicoAjustado(stat, raidStats) {
+            const medianNorm = stat.median / raidStats.median;
+            const q3Norm = stat.q3 / raidStats.q3;
+
+            const base = 0.6 * medianNorm + 0.4 * q3Norm;
+
+            const consistencia = (stat.q3 - stat.q1) / stat.median;
+            const ajustado = base * (1 - consistencia * 0.1);
+
+            return ajustado;
+        }
         
         function renderTable() {
             const specs = new Set();
@@ -210,11 +222,24 @@
                         const specKey = `${stat.class} - ${stat.spec}`;
                         specs.add(specKey);
                         if (!dataBySpec[specKey]) {
-                            dataBySpec[specKey] = {};
+                            dataBySpec[specKey] = { rta: {} };
                         }
-                        dataBySpec[specKey][key] = stat.median;
+                        const rta = rendimientoTipicoAjustado(stat, raidGlobals[key]);
+                        dataBySpec[specKey].rta[key] = rta;
+                        dataBySpec[specKey][key] = stat.median; // Guardar median DPS
                     }
                 }
+            }
+
+            const raidGlobals = {};
+            for (const col of COLUMNS) {
+                const key = `${col.raid}${col.gate}Main`;
+                const data = allData[key]?.stats || [];
+
+                raidGlobals[key] = {
+                    median: data.reduce((s, d) => s + d.median, 0) / data.length,
+                    q3: data.reduce((s, d) => s + d.q3, 0) / data.length
+                };
             }
             
             // Normalizar valores por columna (0-1)
@@ -248,6 +273,39 @@
             
             ranking.sort((a, b) => b.total - a.total);
             
+            let rtaHtml = '<div class="table-wrapper"><table><thead><tr>';
+            rtaHtml += '<th style="text-align:left;">Spec</th>';
+
+            for (const col of COLUMNS) {
+                rtaHtml += `<th>${col.raid} ${col.gate}</th>`;
+            }
+            rtaHtml += '<th>Promedio</th></tr></thead><tbody>';
+
+            for (const specKey of sortedSpecs) {
+                let sum = 0;
+                let count = 0;
+
+                rtaHtml += `<tr><td class="spec-name">${specKey}</td>`;
+
+                for (const col of COLUMNS) {
+                    const key = `${col.raid}${col.gate}Main`;
+                    const val = dataBySpec[specKey].rta[key];
+
+                    if (val !== undefined) {
+                        sum += val;
+                        count++;
+                        rtaHtml += `<td class="dps-value">${val.toFixed(3)}</td>`;
+                    } else {
+                        rtaHtml += `<td>-</td>`;
+                    }
+                }
+
+                const avg = count ? sum / count : 0;
+                rtaHtml += `<td style="font-weight:bold;color:#81c784;">${avg.toFixed(3)}</td></tr>`;
+            }
+
+            rtaHtml += '</tbody></table></div>';
+
             // Tabla de ranking
             let rankingHtml = '<div class="table-wrapper"><table><thead><tr><th style="text-align:center;">#</th><th style="text-align:left;">Spec</th>';
             for (const col of COLUMNS) {
@@ -292,7 +350,7 @@
             }
             
             dataHtml += '</tbody></table></div>';
-            document.getElementById('content').innerHTML = rankingHtml + '<br>' + dataHtml;
+            document.getElementById('content').innerHTML = rtaHtml + '<br>' + rankingHtml + '<br>' + dataHtml;
         }
         
         loadData();
