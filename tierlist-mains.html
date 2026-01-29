@@ -294,6 +294,41 @@
             return { stars: 1, label: 'D', color: 'rgba(244,67,54,0.25)' };
         }
 
+        function renderRTATable(rtaRanking) {
+            let rtaHtml = '<div class="table-wrapper"><table><thead><tr>';
+            rtaHtml += '<th style="text-align:center;">#</th>';
+            rtaHtml += '<th style="text-align:left;">Spec</th>';
+
+            for (const col of COLUMNS) {
+                rtaHtml += `<th>${col.raid} ${col.gate}</th>`;
+            }
+            rtaHtml += '<th>Promedio</th></tr></thead><tbody>';
+
+            let pos = 1;
+            for (const item of rtaRanking) {
+                const { specKey, avg, avgConsistency, tier } = item;
+
+                rtaHtml += `<tr style="background-color:${tier.color};">`;
+                rtaHtml += `<td style="text-align:center;font-weight:bold;">${pos}</td>`;
+                rtaHtml += `<td class="spec-name">${specKey}</td>`;
+
+                for (const col of COLUMNS) {
+                    const key = `${col.raid}${col.gate}Main`;
+                    const val = dataBySpec[specKey].rta[key];
+                    rtaHtml += `<td class="dps-value">${val ? val.toFixed(3) : '-'}</td>`;
+                }
+
+                rtaHtml += `<td style="font-weight:bold;">${avg.toFixed(3)}</td>`;
+                rtaHtml += `<td style="font-weight:bold;">${'⭐'.repeat(tier.stars)}</td>`;
+                rtaHtml += '</tr>';
+
+                pos++;
+            }
+
+            rtaHtml += '</tbody></table></div>';
+            return rtaHtml;
+        }
+
         function buildRTARanking(filterMode) {
             const ranking = [];
             const consistencies = [];
@@ -559,40 +594,6 @@
 
                 html += '</tbody></table></div>';
                 return html;
-            }
-
-            function renderRTATable(rtaRanking) {
-                let rtaHtml = '<div class="table-wrapper"><table><thead><tr>';
-                rtaHtml += '<th style="text-align:center;">#</th>';
-                rtaHtml += '<th style="text-align:left;">Spec</th>';
-
-                for (const col of COLUMNS) {
-                    rtaHtml += `<th>${col.raid} ${col.gate}</th>`;
-                }
-                rtaHtml += '<th>Promedio</th></tr></thead><tbody>';
-
-                let pos = 1;
-                for (const item of rtaRanking) {
-                    const { specKey, avg, avgConsistency, tier } = item;
-
-                    rtaHtml += `<tr style="background-color:${tier.color};">`;
-                    rtaHtml += `<td style="text-align:center;font-weight:bold;">${pos}</td>`;
-                    rtaHtml += `<td class="spec-name">${specKey}</td>`;
-
-                    for (const col of COLUMNS) {
-                        const key = `${col.raid}${col.gate}Main`;
-                        const val = dataBySpec[specKey].rta[key];
-                        rtaHtml += `<td class="dps-value">${val ? val.toFixed(3) : '-'}</td>`;
-                    }
-
-                    rtaHtml += `<td style="font-weight:bold;">${avg.toFixed(3)}</td>`;
-                    rtaHtml += `<td style="font-weight:bold;">${'⭐'.repeat(tier.stars)}</td>`;
-                    rtaHtml += '</tr>';
-
-                    pos++;
-                }
-
-                rtaHtml += '</tbody></table></div>';
             }
 
             const tierVisualHtml = renderTierVisualTable(tiersMap);
