@@ -237,6 +237,7 @@
             { raid: 'Kazeros', gate: 'G2' }
         ];
         let allData = {};
+        let sortedSpecs = [];
         
         async function loadData() {
             try {
@@ -266,6 +267,70 @@
                 document.getElementById('content').innerHTML = `<div class="error">Error al cargar datos: ${error.message}</div>`;
                 console.error(error);
             }
+        }
+
+        function buildTiersMap(ranking) {
+            const map = { 5:[],4:[],3:[],2:[],1:[] };
+
+            ranking.forEach(item => {
+                const tier = getTierByRTA(item.avg);
+                map[tier.stars].push({ ...item, tier });
+            });
+
+            return map;
+        }
+
+        function buildRTARanking(filterMode) {
+            const ranking = [];
+            const consistencies = [];
+
+            for (const specKey of sortedSpecs) {
+                const rtaByGate = dataBySpec[specKey].rta;
+                const values = getFilteredRTAValues(rtaByGate, filterMode);
+
+                if (!values.length) continue;
+
+                const avg = values.reduce((a,b)=>a+b,0) / values.length;
+                for (const col of COLUMNS) {
+                    const key = `${col.raid}${col.gate}Main`;
+                    const stat = allData[key]?.stats?.find(
+                        s => `${s.class} - ${s.spec}` === specKey
+                    );
+                    if (stat) {
+                        consistencies.push((stat.q3 - stat.q1) / stat.median);
+                    }
+                }
+
+                const avgConsistency =
+                    consistencies.length
+                        ? consistencies.reduce((a,b)=>a+b,0) / consistencies.length
+                        : 0;
+                        
+                ranking.push({
+                    specKey,
+                    avg,
+                    avgConsistency: avgConsistency,
+                    tier: getTierByRTA(avg)
+                });
+            }
+
+            // recentrar
+            const mean = ranking.reduce((s,r)=>s+r.avg,0) / ranking.length;
+            ranking.forEach(r => r.avg /= mean);
+
+            ranking.sort((a,b)=>b.avg-a.avg);
+            return ranking;
+        }
+
+        function renderWithFilter(mode) {
+            const ranking = buildRTARanking(mode);
+            const tiersMap = buildTiersMap(ranking);
+
+            const rtaHtml = renderRTATable(ranking);          // la tabla numérica
+            const tierVisualHtml = renderTierVisualTable(tiersMap);
+
+            document.getElementById('content').innerHTML =
+                tierVisualHtml + '<br>' + rtaHtml;
         }
 
         function specToImagePath(specKey) {
@@ -372,7 +437,7 @@
             }
             
             ranking.sort((a, b) => b.total - a.total);
-            const sortedSpecs = ranking.map(r => r.specKey);
+            sortedSpecs = ranking.map(r => r.specKey);
 
             const rtaRanking = sortedSpecs.map(specKey => {
                 const rtaEntries = dataBySpec[specKey].rta;
@@ -429,71 +494,6 @@
                     tier
                 });
             });
-
-            function buildRTARanking(filterMode) {
-                const ranking = [];
-                const consistencies = [];
-
-                for (const specKey of sortedSpecs) {
-                    const rtaByGate = dataBySpec[specKey].rta;
-                    const values = getFilteredRTAValues(rtaByGate, filterMode);
-
-                    if (!values.length) continue;
-
-                    const avg = values.reduce((a,b)=>a+b,0) / values.length;
-                    for (const col of COLUMNS) {
-                        const key = `${col.raid}${col.gate}Main`;
-                        const stat = allData[key]?.stats?.find(
-                            s => `${s.class} - ${s.spec}` === specKey
-                        );
-                        if (stat) {
-                            consistencies.push((stat.q3 - stat.q1) / stat.median);
-                        }
-                    }
-
-                    const avgConsistency =
-                        consistencies.length
-                            ? consistencies.reduce((a,b)=>a+b,0) / consistencies.length
-                            : 0;
-                            
-                    ranking.push({
-                        specKey,
-                        avg,
-                        avgConsistency: avgConsistency,
-                        tier: getTierByRTA(avg)
-                    });
-                }
-
-                // recentrar
-                const mean = ranking.reduce((s,r)=>s+r.avg,0) / ranking.length;
-                ranking.forEach(r => r.avg /= mean);
-
-                ranking.sort((a,b)=>b.avg-a.avg);
-                return ranking;
-            }
-
-            function buildTiersMap(ranking) {
-                const map = { 5:[],4:[],3:[],2:[],1:[] };
-
-                ranking.forEach(item => {
-                    const tier = getTierByRTA(item.avg);
-                    map[tier.stars].push({ ...item, tier });
-                });
-
-                return map;
-            }
-
-            function renderWithFilter(mode) {
-                const ranking = buildRTARanking(mode);
-                const tiersMap = buildTiersMap(ranking);
-
-                const rtaHtml = renderRTATable(ranking);          // la tabla numérica
-                const tierVisualHtml = renderTierVisualTable(tiersMap);
-
-                document.getElementById('content').innerHTML =
-                    tierVisualHtml + '<br>' + rtaHtml;
-            }
-
             
             // render inicial
             renderWithFilter('all');
