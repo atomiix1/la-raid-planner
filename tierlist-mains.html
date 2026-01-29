@@ -584,7 +584,7 @@
                 2: [],
                 1: []
             };
-
+            globalMean = rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
             rtaRanking.forEach(item => {
                 const tier = getTierByRTA(item.avg);
                 tiersMap[tier.stars].push({
