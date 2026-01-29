@@ -485,7 +485,7 @@ function renderTierVisualTable(tiersMap) {
                 rtaHtml += `<td class="spec-name">${specKey}</td>`;
 
                 for (const col of COLUMNS) {
-                    const key = `${col.raid}${col.gate}Alt`;
+                    const key = `${col.raid}${col.gate}Main`;
                     const val = dataBySpec[specKey].rta[key];
                     rtaHtml += `<td class="dps-value">${val ? val.toFixed(3) : '-'}</td>`;
                 }

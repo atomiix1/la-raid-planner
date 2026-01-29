@@ -360,7 +360,7 @@
                 // Consistencia media
                 const consistencies = [];
                 for (const col of COLUMNS) {
-                    const key = `${col.raid}${col.gate}Main`;
+                    const key = `${col.raid}${col.gate}Alt`;
                     const stat = allData[key]?.stats?.find(
                         s => `${s.class} - ${s.spec}` === specKey
                     );
