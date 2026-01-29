@@ -417,8 +417,9 @@
 
 
         function renderWithFilter(mode) {
-            globalMean = rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
             const ranking = buildRTARanking(mode);
+            globalMean = ranking.reduce((s, r) => s + r.avg, 0) / ranking.length;
+
             const tiersMap = buildTiersMap(ranking);
 
             const rtaHtml = renderRTATable(ranking);          // la tabla numérica
