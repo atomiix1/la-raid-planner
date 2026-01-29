@@ -440,7 +440,7 @@ function renderTierVisualTable(tiersMap) {
                         title="
         ${item.specKey}
         RTA medio: ${item.avg.toFixed(3)}
-        Δ vs 1.00: ${delta}%
+        Δ vs ${globalMean.toFixed(2)}: ${delta}%
         Consistencia: ${item.avgConsistency.toFixed(2)}
                         ">
                         <img src="${specToImagePath(item.specKey)}"
