@@ -180,6 +180,30 @@
         .back-link:hover {
             background-color: #42a5f5;
         }
+
+        .badge {
+            font-size: 10px;
+            margin-top: 2px;
+            font-weight: bold;
+        }
+
+        .badge.pos { color: #81c784; }
+        .badge.neg { color: #e57373; }
+
+        .warn {
+            font-size: 12px;
+            color: #ffb74d;
+        }
+
+        .spec-icon {
+            position: relative;
+        }
+
+        .spec-icon figcaption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -219,6 +243,14 @@
                     }
                 }
                 renderTable();
+                setTimeout(() => {
+                const btn = document.getElementById('toggleTiers');
+                const cont = document.getElementById('tierVisualContainer');
+
+                btn.addEventListener('click', () => {
+                    cont.style.display = cont.style.display === 'none' ? 'block' : 'none';
+                });
+            }, 0);
             } catch (error) {
                 document.getElementById('content').innerHTML = `<div class="error">Error al cargar datos: ${error.message}</div>`;
                 console.error(error);
@@ -228,6 +260,10 @@
         function specToImagePath(specKey) {
             const sanitized = specKey.replace(/:/g, '');
             return `specIcons/${sanitized}.jpg`;
+        }
+
+        function needsWarning(consistency) {
+            return consistency >= 0.35; // ajustable
         }
 
         function getTierByRTA(avg) {
@@ -317,10 +353,26 @@
             const sortedSpecs = ranking.map(r => r.specKey);
 
             const rtaRanking = sortedSpecs.map(specKey => {
-                const values = Object.values(dataBySpec[specKey].rta || {});
+                const rtaEntries = dataBySpec[specKey].rta;
+                const values = Object.values(rtaEntries || {});
                 const avg = values.reduce((a, b) => a + b, 0) / values.length;
 
-                return { specKey, avg };
+                // Consistencia media
+                const consistencies = [];
+                for (const col of COLUMNS) {
+                    const key = `${col.raid}${col.gate}Main`;
+                    const stat = allData[key]?.stats?.find(
+                        s => `${s.class} - ${s.spec}` === specKey
+                    );
+                    if (stat) {
+                        consistencies.push((stat.q3 - stat.q1) / stat.median);
+                    }
+                }
+
+                const avgConsistency =
+                    consistencies.reduce((a, b) => a + b, 0) / consistencies.length;
+
+                return { specKey, avg, avgConsistency };
             });
 
             rtaRanking.sort((a, b) => b.avg - a.avg);
@@ -339,37 +391,74 @@
 
             rtaRanking.forEach(item => {
                 const tier = getTierByRTA(item.avg);
-                tiersMap[tier.stars].push(item.specKey);
+                tiersMap[tier.stars].push({
+                    ...item,
+                    tier
+                });
             });
 
             function renderTierVisualTable(tiersMap) {
-                let html = '<div class="table-wrapper"><table>';
-                html += '<thead><tr><th style="width:120px;">Tier</th><th>Specs</th></tr></thead><tbody>';
+            let html = `
+            <div style="margin-bottom:12px;">
+                <button id="toggleTiers" class="tab-btn active">
+                    Mostrar / Ocultar Tiers Visuales
+                </button>
+            </div>
+            <div id="tierVisualContainer" class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width:110px;">Tier</th>
+                        <th>Specs</th>
+                    </tr>
+                </thead>
+                <tbody>
+            `;
 
-                for (let stars = 5; stars >= 1; stars--) {
-                    const specs = tiersMap[stars];
-                    if (!specs.length) continue;
+            for (let stars = 5; stars >= 1; stars--) {
+                const specs = tiersMap[stars];
+                const tierLabel = '⭐'.repeat(stars);
 
-                    html += '<tr>';
-                    html += `<td style="font-weight:bold;text-align:center;">${'⭐'.repeat(stars)}</td>`;
-                    html += '<td class="tier-specs">';
+                html += `<tr>
+                    <td style="font-weight:bold;text-align:center;">${tierLabel}</td>
+                    <td class="tier-specs">
+                `;
 
-                    for (const specKey of specs) {
-                        const imgPath = specToImagePath(specKey);
-                        html += `
-                            <figure class="spec-icon">
-                                <img src="${imgPath}" alt="${specKey}" loading="lazy">
-                                <figcaption>${specKey}</figcaption>
-                            </figure>
-                        `;
-                    }
-
-                    html += '</td></tr>';
+                if (!specs.length) {
+                    html += `<span style="opacity:0.5;font-style:italic;">(Vacío)</span>`;
                 }
 
-                html += '</tbody></table></div>';
-                return html;
+                for (const item of specs) {
+                    const delta = ((item.avg - 1) * 100).toFixed(1);
+                    const warn = needsWarning(item.avgConsistency);
+
+                    html += `
+                    <figure class="spec-icon"
+                        title="
+        ${item.specKey}
+        RTA medio: ${item.avg.toFixed(3)}
+        Δ vs 1.00: ${delta}%
+        Consistencia: ${item.avgConsistency.toFixed(2)}
+                        ">
+                        <img src="${specToImagePath(item.specKey)}"
+                            alt="${item.specKey}">
+                        <figcaption>
+                            ${item.specKey}
+                            <div class="badge ${delta >= 0 ? 'pos' : 'neg'}">
+                                ${delta >= 0 ? '+' : ''}${delta}%
+                            </div>
+                            ${warn ? '<div class="warn">⚠️</div>' : ''}
+                        </figcaption>
+                    </figure>
+                    `;
+                }
+
+                html += '</td></tr>';
             }
+
+            html += '</tbody></table></div>';
+            return html;
+        }
             
             let rtaHtml = '<div class="table-wrapper"><table><thead><tr>';
             rtaHtml += '<th style="text-align:center;">#</th>';
