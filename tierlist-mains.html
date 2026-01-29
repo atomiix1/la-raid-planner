@@ -204,6 +204,11 @@
             flex-direction: column;
             align-items: center;
         }
+        .delta {
+            font-size: 11px;
+            font-weight: bold;
+            opacity: 0.85;
+        }
     </style>
 </head>
 <body>
@@ -211,11 +216,12 @@
         <a href="index.html" class="back-link">← Volver</a>
         <h1>Tierlist DPS - Mains</h1>
         <div style="display:flex; justify-content:flex-end; margin-bottom:10px;">
-            <select id="gateFilter" class="tab-btn">
-                <option value="all">Todas las puertas</option>
-                <option value="no-best">Todas menos la mejor</option>
-                <option value="no-worst">Todas menos la peor</option>
-            </select>
+            <div style="display:flex; justify-content:flex-end; margin-bottom:10px;">
+                <select id="gateFilter" class="tab-btn">
+                    <option value="all">Todas las puertas</option>
+                    <option value="trimmed">Todas menos mejor y peor</option>
+                </select>
+            </div>
         </div>
         <div id="content" class="loading">Cargando datos...</div>
         
@@ -243,6 +249,8 @@
         let raidGlobals = {};
         let rtaRanking = [];
         let globalMean = 1;
+        let baselineRanking = buildRTARanking('all');
+        let baselinePositions = {};
         
         async function loadData() {
             try {
@@ -272,6 +280,19 @@
                 document.getElementById('content').innerHTML = `<div class="error">Error al cargar datos: ${error.message}</div>`;
                 console.error(error);
             }
+        }
+
+        function getFilteredRTAValues(rtaByGate, mode) {
+            const values = Object.values(rtaByGate);
+
+            if (mode !== 'trimmed' || values.length <= 2) {
+                return values;
+            }
+
+            const max = Math.max(...values);
+            const min = Math.min(...values);
+
+            return values.filter(v => v !== max && v !== min);
         }
 
         function buildTiersMap(ranking) {
@@ -308,7 +329,16 @@
                 const { specKey, avg, avgConsistency, tier } = item;
 
                 rtaHtml += `<tr style="background-color:${tier.color};">`;
-                rtaHtml += `<td style="text-align:center;font-weight:bold;">${pos}</td>`;
+                rtaHtml += `<td style="text-align:center;font-weight:bold;">
+                    ${item.position}
+                    ${
+                        item.delta > 0
+                            ? `<span style="color:#81c784;"> ↑${item.delta}</span>`
+                            : item.delta < 0
+                                ? `<span style="color:#e57373;"> ↓${Math.abs(item.delta)}</span>`
+                                : `<span style="opacity:0.6;"> –</span>`
+                    }
+                </td>`;
                 rtaHtml += `<td class="spec-name">${specKey}</td>`;
 
                 for (const col of COLUMNS) {
@@ -369,6 +399,42 @@
             ranking.sort((a,b)=>b.avg-a.avg);
             return ranking;
         }
+
+        function buildRTARanking(mode) {
+            const ranking = [];
+
+            for (const specKey of sortedSpecs) {
+                const rtaByGate = dataBySpec[specKey].rta;
+                const values = getFilteredRTAValues(rtaByGate, mode);
+                if (!values.length) continue;
+
+                const avg = values.reduce((a,b)=>a+b,0) / values.length;
+
+                ranking.push({
+                    specKey,
+                    avg,
+                    avgConsistency: dataBySpec[specKey].avgConsistency
+                });
+            }
+
+            // recentrar
+            const mean = ranking.reduce((s,r)=>s+r.avg,0) / ranking.length;
+            ranking.forEach(r => r.avg /= mean);
+
+            ranking.sort((a,b)=>b.avg-a.avg);
+
+            // posición y delta
+            ranking.forEach((item, index) => {
+                item.position = index + 1;
+                item.delta =
+                    baselinePositions[item.specKey]
+                    ? baselinePositions[item.specKey] - item.position
+                    : 0;
+            });
+
+            return ranking;
+        }
+
 
         function renderWithFilter(mode) {
             globalMean = rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
@@ -469,6 +535,15 @@
                                 alt="${item.specKey}">
                             <figcaption>
                                 ${item.specKey}
+                                <div class="delta">
+                                    ${
+                                        item.delta > 0
+                                            ? `↑${item.delta}`
+                                            : item.delta < 0
+                                                ? `↓${Math.abs(item.delta)}`
+                                                : '–'
+                                    }
+                                </div>
                                 <div class="badge ${delta >= 0 ? 'pos' : 'neg'}">
                                     ${delta >= 0 ? '+' : ''}${delta}%
                                 </div>
@@ -591,6 +666,10 @@
                     ...item,
                     tier
                 });
+            });
+
+            baselineRanking.forEach((item, index) => {
+                baselinePositions[item.specKey] = index + 1;
             });
             
             // render inicial
