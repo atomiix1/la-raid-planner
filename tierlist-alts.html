@@ -217,33 +217,82 @@
                 }
             }
             
-            // Ordenar specs por DPS promedio descendente
-            const sortedSpecs = Array.from(specs).sort((a, b) => {
-                const avgA = COLUMNS.reduce((sum, col) => sum + (dataBySpec[a][`${col.raid}${col.gate}Alt`] || 0), 0) / COLUMNS.length;
-                const avgB = COLUMNS.reduce((sum, col) => sum + (dataBySpec[b][`${col.raid}${col.gate}Alt`] || 0), 0) / COLUMNS.length;
-                return avgB - avgA;
-            });
-            
-            // Construir tabla
-            let html = '<div class="table-wrapper"><table><thead><tr><th>Spec</th>';
-            for (const col of COLUMNS) {
-                html += `<th>${col.raid} ${col.gate}</th>`;
+            // Normalizar valores por columna (0-1)
+            const normalizedBySpec = {};
+            for (const specKey of specs) {
+                normalizedBySpec[specKey] = {};
+                for (const col of COLUMNS) {
+                    const key = `${col.raid}${col.gate}Alt`;
+                    const values = Array.from(specs).map(s => dataBySpec[s][key] || 0);
+                    const max = Math.max(...values);
+                    const val = dataBySpec[specKey][key] || 0;
+                    normalizedBySpec[specKey][key] = max > 0 ? val / max : 0;
+                }
             }
-            html += '</tr></thead><tbody>';
+            
+            // Calcular totales y ranking
+            const ranking = [];
+            for (const specKey of specs) {
+                let total = 0;
+                for (const col of COLUMNS) {
+                    const key = `${col.raid}${col.gate}Alt`;
+                    total += normalizedBySpec[specKey][key] || 0;
+                }
+                const normalized = (total / COLUMNS.length) * 10; // 0-10
+                ranking.push({
+                    specKey,
+                    total,
+                    normalized: Math.round(normalized * 10) / 10
+                });
+            }
+            
+            ranking.sort((a, b) => b.total - a.total);
+            
+            // Tabla de ranking
+            let rankingHtml = '<div class="table-wrapper"><table><thead><tr><th>#</th><th>Spec</th>';
+            for (const col of COLUMNS) {
+                rankingHtml += `<th>${col.raid} ${col.gate}</th>`;
+            }
+            rankingHtml += '<th>Total</th><th>Ranking 0-10</th></tr></thead><tbody>';
+            
+            let position = 1;
+            for (const item of ranking) {
+                rankingHtml += `<tr><td style="text-align:center;font-weight:bold;background-color:#1a73e8;color:white;">${position}</td>`;
+                rankingHtml += `<td class="spec-name">${item.specKey}</td>`;
+                for (const col of COLUMNS) {
+                    const key = `${col.raid}${col.gate}Alt`;
+                    const norm = normalizedBySpec[item.specKey][key] || 0;
+                    rankingHtml += `<td class="dps-value" style="background-color:rgba(100,181,246,${norm * 0.3});">${(norm).toFixed(2)}</td>`;
+                }
+                rankingHtml += `<td style="font-weight:bold;color:#ffb74d;">${item.total.toFixed(2)}/7</td>`;
+                rankingHtml += `<td style="font-weight:bold;color:#4caf50;background-color:rgba(76,175,80,0.2);">${item.normalized.toFixed(1)}/10</td></tr>`;
+                position++;
+            }
+            
+            rankingHtml += '</tbody></table></div>';
+            
+            // Tabla de datos original
+            const sortedSpecs = ranking.map(r => r.specKey);
+            
+            let dataHtml = '<div class="table-wrapper"><table><thead><tr><th>Spec</th>';
+            for (const col of COLUMNS) {
+                dataHtml += `<th>${col.raid} ${col.gate}</th>`;
+            }
+            dataHtml += '</tr></thead><tbody>';
             
             for (const specKey of sortedSpecs) {
-                html += `<tr><td class="spec-name">${specKey}</td>`;
+                dataHtml += `<tr><td class="spec-name">${specKey}</td>`;
                 for (const col of COLUMNS) {
                     const key = `${col.raid}${col.gate}Alt`;
                     const dps = dataBySpec[specKey][key];
                     const formattedDps = dps ? (dps / 1000000).toFixed(1) + 'M' : '-';
-                    html += `<td class="dps-value">${formattedDps}</td>`;
+                    dataHtml += `<td class="dps-value">${formattedDps}</td>`;
                 }
-                html += '</tr>';
+                dataHtml += '</tr>';
             }
             
-            html += '</tbody></table></div>';
-            document.getElementById('content').innerHTML = html;
+            dataHtml += '</tbody></table></div>';
+            document.getElementById('content').innerHTML = rankingHtml + '<br>' + dataHtml;
         }
         
         loadData();
