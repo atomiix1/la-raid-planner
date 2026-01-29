@@ -290,7 +290,7 @@
                 rtaHtml += `<tr><td class="spec-name">${specKey}</td>`;
 
                 for (const col of COLUMNS) {
-                    const key = `${col.raid}${col.gate}Main`;
+                    const key = `${col.raid}${col.gate}Alt`;
                     const val = dataBySpec[specKey].rta[key];
 
                     if (val !== undefined) {
