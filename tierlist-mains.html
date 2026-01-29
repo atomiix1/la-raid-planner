@@ -385,6 +385,10 @@
                     }
                 }
 
+                // Consistencia media
+                const avgConsistency =
+                    consistencies.reduce((a, b) => a + b, 0) / consistencies.length;
+
                 ranking.push({
                     specKey,
                     avg,
