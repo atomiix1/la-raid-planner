@@ -238,6 +238,9 @@
         ];
         let allData = {};
         let sortedSpecs = [];
+        let dataBySpec = {};
+        let specs = new Set();
+        let raidGlobals = {};
         
         async function loadData() {
             try {
@@ -374,9 +377,6 @@
         }
         
         function renderTable() {
-            const specs = new Set();
-            const dataBySpec = {};
-            const raidGlobals = {};
 
             // Calcular raidGlobals
             for (const col of COLUMNS) {
