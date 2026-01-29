@@ -444,7 +444,8 @@
                     ranking.push({
                         specKey,
                         avg,
-                        avgConsistency: dataBySpec[specKey].avgConsistency
+                        avgConsistency: dataBySpec[specKey].avgConsistency,
+                        tier: getTierByRTA(avg)
                     });
                 }
 
@@ -557,7 +558,7 @@
 
                 let pos = 1;
                 for (const item of rtaRanking) {
-                    const { specKey, avg, tier } = item;
+                    const { specKey, avg, avgConsistency, tier } = item;
 
                     rtaHtml += `<tr style="background-color:${tier.color};">`;
                     rtaHtml += `<td style="text-align:center;font-weight:bold;">${pos}</td>`;
