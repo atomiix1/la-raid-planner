@@ -241,6 +241,7 @@
         let dataBySpec = {};
         let specs = new Set();
         let raidGlobals = {};
+        let rtaRanking = [];
         
         async function loadData() {
             try {
@@ -281,6 +282,16 @@
             });
 
             return map;
+        }
+
+        const globalMean = rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
+
+        function getTierByRTA(avg) {
+            if (avg >= globalMean + 0.08) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
+            if (avg >= globalMean + 0.04) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
+            if (avg >= globalMean - 0.03) return { stars: 3, label: 'B', color: 'rgba(33,150,243,0.25)' };
+            if (avg >= globalMean - 0.08) return { stars: 2, label: 'C', color: 'rgba(255,152,0,0.25)' };
+            return { stars: 1, label: 'D', color: 'rgba(244,67,54,0.25)' };
         }
 
         function buildRTARanking(filterMode) {
@@ -439,7 +450,7 @@
             ranking.sort((a, b) => b.total - a.total);
             sortedSpecs = ranking.map(r => r.specKey);
 
-            const rtaRanking = sortedSpecs.map(specKey => {
+            rtaRanking = sortedSpecs.map(specKey => {
                 const rtaEntries = dataBySpec[specKey].rta;
                 const values = Object.values(rtaEntries || {});
                 const avg = values.reduce((a, b) => a + b, 0) / values.length;
@@ -463,17 +474,6 @@
             });
 
             rtaRanking.sort((a, b) => b.avg - a.avg);
-
-            const globalMean =
-            rtaRanking.reduce((s, r) => s + r.avg, 0) / rtaRanking.length;
-
-            function getTierByRTA(avg) {
-                if (avg >= globalMean + 0.08) return { stars: 5, label: 'S', color: 'rgba(255,215,0,0.25)' };
-                if (avg >= globalMean + 0.04) return { stars: 4, label: 'A', color: 'rgba(76,175,80,0.25)' };
-                if (avg >= globalMean - 0.03) return { stars: 3, label: 'B', color: 'rgba(33,150,243,0.25)' };
-                if (avg >= globalMean - 0.08) return { stars: 2, label: 'C', color: 'rgba(255,152,0,0.25)' };
-                return { stars: 1, label: 'D', color: 'rgba(244,67,54,0.25)' };
-            }
 
             rtaRanking.forEach((item, index) => {
                 item.tier = getTierByRTA(item.avg);
