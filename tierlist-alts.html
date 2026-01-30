@@ -219,7 +219,6 @@
             <div class="legend-item">Los valores están normalizados y ordenados de mayor a menor DPS</div>
         </div>
     </div>
-    <script type="text/javascript" src="tierlist/tierlistPetitions.js"></script>
     <script>
         const COLUMNS = [
             { raid: 'Mordum', gate: 'G1' },
@@ -234,6 +233,39 @@
         
         async function loadData() {
             try {
+                const armocheG1Main = "https://uwuowo.mathi.moe/api/stats/raids?boss=Armoche%2C+Sentinel+of+the+Abyss&difficulty=Hard&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1730&maxIlvl=1750";
+                const armocheG1Alt = "https://uwuowo.mathi.moe/api/stats/raids?boss=Armoche%2C+Sentinel+of+the+Abyss&difficulty=Normal&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1710&maxIlvl=1730";
+                const armocheG2Main = "https://uwuowo.mathi.moe/api/stats/raids?boss=Armoche%2C+Sentinel+of+the+Abyss&difficulty=Hard&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1730&maxIlvl=1750";
+                const armocheG2Alt = "https://uwuowo.mathi.moe/api/stats/raids?boss=Armoche%2C+Sentinel+of+the+Abyss&difficulty=Normal&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1710&maxIlvl=1730";
+                const mordumG1Main = "https://uwuowo.mathi.moe/api/stats/raids?boss=Infernas&difficulty=Hard&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1730&maxIlvl=1750";
+                const mordumG1Alt = "https://uwuowo.mathi.moe/api/stats/raids?boss=Infernas&difficulty=Hard&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1710&maxIlvl=1730";
+                const mordumG2Main = "https://uwuowo.mathi.moe/api/stats/raids?boss=Blossoming+Fear%2C+Naitreya&difficulty=Hard&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1730&maxIlvl=1750";
+                const mordumG2Alt = "https://uwuowo.mathi.moe/api/stats/raids?boss=Blossoming+Fear%2C+Naitreya&difficulty=Hard&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1710&maxIlvl=1730";
+                const mordumG3Main = "https://uwuowo.mathi.moe/api/stats/raids?boss=Flash+of+Punishment&difficulty=Hard&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1730&maxIlvl=1750";
+                const mordumG3Alt = "https://uwuowo.mathi.moe/api/stats/raids?boss=Flash+of+Punishment&difficulty=Hard&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1710&maxIlvl=1730";
+                const kazerosG1Main = "https://uwuowo.mathi.moe/api/stats/raids?boss=Abyss+Lord+Kazeros&difficulty=Hard&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1730&maxIlvl=1750";
+                const kazerosG1Alt = "https://uwuowo.mathi.moe/api/stats/raids?boss=Abyss+Lord+Kazeros&difficulty=Normal&patch=jan26&filterBy=ilvl&type=bdps&support=true&minIlvl=1710&maxIlvl=1730";
+                const kazerosG2Main = "https://uwuowo.mathi.moe/api/stats/raids?boss=Death+Incarnate+Kazeros&difficulty=Hard&patch=jan26&filterBy=ilvl&type=udps&support=false&minIlvl=1730&maxIlvl=1750";
+                const kazerosG2Alt = "https://uwuowo.mathi.moe/api/stats/raids?boss=Death+Incarnate+Kazeros&difficulty=Normal&patch=jan26&filterBy=ilvl&type=udps&support=false&minIlvl=1710&maxIlvl=1730";
+                const RAID_URLS = {
+                armocheG1Main: armocheG1Main,
+                armocheG1Alt: armocheG1Alt,
+                armocheG2Main: armocheG2Main,
+                armocheG2Alt: armocheG2Alt,
+
+                mordumG1Main: mordumG1Main,
+                mordumG1Alt: mordumG1Alt,
+                mordumG2Main: mordumG2Main,
+                mordumG2Alt: mordumG2Alt,
+                mordumG3Main: mordumG3Main,
+                mordumG3Alt: mordumG3Alt,
+
+                kazerosG1Main: kazerosG1Main,
+                kazerosG1Alt: kazerosG1Alt,
+                kazerosG2Main: kazerosG2Main,
+                kazerosG2Alt: kazerosG2Alt,
+                };
+
                 // Cargar todos los datos necesarios
                 for (const col of COLUMNS) {
                     const key = `${col.raid}${col.gate}Alt`;
