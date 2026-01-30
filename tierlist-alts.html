@@ -219,7 +219,7 @@
             <div class="legend-item">Los valores están normalizados y ordenados de mayor a menor DPS</div>
         </div>
     </div>
-    
+    <script type="text/javascript" src="tierlist/tierlistPetitions.js"></script>
     <script>
         const COLUMNS = [
             { raid: 'Mordum', gate: 'G1' },
@@ -237,7 +237,9 @@
                 // Cargar todos los datos necesarios
                 for (const col of COLUMNS) {
                     const key = `${col.raid}${col.gate}Alt`;
-                    const response = await fetch(`tierlist/${col.raid.toLowerCase()}${col.gate}Alt.json`);
+                    //get Url from tierlistPetitions.js
+                    const url = RAID_URLS[col.raid.toLowerCase() + col.gate + 'Alt'];
+                    const response = await fetch(url);
                     if (response.ok) {
                         allData[key] = await response.json();
                     }
