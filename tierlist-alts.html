@@ -214,8 +214,8 @@
         <div id="content" class="loading">Cargando datos...</div>
         
         <div class="legend">
-            <div class="legend-item"><strong>Median DPS por Spec:</strong> Daño medio de cada especialización en cada raid</div>
-            <div class="legend-item"><strong>G1, G2, G3:</strong> Gates/Fases de la raid</div>
+            <div class="legend-item"><strong>RTA (Rendimiento Típico Ajustado):</strong> Valor normalizado que ajusta el rendimiento de cada especialización en cada raid, siendo un 70% Mediana y un 30% Percentil 75</div>
+            <div class="legend-item"><strong>Variabilidad:</strong> Medida de la consistencia de los datos de cada especialización en cada raid</div>
             <div class="legend-item">Los valores están normalizados y ordenados de mayor a menor DPS</div>
         </div>
     </div>
@@ -441,7 +441,7 @@
         ${item.specKey}
         RTA medio: ${item.avg.toFixed(3)}
         Δ vs ${globalMean.toFixed(2)}: ${delta}%
-        Consistencia: ${item.avgConsistency.toFixed(2)}
+        Variabilidad: ${item.avgConsistency.toFixed(2)}
                         ">
                         <img src="${specToImagePath(item.specKey)}"
                             alt="${item.specKey}">
