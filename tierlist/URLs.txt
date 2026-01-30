@@ -1,5 +1,5 @@
-https://uwuowo.mathi.moe/api/stats/raids?boss=Armoche%2C+Sentinel+of+the+Abyss&difficulty=Normal&patch=jan26&filterBy=ilvl&type=udps&support=false&minIlvl=1710&maxIlvl=1730
-https://uwuowo.mathi.moe/api/stats/raids?boss=Armoche%2C+Sentinel+of+the+Abyss&difficulty=Hard&patch=jan26&filterBy=ilvl&type=udps&support=false&minIlvl=1730&maxIlvl=1750
+https://uwuowo.mathi.moe/api/stats/raids?boss=Brelshaza%2C+Ember+in+the+Ashes&difficulty=Normal&patch=jan26&filterBy=ilvl&type=udps&support=false&minIlvl=1710&maxIlvl=1730
+https://uwuowo.mathi.moe/api/stats/raids?boss=Brelshaza%2C+Ember+in+the+Ashes&difficulty=Hard&patch=jan26&filterBy=ilvl&type=udps&support=false&minIlvl=1730&maxIlvl=1750
 https://uwuowo.mathi.moe/api/stats/raids?boss=Armoche%2C+Sentinel+of+the+Abyss&difficulty=Normal&patch=jan26&filterBy=ilvl&type=udps&support=false&minIlvl=1710&maxIlvl=1730
 https://uwuowo.mathi.moe/api/stats/raids?boss=Armoche%2C+Sentinel+of+the+Abyss&difficulty=Hard&patch=jan26&filterBy=ilvl&type=udps&support=false&minIlvl=1730&maxIlvl=1750
 https://uwuowo.mathi.moe/api/stats/raids?boss=Abyss+Lord+Kazeros&difficulty=Normal&patch=jan26&filterBy=ilvl&type=udps&support=false&minIlvl=1710&maxIlvl=1730
