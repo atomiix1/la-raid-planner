@@ -128,6 +128,11 @@ function getUserStats(user) {
     return { remaining: remainingRaids, total: totalRaids };
 }
 
+//Ordenar personajes por iLvl descendente
+function sortCharactersByILvl(characters) {
+    return characters.sort((a, b) => b.iLvl - a.iLvl);
+}
+
 // Calcular estadísticas de un personaje
 function getCharacterStats(character) {
     let totalRaids = character.raids.length;
@@ -184,6 +189,7 @@ function renderTables() {
         raidHeaderCell.textContent = 'Raid';
         headerRow.appendChild(raidHeaderCell);
         
+        user.characters = sortCharactersByILvl(user.characters);
         user.characters.forEach(character => {
             const charStats = getCharacterStats(character);
             const th = document.createElement('th');
