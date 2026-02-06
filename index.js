@@ -6,10 +6,13 @@ const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kaz
 // Configuración de raids con iLvl mínimo requerido
 const RAIDS_CONFIG = [
     { name: 'Behemoth', difficulty: 'Normal', minILvl: 1640 },
+    { name: 'Aegir', difficulty: 'Solo', minILvl: 1660 },
     { name: 'Aegir', difficulty: 'Normal', minILvl: 1660 },
     { name: 'Aegir', difficulty: 'Hard', minILvl: 1680 },
+    { name: 'Brelshaza', difficulty: 'Solo', minILvl: 1670 },
     { name: 'Brelshaza', difficulty: 'Normal', minILvl: 1670 },
     { name: 'Brelshaza', difficulty: 'Hard', minILvl: 1690 },
+    { name: 'Mordum', difficulty: 'Solo', minILvl: 1680 },
     { name: 'Mordum', difficulty: 'Normal', minILvl: 1680 },
     { name: 'Mordum', difficulty: 'Hard', minILvl: 1700 },
     { name: 'Armoche', difficulty: 'Normal', minILvl: 1700 },
@@ -104,7 +107,7 @@ function getUserRaidesWithDifficulty(user) {
     });
     
     // Convertir a array y ordenar: primero por nombre de raid, luego por dificultad
-    const difficultyOrder = { 'Normal': 0, 'Hard': 1, 'Extreme': 2 };
+    const difficultyOrder = { 'Solo': 0, 'Normal': 1, 'Hard': 2, 'Extreme': 3 };
     return Array.from(raidDifficultyMap.values()).sort((a, b) => {
         const nameCompare = RAIDS_ORDER.indexOf(a.name) - RAIDS_ORDER.indexOf(b.name);
         if (nameCompare !== 0) return nameCompare;
