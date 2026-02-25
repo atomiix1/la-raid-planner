@@ -185,8 +185,8 @@
                 const bosses = getUniqueBosses(filteredDpsData);
                 
                 // Renderizar tablas
-                renderBossTable('bossDpsTable', 'bossTableHead', 'bossTableBody', bossDps, bosses, nameToAccount);
-                renderBossTable('bossUnbuffedDpsTable', 'bossUnbuffedTableHead', 'bossUnbuffedTableBody', bossUnbuffedDps, bosses, nameToAccount);
+                renderBossTable('bossDpsTable', 'bossTableHead', 'bossTableBody', bossDps, bosses, nameToAccount, characterNames);
+                renderBossTable('bossUnbuffedDpsTable', 'bossUnbuffedTableHead', 'bossUnbuffedTableBody', bossUnbuffedDps, bosses, nameToAccount, characterNames);
                 
             } catch (error) {
                 console.error('Error loading data:', error);
@@ -265,7 +265,7 @@
         }
         
         // Función para renderizar tabla de DPS por jefe
-        function renderBossTable(tableId, headId, bodyId, bossDps, bosses, nameToAccount) {
+        function renderBossTable(tableId, headId, bodyId, bossDps, bosses, nameToAccount, characterNames) {
             const thead = document.querySelector(`#${headId} tr`);
             const tbody = document.querySelector(`#${bodyId}`);
             
