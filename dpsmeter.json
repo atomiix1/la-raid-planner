@@ -35282,18 +35282,18 @@
     {
         "current_boss": "Abyss Lord Kazeros",
         "difficulty": "Normal",
-        "dps": 249993261,
+        "dps": 2761077878,
         "fight_start": 1771003444044,
         "name": "1ed3c648",
-        "unbuffed_dps": 153870074
+        "unbuffed_dps": 2761077878
     },
     {
         "current_boss": "Abyss Lord Kazeros",
         "difficulty": "Normal",
-        "dps": 2761077878,
+        "dps": 249993261,
         "fight_start": 1771003444044,
         "name": "Katoriix",
-        "unbuffed_dps": 2761077878
+        "unbuffed_dps": 153870074
     },
     {
         "current_boss": "Abyss Lord Kazeros",
