@@ -175,7 +175,7 @@
                 const dpsData = await dpsResponse.json();
                 
                 // Filtrar DPS solo para personajes conocidos
-                const filteredDpsData = dpsData.filter(entry => characterNames.has(entry.name));
+                const filteredDpsData = dpsData.filter(entry => characterNames.includes(entry.name));
                 
                 // Procesar datos para DPS por jefe
                 const bossDps = processBossDps(filteredDpsData, 'dps');
@@ -209,13 +209,17 @@
             });
         }
         
-        // Obtener nombres de personajes únicos y mapa a cuentas
+        // Obtener nombres de personajes únicos y mapa a cuentas, en orden original
         function getCharacterNames(charactersData) {
-            const names = new Set();
+            const names = [];
             const nameToAccount = {};
+            const nameSet = new Set();
             charactersData.forEach(user => {
                 user.characters.forEach(character => {
-                    names.add(character.name);
+                    if (!nameSet.has(character.name)) {
+                        names.push(character.name);
+                        nameSet.add(character.name);
+                    }
                     nameToAccount[character.name] = user.account;
                 });
             });
@@ -292,15 +296,8 @@
             // Limpiar cuerpo
             tbody.innerHTML = '';
             
-            // Agregar filas de personajes, ordenados por cuenta y luego por nombre
-            const characters = Object.keys(bossDps).sort((a, b) => {
-                const accountA = nameToAccount[a] || '';
-                const accountB = nameToAccount[b] || '';
-                if (accountA !== accountB) {
-                    return accountA.localeCompare(accountB);
-                }
-                return a.localeCompare(b);
-            });
+            // Agregar filas de personajes, en el orden original de Firebase
+            const characters = characterNames.filter(name => bossDps[name]); // Solo aquellos con datos
             
             characters.forEach(name => {
                 const row = document.createElement('tr');
