@@ -38166,5 +38166,293 @@
         "fight_start": 1771966991493,
         "name": "Maxwêll",
         "unbuffed_dps": 337182376
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 635310596,
+        "fight_start": 1772033149890,
+        "name": "Luescent",
+        "unbuffed_dps": 334141542
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 7323213,
+        "fight_start": 1772033149890,
+        "name": "Vèlèris",
+        "unbuffed_dps": 7323213
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 530256194,
+        "fight_start": 1772033149890,
+        "name": "Pandiemonium",
+        "unbuffed_dps": 261457836
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 547258985,
+        "fight_start": 1772033149890,
+        "name": "Atomiix",
+        "unbuffed_dps": 291148909
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 607775428,
+        "fight_start": 1772034567473,
+        "name": "Virghoule",
+        "unbuffed_dps": 356970735
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 648788482,
+        "fight_start": 1772034567473,
+        "name": "Michisevicj",
+        "unbuffed_dps": 379253491
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 24097380,
+        "fight_start": 1772034567473,
+        "name": "Naromiix",
+        "unbuffed_dps": 24097380
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 353480248,
+        "fight_start": 1772034567473,
+        "name": "Foxing",
+        "unbuffed_dps": 216245838
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 97114872,
+        "fight_start": 1772038961257,
+        "name": "Pritie",
+        "unbuffed_dps": 97114872
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 207255663,
+        "fight_start": 1772038961257,
+        "name": "Rappibersii",
+        "unbuffed_dps": 207255663
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 227418852,
+        "fight_start": 1772038961257,
+        "name": "Satoriix",
+        "unbuffed_dps": 227418852
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 282640376,
+        "fight_start": 1772038961257,
+        "name": "Omgitsaurel",
+        "unbuffed_dps": 282640376
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 292167374,
+        "fight_start": 1772039883413,
+        "name": "Lilynnessa",
+        "unbuffed_dps": 174495351
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 19458281,
+        "fight_start": 1772039883413,
+        "name": "Rosespirit",
+        "unbuffed_dps": 19458281
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 487186129,
+        "fight_start": 1772039883413,
+        "name": "Apbreak",
+        "unbuffed_dps": 292762259
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 369445973,
+        "fight_start": 1772039883413,
+        "name": "Katoriix",
+        "unbuffed_dps": 224170355
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 170206895,
+        "fight_start": 1772042771135,
+        "name": "Bluewizardgr",
+        "unbuffed_dps": 104509410
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 21924726,
+        "fight_start": 1772042771135,
+        "name": "Àltàlya",
+        "unbuffed_dps": 21924726
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 376415907,
+        "fight_start": 1772042771135,
+        "name": "Visnjica",
+        "unbuffed_dps": 226444376
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 328325522,
+        "fight_start": 1772042771135,
+        "name": "Tomoriix",
+        "unbuffed_dps": 204168964
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 4428175,
+        "fight_start": 1772044770164,
+        "name": "Raeval",
+        "unbuffed_dps": 4428175
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 138679387,
+        "fight_start": 1772044770164,
+        "name": "Atomiix",
+        "unbuffed_dps": 83438563
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 129737422,
+        "fight_start": 1772044770164,
+        "name": "Szarefluo",
+        "unbuffed_dps": 79969334
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 145351890,
+        "fight_start": 1772044770164,
+        "name": "Eirÿs",
+        "unbuffed_dps": 82702636
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 108356704,
+        "fight_start": 1772044770164,
+        "name": "Neïzha",
+        "unbuffed_dps": 67076081
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 1770501,
+        "fight_start": 1772044770164,
+        "name": "Eskkol",
+        "unbuffed_dps": 1770501
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 162300626,
+        "fight_start": 1772044770164,
+        "name": "Vriytra",
+        "unbuffed_dps": 94418384
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 136264931,
+        "fight_start": 1772044770164,
+        "name": "Orkhans",
+        "unbuffed_dps": 83810074
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 243297098,
+        "fight_start": 1772045785784,
+        "name": "Szarefluo",
+        "unbuffed_dps": 145748753
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 9518132,
+        "fight_start": 1772045785784,
+        "name": "Raeval",
+        "unbuffed_dps": 9518132
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 312918236,
+        "fight_start": 1772045785784,
+        "name": "Orkhans",
+        "unbuffed_dps": 190009288
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 417825287,
+        "fight_start": 1772045785784,
+        "name": "Vriytra",
+        "unbuffed_dps": 231303215
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 369171431,
+        "fight_start": 1772045785784,
+        "name": "Eirÿs",
+        "unbuffed_dps": 201317511
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 4468470,
+        "fight_start": 1772045785784,
+        "name": "Eskkol",
+        "unbuffed_dps": 4468470
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 349884926,
+        "fight_start": 1772045785784,
+        "name": "Atomiix",
+        "unbuffed_dps": 194789289
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 294380348,
+        "fight_start": 1772045785784,
+        "name": "Neïzha",
+        "unbuffed_dps": 179707086
     }
 ]
