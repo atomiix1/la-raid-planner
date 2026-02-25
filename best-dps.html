@@ -100,6 +100,11 @@
         .account-separator {
             border-top: 3px solid #64b5f6;
         }
+
+        .highlight {
+            font-weight: bold;
+            color: #4caf50;
+        }
     </style>
 </head>
 <body>
@@ -341,7 +346,7 @@
                         const recentClass = isRecentBest ? 'highlight' : '';
                         cell.innerHTML = `
                             <div>Max: ${data.max.value.toLocaleString()} (${maxDate})</div>
-                            <div class="${recentClass}">Reciente: ${data.recent.value.toLocaleString()} (${recentDate})</div>
+                            <div class="${recentClass}">Rec: ${data.recent.value.toLocaleString()} (${recentDate})</div>
                         `;
                     } else {
                         cell.textContent = '-';
