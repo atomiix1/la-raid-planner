@@ -64,6 +64,13 @@
             font-weight: bold;
         }
         
+        th small {
+            font-size: 0.8em;
+            color: #bbb;
+            display: block;
+            margin-top: 4px;
+        }
+        
         tr:nth-child(even) {
             background-color: #252525;
         }
@@ -235,10 +242,8 @@
                 "Infernas",
                 "Blossoming Fear, Naitreya",
                 "Flash of Punishment",
-                "Brelshaza",
-                "Ember in the Ashes",
-                "Armoche",
-                "Sentinel of the Abyss",
+                "Brelshaza, Ember in the Ashes",
+                "Armoche, Sentinel of the Abyss",
                 "Abyss Lord Kazeros",
                 "Archdemon Kazeros",
                 "Death Incarnate Kazeros",
@@ -263,13 +268,11 @@
                 "Infernas": "Mordum G1",
                 "Blossoming Fear, Naitreya": "Mordum G2",
                 "Flash of Punishment": "Mordum G3",
-                "Brelshaza": "Armoche G1",
-                "Ember in the Ashes": "Armoche G2",
-                "Armoche": "Kazeros G1",
-                "Sentinel of the Abyss": "Kazeros G2-1",
-                "Abyss Lord Kazeros": "Kazeros G2-23",
-                "Archdemon Kazeros": "Kazeros G3",
-                "Death Incarnate Kazeros": "Kazeros G4",
+                "Brelshaza, Ember in the Ashes": "Armoche G1",
+                "Armoche, Sentinel of the Abyss": "Armoche G2",
+                "Abyss Lord Kazeros": "Kazeros G1",
+                "Archdemon Kazeross": "Kazeros G2-1",
+                "Death Incarnate Kazeros": "Kazeros G2-2",
                 "Thaemine, Conqueror of Stars": "Thaemine EX"
             };
             
@@ -281,7 +284,8 @@
             // Agregar encabezados de jefes
             bosses.forEach(boss => {
                 const th = document.createElement('th');
-                th.textContent = bossLabels[boss] || boss;
+                const label = bossLabels[boss] || boss;
+                th.innerHTML = `${boss}<br><small>${label}</small>`;
                 thead.appendChild(th);
             });
             
