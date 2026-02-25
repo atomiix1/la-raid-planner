@@ -52,10 +52,14 @@
             margin-top: 20px;
         }
         
-        th, td {
+        td, th {
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid #444;
+        }
+        
+        td {
+            font-size: 0.9em;
         }
         
         th {
@@ -93,9 +97,8 @@
             margin-top: 50px;
         }
         
-        .highlight {
-            font-weight: bold;
-            color: #4caf50;
+        .account-separator {
+            border-top: 3px solid #64b5f6;
         }
     </style>
 </head>
@@ -153,15 +156,13 @@
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
         
-        // Función para formatear timestamp a fecha legible
+        // Función para formatear timestamp a fecha legible (solo fecha)
         function formatDate(timestamp) {
             const date = new Date(timestamp);
             return date.toLocaleDateString('es-ES', {
                 year: 'numeric',
                 month: '2-digit',
-                day: '2-digit',
-                hour: '2-digit',
-                minute: '2-digit'
+                day: '2-digit'
             });
         }
         
@@ -313,10 +314,17 @@
             // Agregar filas de personajes, en el orden original de Firebase
             const characters = characterNames.filter(name => bossDps[name]); // Solo aquellos con datos
             
+            let previousAccount = null;
             characters.forEach(name => {
+                const account = nameToAccount[name] || '-';
                 const row = document.createElement('tr');
+                if (previousAccount !== null && account !== previousAccount) {
+                    row.classList.add('account-separator');
+                }
+                previousAccount = account;
+                
                 const accountCell = document.createElement('td');
-                accountCell.textContent = nameToAccount[name] || '-';
+                accountCell.textContent = account;
                 row.appendChild(accountCell);
                 
                 const nameCell = document.createElement('td');
