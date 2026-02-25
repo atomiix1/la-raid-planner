@@ -115,17 +115,26 @@
             font-size: 18px;
         }
         
-        .legend-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
+        .legend-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
         }
         
-        .color-box {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-            border: 1px solid #444;
+        .legend-table th, .legend-table td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        
+        .legend-table th {
+            background-color: #333;
+            color: #64b5f6;
+            font-weight: bold;
+        }
+        
+        .legend-table tr:nth-child(even) {
+            background-color: #252525;
         }
 
         .highlight {
@@ -134,15 +143,15 @@
         }
         
         .dps-normal {
-            background-color: #e8f5e8; /* Light green for Normal */
+            background-color: #311802; /* Light green for Normal */
         }
         
         .dps-hard {
-            background-color: #fff3e0; /* Light orange for Hard */
+            background-color: #063601; /* Light orange for Hard */
         }
         
         .dps-hard120 {
-            background-color: #fce4ec; /* Light pink for 120% Hard */
+            background-color: #050a39; /* Light pink for 120% Hard */
         }
     </style>
 </head>
@@ -152,18 +161,62 @@
         
         <div class="legend">
             <h3>Leyenda de Colores (Tabla DPS)</h3>
-            <div class="legend-item">
-                <div class="color-box dps-normal"></div>
-                <span>Supera mínimo Normal (varía por boss)</span>
-            </div>
-            <div class="legend-item">
-                <div class="color-box dps-hard"></div>
-                <span>Supera mínimo Hard (varía por boss)</span>
-            </div>
-            <div class="legend-item">
-                <div class="color-box dps-hard120"></div>
-                <span>Supera 120% Hard (varía por boss)</span>
-            </div>
+            <table class="legend-table">
+                <thead>
+                    <tr>
+                        <th>Boss</th>
+                        <th>Normal (Mín)</th>
+                        <th>Hard (Mín)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Infernas</td>
+                        <td>58.535.550</td>
+                        <td>88.144.414</td>
+                    </tr>
+                    <tr>
+                        <td>Blossoming Fear, Naitreya</td>
+                        <td>53.125.651</td>
+                        <td>94.825.271</td>
+                    </tr>
+                    <tr>
+                        <td>Flash of Punishment</td>
+                        <td>81.330.595</td>
+                        <td>139.189.550</td>
+                    </tr>
+                    <tr>
+                        <td>Brelshaza, Ember in the Ashes</td>
+                        <td>92.838.262</td>
+                        <td>170.642.388</td>
+                    </tr>
+                    <tr>
+                        <td>Armoche, Sentinel of the Abyss</td>
+                        <td>99.893.371</td>
+                        <td>198.617.140</td>
+                    </tr>
+                    <tr>
+                        <td>Abyss Lord Kazeros</td>
+                        <td>99.279.498</td>
+                        <td>200.279.740</td>
+                    </tr>
+                    <tr>
+                        <td>Archdemon Kazeros</td>
+                        <td>105.961.148</td>
+                        <td>213.757.277</td>
+                    </tr>
+                    <tr>
+                        <td>Death Incarnate Kazeros</td>
+                        <td>105.961.148</td>
+                        <td>220.629.351</td>
+                    </tr>
+                    <tr>
+                        <td>Thaemine, Conqueror of Stars</td>
+                        <td>247.289.975</td>
+                        <td>247.289.975</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         
         <div class="table-container">
