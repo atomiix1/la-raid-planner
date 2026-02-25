@@ -100,16 +100,71 @@
         .account-separator {
             border-top: 3px solid #64b5f6;
         }
+        
+        .legend {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .legend h3 {
+            margin-bottom: 15px;
+            color: #64b5f6;
+            font-size: 18px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .color-box {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border: 1px solid #444;
+        }
 
         .highlight {
             font-weight: bold;
             color: #4caf50;
+        }
+        
+        .dps-normal {
+            background-color: #e8f5e8; /* Light green for Normal */
+        }
+        
+        .dps-hard {
+            background-color: #fff3e0; /* Light orange for Hard */
+        }
+        
+        .dps-hard120 {
+            background-color: #fce4ec; /* Light pink for 120% Hard */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Mejor DPS por Jefe</h1>
+        
+        <div class="legend">
+            <h3>Leyenda de Colores (Tabla DPS)</h3>
+            <div class="legend-item">
+                <div class="color-box dps-normal"></div>
+                <span>Supera mínimo Normal (varía por boss)</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box dps-hard"></div>
+                <span>Supera mínimo Hard (varía por boss)</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box dps-hard120"></div>
+                <span>Supera 120% Hard (varía por boss)</span>
+            </div>
+        </div>
         
         <div class="table-container">
             <div class="table-title">Mejor DPS por Jefe</div>
@@ -289,6 +344,19 @@
             const thead = document.querySelector(`#${headId} tr`);
             const tbody = document.querySelector(`#${bodyId}`);
             
+            // Umbrales de DPS por boss (ajusta estos valores según tus necesidades)
+            const bossThresholds = {
+                "Infernas": { normal: 58535550, hard: 88144414, hard120: 105773297 },
+                "Blossoming Fear, Naitreya": { normal: 53125651, hard: 94825271, hard120: 113790325 },
+                "Flash of Punishment": { normal: 81330595, hard: 139189550, hard120: 167027460 },
+                "Brelshaza, Ember in the Ashes": { normal: 92838262, hard: 170642388, hard120: 204770866 },
+                "Armoche, Sentinel of the Abyss": { normal: 99893371, hard: 198617140, hard120: 238340568 },
+                "Abyss Lord Kazeros": { normal: 99279498, hard: 200278740, hard120: 240334488 },
+                "Archdemon Kazeros": { normal: 105961148, hard: 213757277, hard120: 256508732 },
+                "Death Incarnate Kazeros": { normal: 105961148, hard: 220629351, hard120: 264755221 },
+                "Thaemine, Conqueror of Stars": { normal: 247289975, hard: 247289975, hard120: 296747970 }
+            };
+            
             // Mapa de bosses a subtítulos
             const bossLabels = {
                 "Infernas": "Mordum G1",
@@ -344,6 +412,24 @@
                         const recentDate = formatDate(data.recent.date);
                         const isRecentBest = data.recent.value === data.max.value;
                         const recentClass = isRecentBest ? 'highlight' : '';
+                        
+                        // Determinar clase de color solo para la tabla de DPS
+                        let colorClass = '';
+                        if (tableId === 'bossDpsTable') {
+                            const thresholds = bossThresholds[boss];
+                            if (thresholds) {
+                                const value = data.max.value;
+                                if (value >= thresholds.hard120) {
+                                    colorClass = 'dps-hard120';
+                                } else if (value >= thresholds.hard) {
+                                    colorClass = 'dps-hard';
+                                } else if (value >= thresholds.normal) {
+                                    colorClass = 'dps-normal';
+                                }
+                            }
+                        }
+                        
+                        cell.className = colorClass;
                         cell.innerHTML = `
                             <div>Max: ${data.max.value.toLocaleString()} (${maxDate})</div>
                             <div class="${recentClass}">Rec: ${data.recent.value.toLocaleString()} (${recentDate})</div>
