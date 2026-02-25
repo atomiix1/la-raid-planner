@@ -165,7 +165,7 @@
             try {
                 // Cargar personajes desde Firebase
                 const charactersData = await loadCharactersFromFirebase();
-                const characterNames = getCharacterNames(charactersData);
+                const { names: characterNames, nameToAccount } = getCharacterNames(charactersData);
                 
                 // Cargar DPS desde dpsmeter.json
                 const dpsResponse = await fetch('./dpsmeter.json');
@@ -185,8 +185,8 @@
                 const bosses = getUniqueBosses(filteredDpsData);
                 
                 // Renderizar tablas
-                renderBossTable('bossDpsTable', 'bossTableHead', 'bossTableBody', bossDps, bosses);
-                renderBossTable('bossUnbuffedDpsTable', 'bossUnbuffedTableHead', 'bossUnbuffedTableBody', bossUnbuffedDps, bosses);
+                renderBossTable('bossDpsTable', 'bossTableHead', 'bossTableBody', bossDps, bosses, nameToAccount);
+                renderBossTable('bossUnbuffedDpsTable', 'bossUnbuffedTableHead', 'bossUnbuffedTableBody', bossUnbuffedDps, bosses, nameToAccount);
                 
             } catch (error) {
                 console.error('Error loading data:', error);
@@ -209,15 +209,17 @@
             });
         }
         
-        // Obtener nombres de personajes únicos
+        // Obtener nombres de personajes únicos y mapa a cuentas
         function getCharacterNames(charactersData) {
             const names = new Set();
+            const nameToAccount = {};
             charactersData.forEach(user => {
                 user.characters.forEach(character => {
                     names.add(character.name);
+                    nameToAccount[character.name] = user.account;
                 });
             });
-            return names;
+            return { names, nameToAccount };
         }
         
         // Procesar DPS por jefe
@@ -259,7 +261,7 @@
         }
         
         // Función para renderizar tabla de DPS por jefe
-        function renderBossTable(tableId, headId, bodyId, bossDps, bosses) {
+        function renderBossTable(tableId, headId, bodyId, bossDps, bosses, nameToAccount) {
             const thead = document.querySelector(`#${headId} tr`);
             const tbody = document.querySelector(`#${bodyId}`);
             
@@ -271,15 +273,13 @@
                 "Brelshaza, Ember in the Ashes": "Armoche G1",
                 "Armoche, Sentinel of the Abyss": "Armoche G2",
                 "Abyss Lord Kazeros": "Kazeros G1",
-                "Archdemon Kazeross": "Kazeros G2-1",
+                "Archdemon Kazeros": "Kazeros G2-1",
                 "Death Incarnate Kazeros": "Kazeros G2-2",
                 "Thaemine, Conqueror of Stars": "Thaemine EX"
             };
             
-            // Limpiar encabezados previos (excepto el primero)
-            while (thead.children.length > 1) {
-                thead.removeChild(thead.lastChild);
-            }
+            // Limpiar encabezados previos
+            thead.innerHTML = '<th>Cuenta</th><th>Personaje</th>';
             
             // Agregar encabezados de jefes
             bosses.forEach(boss => {
@@ -292,10 +292,22 @@
             // Limpiar cuerpo
             tbody.innerHTML = '';
             
-            // Agregar filas de personajes
-            const characters = Object.keys(bossDps).sort();
+            // Agregar filas de personajes, ordenados por cuenta y luego por nombre
+            const characters = Object.keys(bossDps).sort((a, b) => {
+                const accountA = nameToAccount[a] || '';
+                const accountB = nameToAccount[b] || '';
+                if (accountA !== accountB) {
+                    return accountA.localeCompare(accountB);
+                }
+                return a.localeCompare(b);
+            });
+            
             characters.forEach(name => {
                 const row = document.createElement('tr');
+                const accountCell = document.createElement('td');
+                accountCell.textContent = nameToAccount[name] || '-';
+                row.appendChild(accountCell);
+                
                 const nameCell = document.createElement('td');
                 nameCell.textContent = name;
                 row.appendChild(nameCell);
