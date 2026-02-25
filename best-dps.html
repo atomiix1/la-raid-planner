@@ -92,6 +92,11 @@
             color: #f44336;
             margin-top: 50px;
         }
+        
+        .highlight {
+            font-weight: bold;
+            color: #4caf50;
+        }
     </style>
 </head>
 <body>
@@ -233,10 +238,19 @@
                 const name = entry.name;
                 const boss = entry.current_boss;
                 const value = entry[key];
+                const date = entry.fight_start;
                 
                 if (!bossDps[name]) bossDps[name] = {};
-                if (!bossDps[name][boss] || value > bossDps[name][boss]) {
-                    bossDps[name][boss] = value;
+                if (!bossDps[name][boss]) bossDps[name][boss] = { max: null, recent: null };
+                
+                // Actualizar max
+                if (!bossDps[name][boss].max || value > bossDps[name][boss].max.value) {
+                    bossDps[name][boss].max = { value, date };
+                }
+                
+                // Actualizar recent (último por fecha)
+                if (!bossDps[name][boss].recent || date > bossDps[name][boss].recent.date) {
+                    bossDps[name][boss].recent = { value, date };
                 }
             });
             return bossDps;
@@ -311,8 +325,19 @@
                 
                 bosses.forEach(boss => {
                     const cell = document.createElement('td');
-                    const value = bossDps[name][boss];
-                    cell.textContent = value ? value.toLocaleString() : '-';
+                    const data = bossDps[name][boss];
+                    if (data && data.max) {
+                        const maxDate = formatDate(data.max.date);
+                        const recentDate = formatDate(data.recent.date);
+                        const isRecentBest = data.recent.value === data.max.value;
+                        const recentClass = isRecentBest ? 'highlight' : '';
+                        cell.innerHTML = `
+                            <div>Max: ${data.max.value.toLocaleString()} (${maxDate})</div>
+                            <div class="${recentClass}">Reciente: ${data.recent.value.toLocaleString()} (${recentDate})</div>
+                        `;
+                    } else {
+                        cell.textContent = '-';
+                    }
                     row.appendChild(cell);
                 });
                 
