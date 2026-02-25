@@ -115,6 +115,29 @@
             font-size: 18px;
         }
         
+        .legend h4 {
+            margin: 20px 0 10px 0;
+            color: #64b5f6;
+            font-size: 16px;
+        }
+        
+        .legend-colors {
+            margin-bottom: 20px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .color-box {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border: 1px solid #444;
+        }
+        
         .legend-table {
             width: 100%;
             border-collapse: collapse;
@@ -161,6 +184,21 @@
         
         <div class="legend">
             <h3>Leyenda de Colores (Tabla DPS)</h3>
+            <div class="legend-colors">
+                <div class="legend-item">
+                    <div class="color-box dps-normal"></div>
+                    <span>Supera mínimo Normal</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box dps-hard"></div>
+                    <span>Supera mínimo Hard</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box dps-hard120"></div>
+                    <span>Supera 120% Hard</span>
+                </div>
+            </div>
+            <h4>Umbrales por Boss</h4>
             <table class="legend-table">
                 <thead>
                     <tr>
