@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejor DPS - Raid Planner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        
+        .table-container {
+            margin-bottom: 40px;
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .table-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #64b5f6;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #64b5f6;
+            padding-bottom: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        
+        th {
+            background-color: #333;
+            color: #64b5f6;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #252525;
+        }
+        
+        tr:hover {
+            background-color: #3a3a3a;
+        }
+        
+        .loading {
+            text-align: center;
+            font-size: 18px;
+            color: #bbb;
+            margin-top: 50px;
+        }
+        
+        .error {
+            text-align: center;
+            font-size: 18px;
+            color: #f44336;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mejor DPS de Personajes</h1>
+        
+        <div class="table-container">
+            <div class="table-title">Mejor DPS</div>
+            <table id="dpsTable">
+                <thead>
+                    <tr>
+                        <th>Personaje</th>
+                        <th>DPS Máximo</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Datos se cargarán aquí -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="table-container">
+            <div class="table-title">Mejor DPS por Jefe</div>
+            <table id="bossDpsTable">
+                <thead id="bossTableHead">
+                    <tr>
+                        <th>Personaje</th>
+                        <!-- Columnas de jefes se agregarán dinámicamente -->
+                    </tr>
+                </thead>
+                <tbody id="bossTableBody">
+                    <!-- Datos se cargarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script>
+        // Función para formatear timestamp a fecha legible
+        function formatDate(timestamp) {
+            const date = new Date(timestamp);
+            return date.toLocaleDateString('es-ES', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+        
+        // Cargar y procesar datos de DPS desde dpsmeter.json
+        async function loadDpsData() {
+            try {
+                const response = await fetch('./dpsmeter.json');
+                if (!response.ok) {
+                    throw new Error('Error al cargar dpsmeter.json');
+                }
+                const dpsData = await response.json();
+                
+                // Procesar datos para encontrar el mejor DPS por personaje
+                const bestDps = {};
+                const bestUnbuffedDps = {};
+                const bossDps = {}; // {character: {boss: maxDps}}
+                const uniqueBosses = new Set();
+                
+                dpsData.forEach(entry => {
+                    const name = entry.name;
+                    const boss = entry.current_boss;
+                    const dps = entry.dps;
+                    const unbuffedDps = entry.unbuffed_dps;
+                    const date = entry.fight_start;
+                    
+                    uniqueBosses.add(boss);
+                    
+                    // Mejor DPS general
+                    if (!bestDps[name] || dps > bestDps[name].dps) {
+                        bestDps[name] = { dps, date };
+                    }
+                    
+                    // Mejor DPS sin buffs general
+                    if (!bestUnbuffedDps[name] || unbuffedDps > bestUnbuffedDps[name].unbuffedDps) {
+                        bestUnbuffedDps[name] = { unbuffedDps, date };
+                    }
+                    
+                    // Mejor DPS por jefe
+                    if (!bossDps[name]) bossDps[name] = {};
+                    if (!bossDps[name][boss] || dps > bossDps[name][boss]) {
+                        bossDps[name][boss] = dps;
+                    }
+                });
+                
+                // Renderizar tabla de DPS
+                renderTable('dpsTable', bestDps, 'dps');
+                
+                // Renderizar tabla de DPS sin buffs
+                renderTable('unbuffedDpsTable', bestUnbuffedDps, 'unbuffedDps');
+                
+                // Renderizar tabla de DPS por jefe
+                renderBossTable(bossDps, Array.from(uniqueBosses).sort());
+                
+            } catch (error) {
+                console.error('Error loading DPS data:', error);
+                document.querySelector('.container').innerHTML = '<div class="error">❌ Error al cargar los datos de DPS: ' + error.message + '</div>';
+            }
+        }
+        
+        // Función para renderizar una tabla
+        function renderTable(tableId, data, key) {
+            const tbody = document.querySelector(`#${tableId} tbody`);
+            tbody.innerHTML = '';
+            
+            Object.keys(data).sort().forEach(name => {
+                const entry = data[name];
+                const value = entry[key];
+                const date = formatDate(entry.date);
+                
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${name}</td>
+                    <td>${value.toLocaleString()}</td>
+                    <td>${date}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+        
+        // Función para renderizar tabla de DPS por jefe
+        function renderBossTable(bossDps, bosses) {
+            const thead = document.querySelector('#bossTableHead tr');
+            const tbody = document.querySelector('#bossTableBody');
+            
+            // Agregar encabezados de jefes
+            bosses.forEach(boss => {
+                const th = document.createElement('th');
+                th.textContent = boss;
+                thead.appendChild(th);
+            });
+            
+            // Agregar filas de personajes
+            const characters = Object.keys(bossDps).sort();
+            characters.forEach(name => {
+                const row = document.createElement('tr');
+                const nameCell = document.createElement('td');
+                nameCell.textContent = name;
+                row.appendChild(nameCell);
+                
+                bosses.forEach(boss => {
+                    const cell = document.createElement('td');
+                    const dps = bossDps[name][boss];
+                    cell.textContent = dps ? dps.toLocaleString() : '-';
+                    row.appendChild(cell);
+                });
+                
+                tbody.appendChild(row);
+            });
+        }
+        
+        // Cargar datos al iniciar
+        loadDpsData();
+    </script>
+</body>
+</html>
