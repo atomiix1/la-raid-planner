@@ -229,19 +229,49 @@
             return bossDps;
         }
         
-        // Obtener bosses únicos
+        // Obtener bosses únicos (limitados y ordenados)
         function getUniqueBosses(dpsData) {
-            const bosses = new Set();
-            dpsData.forEach(entry => {
-                bosses.add(entry.current_boss);
+            const desiredBosses = [
+                "Infernas",
+                "Blossoming Fear, Naitreya",
+                "Flash of Punishment",
+                "Brelshaza",
+                "Ember in the Ashes",
+                "Armoche",
+                "Sentinel of the Abyss",
+                "Abyss Lord Kazeros",
+                "Archdemon Kazeros",
+                "Death Incarnate Kazeros",
+                "Thaemine, Conqueror of Stars"
+            ];
+            
+            // Filtrar solo los bosses deseados que aparecen en los datos
+            const availableBosses = desiredBosses.filter(boss => {
+                return dpsData.some(entry => entry.current_boss === boss);
             });
-            return Array.from(bosses).sort();
+            
+            return availableBosses;
         }
         
         // Función para renderizar tabla de DPS por jefe
         function renderBossTable(tableId, headId, bodyId, bossDps, bosses) {
             const thead = document.querySelector(`#${headId} tr`);
             const tbody = document.querySelector(`#${bodyId}`);
+            
+            // Mapa de bosses a subtítulos
+            const bossLabels = {
+                "Infernas": "Mordum G1",
+                "Blossoming Fear, Naitreya": "Mordum G2",
+                "Flash of Punishment": "Mordum G3",
+                "Brelshaza": "Armoche G1",
+                "Ember in the Ashes": "Armoche G2",
+                "Armoche": "Kazeros G1",
+                "Sentinel of the Abyss": "Kazeros G2-1",
+                "Abyss Lord Kazeros": "Kazeros G2-23",
+                "Archdemon Kazeros": "Kazeros G3",
+                "Death Incarnate Kazeros": "Kazeros G4",
+                "Thaemine, Conqueror of Stars": "Thaemine EX"
+            };
             
             // Limpiar encabezados previos (excepto el primero)
             while (thead.children.length > 1) {
@@ -251,7 +281,7 @@
             // Agregar encabezados de jefes
             bosses.forEach(boss => {
                 const th = document.createElement('th');
-                th.textContent = boss;
+                th.textContent = bossLabels[boss] || boss;
                 thead.appendChild(th);
             });
             
