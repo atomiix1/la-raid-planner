@@ -89,39 +89,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Mejor DPS de Personajes</h1>
-        
-        <div class="table-container">
-            <div class="table-title">Mejor DPS</div>
-            <table id="dpsTable">
-                <thead>
-                    <tr>
-                        <th>Personaje</th>
-                        <th>DPS Máximo</th>
-                        <th>Fecha</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Datos se cargarán aquí -->
-                </tbody>
-            </table>
-        </div>
-
-        <div class="table-container">
-            <div class="table-title">Mejor DPS sin Buffs</div>
-            <table id="unbuffedDpsTable">
-                <thead>
-                    <tr>
-                        <th>Personaje</th>
-                        <th>DPS Máximo</th>
-                        <th>Fecha</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Datos se cargarán aquí -->
-                </tbody>
-            </table>
-        </div>
+        <h1>Mejor DPS por Jefe</h1>
         
         <div class="table-container">
             <div class="table-title">Mejor DPS por Jefe</div>
@@ -137,9 +105,42 @@
                 </tbody>
             </table>
         </div>
+        
+        <div class="table-container">
+            <div class="table-title">Mejor DPS Sin Buffs por Jefe</div>
+            <table id="bossUnbuffedDpsTable">
+                <thead id="bossUnbuffedTableHead">
+                    <tr>
+                        <th>Personaje</th>
+                        <!-- Columnas de jefes se agregarán dinámicamente -->
+                    </tr>
+                </thead>
+                <tbody id="bossUnbuffedTableBody">
+                    <!-- Datos se cargarán aquí -->
+                </tbody>
+            </table>
+        </div>
     </div>
     
-    <script>
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
+        import { getDatabase, ref, onValue } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js';
+        
+        // Configuración de Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyC61vsWUjfVHQOFuejgmXl9Lk4ZEKNQr04",
+            authDomain: "la-planner.firebaseapp.com",
+            databaseURL: "https://la-planner-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "la-planner",
+            storageBucket: "la-planner.firebasestorage.app",
+            messagingSenderId: "922350103987",
+            appId: "1:922350103987:web:a546e04e3b57b867bc6fc6"
+        };
+        
+        // Inicializar Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        
         // Función para formatear timestamp a fecha legible
         function formatDate(timestamp) {
             const date = new Date(timestamp);
@@ -152,86 +153,100 @@
             });
         }
         
-        // Cargar y procesar datos de DPS desde dpsmeter.json
-        async function loadDpsData() {
+        // Cargar datos de personajes y DPS
+        async function loadData() {
             try {
-                const response = await fetch('./dpsmeter.json');
-                if (!response.ok) {
+                // Cargar personajes desde Firebase
+                const charactersData = await loadCharactersFromFirebase();
+                const characterNames = getCharacterNames(charactersData);
+                
+                // Cargar DPS desde dpsmeter.json
+                const dpsResponse = await fetch('./dpsmeter.json');
+                if (!dpsResponse.ok) {
                     throw new Error('Error al cargar dpsmeter.json');
                 }
-                const dpsData = await response.json();
+                const dpsData = await dpsResponse.json();
                 
-                // Procesar datos para encontrar el mejor DPS por personaje
-                const bestDps = {};
-                const bestUnbuffedDps = {};
-                const bossDps = {}; // {character: {boss: maxDps}}
-                const uniqueBosses = new Set();
+                // Filtrar DPS solo para personajes conocidos
+                const filteredDpsData = dpsData.filter(entry => characterNames.has(entry.name));
                 
-                dpsData.forEach(entry => {
-                    const name = entry.name;
-                    const boss = entry.current_boss;
-                    const dps = entry.dps;
-                    const unbuffedDps = entry.unbuffed_dps;
-                    const date = entry.fight_start;
-                    
-                    uniqueBosses.add(boss);
-                    
-                    // Mejor DPS general
-                    if (!bestDps[name] || dps > bestDps[name].dps) {
-                        bestDps[name] = { dps, date };
-                    }
-                    
-                    // Mejor DPS sin buffs general
-                    if (!bestUnbuffedDps[name] || unbuffedDps > bestUnbuffedDps[name].unbuffedDps) {
-                        bestUnbuffedDps[name] = { unbuffedDps, date };
-                    }
-                    
-                    // Mejor DPS por jefe
-                    if (!bossDps[name]) bossDps[name] = {};
-                    if (!bossDps[name][boss] || dps > bossDps[name][boss]) {
-                        bossDps[name][boss] = dps;
-                    }
-                });
+                // Procesar datos para DPS por jefe
+                const bossDps = processBossDps(filteredDpsData, 'dps');
+                const bossUnbuffedDps = processBossDps(filteredDpsData, 'unbuffed_dps');
                 
-                // Renderizar tabla de DPS
-                renderTable('dpsTable', bestDps, 'dps');
+                // Obtener bosses únicos
+                const bosses = getUniqueBosses(filteredDpsData);
                 
-                // Renderizar tabla de DPS sin buffs
-                renderTable('unbuffedDpsTable', bestUnbuffedDps, 'unbuffedDps');
-                
-                // Renderizar tabla de DPS por jefe
-                renderBossTable(bossDps, Array.from(uniqueBosses).sort());
+                // Renderizar tablas
+                renderBossTable('bossDpsTable', 'bossTableHead', 'bossTableBody', bossDps, bosses);
+                renderBossTable('bossUnbuffedDpsTable', 'bossUnbuffedTableHead', 'bossUnbuffedTableBody', bossUnbuffedDps, bosses);
                 
             } catch (error) {
-                console.error('Error loading DPS data:', error);
-                document.querySelector('.container').innerHTML = '<div class="error">❌ Error al cargar los datos de DPS: ' + error.message + '</div>';
+                console.error('Error loading data:', error);
+                document.querySelector('.container').innerHTML = '<div class="error">❌ Error al cargar los datos: ' + error.message + '</div>';
             }
         }
         
-        // Función para renderizar una tabla
-        function renderTable(tableId, data, key) {
-            const tbody = document.querySelector(`#${tableId} tbody`);
-            tbody.innerHTML = '';
-            
-            Object.keys(data).sort().forEach(name => {
-                const entry = data[name];
-                const value = entry[key];
-                const date = formatDate(entry.date);
-                
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${name}</td>
-                    <td>${value.toLocaleString()}</td>
-                    <td>${date}</td>
-                `;
-                tbody.appendChild(row);
+        // Cargar personajes desde Firebase
+        function loadCharactersFromFirebase() {
+            return new Promise((resolve, reject) => {
+                onValue(ref(database), (snapshot) => {
+                    if (snapshot.exists()) {
+                        resolve(snapshot.val());
+                    } else {
+                        reject(new Error('No hay datos de personajes en Firebase'));
+                    }
+                }, (error) => {
+                    reject(error);
+                });
             });
         }
         
+        // Obtener nombres de personajes únicos
+        function getCharacterNames(charactersData) {
+            const names = new Set();
+            charactersData.forEach(user => {
+                user.characters.forEach(character => {
+                    names.add(character.name);
+                });
+            });
+            return names;
+        }
+        
+        // Procesar DPS por jefe
+        function processBossDps(dpsData, key) {
+            const bossDps = {};
+            dpsData.forEach(entry => {
+                const name = entry.name;
+                const boss = entry.current_boss;
+                const value = entry[key];
+                
+                if (!bossDps[name]) bossDps[name] = {};
+                if (!bossDps[name][boss] || value > bossDps[name][boss]) {
+                    bossDps[name][boss] = value;
+                }
+            });
+            return bossDps;
+        }
+        
+        // Obtener bosses únicos
+        function getUniqueBosses(dpsData) {
+            const bosses = new Set();
+            dpsData.forEach(entry => {
+                bosses.add(entry.current_boss);
+            });
+            return Array.from(bosses).sort();
+        }
+        
         // Función para renderizar tabla de DPS por jefe
-        function renderBossTable(bossDps, bosses) {
-            const thead = document.querySelector('#bossTableHead tr');
-            const tbody = document.querySelector('#bossTableBody');
+        function renderBossTable(tableId, headId, bodyId, bossDps, bosses) {
+            const thead = document.querySelector(`#${headId} tr`);
+            const tbody = document.querySelector(`#${bodyId}`);
+            
+            // Limpiar encabezados previos (excepto el primero)
+            while (thead.children.length > 1) {
+                thead.removeChild(thead.lastChild);
+            }
             
             // Agregar encabezados de jefes
             bosses.forEach(boss => {
@@ -239,6 +254,9 @@
                 th.textContent = boss;
                 thead.appendChild(th);
             });
+            
+            // Limpiar cuerpo
+            tbody.innerHTML = '';
             
             // Agregar filas de personajes
             const characters = Object.keys(bossDps).sort();
@@ -250,8 +268,8 @@
                 
                 bosses.forEach(boss => {
                     const cell = document.createElement('td');
-                    const dps = bossDps[name][boss];
-                    cell.textContent = dps ? dps.toLocaleString() : '-';
+                    const value = bossDps[name][boss];
+                    cell.textContent = value ? value.toLocaleString() : '-';
                     row.appendChild(cell);
                 });
                 
@@ -260,7 +278,7 @@
         }
         
         // Cargar datos al iniciar
-        loadDpsData();
+        loadData();
     </script>
 </body>
 </html>

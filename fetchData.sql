@@ -1,0 +1,1 @@
+SELECT entity.name, entity.dps, entity.unbuffed_dps, encounter_preview.fight_start, encounter_preview.current_boss, encounter_preview.difficulty FROM entity JOIN encounter_preview ON entity.encounter_id = encounter_preview.id WHERE entity.entity_type = 'PLAYER';
