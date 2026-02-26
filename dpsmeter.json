@@ -38454,5 +38454,261 @@
         "fight_start": 1772045785784,
         "name": "Neïzha",
         "unbuffed_dps": 179707086
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 302388275,
+        "fight_start": 1772048077196,
+        "name": "Satoriix",
+        "unbuffed_dps": 161705282
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 460101812,
+        "fight_start": 1772048077196,
+        "name": "Orkhanx",
+        "unbuffed_dps": 252393116
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 376839305,
+        "fight_start": 1772048077196,
+        "name": "Deathgodsss",
+        "unbuffed_dps": 221788524
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 417656268,
+        "fight_start": 1772048077196,
+        "name": "Arezimus",
+        "unbuffed_dps": 228589293
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 335612130,
+        "fight_start": 1772048077196,
+        "name": "Tazubbies",
+        "unbuffed_dps": 208154895
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 12380849,
+        "fight_start": 1772048077196,
+        "name": "Brunildâ",
+        "unbuffed_dps": 12380849
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 7173846,
+        "fight_start": 1772048077196,
+        "name": "Revrese",
+        "unbuffed_dps": 7173846
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 319386896,
+        "fight_start": 1772048077196,
+        "name": "Sharemu",
+        "unbuffed_dps": 193062931
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 438330267,
+        "fight_start": 1772048760113,
+        "name": "Arezimus",
+        "unbuffed_dps": 232059226
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 7572458,
+        "fight_start": 1772048760113,
+        "name": "Revrese",
+        "unbuffed_dps": 7572458
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 327431769,
+        "fight_start": 1772048760113,
+        "name": "Sharemu",
+        "unbuffed_dps": 197003791
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 358945205,
+        "fight_start": 1772048760113,
+        "name": "Satoriix",
+        "unbuffed_dps": 186759934
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 447330586,
+        "fight_start": 1772048760113,
+        "name": "Orkhanx",
+        "unbuffed_dps": 239824074
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 328401823,
+        "fight_start": 1772048760113,
+        "name": "Tazubbies",
+        "unbuffed_dps": 194737422
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 338284199,
+        "fight_start": 1772048760113,
+        "name": "Deathgodsss",
+        "unbuffed_dps": 200548684
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 12027182,
+        "fight_start": 1772048760113,
+        "name": "Brunildâ",
+        "unbuffed_dps": 12027182
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 276717953,
+        "fight_start": 1772049368585,
+        "name": "Sharemu",
+        "unbuffed_dps": 167046367
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 7011431,
+        "fight_start": 1772049368585,
+        "name": "Revrese",
+        "unbuffed_dps": 7011431
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 10593477,
+        "fight_start": 1772049368585,
+        "name": "Brunildâ",
+        "unbuffed_dps": 10593477
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 261150713,
+        "fight_start": 1772049368585,
+        "name": "Deathgodsss",
+        "unbuffed_dps": 157289939
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 332813339,
+        "fight_start": 1772049368585,
+        "name": "Orkhanx",
+        "unbuffed_dps": 177468826
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 255230336,
+        "fight_start": 1772049368585,
+        "name": "Satoriix",
+        "unbuffed_dps": 133332262
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 300303197,
+        "fight_start": 1772049368585,
+        "name": "Arezimus",
+        "unbuffed_dps": 164312693
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 230908780,
+        "fight_start": 1772049368585,
+        "name": "Tazubbies",
+        "unbuffed_dps": 138665479
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 19723936,
+        "fight_start": 1772052338542,
+        "name": "Señko",
+        "unbuffed_dps": 19723936
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 33099756,
+        "fight_start": 1772052338542,
+        "name": "Zekubo",
+        "unbuffed_dps": 33099756
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 75465752,
+        "fight_start": 1772052338542,
+        "name": "Tatsuhikomaru",
+        "unbuffed_dps": 75465752
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 105460545,
+        "fight_start": 1772052338542,
+        "name": "Feraliix",
+        "unbuffed_dps": 105460545
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 3967629,
+        "fight_start": 1772052823155,
+        "name": "Moorffeusz",
+        "unbuffed_dps": 3967629
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 350628367,
+        "fight_start": 1772052823155,
+        "name": "Feraliix",
+        "unbuffed_dps": 222391129
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 500500447,
+        "fight_start": 1772052823155,
+        "name": "Grabmebythehorns",
+        "unbuffed_dps": 328219102
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 242569082,
+        "fight_start": 1772052823155,
+        "name": "Mykebreakson",
+        "unbuffed_dps": 155080520
     }
 ]
