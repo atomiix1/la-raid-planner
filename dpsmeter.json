@@ -38650,38 +38650,6 @@
     {
         "current_boss": "Drextalas",
         "difficulty": "Normal",
-        "dps": 19723936,
-        "fight_start": 1772052338542,
-        "name": "Señko",
-        "unbuffed_dps": 19723936
-    },
-    {
-        "current_boss": "Drextalas",
-        "difficulty": "Normal",
-        "dps": 33099756,
-        "fight_start": 1772052338542,
-        "name": "Zekubo",
-        "unbuffed_dps": 33099756
-    },
-    {
-        "current_boss": "Drextalas",
-        "difficulty": "Normal",
-        "dps": 75465752,
-        "fight_start": 1772052338542,
-        "name": "Tatsuhikomaru",
-        "unbuffed_dps": 75465752
-    },
-    {
-        "current_boss": "Drextalas",
-        "difficulty": "Normal",
-        "dps": 105460545,
-        "fight_start": 1772052338542,
-        "name": "Feraliix",
-        "unbuffed_dps": 105460545
-    },
-    {
-        "current_boss": "Drextalas",
-        "difficulty": "Normal",
         "dps": 3967629,
         "fight_start": 1772052823155,
         "name": "Moorffeusz",
@@ -38840,134 +38808,6 @@
         "unbuffed_dps": 37664133
     },
     {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 395179735,
-        "fight_start": 1772132077647,
-        "name": "Alavhel",
-        "unbuffed_dps": 227351429
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 302935685,
-        "fight_start": 1772132077647,
-        "name": "Palesnoww",
-        "unbuffed_dps": 182331838
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 3454188,
-        "fight_start": 1772132077647,
-        "name": "Sebadi",
-        "unbuffed_dps": 3454188
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 3369954,
-        "fight_start": 1772132077647,
-        "name": "Naromiix",
-        "unbuffed_dps": 3369954
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 286592987,
-        "fight_start": 1772132077647,
-        "name": "Aedhe",
-        "unbuffed_dps": 177896017
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 370326350,
-        "fight_start": 1772132077647,
-        "name": "Orkhanx",
-        "unbuffed_dps": 222189367
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 345222856,
-        "fight_start": 1772132077647,
-        "name": "Veigerr",
-        "unbuffed_dps": 203048322
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 710404039,
-        "fight_start": 1772132077647,
-        "name": "Kadell",
-        "unbuffed_dps": 449456993
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 403472347,
-        "fight_start": 1772132399408,
-        "name": "Palesnoww",
-        "unbuffed_dps": 238862728
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 2942664,
-        "fight_start": 1772132399408,
-        "name": "Naromiix",
-        "unbuffed_dps": 2942664
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 332106827,
-        "fight_start": 1772132399408,
-        "name": "Veigerr",
-        "unbuffed_dps": 196294241
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 426659054,
-        "fight_start": 1772132399408,
-        "name": "Alavhel",
-        "unbuffed_dps": 248407310
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 3124427,
-        "fight_start": 1772132399408,
-        "name": "Sebadi",
-        "unbuffed_dps": 3124427
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 418640187,
-        "fight_start": 1772132399408,
-        "name": "Orkhanx",
-        "unbuffed_dps": 283828299
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 633854748,
-        "fight_start": 1772132399408,
-        "name": "Kadell",
-        "unbuffed_dps": 424767086
-    },
-    {
-        "current_boss": "Darkness Legion Commander Thaemine",
-        "difficulty": "Extreme Hard",
-        "dps": 98063226,
-        "fight_start": 1772132399408,
-        "name": "Aedhe",
-        "unbuffed_dps": 56748959
-    },
-    {
         "current_boss": "Thaemine, Conqueror of Stars",
         "difficulty": "Extreme Hard",
         "dps": 10652996,
@@ -39098,134 +38938,6 @@
     {
         "current_boss": "Armoche, Sentinel of the Abyss",
         "difficulty": "Hard",
-        "dps": 457731214,
-        "fight_start": 1772135088131,
-        "name": "Alavhel",
-        "unbuffed_dps": 270523855
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 304183499,
-        "fight_start": 1772135088131,
-        "name": "Satoriix",
-        "unbuffed_dps": 171627947
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 3317773,
-        "fight_start": 1772135088131,
-        "name": "Sebadi",
-        "unbuffed_dps": 3317773
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 2247929,
-        "fight_start": 1772135088131,
-        "name": "Luminarys",
-        "unbuffed_dps": 2247929
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 322026685,
-        "fight_start": 1772135088131,
-        "name": "Aedhe",
-        "unbuffed_dps": 201889580
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 143236326,
-        "fight_start": 1772135088131,
-        "name": "Orkhanar",
-        "unbuffed_dps": 86888962
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 417870614,
-        "fight_start": 1772135088131,
-        "name": "Pxzerö",
-        "unbuffed_dps": 271018130
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 562114239,
-        "fight_start": 1772135088131,
-        "name": "Kadell",
-        "unbuffed_dps": 337278861
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 202363753,
-        "fight_start": 1772135451144,
-        "name": "Aedhe",
-        "unbuffed_dps": 137582810
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 2219629,
-        "fight_start": 1772135451144,
-        "name": "Sebadi",
-        "unbuffed_dps": 2219629
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 2724784,
-        "fight_start": 1772135451144,
-        "name": "Luminarys",
-        "unbuffed_dps": 2724784
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 488956445,
-        "fight_start": 1772135451144,
-        "name": "Kadell",
-        "unbuffed_dps": 283325463
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 236123260,
-        "fight_start": 1772135451144,
-        "name": "Satoriix",
-        "unbuffed_dps": 125529521
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 130074590,
-        "fight_start": 1772135451144,
-        "name": "Pxzerö",
-        "unbuffed_dps": 100532632
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 196519240,
-        "fight_start": 1772135451144,
-        "name": "Orkhanar",
-        "unbuffed_dps": 133293436
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
-        "dps": 305311162,
-        "fight_start": 1772135451144,
-        "name": "Alavhel",
-        "unbuffed_dps": 171421676
-    },
-    {
-        "current_boss": "Armoche, Sentinel of the Abyss",
-        "difficulty": "Hard",
         "dps": 3599347,
         "fight_start": 1772135545616,
         "name": "Sebadi",
@@ -39286,5 +38998,805 @@
         "fight_start": 1772135545616,
         "name": "Aedhe",
         "unbuffed_dps": 211607694
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 9044950,
+        "fight_start": 1772209141039,
+        "name": "Gosenshi",
+        "unbuffed_dps": 9044950
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 283975196,
+        "fight_start": 1772209141039,
+        "name": "Eirÿs",
+        "unbuffed_dps": 180472142
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 215622399,
+        "fight_start": 1772209141039,
+        "name": "Orkhanadb",
+        "unbuffed_dps": 134746722
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 245758342,
+        "fight_start": 1772209141039,
+        "name": "Cataklysmaa",
+        "unbuffed_dps": 147946522
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 245478471,
+        "fight_start": 1772209141039,
+        "name": "Chibïsoul",
+        "unbuffed_dps": 154085604
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 226135406,
+        "fight_start": 1772209141039,
+        "name": "Feraliix",
+        "unbuffed_dps": 141219101
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 8521405,
+        "fight_start": 1772209141039,
+        "name": "Bählar",
+        "unbuffed_dps": 8521405
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 198707070,
+        "fight_start": 1772209141039,
+        "name": "Kijyodouji",
+        "unbuffed_dps": 124847658
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 10240991,
+        "fight_start": 1772209693071,
+        "name": "Bählar",
+        "unbuffed_dps": 10240991
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 8715250,
+        "fight_start": 1772209693071,
+        "name": "Gosenshi",
+        "unbuffed_dps": 8715250
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 228071231,
+        "fight_start": 1772209693071,
+        "name": "Chibïsoul",
+        "unbuffed_dps": 147660856
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 240955427,
+        "fight_start": 1772209693071,
+        "name": "Cataklysmaa",
+        "unbuffed_dps": 154756161
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 239805844,
+        "fight_start": 1772209693071,
+        "name": "Eirÿs",
+        "unbuffed_dps": 154024013
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 172572834,
+        "fight_start": 1772209693071,
+        "name": "Orkhanadb",
+        "unbuffed_dps": 115157928
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 153480444,
+        "fight_start": 1772209693071,
+        "name": "Kijyodouji",
+        "unbuffed_dps": 88530389
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 227442903,
+        "fight_start": 1772209693071,
+        "name": "Feraliix",
+        "unbuffed_dps": 139264923
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 267032108,
+        "fight_start": 1772211072341,
+        "name": "Charmingkrein",
+        "unbuffed_dps": 167803257
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 1611150,
+        "fight_start": 1772211072341,
+        "name": "Sismariii",
+        "unbuffed_dps": 1611150
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 3068366,
+        "fight_start": 1772211072341,
+        "name": "Yaoru",
+        "unbuffed_dps": 3068366
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 102924174,
+        "fight_start": 1772211072341,
+        "name": "Stûrm",
+        "unbuffed_dps": 61663743
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 216805698,
+        "fight_start": 1772211072341,
+        "name": "Katsushiika",
+        "unbuffed_dps": 153878902
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 157829950,
+        "fight_start": 1772211072341,
+        "name": "Xÿrris",
+        "unbuffed_dps": 108520601
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 241567904,
+        "fight_start": 1772211072341,
+        "name": "Örkhana",
+        "unbuffed_dps": 172002248
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 253016327,
+        "fight_start": 1772211072341,
+        "name": "Atomiix",
+        "unbuffed_dps": 153375304
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 180142063,
+        "fight_start": 1772211182831,
+        "name": "Katsushiika",
+        "unbuffed_dps": 118467092
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 131862731,
+        "fight_start": 1772211182831,
+        "name": "Stûrm",
+        "unbuffed_dps": 79407819
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 7954844,
+        "fight_start": 1772211182831,
+        "name": "Yaoru",
+        "unbuffed_dps": 7954844
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 228165796,
+        "fight_start": 1772211182831,
+        "name": "Charmingkrein",
+        "unbuffed_dps": 139584253
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 7061021,
+        "fight_start": 1772211182831,
+        "name": "Sismariii",
+        "unbuffed_dps": 7061021
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 250497851,
+        "fight_start": 1772211182831,
+        "name": "Örkhana",
+        "unbuffed_dps": 167316640
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 215040060,
+        "fight_start": 1772211182831,
+        "name": "Atomiix",
+        "unbuffed_dps": 133146237
+    },
+    {
+        "current_boss": "Narok the Butcher",
+        "difficulty": "Hard",
+        "dps": 165454951,
+        "fight_start": 1772211182831,
+        "name": "Xÿrris",
+        "unbuffed_dps": 106982506
+    },
+    {
+        "current_boss": "Phantom Manifester Brelshaza",
+        "difficulty": "Hard",
+        "dps": 247284148,
+        "fight_start": 1772211705396,
+        "name": "Atomiix",
+        "unbuffed_dps": 153485408
+    },
+    {
+        "current_boss": "Phantom Manifester Brelshaza",
+        "difficulty": "Hard",
+        "dps": 217407426,
+        "fight_start": 1772211705396,
+        "name": "Charmingkrein",
+        "unbuffed_dps": 133209889
+    },
+    {
+        "current_boss": "Phantom Manifester Brelshaza",
+        "difficulty": "Hard",
+        "dps": 263967306,
+        "fight_start": 1772211705396,
+        "name": "Örkhana",
+        "unbuffed_dps": 168819806
+    },
+    {
+        "current_boss": "Phantom Manifester Brelshaza",
+        "difficulty": "Hard",
+        "dps": 134006905,
+        "fight_start": 1772211705396,
+        "name": "Xÿrris",
+        "unbuffed_dps": 87986512
+    },
+    {
+        "current_boss": "Phantom Manifester Brelshaza",
+        "difficulty": "Hard",
+        "dps": 185861153,
+        "fight_start": 1772211705396,
+        "name": "Katsushiika",
+        "unbuffed_dps": 120820343
+    },
+    {
+        "current_boss": "Phantom Manifester Brelshaza",
+        "difficulty": "Hard",
+        "dps": 7288407,
+        "fight_start": 1772211705396,
+        "name": "Yaoru",
+        "unbuffed_dps": 7288407
+    },
+    {
+        "current_boss": "Phantom Manifester Brelshaza",
+        "difficulty": "Hard",
+        "dps": 110451209,
+        "fight_start": 1772211705396,
+        "name": "Stûrm",
+        "unbuffed_dps": 64665797
+    },
+    {
+        "current_boss": "Phantom Manifester Brelshaza",
+        "difficulty": "Hard",
+        "dps": 5591512,
+        "fight_start": 1772211705396,
+        "name": "Sismariii",
+        "unbuffed_dps": 5591512
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 14906156,
+        "fight_start": 1772216559639,
+        "name": "Eskkol",
+        "unbuffed_dps": 14906156
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 227509141,
+        "fight_start": 1772216559639,
+        "name": "Talaxia",
+        "unbuffed_dps": 129942407
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 258206226,
+        "fight_start": 1772216559639,
+        "name": "Orkhans",
+        "unbuffed_dps": 174291561
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 10034473,
+        "fight_start": 1772216559639,
+        "name": "Chalinda",
+        "unbuffed_dps": 10034473
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 358614182,
+        "fight_start": 1772216559639,
+        "name": "Badunclearti",
+        "unbuffed_dps": 233864147
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 336979628,
+        "fight_start": 1772216559639,
+        "name": "Aedhe",
+        "unbuffed_dps": 180903442
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 239072369,
+        "fight_start": 1772216559639,
+        "name": "Atomiix",
+        "unbuffed_dps": 136622829
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 211273233,
+        "fight_start": 1772216559639,
+        "name": "Eÿsa",
+        "unbuffed_dps": 133873687
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 164974192,
+        "fight_start": 1772216948036,
+        "name": "Talaxia",
+        "unbuffed_dps": 86508605
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 267946797,
+        "fight_start": 1772216948036,
+        "name": "Atomiix",
+        "unbuffed_dps": 155096724
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 13946071,
+        "fight_start": 1772216948036,
+        "name": "Eskkol",
+        "unbuffed_dps": 13946071
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 142613939,
+        "fight_start": 1772216948036,
+        "name": "Eÿsa",
+        "unbuffed_dps": 89561054
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 296315291,
+        "fight_start": 1772216948036,
+        "name": "Aedhe",
+        "unbuffed_dps": 168496594
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 195605119,
+        "fight_start": 1772216948036,
+        "name": "Orkhans",
+        "unbuffed_dps": 122146095
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 9557126,
+        "fight_start": 1772216948036,
+        "name": "Chalinda",
+        "unbuffed_dps": 9557126
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 242276282,
+        "fight_start": 1772216948036,
+        "name": "Badunclearti",
+        "unbuffed_dps": 155849388
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 327911821,
+        "fight_start": 1772217406616,
+        "name": "Orkhans",
+        "unbuffed_dps": 218682675
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 297493152,
+        "fight_start": 1772217406616,
+        "name": "Talaxia",
+        "unbuffed_dps": 167019508
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 367769369,
+        "fight_start": 1772217406616,
+        "name": "Atomiix",
+        "unbuffed_dps": 212380074
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 494730451,
+        "fight_start": 1772217406616,
+        "name": "Aedhe",
+        "unbuffed_dps": 284376032
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 378425638,
+        "fight_start": 1772217406616,
+        "name": "Badunclearti",
+        "unbuffed_dps": 249447222
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 282271330,
+        "fight_start": 1772217406616,
+        "name": "Eÿsa",
+        "unbuffed_dps": 185322996
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 8606296,
+        "fight_start": 1772217406616,
+        "name": "Chalinda",
+        "unbuffed_dps": 8606296
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 12287397,
+        "fight_start": 1772217406616,
+        "name": "Eskkol",
+        "unbuffed_dps": 12287397
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 12137149,
+        "fight_start": 1772218522425,
+        "name": "Sebadi",
+        "unbuffed_dps": 12137149
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 176415633,
+        "fight_start": 1772218522425,
+        "name": "Boreahl",
+        "unbuffed_dps": 105421849
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 279431441,
+        "fight_start": 1772218522425,
+        "name": "Tomoriix",
+        "unbuffed_dps": 152022943
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 268851061,
+        "fight_start": 1772218522425,
+        "name": "Kijyodouji",
+        "unbuffed_dps": 144300140
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 255545227,
+        "fight_start": 1772218522425,
+        "name": "Lordmagna",
+        "unbuffed_dps": 146898308
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 15530520,
+        "fight_start": 1772218522425,
+        "name": "Yudellia",
+        "unbuffed_dps": 15530520
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 179571210,
+        "fight_start": 1772218522425,
+        "name": "Xÿrris",
+        "unbuffed_dps": 106429423
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 308643665,
+        "fight_start": 1772218522425,
+        "name": "Orkhan",
+        "unbuffed_dps": 172097751
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 139438437,
+        "fight_start": 1772218951100,
+        "name": "Boreahl",
+        "unbuffed_dps": 80635689
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 162312520,
+        "fight_start": 1772218951100,
+        "name": "Xÿrris",
+        "unbuffed_dps": 97386116
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 233228390,
+        "fight_start": 1772218951100,
+        "name": "Tomoriix",
+        "unbuffed_dps": 126120034
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 201289178,
+        "fight_start": 1772218951100,
+        "name": "Kijyodouji",
+        "unbuffed_dps": 107761478
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 331345746,
+        "fight_start": 1772218951100,
+        "name": "Orkhan",
+        "unbuffed_dps": 180014480
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 3637632,
+        "fight_start": 1772218951100,
+        "name": "Yudellia",
+        "unbuffed_dps": 3637632
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 2937915,
+        "fight_start": 1772218951100,
+        "name": "Sebadi",
+        "unbuffed_dps": 2937915
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 167224682,
+        "fight_start": 1772218951100,
+        "name": "Lordmagna",
+        "unbuffed_dps": 96443301
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 8891345,
+        "fight_start": 1772219457904,
+        "name": "Yudellia",
+        "unbuffed_dps": 8891345
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 205091744,
+        "fight_start": 1772219457904,
+        "name": "Lordmagna",
+        "unbuffed_dps": 123134224
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 356933879,
+        "fight_start": 1772219457904,
+        "name": "Tomoriix",
+        "unbuffed_dps": 199993081
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 266091118,
+        "fight_start": 1772219457904,
+        "name": "Kijyodouji",
+        "unbuffed_dps": 144975381
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 234811539,
+        "fight_start": 1772219457904,
+        "name": "Boreahl",
+        "unbuffed_dps": 142366464
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 340896979,
+        "fight_start": 1772219457904,
+        "name": "Orkhan",
+        "unbuffed_dps": 187370286
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 183255485,
+        "fight_start": 1772219457904,
+        "name": "Xÿrris",
+        "unbuffed_dps": 112193863
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 13210511,
+        "fight_start": 1772219457904,
+        "name": "Sebadi",
+        "unbuffed_dps": 13210511
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 366592249,
+        "fight_start": 1772220481790,
+        "name": "Tomoriix",
+        "unbuffed_dps": 220808278
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 337229994,
+        "fight_start": 1772220481790,
+        "name": "Daedalï",
+        "unbuffed_dps": 211922489
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 4475237,
+        "fight_start": 1772220481790,
+        "name": "Zaheertheon",
+        "unbuffed_dps": 4475237
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 373225905,
+        "fight_start": 1772220481790,
+        "name": "Véliraa",
+        "unbuffed_dps": 220200699
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 473302717,
+        "fight_start": 1772221191553,
+        "name": "Orkhan",
+        "unbuffed_dps": 272704159
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 606033107,
+        "fight_start": 1772221191553,
+        "name": "Dhaniria",
+        "unbuffed_dps": 347771745
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 4095758,
+        "fight_start": 1772221191553,
+        "name": "Naromiix",
+        "unbuffed_dps": 4095758
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 485344295,
+        "fight_start": 1772221191553,
+        "name": "Alavhel",
+        "unbuffed_dps": 267803052
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 574354959,
+        "fight_start": 1772221518160,
+        "name": "Kïnko",
+        "unbuffed_dps": 325912819
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 6312244,
+        "fight_start": 1772221518160,
+        "name": "Lunaakh",
+        "unbuffed_dps": 6312244
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 828246064,
+        "fight_start": 1772221518160,
+        "name": "Deadlytama",
+        "unbuffed_dps": 457820021
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 441058286,
+        "fight_start": 1772221518160,
+        "name": "Satoriix",
+        "unbuffed_dps": 236087546
     }
 ]
