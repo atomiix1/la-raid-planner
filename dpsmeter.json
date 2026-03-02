@@ -40982,5 +40982,1229 @@
         "fight_start": 1772391190234,
         "name": "Rhulkz",
         "unbuffed_dps": 134527941
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 347702477,
+        "fight_start": 1772392091191,
+        "name": "Alavhel",
+        "unbuffed_dps": 211647889
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 126226564,
+        "fight_start": 1772392091191,
+        "name": "Crisostoma",
+        "unbuffed_dps": 79252990
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 177136331,
+        "fight_start": 1772392091191,
+        "name": "Reisliebhaber",
+        "unbuffed_dps": 114735366
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 176740269,
+        "fight_start": 1772392091191,
+        "name": "Muskolo",
+        "unbuffed_dps": 117590132
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 255059130,
+        "fight_start": 1772392091191,
+        "name": "Juúzóu",
+        "unbuffed_dps": 158467990
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 11597665,
+        "fight_start": 1772392091191,
+        "name": "Naromiix",
+        "unbuffed_dps": 11597665
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 3110937,
+        "fight_start": 1772392091191,
+        "name": "Evodiaa",
+        "unbuffed_dps": 3110937
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 231592074,
+        "fight_start": 1772392091191,
+        "name": "Katsushiika",
+        "unbuffed_dps": 135240415
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 334983819,
+        "fight_start": 1772392545162,
+        "name": "Alavhel",
+        "unbuffed_dps": 193992818
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 10845083,
+        "fight_start": 1772392545162,
+        "name": "Evodiaa",
+        "unbuffed_dps": 10845083
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 233783468,
+        "fight_start": 1772392545162,
+        "name": "Katsushiika",
+        "unbuffed_dps": 136506036
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 214939351,
+        "fight_start": 1772392545162,
+        "name": "Juúzóu",
+        "unbuffed_dps": 132158137
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 246506217,
+        "fight_start": 1772392545162,
+        "name": "Reisliebhaber",
+        "unbuffed_dps": 152668450
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 11277486,
+        "fight_start": 1772392545162,
+        "name": "Naromiix",
+        "unbuffed_dps": 11277486
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 170139335,
+        "fight_start": 1772392545162,
+        "name": "Muskolo",
+        "unbuffed_dps": 108250513
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 135775596,
+        "fight_start": 1772392545162,
+        "name": "Crisostoma",
+        "unbuffed_dps": 82024893
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 538705385,
+        "fight_start": 1772392984493,
+        "name": "Alavhel",
+        "unbuffed_dps": 306790288
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 243756405,
+        "fight_start": 1772392984493,
+        "name": "Muskolo",
+        "unbuffed_dps": 154073186
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 225090214,
+        "fight_start": 1772392984493,
+        "name": "Crisostoma",
+        "unbuffed_dps": 130920821
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 16310240,
+        "fight_start": 1772392984493,
+        "name": "Naromiix",
+        "unbuffed_dps": 16310240
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 396835237,
+        "fight_start": 1772392984493,
+        "name": "Juúzóu",
+        "unbuffed_dps": 246317140
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 303393297,
+        "fight_start": 1772392984493,
+        "name": "Reisliebhaber",
+        "unbuffed_dps": 193417683
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 8607516,
+        "fight_start": 1772392984493,
+        "name": "Evodiaa",
+        "unbuffed_dps": 8607516
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 280730818,
+        "fight_start": 1772392984493,
+        "name": "Katsushiika",
+        "unbuffed_dps": 166399969
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 239176290,
+        "fight_start": 1772446788950,
+        "name": "Sarrissa",
+        "unbuffed_dps": 144399926
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 144611381,
+        "fight_start": 1772446788950,
+        "name": "Aurelíá",
+        "unbuffed_dps": 93155634
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 288562968,
+        "fight_start": 1772446788950,
+        "name": "Wreckadoodle",
+        "unbuffed_dps": 182348879
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 186934340,
+        "fight_start": 1772446788950,
+        "name": "Hawktuàh",
+        "unbuffed_dps": 117547074
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 224547447,
+        "fight_start": 1772446788950,
+        "name": "Feraliix",
+        "unbuffed_dps": 132352739
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 11747909,
+        "fight_start": 1772446788950,
+        "name": "Holymore",
+        "unbuffed_dps": 11747909
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 249729708,
+        "fight_start": 1772446788950,
+        "name": "Asthelyn",
+        "unbuffed_dps": 152455505
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 9101985,
+        "fight_start": 1772446788950,
+        "name": "Moujahide",
+        "unbuffed_dps": 9101985
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 201453593,
+        "fight_start": 1772447251442,
+        "name": "Hawktuàh",
+        "unbuffed_dps": 125679161
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 2423584,
+        "fight_start": 1772447251442,
+        "name": "Holymore",
+        "unbuffed_dps": 2423584
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 241619434,
+        "fight_start": 1772447251442,
+        "name": "Feraliix",
+        "unbuffed_dps": 134414676
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 285591426,
+        "fight_start": 1772447251442,
+        "name": "Wreckadoodle",
+        "unbuffed_dps": 173642169
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 235771693,
+        "fight_start": 1772447251442,
+        "name": "Sarrissa",
+        "unbuffed_dps": 136168175
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 191075933,
+        "fight_start": 1772447251442,
+        "name": "Asthelyn",
+        "unbuffed_dps": 117760950
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 9068024,
+        "fight_start": 1772447251442,
+        "name": "Moujahide",
+        "unbuffed_dps": 9068024
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 159925602,
+        "fight_start": 1772447251442,
+        "name": "Aurelíá",
+        "unbuffed_dps": 97393167
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 186558363,
+        "fight_start": 1772447713943,
+        "name": "Wreckadoodle",
+        "unbuffed_dps": 110154354
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 272413832,
+        "fight_start": 1772447713943,
+        "name": "Feraliix",
+        "unbuffed_dps": 163769410
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 136363550,
+        "fight_start": 1772447713943,
+        "name": "Aurelíá",
+        "unbuffed_dps": 96279550
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 1910858,
+        "fight_start": 1772447713943,
+        "name": "Moujahide",
+        "unbuffed_dps": 1910858
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 169355584,
+        "fight_start": 1772447713943,
+        "name": "Asthelyn",
+        "unbuffed_dps": 105105559
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 344466729,
+        "fight_start": 1772447713943,
+        "name": "Sarrissa",
+        "unbuffed_dps": 211305379
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 7182212,
+        "fight_start": 1772447713943,
+        "name": "Holymore",
+        "unbuffed_dps": 7182212
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 193933129,
+        "fight_start": 1772447713943,
+        "name": "Hawktuàh",
+        "unbuffed_dps": 136348621
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 164119772,
+        "fight_start": 1772450691025,
+        "name": "Katoriix",
+        "unbuffed_dps": 164119772
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 237097887,
+        "fight_start": 1772450691025,
+        "name": "Helllsoul",
+        "unbuffed_dps": 237097887
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 374906598,
+        "fight_start": 1772450691025,
+        "name": "Kiwinuke",
+        "unbuffed_dps": 374906598
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 175815433,
+        "fight_start": 1772450691025,
+        "name": "Kikszdemonic",
+        "unbuffed_dps": 175815433
+    },
+    {
+        "current_boss": "Ironblood Captain Arno",
+        "difficulty": "",
+        "dps": 469613348,
+        "fight_start": 1772451152121,
+        "name": "Katoriix",
+        "unbuffed_dps": 469613348
+    },
+    {
+        "current_boss": "Cicerra",
+        "difficulty": "",
+        "dps": 579189796,
+        "fight_start": 1772451387245,
+        "name": "Katoriix",
+        "unbuffed_dps": 579189796
+    },
+    {
+        "current_boss": "Habeck",
+        "difficulty": "",
+        "dps": 372336297,
+        "fight_start": 1772451615864,
+        "name": "Katoriix",
+        "unbuffed_dps": 372336297
+    },
+    {
+        "current_boss": "Elemental Knight of Darkness",
+        "difficulty": "",
+        "dps": 599161858,
+        "fight_start": 1772452258860,
+        "name": "Satoriix",
+        "unbuffed_dps": 599161858
+    },
+    {
+        "current_boss": "Diogenes",
+        "difficulty": "",
+        "dps": 648692571,
+        "fight_start": 1772452468279,
+        "name": "Satoriix",
+        "unbuffed_dps": 648692571
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 178503748,
+        "fight_start": 1772468288813,
+        "name": "Katoriix",
+        "unbuffed_dps": 103908290
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 269892599,
+        "fight_start": 1772468288813,
+        "name": "Certifiedturtle",
+        "unbuffed_dps": 154348080
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 3270531,
+        "fight_start": 1772468288813,
+        "name": "Mylulia",
+        "unbuffed_dps": 3270531
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 61382051,
+        "fight_start": 1772468288813,
+        "name": "Hiymeko",
+        "unbuffed_dps": 41251913
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 158925560,
+        "fight_start": 1772468288813,
+        "name": "Boreahl",
+        "unbuffed_dps": 103346451
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 314709237,
+        "fight_start": 1772468288813,
+        "name": "Nekùh",
+        "unbuffed_dps": 180088756
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 7194757,
+        "fight_start": 1772468288813,
+        "name": "Chalinda",
+        "unbuffed_dps": 7194757
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 178827116,
+        "fight_start": 1772468288813,
+        "name": "Markslady",
+        "unbuffed_dps": 115738799
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 131579622,
+        "fight_start": 1772468927220,
+        "name": "Hiymeko",
+        "unbuffed_dps": 90602029
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 258242193,
+        "fight_start": 1772468927220,
+        "name": "Katoriix",
+        "unbuffed_dps": 148311881
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 333034212,
+        "fight_start": 1772468927220,
+        "name": "Nekùh",
+        "unbuffed_dps": 184212334
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 328799998,
+        "fight_start": 1772468927220,
+        "name": "Certifiedturtle",
+        "unbuffed_dps": 179056710
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 170859210,
+        "fight_start": 1772468927220,
+        "name": "Markslady",
+        "unbuffed_dps": 125332942
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 1887658,
+        "fight_start": 1772468927220,
+        "name": "Chalinda",
+        "unbuffed_dps": 1887658
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 2855140,
+        "fight_start": 1772468927220,
+        "name": "Mylulia",
+        "unbuffed_dps": 2855140
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 126337545,
+        "fight_start": 1772468927220,
+        "name": "Boreahl",
+        "unbuffed_dps": 84798398
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 3047454,
+        "fight_start": 1772469248219,
+        "name": "Mylulia",
+        "unbuffed_dps": 3047454
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 177237123,
+        "fight_start": 1772469248219,
+        "name": "Boreahl",
+        "unbuffed_dps": 105981549
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 180548805,
+        "fight_start": 1772469248219,
+        "name": "Markslady",
+        "unbuffed_dps": 114600087
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 319932525,
+        "fight_start": 1772469248219,
+        "name": "Nekùh",
+        "unbuffed_dps": 176639233
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 251352950,
+        "fight_start": 1772469248219,
+        "name": "Katoriix",
+        "unbuffed_dps": 148164929
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 153876710,
+        "fight_start": 1772469248219,
+        "name": "Hiymeko",
+        "unbuffed_dps": 96082829
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 2892057,
+        "fight_start": 1772469248219,
+        "name": "Chalinda",
+        "unbuffed_dps": 2892057
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 339730549,
+        "fight_start": 1772469248219,
+        "name": "Certifiedturtle",
+        "unbuffed_dps": 181712292
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 145269072,
+        "fight_start": 1772470583710,
+        "name": "Luminarys",
+        "unbuffed_dps": 91559822
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 239382666,
+        "fight_start": 1772470583710,
+        "name": "Tomoriix",
+        "unbuffed_dps": 142557165
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 274241478,
+        "fight_start": 1772470583710,
+        "name": "Embëreth",
+        "unbuffed_dps": 160252897
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 9924281,
+        "fight_start": 1772470583710,
+        "name": "Anyära",
+        "unbuffed_dps": 9924281
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 253677066,
+        "fight_start": 1772470583710,
+        "name": "Doctorpepino",
+        "unbuffed_dps": 150804153
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 9361424,
+        "fight_start": 1772470583710,
+        "name": "Sebadi",
+        "unbuffed_dps": 9361424
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 320358294,
+        "fight_start": 1772470583710,
+        "name": "Aedhe",
+        "unbuffed_dps": 178992748
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 191632459,
+        "fight_start": 1772470583710,
+        "name": "Dreadqueen",
+        "unbuffed_dps": 114353955
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 4278719,
+        "fight_start": 1772471178786,
+        "name": "Sebadi",
+        "unbuffed_dps": 4278719
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 357815689,
+        "fight_start": 1772471178786,
+        "name": "Aedhe",
+        "unbuffed_dps": 206553050
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 163149171,
+        "fight_start": 1772471178786,
+        "name": "Luminarys",
+        "unbuffed_dps": 91590992
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 3470414,
+        "fight_start": 1772471178786,
+        "name": "Anyära",
+        "unbuffed_dps": 3470414
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 197536231,
+        "fight_start": 1772471178786,
+        "name": "Dreadqueen",
+        "unbuffed_dps": 118060041
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 150043912,
+        "fight_start": 1772471178786,
+        "name": "Embëreth",
+        "unbuffed_dps": 85010139
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 254761980,
+        "fight_start": 1772471178786,
+        "name": "Tomoriix",
+        "unbuffed_dps": 149216119
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 259962199,
+        "fight_start": 1772471178786,
+        "name": "Doctorpepino",
+        "unbuffed_dps": 148725514
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 373248497,
+        "fight_start": 1772471506563,
+        "name": "Aedhe",
+        "unbuffed_dps": 209916807
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 8343813,
+        "fight_start": 1772471506563,
+        "name": "Sebadi",
+        "unbuffed_dps": 8343813
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 132802795,
+        "fight_start": 1772471506563,
+        "name": "Luminarys",
+        "unbuffed_dps": 84891850
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 173839604,
+        "fight_start": 1772471506563,
+        "name": "Embëreth",
+        "unbuffed_dps": 101445101
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 232995776,
+        "fight_start": 1772471506563,
+        "name": "Tomoriix",
+        "unbuffed_dps": 135498225
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 251363013,
+        "fight_start": 1772471506563,
+        "name": "Doctorpepino",
+        "unbuffed_dps": 143564216
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 188160545,
+        "fight_start": 1772471506563,
+        "name": "Dreadqueen",
+        "unbuffed_dps": 114803777
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 9326323,
+        "fight_start": 1772471506563,
+        "name": "Anyära",
+        "unbuffed_dps": 9326323
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 4176020,
+        "fight_start": 1772472641103,
+        "name": "Majinsppppp",
+        "unbuffed_dps": 4176020
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 48672936,
+        "fight_start": 1772472641103,
+        "name": "Stompyah",
+        "unbuffed_dps": 26651980
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 431381464,
+        "fight_start": 1772472641103,
+        "name": "Âvlora",
+        "unbuffed_dps": 280033786
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 200877929,
+        "fight_start": 1772472641103,
+        "name": "Liduvina",
+        "unbuffed_dps": 135555651
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 282232803,
+        "fight_start": 1772472641103,
+        "name": "Satoriix",
+        "unbuffed_dps": 185483819
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 325998094,
+        "fight_start": 1772472641103,
+        "name": "Weatherassassin",
+        "unbuffed_dps": 198860293
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 241504132,
+        "fight_start": 1772472641103,
+        "name": "Tiphonn",
+        "unbuffed_dps": 149649854
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 12027631,
+        "fight_start": 1772472641103,
+        "name": "Luminarys",
+        "unbuffed_dps": 12027631
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 228724020,
+        "fight_start": 1772473047474,
+        "name": "Satoriix",
+        "unbuffed_dps": 145365774
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 80233586,
+        "fight_start": 1772473047474,
+        "name": "Stompyah",
+        "unbuffed_dps": 45726009
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 11139414,
+        "fight_start": 1772473047474,
+        "name": "Luminarys",
+        "unbuffed_dps": 11139414
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 190491245,
+        "fight_start": 1772473047474,
+        "name": "Liduvina",
+        "unbuffed_dps": 119540523
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 339970308,
+        "fight_start": 1772473047474,
+        "name": "Âvlora",
+        "unbuffed_dps": 220476731
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 169301206,
+        "fight_start": 1772473047474,
+        "name": "Tiphonn",
+        "unbuffed_dps": 98792318
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 292792747,
+        "fight_start": 1772473047474,
+        "name": "Weatherassassin",
+        "unbuffed_dps": 177465206
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 12803000,
+        "fight_start": 1772473047474,
+        "name": "Majinsppppp",
+        "unbuffed_dps": 12803000
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 467150708,
+        "fight_start": 1772473515735,
+        "name": "Weatherassassin",
+        "unbuffed_dps": 281134203
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 322108081,
+        "fight_start": 1772473515735,
+        "name": "Tiphonn",
+        "unbuffed_dps": 191531928
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 12332792,
+        "fight_start": 1772473515735,
+        "name": "Majinsppppp",
+        "unbuffed_dps": 12332792
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 64725788,
+        "fight_start": 1772473515735,
+        "name": "Stompyah",
+        "unbuffed_dps": 32834087
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 476867844,
+        "fight_start": 1772473515735,
+        "name": "Âvlora",
+        "unbuffed_dps": 311914552
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 408092355,
+        "fight_start": 1772473515735,
+        "name": "Satoriix",
+        "unbuffed_dps": 260694493
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 7735637,
+        "fight_start": 1772473515735,
+        "name": "Luminarys",
+        "unbuffed_dps": 7735637
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 241619534,
+        "fight_start": 1772473515735,
+        "name": "Liduvina",
+        "unbuffed_dps": 155511101
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 194459374,
+        "fight_start": 1772474636487,
+        "name": "Uriangera",
+        "unbuffed_dps": 98641325
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 376905025,
+        "fight_start": 1772474636487,
+        "name": "Zrotyson",
+        "unbuffed_dps": 203412864
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 261775316,
+        "fight_start": 1772474636487,
+        "name": "Katoriix",
+        "unbuffed_dps": 143291578
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 382469011,
+        "fight_start": 1772474636487,
+        "name": "Lowkêy",
+        "unbuffed_dps": 220508324
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 4358101,
+        "fight_start": 1772474636487,
+        "name": "Brunildâ",
+        "unbuffed_dps": 4358101
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 273694948,
+        "fight_start": 1772474636487,
+        "name": "Vriytra",
+        "unbuffed_dps": 153388655
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 4433795,
+        "fight_start": 1772474636487,
+        "name": "Aírashí",
+        "unbuffed_dps": 4433795
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 378247134,
+        "fight_start": 1772474636487,
+        "name": "Thrillmancer",
+        "unbuffed_dps": 209652768
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 310300385,
+        "fight_start": 1772474988038,
+        "name": "Thrillmancer",
+        "unbuffed_dps": 172905240
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 264882724,
+        "fight_start": 1772474988038,
+        "name": "Vriytra",
+        "unbuffed_dps": 142984330
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 3774980,
+        "fight_start": 1772474988038,
+        "name": "Aírashí",
+        "unbuffed_dps": 3774980
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 306204472,
+        "fight_start": 1772474988038,
+        "name": "Zrotyson",
+        "unbuffed_dps": 169410845
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 351463759,
+        "fight_start": 1772474988038,
+        "name": "Lowkêy",
+        "unbuffed_dps": 200185342
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 5008493,
+        "fight_start": 1772474988038,
+        "name": "Brunildâ",
+        "unbuffed_dps": 5008493
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 226051228,
+        "fight_start": 1772474988038,
+        "name": "Katoriix",
+        "unbuffed_dps": 122908781
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 123439675,
+        "fight_start": 1772474988038,
+        "name": "Uriangera",
+        "unbuffed_dps": 68236481
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 537398355,
+        "fight_start": 1772475383013,
+        "name": "Lowkêy",
+        "unbuffed_dps": 310145573
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 242275245,
+        "fight_start": 1772475383013,
+        "name": "Uriangera",
+        "unbuffed_dps": 131628048
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 389236679,
+        "fight_start": 1772475383013,
+        "name": "Katoriix",
+        "unbuffed_dps": 215011534
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 14541863,
+        "fight_start": 1772475383013,
+        "name": "Brunildâ",
+        "unbuffed_dps": 14541863
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 475529848,
+        "fight_start": 1772475383013,
+        "name": "Thrillmancer",
+        "unbuffed_dps": 276075041
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 12473618,
+        "fight_start": 1772475383013,
+        "name": "Aírashí",
+        "unbuffed_dps": 12473618
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 385875571,
+        "fight_start": 1772475383013,
+        "name": "Vriytra",
+        "unbuffed_dps": 213342880
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 315462170,
+        "fight_start": 1772475383013,
+        "name": "Zrotyson",
+        "unbuffed_dps": 179249146
     }
 ]
