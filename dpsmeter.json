@@ -42206,5 +42206,53 @@
         "fight_start": 1772475383013,
         "name": "Zrotyson",
         "unbuffed_dps": 179249146
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 284957146,
+        "fight_start": 1772909466000,
+        "name": "Atomiix",
+        "unbuffed_dps": 156800000
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 13962962,
+        "fight_start": 1772909466000,
+        "name": "Brunildâ",
+        "unbuffed_dps": 13962962
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 442959628,
+        "fight_start": 1772909466000,
+        "name": "Orkhanx",
+        "unbuffed_dps": 241800000
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 339792198,
+        "fight_start": 1772909466000,
+        "name": "Atomiix",
+        "unbuffed_dps": 181000000
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 14386641,
+        "fight_start": 1772909466000,
+        "name": "Brunildâ",
+        "unbuffed_dps": 14386641
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 352088101,
+        "fight_start": 1772909466000,
+        "name": "Orkhanx",
+        "unbuffed_dps": 189300000
     }
 ]
