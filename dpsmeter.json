@@ -42208,51 +42208,771 @@
         "unbuffed_dps": 179249146
     },
     {
-        "current_boss": "Abyss Lord Kazeros",
+        "current_boss": "Brelshaza, Ember in the Ashes",
         "difficulty": "Hard",
-        "dps": 284957146,
-        "fight_start": 1772909466000,
-        "name": "Atomiix",
-        "unbuffed_dps": 156800000
+        "dps": 12123242,
+        "fight_start": 1772910342530,
+        "name": "Yudellia",
+        "unbuffed_dps": 12123242
     },
     {
-        "current_boss": "Abyss Lord Kazeros",
+        "current_boss": "Brelshaza, Ember in the Ashes",
         "difficulty": "Hard",
-        "dps": 13962962,
-        "fight_start": 1772909466000,
-        "name": "Brunildâ",
-        "unbuffed_dps": 13962962
+        "dps": 90029021,
+        "fight_start": 1772910342530,
+        "name": "Liduvina",
+        "unbuffed_dps": 50715417
     },
     {
-        "current_boss": "Abyss Lord Kazeros",
+        "current_boss": "Brelshaza, Ember in the Ashes",
         "difficulty": "Hard",
-        "dps": 442959628,
-        "fight_start": 1772909466000,
+        "dps": 349383968,
+        "fight_start": 1772910342530,
         "name": "Orkhanx",
-        "unbuffed_dps": 241800000
+        "unbuffed_dps": 198528990
     },
     {
-        "current_boss": "Death Incarnate Kazeros",
+        "current_boss": "Brelshaza, Ember in the Ashes",
         "difficulty": "Hard",
-        "dps": 339792198,
-        "fight_start": 1772909466000,
-        "name": "Atomiix",
-        "unbuffed_dps": 181000000
+        "dps": 11593050,
+        "fight_start": 1772910342530,
+        "name": "Swiftcalligraphy",
+        "unbuffed_dps": 11593050
     },
     {
-        "current_boss": "Death Incarnate Kazeros",
+        "current_boss": "Brelshaza, Ember in the Ashes",
         "difficulty": "Hard",
-        "dps": 14386641,
-        "fight_start": 1772909466000,
-        "name": "Brunildâ",
-        "unbuffed_dps": 14386641
+        "dps": 426450267,
+        "fight_start": 1772910342530,
+        "name": "Icyemilia",
+        "unbuffed_dps": 229434284
     },
     {
-        "current_boss": "Death Incarnate Kazeros",
+        "current_boss": "Brelshaza, Ember in the Ashes",
         "difficulty": "Hard",
-        "dps": 352088101,
-        "fight_start": 1772909466000,
+        "dps": 382103255,
+        "fight_start": 1772910342530,
+        "name": "Alavhel",
+        "unbuffed_dps": 211293813
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 234003088,
+        "fight_start": 1772910342530,
+        "name": "Katoriix",
+        "unbuffed_dps": 132824936
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 250412647,
+        "fight_start": 1772910342530,
+        "name": "Aluby",
+        "unbuffed_dps": 143876971
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 196282838,
+        "fight_start": 1772910944336,
+        "name": "Liduvina",
+        "unbuffed_dps": 104374640
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 4682849,
+        "fight_start": 1772910944336,
+        "name": "Swiftcalligraphy",
+        "unbuffed_dps": 4682849
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 558979298,
+        "fight_start": 1772910944336,
         "name": "Orkhanx",
-        "unbuffed_dps": 189300000
+        "unbuffed_dps": 314199018
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 13678920,
+        "fight_start": 1772910944336,
+        "name": "Yudellia",
+        "unbuffed_dps": 13678920
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 457095598,
+        "fight_start": 1772910944336,
+        "name": "Icyemilia",
+        "unbuffed_dps": 235068609
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 300093737,
+        "fight_start": 1772910944336,
+        "name": "Aluby",
+        "unbuffed_dps": 165916733
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 387244992,
+        "fight_start": 1772910944336,
+        "name": "Alavhel",
+        "unbuffed_dps": 210123775
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 262365423,
+        "fight_start": 1772910944336,
+        "name": "Katoriix",
+        "unbuffed_dps": 150164074
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 12990687,
+        "fight_start": 1772911306093,
+        "name": "Swiftcalligraphy",
+        "unbuffed_dps": 12990687
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 13867181,
+        "fight_start": 1772911306093,
+        "name": "Yudellia",
+        "unbuffed_dps": 13867181
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 579951371,
+        "fight_start": 1772911306093,
+        "name": "Icyemilia",
+        "unbuffed_dps": 316273475
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 511893416,
+        "fight_start": 1772911306093,
+        "name": "Alavhel",
+        "unbuffed_dps": 276397905
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 469147697,
+        "fight_start": 1772911306093,
+        "name": "Orkhanx",
+        "unbuffed_dps": 263029712
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 277369793,
+        "fight_start": 1772911306093,
+        "name": "Katoriix",
+        "unbuffed_dps": 156601489
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 326922160,
+        "fight_start": 1772911306093,
+        "name": "Liduvina",
+        "unbuffed_dps": 181443013
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 337645007,
+        "fight_start": 1772911306093,
+        "name": "Aluby",
+        "unbuffed_dps": 190752825
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 256758858,
+        "fight_start": 1772913074062,
+        "name": "Orkhan",
+        "unbuffed_dps": 148940535
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 9391752,
+        "fight_start": 1772913074062,
+        "name": "Guoguoguardian",
+        "unbuffed_dps": 9391752
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 564874937,
+        "fight_start": 1772913074062,
+        "name": "Kadell",
+        "unbuffed_dps": 343000527
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 698076497,
+        "fight_start": 1772913074062,
+        "name": "Cnqtxz",
+        "unbuffed_dps": 397978365
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 411920419,
+        "fight_start": 1772913074062,
+        "name": "Sichelsusi",
+        "unbuffed_dps": 226594610
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 2620444,
+        "fight_start": 1772913074062,
+        "name": "Naromiix",
+        "unbuffed_dps": 2620444
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 357947311,
+        "fight_start": 1772913074062,
+        "name": "Taizia",
+        "unbuffed_dps": 212125919
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 389778922,
+        "fight_start": 1772913074062,
+        "name": "Petmypepe",
+        "unbuffed_dps": 222814877
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 613477324,
+        "fight_start": 1772913727136,
+        "name": "Kadell",
+        "unbuffed_dps": 371881992
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 9637128,
+        "fight_start": 1772913727136,
+        "name": "Naromiix",
+        "unbuffed_dps": 9637128
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 447814461,
+        "fight_start": 1772913727136,
+        "name": "Taizia",
+        "unbuffed_dps": 268059409
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 5356442,
+        "fight_start": 1772913727136,
+        "name": "Guoguoguardian",
+        "unbuffed_dps": 5356442
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 424320422,
+        "fight_start": 1772913727136,
+        "name": "Petmypepe",
+        "unbuffed_dps": 242713513
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 442102460,
+        "fight_start": 1772913727136,
+        "name": "Sichelsusi",
+        "unbuffed_dps": 250203463
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 291743020,
+        "fight_start": 1772913727136,
+        "name": "Orkhan",
+        "unbuffed_dps": 170435636
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 675979579,
+        "fight_start": 1772913727136,
+        "name": "Cnqtxz",
+        "unbuffed_dps": 388001654
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 9992710,
+        "fight_start": 1772914182985,
+        "name": "Guoguoguardian",
+        "unbuffed_dps": 9992710
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 346863407,
+        "fight_start": 1772914182985,
+        "name": "Petmypepe",
+        "unbuffed_dps": 195998976
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 7046089,
+        "fight_start": 1772914182985,
+        "name": "Naromiix",
+        "unbuffed_dps": 7046089
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 407556159,
+        "fight_start": 1772914182985,
+        "name": "Taizia",
+        "unbuffed_dps": 241591674
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 377062610,
+        "fight_start": 1772914182985,
+        "name": "Sichelsusi",
+        "unbuffed_dps": 211858945
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 536171536,
+        "fight_start": 1772914182985,
+        "name": "Kadell",
+        "unbuffed_dps": 328580659
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 199761019,
+        "fight_start": 1772914182985,
+        "name": "Orkhan",
+        "unbuffed_dps": 115556746
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 553697724,
+        "fight_start": 1772914182985,
+        "name": "Cnqtxz",
+        "unbuffed_dps": 325173302
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 270654571,
+        "fight_start": 1772914795410,
+        "name": "Taizia",
+        "unbuffed_dps": 188093899
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 402760461,
+        "fight_start": 1772914795410,
+        "name": "Kadell",
+        "unbuffed_dps": 287568137
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 395635921,
+        "fight_start": 1772914795410,
+        "name": "Sichelsusi",
+        "unbuffed_dps": 224467901
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 4680736,
+        "fight_start": 1772914795410,
+        "name": "Guoguoguardian",
+        "unbuffed_dps": 4680736
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 192823389,
+        "fight_start": 1772914795410,
+        "name": "Orkhan",
+        "unbuffed_dps": 124624012
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 383858158,
+        "fight_start": 1772914795410,
+        "name": "Petmypepe",
+        "unbuffed_dps": 224416226
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 1626491,
+        "fight_start": 1772914795410,
+        "name": "Naromiix",
+        "unbuffed_dps": 1626491
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 663622357,
+        "fight_start": 1772914795410,
+        "name": "Cnqtxz",
+        "unbuffed_dps": 393626042
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 348168465,
+        "fight_start": 1772915290868,
+        "name": "Taizia",
+        "unbuffed_dps": 210908966
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 468340008,
+        "fight_start": 1772915290868,
+        "name": "Kadell",
+        "unbuffed_dps": 292351128
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 217098493,
+        "fight_start": 1772915290868,
+        "name": "Orkhan",
+        "unbuffed_dps": 127636972
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 394317219,
+        "fight_start": 1772915290868,
+        "name": "Petmypepe",
+        "unbuffed_dps": 224771452
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 9191189,
+        "fight_start": 1772915290868,
+        "name": "Naromiix",
+        "unbuffed_dps": 9191189
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 357098732,
+        "fight_start": 1772915290868,
+        "name": "Sichelsusi",
+        "unbuffed_dps": 197497662
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 562905108,
+        "fight_start": 1772915290868,
+        "name": "Cnqtxz",
+        "unbuffed_dps": 323289873
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Hard",
+        "dps": 3713435,
+        "fight_start": 1772915290868,
+        "name": "Guoguoguardian",
+        "unbuffed_dps": 3713435
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 8043373,
+        "fight_start": 1772915871723,
+        "name": "Naromiix",
+        "unbuffed_dps": 8043373
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 352764282,
+        "fight_start": 1772915871723,
+        "name": "Taizia",
+        "unbuffed_dps": 215168600
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 547140213,
+        "fight_start": 1772915871723,
+        "name": "Cnqtxz",
+        "unbuffed_dps": 323425094
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 244451392,
+        "fight_start": 1772915871723,
+        "name": "Orkhan",
+        "unbuffed_dps": 151445970
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 496393928,
+        "fight_start": 1772915871723,
+        "name": "Kadell",
+        "unbuffed_dps": 312839176
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 353374035,
+        "fight_start": 1772915871723,
+        "name": "Sichelsusi",
+        "unbuffed_dps": 206119564
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 357572853,
+        "fight_start": 1772915871723,
+        "name": "Petmypepe",
+        "unbuffed_dps": 209469632
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 9856210,
+        "fight_start": 1772915871723,
+        "name": "Guoguoguardian",
+        "unbuffed_dps": 9856210
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 94055487,
+        "fight_start": 1772918033758,
+        "name": "Silmarri",
+        "unbuffed_dps": 58617377
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 234797517,
+        "fight_start": 1772918033758,
+        "name": "Cielayer",
+        "unbuffed_dps": 157529548
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 198452492,
+        "fight_start": 1772918033758,
+        "name": "Vedrfolnir",
+        "unbuffed_dps": 116551534
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 6885786,
+        "fight_start": 1772918033758,
+        "name": "Ahmedmaamounkkkk",
+        "unbuffed_dps": 6885786
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 182767796,
+        "fight_start": 1772918033758,
+        "name": "Zivswinds",
+        "unbuffed_dps": 114964969
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 226519755,
+        "fight_start": 1772918033758,
+        "name": "Katoriix",
+        "unbuffed_dps": 148006371
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 2149523,
+        "fight_start": 1772918033758,
+        "name": "Morumon",
+        "unbuffed_dps": 2149523
+    },
+    {
+        "current_boss": "Infernas",
+        "difficulty": "Hard",
+        "dps": 226289648,
+        "fight_start": 1772918033758,
+        "name": "Aenovia",
+        "unbuffed_dps": 138029390
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 146782765,
+        "fight_start": 1772918522413,
+        "name": "Zivswinds",
+        "unbuffed_dps": 91226404
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 203036322,
+        "fight_start": 1772918522413,
+        "name": "Katoriix",
+        "unbuffed_dps": 130147263
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 213163488,
+        "fight_start": 1772918522413,
+        "name": "Silmarri",
+        "unbuffed_dps": 127109015
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 276147062,
+        "fight_start": 1772918522413,
+        "name": "Cielayer",
+        "unbuffed_dps": 170490708
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 200371415,
+        "fight_start": 1772918522413,
+        "name": "Aenovia",
+        "unbuffed_dps": 127705062
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 173681278,
+        "fight_start": 1772918522413,
+        "name": "Vedrfolnir",
+        "unbuffed_dps": 106162906
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 3029135,
+        "fight_start": 1772918522413,
+        "name": "Morumon",
+        "unbuffed_dps": 3029135
+    },
+    {
+        "current_boss": "Blossoming Fear, Naitreya",
+        "difficulty": "Hard",
+        "dps": 14575682,
+        "fight_start": 1772918522413,
+        "name": "Ahmedmaamounkkkk",
+        "unbuffed_dps": 14575682
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 334997530,
+        "fight_start": 1772919001973,
+        "name": "Cielayer",
+        "unbuffed_dps": 213680597
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 207562454,
+        "fight_start": 1772919001973,
+        "name": "Aenovia",
+        "unbuffed_dps": 139041395
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 7337143,
+        "fight_start": 1772919001973,
+        "name": "Morumon",
+        "unbuffed_dps": 7337143
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 239586130,
+        "fight_start": 1772919001973,
+        "name": "Silmarri",
+        "unbuffed_dps": 157719518
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 247868185,
+        "fight_start": 1772919001973,
+        "name": "Katoriix",
+        "unbuffed_dps": 174749786
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 5113517,
+        "fight_start": 1772919001973,
+        "name": "Ahmedmaamounkkkk",
+        "unbuffed_dps": 5113517
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 158388668,
+        "fight_start": 1772919001973,
+        "name": "Zivswinds",
+        "unbuffed_dps": 102045402
+    },
+    {
+        "current_boss": "Flash of Punishment",
+        "difficulty": "Hard",
+        "dps": 302225513,
+        "fight_start": 1772919001973,
+        "name": "Vedrfolnir",
+        "unbuffed_dps": 184423803
     }
 ]
