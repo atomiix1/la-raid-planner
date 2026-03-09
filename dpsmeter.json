@@ -44126,5 +44126,413 @@
         "fight_start": 1772998195604,
         "name": "Starcker",
         "unbuffed_dps": 124137515
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 696592245,
+        "fight_start": 1773078234802,
+        "name": "Lionrandgrid",
+        "unbuffed_dps": 430970793
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 342114740,
+        "fight_start": 1773078234802,
+        "name": "Hiymeko",
+        "unbuffed_dps": 192796754
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 24592936,
+        "fight_start": 1773078234802,
+        "name": "Naromiix",
+        "unbuffed_dps": 24592936
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 357692721,
+        "fight_start": 1773078234802,
+        "name": "Liduvina",
+        "unbuffed_dps": 223799186
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 260537283,
+        "fight_start": 1773079109871,
+        "name": "Bearlylégal",
+        "unbuffed_dps": 156281465
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 341193525,
+        "fight_start": 1773079109871,
+        "name": "Shybrelhell",
+        "unbuffed_dps": 212346835
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 10085198,
+        "fight_start": 1773079109871,
+        "name": "Eddyvalk",
+        "unbuffed_dps": 10085198
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 237384849,
+        "fight_start": 1773079109871,
+        "name": "Feraliix",
+        "unbuffed_dps": 137714705
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 260951442,
+        "fight_start": 1773079109871,
+        "name": "Staggerdinger",
+        "unbuffed_dps": 152140024
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 393020472,
+        "fight_start": 1773079109871,
+        "name": "Pokingborta",
+        "unbuffed_dps": 247078966
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 3365727,
+        "fight_start": 1773079109871,
+        "name": "Sebadi",
+        "unbuffed_dps": 3365727
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 200695863,
+        "fight_start": 1773079109871,
+        "name": "Hiymeko",
+        "unbuffed_dps": 122883088
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 2617372,
+        "fight_start": 1773079596088,
+        "name": "Eddyvalk",
+        "unbuffed_dps": 2617372
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 278841675,
+        "fight_start": 1773079596088,
+        "name": "Staggerdinger",
+        "unbuffed_dps": 156270965
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 237104473,
+        "fight_start": 1773079596088,
+        "name": "Bearlylégal",
+        "unbuffed_dps": 148034573
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 10831260,
+        "fight_start": 1773079596088,
+        "name": "Sebadi",
+        "unbuffed_dps": 10831260
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 272979782,
+        "fight_start": 1773079596088,
+        "name": "Feraliix",
+        "unbuffed_dps": 155324064
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 334437798,
+        "fight_start": 1773079596088,
+        "name": "Shybrelhell",
+        "unbuffed_dps": 209698227
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 335790024,
+        "fight_start": 1773079596088,
+        "name": "Pokingborta",
+        "unbuffed_dps": 217666367
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 187720347,
+        "fight_start": 1773079596088,
+        "name": "Hiymeko",
+        "unbuffed_dps": 110307631
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 272167156,
+        "fight_start": 1773080401229,
+        "name": "Katoriix",
+        "unbuffed_dps": 168630543
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 204377062,
+        "fight_start": 1773080401229,
+        "name": "Xÿrris",
+        "unbuffed_dps": 125126110
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 9551681,
+        "fight_start": 1773080401229,
+        "name": "Luminarys",
+        "unbuffed_dps": 9551681
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 9296030,
+        "fight_start": 1773080401229,
+        "name": "Cacchiin",
+        "unbuffed_dps": 9296030
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 189596334,
+        "fight_start": 1773080401229,
+        "name": "Staggérfloh",
+        "unbuffed_dps": 123540789
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 152993992,
+        "fight_start": 1773080401229,
+        "name": "Crisostoma",
+        "unbuffed_dps": 97326957
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 265901816,
+        "fight_start": 1773080401229,
+        "name": "Amenokaze",
+        "unbuffed_dps": 155259249
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 317000914,
+        "fight_start": 1773080401229,
+        "name": "Amathiien",
+        "unbuffed_dps": 204009322
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 9628687,
+        "fight_start": 1773080952890,
+        "name": "Cacchiin",
+        "unbuffed_dps": 9628687
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 338194735,
+        "fight_start": 1773080952890,
+        "name": "Amathiien",
+        "unbuffed_dps": 220884469
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 10258119,
+        "fight_start": 1773080952890,
+        "name": "Luminarys",
+        "unbuffed_dps": 10258119
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 200279720,
+        "fight_start": 1773080952890,
+        "name": "Xÿrris",
+        "unbuffed_dps": 124207383
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 273742409,
+        "fight_start": 1773080952890,
+        "name": "Amenokaze",
+        "unbuffed_dps": 164772481
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 150624394,
+        "fight_start": 1773080952890,
+        "name": "Staggérfloh",
+        "unbuffed_dps": 102067429
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 282911503,
+        "fight_start": 1773080952890,
+        "name": "Katoriix",
+        "unbuffed_dps": 181166939
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 139857449,
+        "fight_start": 1773080952890,
+        "name": "Crisostoma",
+        "unbuffed_dps": 89233245
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 28558854,
+        "fight_start": 1773082905329,
+        "name": "Llfe",
+        "unbuffed_dps": 28558854
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 88782387,
+        "fight_start": 1773082905329,
+        "name": "Tornadux",
+        "unbuffed_dps": 85664940
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 21360506,
+        "fight_start": 1773082905329,
+        "name": "Certifiedchris",
+        "unbuffed_dps": 21360506
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 196271511,
+        "fight_start": 1773082905329,
+        "name": "Xsylla",
+        "unbuffed_dps": 175106547
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 282858854,
+        "fight_start": 1773082905329,
+        "name": "Cocyitus",
+        "unbuffed_dps": 246295625
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 55366066,
+        "fight_start": 1773082905329,
+        "name": "Kentininio",
+        "unbuffed_dps": 48632005
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 7843390,
+        "fight_start": 1773082905329,
+        "name": "Inactiveaccount",
+        "unbuffed_dps": 7843390
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 63483078,
+        "fight_start": 1773082905329,
+        "name": "Solibunbun",
+        "unbuffed_dps": 59132781
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 104112161,
+        "fight_start": 1773082905329,
+        "name": "Satoriix",
+        "unbuffed_dps": 90933432
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 71390162,
+        "fight_start": 1773082905329,
+        "name": "Elfetish",
+        "unbuffed_dps": 71390162
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 304445,
+        "fight_start": 1773082905329,
+        "name": "Nakiko",
+        "unbuffed_dps": 304445
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 110411330,
+        "fight_start": 1773082905329,
+        "name": "Freeksen",
+        "unbuffed_dps": 110411330
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 2004869,
+        "fight_start": 1773082905329,
+        "name": "Ofiltonpairnei",
+        "unbuffed_dps": 2004869
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 35565871,
+        "fight_start": 1773082905329,
+        "name": "Miorinee",
+        "unbuffed_dps": 35565871
+    },
+    {
+        "current_boss": "Plague Legion Loogdoom",
+        "difficulty": "",
+        "dps": 64655493,
+        "fight_start": 1773082905329,
+        "name": "Binhi",
+        "unbuffed_dps": 64655493
     }
 ]
