@@ -44534,5 +44534,285 @@
         "fight_start": 1773082905329,
         "name": "Binhi",
         "unbuffed_dps": 64655493
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 442785393,
+        "fight_start": 1773089519793,
+        "name": "Karygin",
+        "unbuffed_dps": 271839802
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 31220702,
+        "fight_start": 1773089519793,
+        "name": "Buffmetoday",
+        "unbuffed_dps": 31220702
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 441032686,
+        "fight_start": 1773089519793,
+        "name": "Yinyanglly",
+        "unbuffed_dps": 277398800
+    },
+    {
+        "current_boss": "Drextalas",
+        "difficulty": "Normal",
+        "dps": 363980178,
+        "fight_start": 1773089519793,
+        "name": "Feraliix",
+        "unbuffed_dps": 226628619
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 573052294,
+        "fight_start": 1773090003643,
+        "name": "Iuvletter",
+        "unbuffed_dps": 328734796
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 22715958,
+        "fight_start": 1773090003643,
+        "name": "Iethargy",
+        "unbuffed_dps": 22715958
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 397158971,
+        "fight_start": 1773090003643,
+        "name": "Katoriix",
+        "unbuffed_dps": 237688916
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 585871255,
+        "fight_start": 1773091454310,
+        "name": "Cuttiehottie",
+        "unbuffed_dps": 379501542
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 391620155,
+        "fight_start": 1773091454310,
+        "name": "Satoriix",
+        "unbuffed_dps": 220331911
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 662950004,
+        "fight_start": 1773091454310,
+        "name": "Magickelvin",
+        "unbuffed_dps": 403362993
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 35601190,
+        "fight_start": 1773091454310,
+        "name": "Aesharrrr",
+        "unbuffed_dps": 35601190
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 7368041,
+        "fight_start": 1773091929726,
+        "name": "Ayúuki",
+        "unbuffed_dps": 7368041
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 515270827,
+        "fight_start": 1773091929726,
+        "name": "Atomiix",
+        "unbuffed_dps": 272568923
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 666261636,
+        "fight_start": 1773091929726,
+        "name": "Dacoslayah",
+        "unbuffed_dps": 333561457
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 431735732,
+        "fight_start": 1773091929726,
+        "name": "Ammit",
+        "unbuffed_dps": 232784771
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 3696727,
+        "fight_start": 1773092376090,
+        "name": "Pugtist",
+        "unbuffed_dps": 3696727
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 204868087,
+        "fight_start": 1773092376090,
+        "name": "Shahyana",
+        "unbuffed_dps": 131512434
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 155785986,
+        "fight_start": 1773092376090,
+        "name": "Vieffe",
+        "unbuffed_dps": 99720399
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 2336469,
+        "fight_start": 1773092376090,
+        "name": "Darkoby",
+        "unbuffed_dps": 2336469
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 243503894,
+        "fight_start": 1773092376090,
+        "name": "Warukyrie",
+        "unbuffed_dps": 142341550
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 195826505,
+        "fight_start": 1773092376090,
+        "name": "Kazarashi",
+        "unbuffed_dps": 119975568
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 313022848,
+        "fight_start": 1773092376090,
+        "name": "Iacobona",
+        "unbuffed_dps": 205529510
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Normal",
+        "dps": 243534389,
+        "fight_start": 1773092376090,
+        "name": "Tomoriix",
+        "unbuffed_dps": 159867462
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 257716921,
+        "fight_start": 1773092944877,
+        "name": "Tomoriix",
+        "unbuffed_dps": 167067641
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 195288927,
+        "fight_start": 1773092944877,
+        "name": "Kazarashi",
+        "unbuffed_dps": 120441647
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 7746095,
+        "fight_start": 1773092944877,
+        "name": "Darkoby",
+        "unbuffed_dps": 7746095
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 239564765,
+        "fight_start": 1773092944877,
+        "name": "Shahyana",
+        "unbuffed_dps": 158560420
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 13042059,
+        "fight_start": 1773092944877,
+        "name": "Pugtist",
+        "unbuffed_dps": 13042059
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 271810865,
+        "fight_start": 1773092944877,
+        "name": "Warukyrie",
+        "unbuffed_dps": 162187488
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 327287652,
+        "fight_start": 1773092944877,
+        "name": "Iacobona",
+        "unbuffed_dps": 215141892
+    },
+    {
+        "current_boss": "Archdemon Kazeros",
+        "difficulty": "Normal",
+        "dps": 147677199,
+        "fight_start": 1773092944877,
+        "name": "Vieffe",
+        "unbuffed_dps": 94472534
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 672762797,
+        "fight_start": 1773093889836,
+        "name": "Kimiblue",
+        "unbuffed_dps": 417986300
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 474388198,
+        "fight_start": 1773093889836,
+        "name": "Tomoriix",
+        "unbuffed_dps": 286377087
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 38122806,
+        "fight_start": 1773093889836,
+        "name": "Hêï",
+        "unbuffed_dps": 38122806
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 490768801,
+        "fight_start": 1773093889836,
+        "name": "Daemonictools",
+        "unbuffed_dps": 294120239
     }
 ]
