@@ -44814,5 +44814,197 @@
         "fight_start": 1773093889836,
         "name": "Daemonictools",
         "unbuffed_dps": 294120239
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Normal",
+        "dps": 148513481,
+        "fight_start": 1773163655081,
+        "name": "Forgevalor",
+        "unbuffed_dps": 109756500
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Normal",
+        "dps": 2657489,
+        "fight_start": 1773163655081,
+        "name": "Slavepalädin",
+        "unbuffed_dps": 2657489
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Normal",
+        "dps": 8244550,
+        "fight_start": 1773163655081,
+        "name": "Peladina",
+        "unbuffed_dps": 8244550
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Normal",
+        "dps": 115016416,
+        "fight_start": 1773163655081,
+        "name": "Legionshredder",
+        "unbuffed_dps": 78633935
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Normal",
+        "dps": 161393503,
+        "fight_start": 1773163655081,
+        "name": "Aerialsun",
+        "unbuffed_dps": 114453746
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Normal",
+        "dps": 130349141,
+        "fight_start": 1773163655081,
+        "name": "Kamaryi",
+        "unbuffed_dps": 89881672
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Normal",
+        "dps": 178366993,
+        "fight_start": 1773163655081,
+        "name": "Feraliix",
+        "unbuffed_dps": 118496755
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Normal",
+        "dps": 235103117,
+        "fight_start": 1773163655081,
+        "name": "Bluegemine",
+        "unbuffed_dps": 154850195
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 1461047,
+        "fight_start": 1773164194839,
+        "name": "Peladina",
+        "unbuffed_dps": 1461047
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 146436964,
+        "fight_start": 1773164194839,
+        "name": "Kamaryi",
+        "unbuffed_dps": 94064397
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 209427473,
+        "fight_start": 1773164194839,
+        "name": "Feraliix",
+        "unbuffed_dps": 137146685
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 71941801,
+        "fight_start": 1773164194839,
+        "name": "Bluegemine",
+        "unbuffed_dps": 43294174
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 95556086,
+        "fight_start": 1773164194839,
+        "name": "Legionshredder",
+        "unbuffed_dps": 63178895
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 160207774,
+        "fight_start": 1773164194839,
+        "name": "Forgevalor",
+        "unbuffed_dps": 108420542
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 59689773,
+        "fight_start": 1773164194839,
+        "name": "Aerialsun",
+        "unbuffed_dps": 39117373
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 3137489,
+        "fight_start": 1773164194839,
+        "name": "Slavepalädin",
+        "unbuffed_dps": 3137489
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 293033648,
+        "fight_start": 1773164646306,
+        "name": "Bluegemine",
+        "unbuffed_dps": 186723969
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 8248334,
+        "fight_start": 1773164646306,
+        "name": "Slavepalädin",
+        "unbuffed_dps": 8248334
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 1482338,
+        "fight_start": 1773164646306,
+        "name": "Peladina",
+        "unbuffed_dps": 1482338
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 284614855,
+        "fight_start": 1773164646306,
+        "name": "Feraliix",
+        "unbuffed_dps": 180292708
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 174952215,
+        "fight_start": 1773164646306,
+        "name": "Forgevalor",
+        "unbuffed_dps": 131551482
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 132971871,
+        "fight_start": 1773164646306,
+        "name": "Legionshredder",
+        "unbuffed_dps": 99779268
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 169595688,
+        "fight_start": 1773164646306,
+        "name": "Kamaryi",
+        "unbuffed_dps": 111196194
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Normal",
+        "dps": 189666819,
+        "fight_start": 1773164646306,
+        "name": "Aerialsun",
+        "unbuffed_dps": 144485146
     }
 ]
