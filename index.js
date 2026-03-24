@@ -195,7 +195,7 @@ function renderTables() {
         user.characters.forEach(character => {
             const charStats = getCharacterStats(character);
             const th = document.createElement('th');
-            th.innerHTML = `<div class="character-header"><span class="character-name" style="cursor: pointer;" data-edit-raids="true">${character.name}</span><span class="character-ilvl" data-character-index="${user.characters.indexOf(character)}" data-user-index="${data.indexOf(user)}">${character.iLvl}</span></div><div class="character-info">${character.class}</div><div class="character-stats">[${charStats.remaining}/${charStats.total}]</div>`;
+            th.innerHTML = `<div class="character-header"><span class="character-name" style="cursor: pointer;" data-edit-raids="true">${character.name}</span><a href="https://lostark.bible/character/CE/${encodeURIComponent(character.name)}" target="_blank" rel="noopener noreferrer" class="character-link"><img src="./artist_cry.png" alt="Link" class="character-link-icon"></a><span class="character-ilvl" data-character-index="${user.characters.indexOf(character)}" data-user-index="${data.indexOf(user)}">${character.iLvl}</span></div><div class="character-info">${character.class}</div><div class="character-stats">[${charStats.remaining}/${charStats.total}]</div>`;
             
             // Agregar evento click al nombre para editar raids
             const nameElement = th.querySelector('.character-name');
