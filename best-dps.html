@@ -243,19 +243,9 @@
                         <td>200.279.740</td>
                     </tr>
                     <tr>
-                        <td>Archdemon Kazeros</td>
+                        <td>Archdemon Kazeros / Death Incarnate Kazeros</td>
                         <td>105.961.148</td>
                         <td>213.757.277</td>
-                    </tr>
-                    <tr>
-                        <td>Death Incarnate Kazeros</td>
-                        <td>-</td>
-                        <td>220.629.351</td>
-                    </tr>
-                    <tr>
-                        <td>Thaemine, Conqueror of Stars</td>
-                        <td>247.289.975</td>
-                        <td>247.289.975</td>
                     </tr>
                 </tbody>
             </table>
@@ -387,12 +377,20 @@
             return { names, nameToAccount };
         }
         
+        // Normalizar nombres de bosses para tratar variaciones como iguales
+        function normalizeBossName(boss) {
+            if (boss === "Death Incarnate Kazeros") {
+                return "Archdemon Kazeros";
+            }
+            return boss;
+        }
+        
         // Procesar DPS por jefe
         function processBossDps(dpsData, key) {
             const bossDps = {};
             dpsData.forEach(entry => {
                 const name = entry.name;
-                const boss = entry.current_boss;
+                const boss = normalizeBossName(entry.current_boss);
                 const value = entry[key];
                 const date = entry.fight_start;
                 
@@ -421,13 +419,12 @@
                 "Brelshaza, Ember in the Ashes",
                 "Armoche, Sentinel of the Abyss",
                 "Abyss Lord Kazeros",
-                "Archdemon Kazeros",
-                "Thaemine, Conqueror of Stars"
+                "Archdemon Kazeros"
             ];
             
-            // Filtrar solo los bosses deseados que aparecen en los datos
+            // Filtrar solo los bosses deseados que aparecen en los datos (normalizando nombres)
             const availableBosses = desiredBosses.filter(boss => {
-                return dpsData.some(entry => entry.current_boss === boss);
+                return dpsData.some(entry => normalizeBossName(entry.current_boss) === boss);
             });
             
             return availableBosses;
@@ -446,8 +443,7 @@
                 "Brelshaza, Ember in the Ashes": { normal: 92838262, hard: 170642388, hard120: 204770866 },
                 "Armoche, Sentinel of the Abyss": { normal: 99893371, hard: 198617140, hard120: 238340568 },
                 "Abyss Lord Kazeros": { normal: 99279498, hard: 200278740, hard120: 240334488 },
-                "Archdemon Kazeros": { normal: 105961148, hard: 213757277, hard120: 256508732 },
-                "Thaemine, Conqueror of Stars": { normal: 247289975, hard: 247289975, hard120: 296747970 }
+                "Archdemon Kazeros": { normal: 105961148, hard: 213757277, hard120: 256508732 }
             };
             
             // Mapa de bosses a subtítulos
@@ -458,8 +454,7 @@
                 "Brelshaza, Ember in the Ashes": "Armoche G1",
                 "Armoche, Sentinel of the Abyss": "Armoche G2",
                 "Abyss Lord Kazeros": "Kazeros G1",
-                "Archdemon Kazeros": "Kazeros G2",
-                "Thaemine, Conqueror of Stars": "Thaemine EX"
+                "Archdemon Kazeros": "Kazeros G2"
             };
             
             // Limpiar encabezados previos
