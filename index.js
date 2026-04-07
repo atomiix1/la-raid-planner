@@ -1,7 +1,7 @@
 let data = [];
 
 // Orden específico de las raids
-const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kazeros'];
+const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kazeros', 'Serca'];
 
 // Configuración de raids con iLvl mínimo requerido
 const RAIDS_CONFIG = [
@@ -18,7 +18,10 @@ const RAIDS_CONFIG = [
     { name: 'Armoche', difficulty: 'Normal', minILvl: 1700 },
     { name: 'Armoche', difficulty: 'Hard', minILvl: 1720 },
     { name: 'Kazeros', difficulty: 'Normal', minILvl: 1710 },
-    { name: 'Kazeros', difficulty: 'Hard', minILvl: 1730 }
+    { name: 'Kazeros', difficulty: 'Hard', minILvl: 1730 },
+    { name: 'Serca', difficulty: 'Normal', minILvl: 1710 },
+    { name: 'Serca', difficulty: 'Hard', minILvl: 1730 },
+    { name: 'Serca', difficulty: 'Nightmare', minILvl: 1740 }
 ];
 
 // Verificar y ejecutar reset semanal (cada miércoles a las 9:00 AM UTC)
