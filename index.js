@@ -109,7 +109,7 @@ function getUserRaidesWithDifficulty(user) {
     });
     
     // Convertir a array y ordenar: primero por nombre de raid, luego por dificultad
-    const difficultyOrder = { 'Solo': 0, 'Normal': 1, 'Hard': 2, 'Extreme': 3 };
+    const difficultyOrder = { 'Solo': 0, 'Normal': 1, 'Hard': 2, 'Extreme': 3, 'Nightmare': 3 };
     return Array.from(raidDifficultyMap.values()).sort((a, b) => {
         const nameCompare = RAIDS_ORDER.indexOf(a.name) - RAIDS_ORDER.indexOf(b.name);
         if (nameCompare !== 0) return nameCompare;
