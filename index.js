@@ -528,7 +528,7 @@ function openRaidSearch() {
         }
         
         // Si son el mismo raid, ordenar por dificultad
-        const diffOrder = { 'Normal': 0, 'Hard': 1, 'Extreme': 2 };
+        const diffOrder = { 'Normal': 0, 'Hard': 1, 'Extreme': 2, 'Nightmare': 2 };
         const diffA = a.split('_')[1];
         const diffB = b.split('_')[1];
         return diffOrder[diffA] - diffOrder[diffB];
