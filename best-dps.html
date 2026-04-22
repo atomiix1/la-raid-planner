@@ -214,24 +214,6 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Infernas</td>
-                        <td>58.535.550</td>
-                        <td>88.144.414</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Blossoming Fear, Naitreya</td>
-                        <td>53.125.651</td>
-                        <td>94.825.271</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Flash of Punishment</td>
-                        <td>81.330.595</td>
-                        <td>139.189.550</td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td>Brelshaza, Ember in the Ashes</td>
                         <td>92.838.262</td>
                         <td>170.642.388</td>
@@ -433,9 +415,6 @@
         // Obtener bosses únicos (limitados y ordenados)
         function getUniqueBosses(dpsData) {
             const desiredBosses = [
-                "Infernas",
-                "Blossoming Fear, Naitreya",
-                "Flash of Punishment",
                 "Brelshaza, Ember in the Ashes",
                 "Armoche, Sentinel of the Abyss",
                 "Abyss Lord Kazeros",
@@ -459,9 +438,6 @@
             
             // Umbrales de DPS por boss (ajusta estos valores según tus necesidades)
             const bossThresholds = {
-                "Infernas": { normal: 58535550, hard: 88144414, hard120: 105773297 },
-                "Blossoming Fear, Naitreya": { normal: 53125651, hard: 94825271, hard120: 113790325 },
-                "Flash of Punishment": { normal: 81330595, hard: 139189550, hard120: 167027460 },
                 "Brelshaza, Ember in the Ashes": { normal: 92838262, hard: 170642388, hard120: 204770866 },
                 "Armoche, Sentinel of the Abyss": { normal: 99893371, hard: 198617140, hard120: 238340568 },
                 "Abyss Lord Kazeros": { normal: 99279498, hard: 200278740, hard120: 240334488 },
@@ -472,9 +448,6 @@
             
             // Mapa de bosses a subtítulos
             const bossLabels = {
-                "Infernas": "Mordum G1",
-                "Blossoming Fear, Naitreya": "Mordum G2",
-                "Flash of Punishment": "Mordum G3",
                 "Brelshaza, Ember in the Ashes": "Armoche G1",
                 "Armoche, Sentinel of the Abyss": "Armoche G2",
                 "Abyss Lord Kazeros": "Kazeros G1",
