@@ -521,17 +521,16 @@
                             const thresholds = bossThresholds[boss];
                             if (thresholds) {
                                 const value = data.max.value;
-                                if (value >= thresholds.hard120) {
+                                if (thresholds.nightmare && value >= thresholds.nightmare120) {
+                                    colorClass = 'dps-nightmare120';
+                                } else if (thresholds.nightmare && value >= thresholds.nightmare) {
+                                    colorClass = 'dps-nightmare';
+                                } else if (value >= thresholds.hard120) {
                                     colorClass = 'dps-hard120';
                                 } else if (value >= thresholds.hard) {
                                     colorClass = 'dps-hard';
                                 } else if (value >= thresholds.normal) {
                                     colorClass = 'dps-normal';
-                                }
-                                if (thresholds.nightmare && value >= thresholds.nightmare120) {
-                                    colorClass = 'dps-nightmare120';
-                                } else if (thresholds.nightmare && value >= thresholds.nightmare) {
-                                    colorClass = 'dps-nightmare';
                                 }
                             }
                         }
