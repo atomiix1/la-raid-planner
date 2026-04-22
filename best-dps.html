@@ -166,15 +166,23 @@
         }
         
         .dps-normal {
-            background-color: #1f4a3b; /* Light green for Normal */
+            background-color: #1f4a3b; 
         }
         
         .dps-hard {
-            background-color: #0e4c6d; /* Light orange for Hard */
+            background-color: #0e4c6d; 
         }
         
         .dps-hard120 {
-            background-color: #442263; /* Light pink for 120% Hard */
+            background-color: #442263; 
+        }
+
+        .dps-nightmare {
+            background-color: #a8641e; 
+        }
+
+        .dps-nightmare120 {
+            background-color: #8f2a2a; 
         }
     </style>
 </head>
@@ -200,6 +208,14 @@
                 <div class="legend-item">
                     <div class="color-box dps-hard120"></div>
                     <span>Supera 120% Hard</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box dps-nightmare"></div>
+                    <span>Supera mínimo Nightmare</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box dps-nightmare120"></div>
+                    <span>Supera 120% Nightmare</span>
                 </div>
             </div>
             <h4>Umbrales por Boss</h4>
@@ -511,6 +527,11 @@
                                     colorClass = 'dps-hard';
                                 } else if (value >= thresholds.normal) {
                                     colorClass = 'dps-normal';
+                                }
+                                if (thresholds.nightmare && value >= thresholds.nightmare120) {
+                                    colorClass = 'dps-nightmare120';
+                                } else if (thresholds.nightmare && value >= thresholds.nightmare) {
+                                    colorClass = 'dps-nightmare';
                                 }
                             }
                         }
