@@ -133,6 +133,52 @@ function getUserStats(user) {
     return { remaining: remainingRaids, total: totalRaids };
 }
 
+// Calcular oro generado y potencial de un usuario
+function getUserGoldStats(user) {
+    // Recolectar todas las raids (completadas y no completadas) con su configuración
+    const allRaids = [];
+    
+    user.characters.forEach(character => {
+        character.raids.forEach(raid => {
+            const config = RAIDS_CONFIG.find(c => c.name === raid.name && c.difficulty === raid.difficulty);
+            if (config) {
+                allRaids.push({
+                    name: raid.name,
+                    difficulty: raid.difficulty,
+                    oro: config.oro,
+                    cofre: config.cofre,
+                    completion: raid.completion,
+                    hasChest: raid.chest === true
+                });
+            }
+        });
+    });
+    
+    // Ordenar por oro total (oro + cofre) descendente y tomar las 3 primeras
+    allRaids.sort((a, b) => (b.oro + b.cofre) - (a.oro + a.cofre));
+    const top3Raids = allRaids.slice(0, 3);
+    
+    // Oro potencial: oro + cofre de las 3 mejores raids
+    let goldPotential = 0;
+    top3Raids.forEach(raid => {
+        goldPotential += raid.oro + raid.cofre;
+    });
+    
+    // Oro generado: solo raids completadas (oro - precio cofre si está marcado)
+    let goldGenerated = 0;
+    top3Raids.forEach(raid => {
+        if (raid.completion) {
+            if (raid.hasChest) {
+                goldGenerated += raid.oro; // Solo el oro, sin gastar cofre
+            } else {
+                goldGenerated += raid.oro; // Oro completo sin cofre
+            }
+        }
+    });
+    
+    return { generated: goldGenerated, potential: goldPotential };
+}
+
 //Ordenar personajes por iLvl descendente
 function sortCharactersByILvl(characters) {
     return characters.sort((a, b) => b.iLvl - a.iLvl);
@@ -176,12 +222,13 @@ function renderTables() {
         if (raidesWithDifficulty.length === 0) return;
         
         const userStats = getUserStats(user);
+        const goldStats = getUserGoldStats(user);
         const userSection = document.createElement('div');
         userSection.className = 'user-section';
         
         const userTitle = document.createElement('div');
         userTitle.className = 'user-title';
-        userTitle.innerHTML = `👤 ${user.account} <span class="stats">[${userStats.remaining}/${userStats.total}]</span>`;
+        userTitle.innerHTML = `👤 ${user.account} <span class="stats">[${userStats.remaining}/${userStats.total}]</span> <span class="gold-stats"><img src="gold.png" class="gold-icon" title="Oro"> ${goldStats.generated.toLocaleString()} / ${goldStats.potential.toLocaleString()}</span>`;
         userSection.appendChild(userTitle);
         
         const table = document.createElement('table');
@@ -234,6 +281,7 @@ function renderTables() {
                     // Contenedor para el botón y el chest
                     const container = document.createElement('div');
                     container.className = 'raid-button-container';
+                    container.style.justifyContent = 'space-around';
                     
                     const button = document.createElement('button');
                     button.className = `raid-button ${raid.completion ? 'complete' : 'incomplete'}`;
