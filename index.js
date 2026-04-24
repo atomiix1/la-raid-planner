@@ -157,7 +157,11 @@ function getUserGoldStats(user) {
     // Oro potencial: oro + cofre de todas las raids
     let goldPotential = 0;
     allRaids.forEach(raid => {
-        goldPotential += (raid.oro - raid.cofre);
+        if (raid.hasChest) {
+                goldPotential += (raid.oro - raid.cofre); // Solo el oro, sin gastar cofre
+            } else {
+                goldPotential += raid.oro; // Oro completo sin cofre
+            }
     });
     
     // Oro generado: solo raids completadas (oro - precio cofre si está marcado)
