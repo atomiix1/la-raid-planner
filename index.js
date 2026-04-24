@@ -5,23 +5,23 @@ const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kaz
 
 // Configuración de raids con iLvl mínimo requerido
 const RAIDS_CONFIG = [
-    { name: 'Behemoth', difficulty: 'Normal', minILvl: 1640 },
-    { name: 'Aegir', difficulty: 'Solo', minILvl: 1660 },
-    { name: 'Aegir', difficulty: 'Normal', minILvl: 1660 },
-    { name: 'Aegir', difficulty: 'Hard', minILvl: 1680 },
-    { name: 'Brelshaza', difficulty: 'Solo', minILvl: 1670 },
-    { name: 'Brelshaza', difficulty: 'Normal', minILvl: 1670 },
-    { name: 'Brelshaza', difficulty: 'Hard', minILvl: 1690 },
-    { name: 'Mordum', difficulty: 'Solo', minILvl: 1680 },
-    { name: 'Mordum', difficulty: 'Normal', minILvl: 1680 },
-    { name: 'Mordum', difficulty: 'Hard', minILvl: 1700 },
-    { name: 'Armoche', difficulty: 'Normal', minILvl: 1700 },
-    { name: 'Armoche', difficulty: 'Hard', minILvl: 1720 },
-    { name: 'Kazeros', difficulty: 'Normal', minILvl: 1710 },
-    { name: 'Kazeros', difficulty: 'Hard', minILvl: 1730 },
-    { name: 'Serca', difficulty: 'Normal', minILvl: 1710 },
-    { name: 'Serca', difficulty: 'Hard', minILvl: 1730 },
-    { name: 'Serca', difficulty: 'Nightmare', minILvl: 1740 }
+    { name: 'Behemoth', difficulty: 'Normal', minILvl: 1640, oro: 9100, cofre: 1010 },
+    { name: 'Aegir', difficulty: 'Solo', minILvl: 1660, oro: 16800, cofre: 2530 },
+    { name: 'Aegir', difficulty: 'Normal', minILvl: 1660, oro: 16800, cofre: 2530 },
+    { name: 'Aegir', difficulty: 'Hard', minILvl: 1680, oro: 21000, cofre: 5970 },
+    { name: 'Brelshaza', difficulty: 'Solo', minILvl: 1670, oro: 19250, cofre: 5540 },
+    { name: 'Brelshaza', difficulty: 'Normal', minILvl: 1670, oro: 19250, cofre: 5540 },
+    { name: 'Brelshaza', difficulty: 'Hard', minILvl: 1690, oro: 23800, cofre: 7500 },
+    { name: 'Mordum', difficulty: 'Solo', minILvl: 1680, oro: 28000, cofre: 9800 },
+    { name: 'Mordum', difficulty: 'Normal', minILvl: 1680, oro: 28000, cofre: 9800 },
+    { name: 'Mordum', difficulty: 'Hard', minILvl: 1700, oro: 38000, cofre: 12600 },
+    { name: 'Armoche', difficulty: 'Normal', minILvl: 1700, oro: 33000, cofre: 10560 },
+    { name: 'Armoche', difficulty: 'Hard', minILvl: 1720, oro: 42000, cofre: 13440 },
+    { name: 'Kazeros', difficulty: 'Normal', minILvl: 1710, oro: 40000, cofre: 12800 },
+    { name: 'Kazeros', difficulty: 'Hard', minILvl: 1730, oro: 52000, cofre: 16640 },
+    { name: 'Serca', difficulty: 'Normal', minILvl: 1710, oro: 35000, cofre: 11200 },
+    { name: 'Serca', difficulty: 'Hard', minILvl: 1730, oro: 44000, cofre: 14080 },
+    { name: 'Serca', difficulty: 'Nightmare', minILvl: 1740, oro: 54000, cofre: 17280 }
 ];
 
 // Verificar y ejecutar reset semanal (cada miércoles a las 9:00 AM UTC)
@@ -231,11 +231,33 @@ function renderTables() {
                 const raid = character.raids.find(r => r.name === raidInfo.name && r.difficulty === raidInfo.difficulty);
                 
                 if (raid) {
+                    // Contenedor para el botón y el chest
+                    const container = document.createElement('div');
+                    container.className = 'raid-button-container';
+                    
                     const button = document.createElement('button');
                     button.className = `raid-button ${raid.completion ? 'complete' : 'incomplete'}`;
                     button.textContent = raid.completion ? 'Hecho' : 'Pendiente';
                     button.addEventListener('click', () => toggleRaidCompletion(user, character, raid, button));
-                    cell.appendChild(button);
+                    container.appendChild(button);
+                    
+                    // Icono de chest
+                    const chestImg = document.createElement('img');
+                    chestImg.src = 'chest.png';
+                    chestImg.className = 'chest-icon';
+                    chestImg.title = 'Cofre comprado';
+                    chestImg.style.opacity = raid.chest === true ? '1' : '0.3';
+                    chestImg.style.cursor = 'pointer';
+                    chestImg.style.width = '20px';
+                    chestImg.style.height = '20px';
+                    chestImg.addEventListener('click', () => {
+                        raid.chest = !raid.chest;
+                        chestImg.style.opacity = raid.chest ? '1' : '0.3';
+                        saveData();
+                    });
+                    container.appendChild(chestImg);
+                    
+                    cell.appendChild(container);
                 } else {
                     cell.textContent = '-';
                     cell.style.textAlign = 'center';
