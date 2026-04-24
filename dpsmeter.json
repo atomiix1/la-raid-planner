@@ -3184,6 +3184,38 @@
         "unbuffed_dps": 397969722
     },
     {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 597421299,
+        "fight_start": 1776885910499,
+        "name": "Atomiix",
+        "unbuffed_dps": 362617365
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 475751265,
+        "fight_start": 1776963459458,
+        "name": "Atomiix",
+        "unbuffed_dps": 266861286
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 553076957,
+        "fight_start": 1776964147943,
+        "name": "Atomiix",
+        "unbuffed_dps": 305577933
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 525514643,
+        "fight_start": 1776965387012,
+        "name": "Atomiix",
+        "unbuffed_dps": 302502778
+    },
+    {
         "current_boss": "Narok the Butcher",
         "difficulty": "Normal",
         "dps": 109885553,
@@ -7928,6 +7960,22 @@
         "unbuffed_dps": 11790476
     },
     {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 5491122,
+        "fight_start": 1776963459458,
+        "name": "Eskkol",
+        "unbuffed_dps": 5491122
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 12609579,
+        "fight_start": 1776964147943,
+        "name": "Eskkol",
+        "unbuffed_dps": 12609579
+    },
+    {
         "current_boss": "Drextalas",
         "difficulty": "Normal",
         "dps": 250593710,
@@ -9462,6 +9510,22 @@
         "fight_start": 1776877304516,
         "name": "Feraliix",
         "unbuffed_dps": 257393843
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 598134281,
+        "fight_start": 1776886537899,
+        "name": "Feraliix",
+        "unbuffed_dps": 339939627
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 460138080,
+        "fight_start": 1777017060903,
+        "name": "Feraliix",
+        "unbuffed_dps": 302414254
     },
     {
         "current_boss": "Akkan, Lord of Death",
@@ -12230,6 +12294,14 @@
         "fight_start": 1776881395623,
         "name": "Katoriix",
         "unbuffed_dps": 245359187
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 565846286,
+        "fight_start": 1776966320191,
+        "name": "Katoriix",
+        "unbuffed_dps": 341118109
     },
     {
         "current_boss": "Akkan, Lord of Death",
@@ -17760,6 +17832,14 @@
         "unbuffed_dps": 17506854
     },
     {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 22004418,
+        "fight_start": 1776960869241,
+        "name": "Naromiix",
+        "unbuffed_dps": 22004418
+    },
+    {
         "current_boss": "Infernas",
         "difficulty": "Hard",
         "dps": 6796143,
@@ -19038,6 +19118,22 @@
         "fight_start": 1775842292776,
         "name": "Orkhan",
         "unbuffed_dps": 147226673
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 442876185,
+        "fight_start": 1776963459458,
+        "name": "Orkhan",
+        "unbuffed_dps": 250665432
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 507641454,
+        "fight_start": 1776964147943,
+        "name": "Orkhan",
+        "unbuffed_dps": 283894936
     },
     {
         "current_boss": "Blossoming Fear, Naitreya",
@@ -21662,6 +21758,14 @@
         "fight_start": 1776880691929,
         "name": "Satoriix",
         "unbuffed_dps": 379229925
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 500668455,
+        "fight_start": 1776965667133,
+        "name": "Satoriix",
+        "unbuffed_dps": 297412188
     },
     {
         "current_boss": "Blossoming Fear, Naitreya",
@@ -25040,6 +25144,14 @@
         "unbuffed_dps": 306960139
     },
     {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 418587882,
+        "fight_start": 1776966770979,
+        "name": "Tomoriix",
+        "unbuffed_dps": 250183685
+    },
+    {
         "current_boss": "Behemoth, the Storm Commander",
         "difficulty": "Normal",
         "dps": 95224370,
@@ -26358,6 +26470,22 @@
         "fight_start": 1776613415903,
         "name": "Vriytra",
         "unbuffed_dps": 214266317
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 430754573,
+        "fight_start": 1776963459458,
+        "name": "Vriytra",
+        "unbuffed_dps": 239444105
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 583383014,
+        "fight_start": 1776964147943,
+        "name": "Vriytra",
+        "unbuffed_dps": 325180194
     },
     {
         "current_boss": "Brelshaza, Ember in the Ashes",
