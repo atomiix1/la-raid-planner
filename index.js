@@ -154,19 +154,15 @@ function getUserGoldStats(user) {
         });
     });
     
-    // Ordenar por oro total (oro + cofre) descendente y tomar las 3 primeras
-    allRaids.sort((a, b) => (b.oro + b.cofre) - (a.oro + a.cofre));
-    const top3Raids = allRaids.slice(0, 3);
-    
-    // Oro potencial: oro + cofre de las 3 mejores raids
+    // Oro potencial: oro + cofre de todas las raids
     let goldPotential = 0;
-    top3Raids.forEach(raid => {
+    allRaids.forEach(raid => {
         goldPotential += raid.oro + raid.cofre;
     });
     
     // Oro generado: solo raids completadas (oro - precio cofre si está marcado)
     let goldGenerated = 0;
-    top3Raids.forEach(raid => {
+    allRaids.forEach(raid => {
         if (raid.completion) {
             if (raid.hasChest) {
                 goldGenerated += raid.oro; // Solo el oro, sin gastar cofre
