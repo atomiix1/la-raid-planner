@@ -29,13 +29,13 @@ function checkWeeklyReset() {
     const now = new Date();
     const utcDay = now.getUTCDay(); // 0 = domingo, 3 = miércoles
     const utcHours = now.getUTCHours();
-    const utcMinutes = now.getUTCMinutes();
     
-    // Verificar si es miércoles (3) y si la hora es entre las 9:00 y 9:59
+    // Verificar si es miércoles (3)
     const isWednesday = utcDay === 3;
-    const isResetTime = utcHours === 9;
     
-    if (isWednesday && isResetTime) {
+    // Si es miércoles y la hora es 9:00 o posterior (y antes de medianoche UTC)
+    // Esto asegura que si abres la página a las 10:00, 11:00, etc., también funcione
+    if (isWednesday && utcHours >= 9) {
         const lastResetDate = localStorage.getItem('lastWeeklyResetDate');
         const today = now.toISOString().split('T')[0]; // YYYY-MM-DD
         
