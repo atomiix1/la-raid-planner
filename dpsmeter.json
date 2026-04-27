@@ -768,6 +768,22 @@
         "unbuffed_dps": 184805417
     },
     {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 239935732,
+        "fight_start": 1777132319248,
+        "name": "Aedhe",
+        "unbuffed_dps": 132120548
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 422927287,
+        "fight_start": 1777133094148,
+        "name": "Aedhe",
+        "unbuffed_dps": 239932732
+    },
+    {
         "current_boss": "Blossoming Fear, Naitreya",
         "difficulty": "Hard",
         "dps": 167245142,
@@ -1790,6 +1806,22 @@
         "fight_start": 1777051912950,
         "name": "Alavhel",
         "unbuffed_dps": 230867175
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 376495833,
+        "fight_start": 1777138404549,
+        "name": "Alavhel",
+        "unbuffed_dps": 212525920
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 552126358,
+        "fight_start": 1777138912139,
+        "name": "Alavhel",
+        "unbuffed_dps": 303910069
     },
     {
         "current_boss": "Brelshaza, Ember in the Ashes",
@@ -3240,6 +3272,54 @@
         "unbuffed_dps": 316197421
     },
     {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 391104240,
+        "fight_start": 1777134940740,
+        "name": "Atomiix",
+        "unbuffed_dps": 219873402
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 388365521,
+        "fight_start": 1777135508357,
+        "name": "Atomiix",
+        "unbuffed_dps": 211441639
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 317330790,
+        "fight_start": 1777138404549,
+        "name": "Atomiix",
+        "unbuffed_dps": 180121957
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 516056890,
+        "fight_start": 1777138912139,
+        "name": "Atomiix",
+        "unbuffed_dps": 281787682
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 587723978,
+        "fight_start": 1777142605581,
+        "name": "Atomiix",
+        "unbuffed_dps": 343616010
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 310179170,
+        "fight_start": 1777311479025,
+        "name": "Atomiix",
+        "unbuffed_dps": 310179170
+    },
+    {
         "current_boss": "Narok the Butcher",
         "difficulty": "Normal",
         "dps": 109885553,
@@ -3904,6 +3984,22 @@
         "unbuffed_dps": 143118615
     },
     {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Normal",
+        "dps": 156806012,
+        "fight_start": 1777126941314,
+        "name": "Boreahl",
+        "unbuffed_dps": 99666475
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Normal",
+        "dps": 195298324,
+        "fight_start": 1777127598598,
+        "name": "Boreahl",
+        "unbuffed_dps": 123547753
+    },
+    {
         "current_boss": "Narok the Butcher",
         "difficulty": "Hard",
         "dps": 8628043,
@@ -4382,6 +4478,38 @@
         "fight_start": 1776707215638,
         "name": "Brunildâ",
         "unbuffed_dps": 16825897
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 12891102,
+        "fight_start": 1777134940740,
+        "name": "Brunildâ",
+        "unbuffed_dps": 12891102
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 14293350,
+        "fight_start": 1777135508357,
+        "name": "Brunildâ",
+        "unbuffed_dps": 14293350
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 13492700,
+        "fight_start": 1777222686436,
+        "name": "Brunildâ",
+        "unbuffed_dps": 13492700
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 16759048,
+        "fight_start": 1777223418602,
+        "name": "Brunildâ",
+        "unbuffed_dps": 16759048
     },
     {
         "current_boss": "Narok the Butcher",
@@ -4958,6 +5086,22 @@
         "fight_start": 1776877304516,
         "name": "Chalinda",
         "unbuffed_dps": 9805439
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 8012122,
+        "fight_start": 1777139823001,
+        "name": "Chalinda",
+        "unbuffed_dps": 8012122
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 3582288,
+        "fight_start": 1777140370342,
+        "name": "Chalinda",
+        "unbuffed_dps": 3582288
     },
     {
         "current_boss": "Akkan, Lord of Death",
@@ -8032,6 +8176,22 @@
         "unbuffed_dps": 11101281
     },
     {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 11076570,
+        "fight_start": 1777138404549,
+        "name": "Eskkol",
+        "unbuffed_dps": 11076570
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 11617458,
+        "fight_start": 1777138912139,
+        "name": "Eskkol",
+        "unbuffed_dps": 11617458
+    },
+    {
         "current_boss": "Drextalas",
         "difficulty": "Normal",
         "dps": 250593710,
@@ -9624,6 +9784,22 @@
         "unbuffed_dps": 365478129
     },
     {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 466200011,
+        "fight_start": 1777123877817,
+        "name": "Feraliix",
+        "unbuffed_dps": 310313943
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 552079058,
+        "fight_start": 1777318892328,
+        "name": "Feraliix",
+        "unbuffed_dps": 319687687
+    },
+    {
         "current_boss": "Akkan, Lord of Death",
         "difficulty": "Hard",
         "dps": 96304725,
@@ -10158,6 +10334,22 @@
         "fight_start": 1776616853995,
         "name": "Hiymeko",
         "unbuffed_dps": 185076958
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 206667549,
+        "fight_start": 1777138404549,
+        "name": "Hiymeko",
+        "unbuffed_dps": 109700149
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 319049119,
+        "fight_start": 1777138912139,
+        "name": "Hiymeko",
+        "unbuffed_dps": 165331840
     },
     {
         "current_boss": "Brelshaza, Ember in the Ashes",
@@ -10998,6 +11190,38 @@
         "fight_start": 1776621071069,
         "name": "Kadell",
         "unbuffed_dps": 403472953
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 447298103,
+        "fight_start": 1777139823001,
+        "name": "Kadell",
+        "unbuffed_dps": 283107083
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 752433385,
+        "fight_start": 1777140370342,
+        "name": "Kadell",
+        "unbuffed_dps": 457023704
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 645534264,
+        "fight_start": 1777226545399,
+        "name": "Kadell",
+        "unbuffed_dps": 366239398
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 737965922,
+        "fight_start": 1777232171100,
+        "name": "Kadell",
+        "unbuffed_dps": 409129387
     },
     {
         "current_boss": "Blossoming Fear, Naitreya",
@@ -12424,6 +12648,54 @@
         "unbuffed_dps": 135697286
     },
     {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 284656015,
+        "fight_start": 1777121529215,
+        "name": "Katoriix",
+        "unbuffed_dps": 284656015
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Normal",
+        "dps": 288167665,
+        "fight_start": 1777126941314,
+        "name": "Katoriix",
+        "unbuffed_dps": 190019618
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Normal",
+        "dps": 351803562,
+        "fight_start": 1777127598598,
+        "name": "Katoriix",
+        "unbuffed_dps": 234196763
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 328430131,
+        "fight_start": 1777141187497,
+        "name": "Katoriix",
+        "unbuffed_dps": 181762992
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 417399596,
+        "fight_start": 1777141745613,
+        "name": "Katoriix",
+        "unbuffed_dps": 229371500
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 552942385,
+        "fight_start": 1777311791308,
+        "name": "Katoriix",
+        "unbuffed_dps": 308999690
+    },
+    {
         "current_boss": "Akkan, Lord of Death",
         "difficulty": "Hard",
         "dps": 103892154,
@@ -13280,6 +13552,22 @@
         "unbuffed_dps": 164426060
     },
     {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 262198462,
+        "fight_start": 1777141187497,
+        "name": "Katsushiika",
+        "unbuffed_dps": 134751343
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 339807792,
+        "fight_start": 1777141745613,
+        "name": "Katsushiika",
+        "unbuffed_dps": 178572154
+    },
+    {
         "current_boss": "Akkan, Lord of Death",
         "difficulty": "Hard",
         "dps": 101772065,
@@ -13814,6 +14102,22 @@
         "fight_start": 1776877304516,
         "name": "Kijyodouji",
         "unbuffed_dps": 249331161
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 183050870,
+        "fight_start": 1777139823001,
+        "name": "Kijyodouji",
+        "unbuffed_dps": 117101134
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 385118325,
+        "fight_start": 1777140370342,
+        "name": "Kijyodouji",
+        "unbuffed_dps": 222090525
     },
     {
         "current_boss": "Narok the Butcher",
@@ -15000,6 +15304,22 @@
         "unbuffed_dps": 194591312
     },
     {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 269925779,
+        "fight_start": 1777138404549,
+        "name": "Liduvina",
+        "unbuffed_dps": 141191922
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 330138151,
+        "fight_start": 1777138912139,
+        "name": "Liduvina",
+        "unbuffed_dps": 180396996
+    },
+    {
         "current_boss": "Infernas",
         "difficulty": "Hard",
         "dps": 12613685,
@@ -15294,6 +15614,38 @@
         "fight_start": 1776616853995,
         "name": "Lirèsa",
         "unbuffed_dps": 3397194
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 11899244,
+        "fight_start": 1777141187497,
+        "name": "Lirèsa",
+        "unbuffed_dps": 11899244
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 10892674,
+        "fight_start": 1777141745613,
+        "name": "Lirèsa",
+        "unbuffed_dps": 10892674
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 8933760,
+        "fight_start": 1777314417665,
+        "name": "Lirèsa",
+        "unbuffed_dps": 8933760
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 10482158,
+        "fight_start": 1777315324303,
+        "name": "Lirèsa",
+        "unbuffed_dps": 10482158
     },
     {
         "current_boss": "Blossoming Fear, Naitreya",
@@ -16422,6 +16774,22 @@
         "fight_start": 1776879170383,
         "name": "Luminarys",
         "unbuffed_dps": 3838964
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 11000692,
+        "fight_start": 1777222686436,
+        "name": "Luminarys",
+        "unbuffed_dps": 11000692
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 12112164,
+        "fight_start": 1777223418602,
+        "name": "Luminarys",
+        "unbuffed_dps": 12112164
     },
     {
         "current_boss": "Brelshaza, Ember in the Ashes",
@@ -17966,6 +18334,54 @@
         "fight_start": 1777045662297,
         "name": "Naromiix",
         "unbuffed_dps": 33526665
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 28391186,
+        "fight_start": 1777147090976,
+        "name": "Naromiix",
+        "unbuffed_dps": 28391186
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 3581757,
+        "fight_start": 1777225301950,
+        "name": "Naromiix",
+        "unbuffed_dps": 3581757
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 3744539,
+        "fight_start": 1777225788682,
+        "name": "Naromiix",
+        "unbuffed_dps": 3744539
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 21956660,
+        "fight_start": 1777303797814,
+        "name": "Naromiix",
+        "unbuffed_dps": 21956660
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 9522677,
+        "fight_start": 1777322221075,
+        "name": "Naromiix",
+        "unbuffed_dps": 9522677
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 9445741,
+        "fight_start": 1777322814583,
+        "name": "Naromiix",
+        "unbuffed_dps": 9445741
     },
     {
         "current_boss": "Infernas",
@@ -21904,6 +22320,70 @@
         "unbuffed_dps": 357954390
     },
     {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 390128959,
+        "fight_start": 1777132319248,
+        "name": "Satoriix",
+        "unbuffed_dps": 261878983
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 527710443,
+        "fight_start": 1777133094148,
+        "name": "Satoriix",
+        "unbuffed_dps": 317792780
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 631047829,
+        "fight_start": 1777143089252,
+        "name": "Satoriix",
+        "unbuffed_dps": 371497848
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 398902361,
+        "fight_start": 1777222686436,
+        "name": "Satoriix",
+        "unbuffed_dps": 210436337
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 568021939,
+        "fight_start": 1777223418602,
+        "name": "Satoriix",
+        "unbuffed_dps": 295634722
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 656951609,
+        "fight_start": 1777311183712,
+        "name": "Satoriix",
+        "unbuffed_dps": 379499649
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 462416976,
+        "fight_start": 1777314417665,
+        "name": "Satoriix",
+        "unbuffed_dps": 252509712
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 434102029,
+        "fight_start": 1777315324303,
+        "name": "Satoriix",
+        "unbuffed_dps": 231341001
+    },
+    {
         "current_boss": "Blossoming Fear, Naitreya",
         "difficulty": "Hard",
         "dps": 6783029,
@@ -23144,6 +23624,22 @@
         "unbuffed_dps": 10609261
     },
     {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 7544325,
+        "fight_start": 1777132319248,
+        "name": "Sebadi",
+        "unbuffed_dps": 7544325
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 10096833,
+        "fight_start": 1777133094148,
+        "name": "Sebadi",
+        "unbuffed_dps": 10096833
+    },
+    {
         "current_boss": "Infernas",
         "difficulty": "Normal",
         "dps": 127915474,
@@ -23494,6 +23990,22 @@
         "fight_start": 1776514028426,
         "name": "Simzhae",
         "unbuffed_dps": 177888626
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 238002080,
+        "fight_start": 1777141187497,
+        "name": "Simzhae",
+        "unbuffed_dps": 126203431
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 304546400,
+        "fight_start": 1777141745613,
+        "name": "Simzhae",
+        "unbuffed_dps": 158713409
     },
     {
         "current_boss": "Brelshaza, Ember in the Ashes",
@@ -25344,6 +25856,54 @@
         "unbuffed_dps": 310699928
     },
     {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 370458913,
+        "fight_start": 1777120787547,
+        "name": "Tomoriix",
+        "unbuffed_dps": 233819839
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 214780246,
+        "fight_start": 1777139823001,
+        "name": "Tomoriix",
+        "unbuffed_dps": 131429900
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 343175188,
+        "fight_start": 1777140370342,
+        "name": "Tomoriix",
+        "unbuffed_dps": 205112852
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 286684815,
+        "fight_start": 1777226545399,
+        "name": "Tomoriix",
+        "unbuffed_dps": 161245462
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 291052322,
+        "fight_start": 1777232171100,
+        "name": "Tomoriix",
+        "unbuffed_dps": 175303079
+    },
+    {
+        "current_boss": "Gargadeth",
+        "difficulty": "Normal",
+        "dps": 591472952,
+        "fight_start": 1777319209980,
+        "name": "Tomoriix",
+        "unbuffed_dps": 345144931
+    },
+    {
         "current_boss": "Behemoth, the Storm Commander",
         "difficulty": "Normal",
         "dps": 95224370,
@@ -25574,6 +26134,22 @@
         "fight_start": 1776879170383,
         "name": "Uriangera",
         "unbuffed_dps": 202872041
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 140824194,
+        "fight_start": 1777222686436,
+        "name": "Uriangera",
+        "unbuffed_dps": 92335431
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 309999012,
+        "fight_start": 1777223418602,
+        "name": "Uriangera",
+        "unbuffed_dps": 184936455
     },
     {
         "current_boss": "Brelshaza, Ember in the Ashes",
@@ -26694,6 +27270,22 @@
         "fight_start": 1777051912950,
         "name": "Vriytra",
         "unbuffed_dps": 197311030
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 137570283,
+        "fight_start": 1777225301950,
+        "name": "Vriytra",
+        "unbuffed_dps": 80328706
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 489574399,
+        "fight_start": 1777225788682,
+        "name": "Vriytra",
+        "unbuffed_dps": 273068431
     },
     {
         "current_boss": "Brelshaza, Ember in the Ashes",
@@ -28246,6 +28838,54 @@
         "fight_start": 1776619429519,
         "name": "Âvlora",
         "unbuffed_dps": 405148347
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 597502586,
+        "fight_start": 1777132319248,
+        "name": "Âvlora",
+        "unbuffed_dps": 396055416
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 751020140,
+        "fight_start": 1777133094148,
+        "name": "Âvlora",
+        "unbuffed_dps": 460869553
+    },
+    {
+        "current_boss": "Brelshaza, Ember in the Ashes",
+        "difficulty": "Hard",
+        "dps": 502951475,
+        "fight_start": 1777225301950,
+        "name": "Âvlora",
+        "unbuffed_dps": 311640800
+    },
+    {
+        "current_boss": "Armoche, Sentinel of the Abyss",
+        "difficulty": "Hard",
+        "dps": 903550639,
+        "fight_start": 1777225788682,
+        "name": "Âvlora",
+        "unbuffed_dps": 513558435
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 693332506,
+        "fight_start": 1777322221075,
+        "name": "Âvlora",
+        "unbuffed_dps": 409034786
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 759955145,
+        "fight_start": 1777322814583,
+        "name": "Âvlora",
+        "unbuffed_dps": 459396797
     },
     {
         "current_boss": "Infernas",
