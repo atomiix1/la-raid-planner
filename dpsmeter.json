@@ -794,14 +794,6 @@
     {
         "current_boss": "Corvus Tul Rak",
         "difficulty": "Hard",
-        "dps": 686009312,
-        "fight_start": 1777736998754,
-        "name": "Aedhe",
-        "unbuffed_dps": 369680017
-    },
-    {
-        "current_boss": "Corvus Tul Rak",
-        "difficulty": "Hard",
         "dps": 484637473,
         "fight_start": 1777737925767,
         "name": "Aedhe",
@@ -21338,14 +21330,6 @@
     {
         "current_boss": "Corvus Tul Rak",
         "difficulty": "Hard",
-        "dps": 478905846,
-        "fight_start": 1777736998754,
-        "name": "Orkhanx",
-        "unbuffed_dps": 260308560
-    },
-    {
-        "current_boss": "Corvus Tul Rak",
-        "difficulty": "Hard",
         "dps": 787448795,
         "fight_start": 1777737925767,
         "name": "Orkhanx",
@@ -22866,14 +22850,6 @@
     {
         "current_boss": "Corvus Tul Rak",
         "difficulty": "Hard",
-        "dps": 602824326,
-        "fight_start": 1777736998754,
-        "name": "Satoriix",
-        "unbuffed_dps": 317572161
-    },
-    {
-        "current_boss": "Corvus Tul Rak",
-        "difficulty": "Hard",
         "dps": 557518335,
         "fight_start": 1777737925767,
         "name": "Satoriix",
@@ -24166,14 +24142,6 @@
         "fight_start": 1777734586988,
         "name": "Sebadi",
         "unbuffed_dps": 5104348
-    },
-    {
-        "current_boss": "Corvus Tul Rak",
-        "difficulty": "Hard",
-        "dps": 7085328,
-        "fight_start": 1777736998754,
-        "name": "Sebadi",
-        "unbuffed_dps": 7085328
     },
     {
         "current_boss": "Corvus Tul Rak",
