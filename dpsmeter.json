@@ -784,6 +784,30 @@
         "unbuffed_dps": 239932732
     },
     {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 399303164,
+        "fight_start": 1777734586988,
+        "name": "Aedhe",
+        "unbuffed_dps": 224710388
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 686009312,
+        "fight_start": 1777736998754,
+        "name": "Aedhe",
+        "unbuffed_dps": 369680017
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 484637473,
+        "fight_start": 1777737925767,
+        "name": "Aedhe",
+        "unbuffed_dps": 274392235
+    },
+    {
         "current_boss": "Blossoming Fear, Naitreya",
         "difficulty": "Hard",
         "dps": 167245142,
@@ -3392,6 +3416,14 @@
         "unbuffed_dps": 320261366
     },
     {
+        "current_boss": "Skolakia",
+        "difficulty": "Normal",
+        "dps": 790581512,
+        "fight_start": 1777729599437,
+        "name": "Atomiix",
+        "unbuffed_dps": 464402386
+    },
+    {
         "current_boss": "Narok the Butcher",
         "difficulty": "Normal",
         "dps": 109885553,
@@ -4070,6 +4102,22 @@
         "fight_start": 1777127598598,
         "name": "Boreahl",
         "unbuffed_dps": 123547753
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Normal",
+        "dps": 169091730,
+        "fight_start": 1777731558061,
+        "name": "Boreahl",
+        "unbuffed_dps": 107129409
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Normal",
+        "dps": 216051563,
+        "fight_start": 1777732637854,
+        "name": "Boreahl",
+        "unbuffed_dps": 139309903
     },
     {
         "current_boss": "Narok the Butcher",
@@ -8296,6 +8344,22 @@
         "unbuffed_dps": 11465437
     },
     {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 12499773,
+        "fight_start": 1777742908498,
+        "name": "Eskkol",
+        "unbuffed_dps": 12499773
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 13310779,
+        "fight_start": 1777743434126,
+        "name": "Eskkol",
+        "unbuffed_dps": 13310779
+    },
+    {
         "current_boss": "Drextalas",
         "difficulty": "Normal",
         "dps": 250593710,
@@ -9942,6 +10006,30 @@
         "fight_start": 1777659859185,
         "name": "Feraliix",
         "unbuffed_dps": 288335385
+    },
+    {
+        "current_boss": "Skolakia",
+        "difficulty": "Normal",
+        "dps": 871154360,
+        "fight_start": 1777729275583,
+        "name": "Feraliix",
+        "unbuffed_dps": 454744200
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 443216326,
+        "fight_start": 1777740516103,
+        "name": "Feraliix",
+        "unbuffed_dps": 233288792
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 446887383,
+        "fight_start": 1777740973709,
+        "name": "Feraliix",
+        "unbuffed_dps": 235230932
     },
     {
         "current_boss": "Akkan, Lord of Death",
@@ -12878,6 +12966,30 @@
         "fight_start": 1777634585018,
         "name": "Katoriix",
         "unbuffed_dps": 435500735
+    },
+    {
+        "current_boss": "Skolakia",
+        "difficulty": "Normal",
+        "dps": 787750903,
+        "fight_start": 1777729871035,
+        "name": "Katoriix",
+        "unbuffed_dps": 428508836
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Normal",
+        "dps": 334986443,
+        "fight_start": 1777731558061,
+        "name": "Katoriix",
+        "unbuffed_dps": 224636620
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Normal",
+        "dps": 368301444,
+        "fight_start": 1777732637854,
+        "name": "Katoriix",
+        "unbuffed_dps": 245263991
     },
     {
         "current_boss": "Akkan, Lord of Death",
@@ -15856,6 +15968,22 @@
         "unbuffed_dps": 10482158
     },
     {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 9172154,
+        "fight_start": 1777740516103,
+        "name": "Lirèsa",
+        "unbuffed_dps": 9172154
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 9133842,
+        "fight_start": 1777740973709,
+        "name": "Lirèsa",
+        "unbuffed_dps": 9133842
+    },
+    {
         "current_boss": "Blossoming Fear, Naitreya",
         "difficulty": "Hard",
         "dps": 7602130,
@@ -18632,6 +18760,14 @@
         "unbuffed_dps": 24143900
     },
     {
+        "current_boss": "Skolakia",
+        "difficulty": "Normal",
+        "dps": 30755327,
+        "fight_start": 1777730834745,
+        "name": "Naromiix",
+        "unbuffed_dps": 30755327
+    },
+    {
         "current_boss": "Infernas",
         "difficulty": "Hard",
         "dps": 6796143,
@@ -20744,6 +20880,22 @@
         "unbuffed_dps": 17224613
     },
     {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 422648043,
+        "fight_start": 1777742908498,
+        "name": "Orkhans",
+        "unbuffed_dps": 232793708
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 385630066,
+        "fight_start": 1777743434126,
+        "name": "Orkhans",
+        "unbuffed_dps": 214396830
+    },
+    {
         "current_boss": "Brelshaza, Ember in the Ashes",
         "difficulty": "Hard",
         "dps": 186045040,
@@ -21174,6 +21326,30 @@
         "fight_start": 1776618028218,
         "name": "Orkhanx",
         "unbuffed_dps": 311671028
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 606857269,
+        "fight_start": 1777734586988,
+        "name": "Orkhanx",
+        "unbuffed_dps": 348913512
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 478905846,
+        "fight_start": 1777736998754,
+        "name": "Orkhanx",
+        "unbuffed_dps": 260308560
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 787448795,
+        "fight_start": 1777737925767,
+        "name": "Orkhanx",
+        "unbuffed_dps": 457691796
     },
     {
         "current_boss": "Akkan, Lord of Death",
@@ -22672,6 +22848,54 @@
         "unbuffed_dps": 557393375
     },
     {
+        "current_boss": "Skolakia",
+        "difficulty": "Normal",
+        "dps": 907278182,
+        "fight_start": 1777730583660,
+        "name": "Satoriix",
+        "unbuffed_dps": 510136996
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 491797614,
+        "fight_start": 1777734586988,
+        "name": "Satoriix",
+        "unbuffed_dps": 286921236
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 602824326,
+        "fight_start": 1777736998754,
+        "name": "Satoriix",
+        "unbuffed_dps": 317572161
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 557518335,
+        "fight_start": 1777737925767,
+        "name": "Satoriix",
+        "unbuffed_dps": 322410395
+    },
+    {
+        "current_boss": "Abyss Lord Kazeros",
+        "difficulty": "Hard",
+        "dps": 424954424,
+        "fight_start": 1777742908498,
+        "name": "Satoriix",
+        "unbuffed_dps": 238705676
+    },
+    {
+        "current_boss": "Death Incarnate Kazeros",
+        "difficulty": "Hard",
+        "dps": 402629414,
+        "fight_start": 1777743434126,
+        "name": "Satoriix",
+        "unbuffed_dps": 223718908
+    },
+    {
         "current_boss": "Blossoming Fear, Naitreya",
         "difficulty": "Hard",
         "dps": 6783029,
@@ -23934,6 +24158,30 @@
         "fight_start": 1777584290147,
         "name": "Sebadi",
         "unbuffed_dps": 31443444
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 5104348,
+        "fight_start": 1777734586988,
+        "name": "Sebadi",
+        "unbuffed_dps": 5104348
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 7085328,
+        "fight_start": 1777736998754,
+        "name": "Sebadi",
+        "unbuffed_dps": 7085328
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 6101934,
+        "fight_start": 1777737925767,
+        "name": "Sebadi",
+        "unbuffed_dps": 6101934
     },
     {
         "current_boss": "Infernas",
@@ -26270,6 +26518,14 @@
         "fight_start": 1777657067857,
         "name": "Tomoriix",
         "unbuffed_dps": 157495904
+    },
+    {
+        "current_boss": "Skolakia",
+        "difficulty": "Normal",
+        "dps": 462810943,
+        "fight_start": 1777728969642,
+        "name": "Tomoriix",
+        "unbuffed_dps": 293377810
     },
     {
         "current_boss": "Behemoth, the Storm Commander",
