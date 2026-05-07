@@ -3504,6 +3504,30 @@
         "unbuffed_dps": 380367944
     },
     {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 686005167,
+        "fight_start": 1778168873422,
+        "name": "Atomiix",
+        "unbuffed_dps": 401813224
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 469379934,
+        "fight_start": 1778177339659,
+        "name": "Atomiix",
+        "unbuffed_dps": 263668349
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 550191506,
+        "fight_start": 1778177893816,
+        "name": "Atomiix",
+        "unbuffed_dps": 310177041
+    },
+    {
         "current_boss": "Narok the Butcher",
         "difficulty": "Normal",
         "dps": 109885553,
@@ -16472,6 +16496,22 @@
         "unbuffed_dps": 2811147
     },
     {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 9949498,
+        "fight_start": 1778177339659,
+        "name": "Lirèsa",
+        "unbuffed_dps": 9949498
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 10033630,
+        "fight_start": 1778177893816,
+        "name": "Lirèsa",
+        "unbuffed_dps": 10033630
+    },
+    {
         "current_boss": "Blossoming Fear, Naitreya",
         "difficulty": "Hard",
         "dps": 7602130,
@@ -19334,6 +19374,22 @@
         "fight_start": 1777969277036,
         "name": "Naromiix",
         "unbuffed_dps": 22708436
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 3518100,
+        "fight_start": 1778174120732,
+        "name": "Naromiix",
+        "unbuffed_dps": 3518100
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 8793930,
+        "fight_start": 1778174661334,
+        "name": "Naromiix",
+        "unbuffed_dps": 8793930
     },
     {
         "current_boss": "Infernas",
@@ -27278,6 +27334,46 @@
         "fight_start": 1778086534986,
         "name": "Tomoriix",
         "unbuffed_dps": 238328193
+    },
+    {
+        "current_boss": "Krathios",
+        "difficulty": "Normal",
+        "dps": 750515539,
+        "fight_start": 1778169125637,
+        "name": "Tomoriix",
+        "unbuffed_dps": 414386634
+    },
+    {
+        "current_boss": "Witch of Agony, Serca",
+        "difficulty": "Hard",
+        "dps": 451434675,
+        "fight_start": 1778169652131,
+        "name": "Tomoriix",
+        "unbuffed_dps": 258263179
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 590447421,
+        "fight_start": 1778171204254,
+        "name": "Tomoriix",
+        "unbuffed_dps": 314910480
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 174101483,
+        "fight_start": 1778171273412,
+        "name": "Tomoriix",
+        "unbuffed_dps": 87668661
+    },
+    {
+        "current_boss": "Corvus Tul Rak",
+        "difficulty": "Hard",
+        "dps": 558455483,
+        "fight_start": 1778171991804,
+        "name": "Tomoriix",
+        "unbuffed_dps": 313556934
     },
     {
         "current_boss": "Behemoth, the Storm Commander",
