@@ -12,6 +12,14 @@ WHERE
     entity.entity_type = 'PLAYER'
     AND encounter_preview.difficulty IS NOT NULL
     AND encounter_preview.difficulty <> ''
+    AND encounter_preview.current_boss IN (
+        'Brelshaza, Ember in the Ashes',
+        'Armoche, Sentinel of the Abyss',
+        'Abyss Lord Kazeros',
+        'Archdemon Kazeros',
+        'Witch of Agony, Serca',
+        'Corvus Tul Rak'
+    )
     AND entity.name IN (
         'Naromiix', 'Satoriix', 'Atomiix', 'Katoriix', 'Tomoriix', 'Feraliix',
         'Aedhe', 'Boreahl', 'Nawinar', 'Lekhanar', 'Knaath', 'Dynwen', 'Kadell',
