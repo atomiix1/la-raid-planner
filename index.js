@@ -54,7 +54,7 @@ function resetAllRaids() {
     
     data.forEach(user => {
         user.characters.forEach(character => {
-            character.raids.forEach(raid => {
+            (character.raids || []).forEach(raid => {
                 raid.completion = false;
             });
         });
@@ -98,7 +98,7 @@ function getUserRaidesWithDifficulty(user) {
     const raidDifficultyMap = new Map(); // Clave: "raidName_difficulty"
     
     user.characters.forEach(character => {
-        character.raids.forEach(raid => {
+        (character.raids || []).forEach(raid => {
             if (RAIDS_ORDER.includes(raid.name)) {
                 const key = `${raid.name}_${raid.difficulty}`;
                 if (!raidDifficultyMap.has(key)) {
@@ -123,7 +123,7 @@ function getUserStats(user) {
     let completedRaids = 0;
     
     user.characters.forEach(character => {
-        character.raids.forEach(raid => {
+        (character.raids || []).forEach(raid => {
             totalRaids++;
             if (raid.completion) completedRaids++;
         });
@@ -135,47 +135,37 @@ function getUserStats(user) {
 
 // Calcular oro generado y potencial de un usuario
 function getUserGoldStats(user) {
-    // Recolectar todas las raids (completadas y no completadas) con su configuración
-    const allRaids = [];
-    
-    user.characters.forEach(character => {
-        character.raids.forEach(raid => {
+    // Calcular el oro base de cada personaje sin tener en cuenta cofres
+    const characterGolds = user.characters.map(character => {
+        const raids = character.raids || [];
+        const totalOro = raids.reduce((sum, raid) => {
             const config = RAIDS_CONFIG.find(c => c.name === raid.name && c.difficulty === raid.difficulty);
-            if (config) {
-                allRaids.push({
-                    name: raid.name,
-                    difficulty: raid.difficulty,
-                    oro: config.oro,
-                    cofre: config.cofre,
-                    completion: raid.completion,
-                    hasChest: raid.chest === true
-                });
+            return config ? sum + config.oro : sum;
+        }, 0);
+        return { character, totalOro };
+    });
+
+    // Seleccionar los 6 personajes que más oro generan
+    const topCharacters = characterGolds
+        .sort((a, b) => b.totalOro - a.totalOro)
+        .slice(0, 6)
+        .map(entry => entry.character);
+
+    let goldPotential = 0;
+    let goldGenerated = 0;
+
+    topCharacters.forEach(character => {
+        (character.raids || []).forEach(raid => {
+            const config = RAIDS_CONFIG.find(c => c.name === raid.name && c.difficulty === raid.difficulty);
+            if (!config) return;
+
+            goldPotential += config.oro;
+            if (raid.completion) {
+                goldGenerated += config.oro;
             }
         });
     });
-    
-    // Oro potencial: oro + cofre de todas las raids
-    let goldPotential = 0;
-    allRaids.forEach(raid => {
-        if (raid.hasChest) {
-                goldPotential += (raid.oro - raid.cofre); // Solo el oro, sin gastar cofre
-            } else {
-                goldPotential += raid.oro; // Oro completo sin cofre
-            }
-    });
-    
-    // Oro generado: solo raids completadas (oro - precio cofre si está marcado)
-    let goldGenerated = 0;
-    allRaids.forEach(raid => {
-        if (raid.completion) {
-            if (raid.hasChest) {
-                goldGenerated += (raid.oro - raid.cofre); // Solo el oro, sin gastar cofre
-            } else {
-                goldGenerated += raid.oro; // Oro completo sin cofre
-            }
-        }
-    });
-    
+
     return { generated: (goldPotential - goldGenerated), potential: goldPotential };
 }
 
@@ -186,8 +176,9 @@ function sortCharactersByILvl(characters) {
 
 // Calcular estadísticas de un personaje
 function getCharacterStats(character) {
-    let totalRaids = character.raids.length;
-    let completedRaids = character.raids.filter(raid => raid.completion).length;
+    const raids = character.raids || [];
+    let totalRaids = raids.length;
+    let completedRaids = raids.filter(raid => raid.completion).length;
     const remainingRaids = totalRaids - completedRaids;
     
     return { remaining: remainingRaids, total: totalRaids };
@@ -199,7 +190,7 @@ function getRaidStats(user, raidName, raidDifficulty) {
     let completed = 0;
     
     user.characters.forEach(character => {
-        const raid = character.raids.find(r => r.name === raidName && r.difficulty === raidDifficulty);
+        const raid = (character.raids || []).find(r => r.name === raidName && r.difficulty === raidDifficulty);
         if (raid) {
             total++;
             if (raid.completion) completed++;
@@ -275,7 +266,7 @@ function renderTables() {
             
             user.characters.forEach(character => {
                 const cell = document.createElement('td');
-                const raid = character.raids.find(r => r.name === raidInfo.name && r.difficulty === raidInfo.difficulty);
+                const raid = (character.raids || []).find(r => r.name === raidInfo.name && r.difficulty === raidInfo.difficulty);
                 
                 if (raid) {
                     // Contenedor para el botón y el chest
@@ -408,6 +399,7 @@ function openRaidSelector(user, character) {
     const raidsContainer = document.createElement('div');
     raidsContainer.className = 'raids-container';
     
+    character.raids = character.raids || [];
     // Agrupar raids por nombre
     const raidsByName = {};
     RAIDS_CONFIG.forEach(raid => {
@@ -506,6 +498,7 @@ function handleRaidCheckboxChange(checkbox, character, diffsInRaid) {
     
     if (checkbox.checked) {
         // Agregar raid
+        character.raids = character.raids || [];
         const newRaid = RAIDS_CONFIG.find(r => r.name === raidName && r.difficulty === difficulty);
         if (newRaid && !character.raids.find(r => r.name === raidName && r.difficulty === difficulty)) {
             // Remover otras dificultades de la misma raid
@@ -580,7 +573,7 @@ function openRaidSearch() {
     const allRaids = new Set();
     data.forEach(user => {
         user.characters.forEach(character => {
-            character.raids.forEach(raid => {
+            (character.raids || []).forEach(raid => {
                 allRaids.add(`${raid.name}_${raid.difficulty}`);
             });
         });
