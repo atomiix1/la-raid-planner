@@ -633,7 +633,7 @@ function updateRaidMatches() {
     
     data.forEach(user => {
         const characters = user.characters.filter(char => {
-            const raidData = char.raids.find(raid => 
+            const raidData = (char.raids || []).find(raid => 
                 raid.name === selectedRaidName && raid.difficulty === selectedDifficulty
             );
             // Solo mostrar si tiene la raid Y no está completada
