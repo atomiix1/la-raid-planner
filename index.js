@@ -168,6 +168,7 @@ function getUserGoldStats(user) {
                 goldGenerated += config.oro;
             }
             if (raid.chest) {
+                goldPotential -= config.cofre;
                 cofresGastados += config.cofre;
             }
         });
