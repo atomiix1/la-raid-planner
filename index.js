@@ -163,7 +163,7 @@ function getUserGoldStats(user) {
             if (!config) return;
 
             goldPotential += config.oro;
-            if (raid.completion) {
+            if (raid.gold) {
                 goldGenerated += config.oro;
             }
         });
@@ -298,6 +298,22 @@ function renderTables() {
                         saveData();
                     });
                     container.appendChild(chestImg);
+                    
+                    // Icono de oro
+                    const goldImg = document.createElement('img');
+                    goldImg.src = 'gold.png';
+                    goldImg.className = 'gold-icon';
+                    goldImg.title = 'Oro ganado';
+                    goldImg.style.opacity = raid.gold === true ? '1' : '0.3';
+                    goldImg.style.cursor = 'pointer';
+                    goldImg.style.width = '20px';
+                    goldImg.style.height = '20px';
+                    goldImg.addEventListener('click', () => {
+                        raid.gold = !raid.gold;
+                        goldImg.style.opacity = raid.gold ? '1' : '0.3';
+                        saveData();
+                    });
+                    container.appendChild(goldImg);
                     
                     cell.appendChild(container);
                 } else {
@@ -510,7 +526,9 @@ function handleRaidCheckboxChange(checkbox, character, diffsInRaid) {
             character.raids.push({
                 name: raidName,
                 difficulty: difficulty,
-                completion: false
+                completion: false,
+                gold: false,
+                chest: false
             });
             
             // Desactivar otros checkboxes de la misma raid
