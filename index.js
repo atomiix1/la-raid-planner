@@ -141,9 +141,8 @@ function getUserGoldStats(user) {
     let goldPotential = 0;
     let goldGenerated = 0;
     let cofresGastados = 0;
-    let goldRemaining = 0;
 
-    // Iterar sobre TODOS los personajes (sin límite de 6)
+    // Iterar sobre TODOS los personajes (sin límite)
     user.characters.forEach(character => {
         (character.raids || []).forEach(raid => {
             const config = RAIDS_CONFIG.find(c => c.name === raid.name && c.difficulty === raid.difficulty);
@@ -152,9 +151,6 @@ function getUserGoldStats(user) {
             if (raid.gold) {
                 goldPotential += config.oro;
                 goldGenerated += config.oro;
-            } else {
-                // Oro de raids sin gold check
-                goldRemaining += config.oro;
             }
             
             if (raid.chest) {
@@ -164,7 +160,7 @@ function getUserGoldStats(user) {
         });
     });
 
-    return { generated: (goldGenerated - cofresGastados), potential: goldPotential, remaining: goldRemaining };
+    return { generated: (goldGenerated - cofresGastados), potential: goldPotential };
 }
 
 //Ordenar personajes por iLvl descendente
@@ -217,7 +213,7 @@ function renderTables() {
         
         const userTitle = document.createElement('div');
         userTitle.className = 'user-title';
-        userTitle.innerHTML = `👤 ${user.account} <span class="stats">[${userStats.remaining}/${userStats.total}]</span> <span class="gold-stats"><img src="gold.png" class="gold-icon" title="Oro"> ${goldStats.generated.toLocaleString()} / ${goldStats.potential.toLocaleString()} - Restante: ${goldStats.remaining.toLocaleString()}</span>`;
+        userTitle.innerHTML = `👤 ${user.account} <span class="stats">[${userStats.remaining}/${userStats.total}]</span> <span class="gold-stats"><img src="gold.png" class="gold-icon" title="Oro"> ${goldStats.generated.toLocaleString()} / ${goldStats.potential.toLocaleString()}</span>`;
         userSection.appendChild(userTitle);
         
         const table = document.createElement('table');
