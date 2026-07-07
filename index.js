@@ -138,27 +138,13 @@ function getUserStats(user) {
 
 // Calcular oro generado y potencial de un usuario
 function getUserGoldStats(user) {
-    // Calcular el oro base de cada personaje sin tener en cuenta cofres
-    const characterGolds = user.characters.map(character => {
-        const raids = character.raids || [];
-        const totalOro = raids.reduce((sum, raid) => {
-            const config = RAIDS_CONFIG.find(c => c.name === raid.name && c.difficulty === raid.difficulty);
-            return config ? sum + config.oro : sum;
-        }, 0);
-        return { character, totalOro };
-    });
-
-    // Seleccionar los 6 personajes que más oro generan
-    const topCharacters = characterGolds
-        .sort((a, b) => b.totalOro - a.totalOro)
-        .slice(0, 6)
-        .map(entry => entry.character);
-
     let goldPotential = 0;
     let goldGenerated = 0;
     let cofresGastados = 0;
+    let goldRemaining = 0;
 
-    topCharacters.forEach(character => {
+    // Iterar sobre TODOS los personajes (sin límite de 6)
+    user.characters.forEach(character => {
         (character.raids || []).forEach(raid => {
             const config = RAIDS_CONFIG.find(c => c.name === raid.name && c.difficulty === raid.difficulty);
             if (!config) return;
@@ -166,7 +152,11 @@ function getUserGoldStats(user) {
             if (raid.gold) {
                 goldPotential += config.oro;
                 goldGenerated += config.oro;
+            } else {
+                // Oro de raids sin gold check
+                goldRemaining += config.oro;
             }
+            
             if (raid.chest) {
                 goldPotential -= config.cofre;
                 cofresGastados += config.cofre;
@@ -174,7 +164,7 @@ function getUserGoldStats(user) {
         });
     });
 
-    return { generated: (goldGenerated - cofresGastados), potential: goldPotential };
+    return { generated: (goldGenerated - cofresGastados), potential: goldPotential, remaining: goldRemaining };
 }
 
 //Ordenar personajes por iLvl descendente
@@ -227,7 +217,7 @@ function renderTables() {
         
         const userTitle = document.createElement('div');
         userTitle.className = 'user-title';
-        userTitle.innerHTML = `👤 ${user.account} <span class="stats">[${userStats.remaining}/${userStats.total}]</span> <span class="gold-stats"><img src="gold.png" class="gold-icon" title="Oro"> ${goldStats.generated.toLocaleString()} / ${goldStats.potential.toLocaleString()}</span>`;
+        userTitle.innerHTML = `👤 ${user.account} <span class="stats">[${userStats.remaining}/${userStats.total}]</span> <span class="gold-stats"><img src="gold.png" class="gold-icon" title="Oro"> ${goldStats.generated.toLocaleString()} / ${goldStats.potential.toLocaleString()} - Restante: ${goldStats.remaining.toLocaleString()}</span>`;
         userSection.appendChild(userTitle);
         
         const table = document.createElement('table');
