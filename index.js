@@ -166,7 +166,7 @@ function getUserGoldStats(user) {
         });
     });
 
-    return { generated: (goldPotential - oroCompletado - (cofresGastados - cofresCompletados)), potential: goldPotential };
+    return { generated: (goldPotential - oroCompletado + cofresCompletados), potential: goldPotential };
 }
 
 //Ordenar personajes por iLvl descendente
