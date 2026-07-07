@@ -163,8 +163,8 @@ function getUserGoldStats(user) {
             const config = RAIDS_CONFIG.find(c => c.name === raid.name && c.difficulty === raid.difficulty);
             if (!config) return;
 
-            goldPotential += config.oro;
             if (raid.gold) {
+                goldPotential += config.oro;
                 goldGenerated += config.oro;
             }
             if (raid.chest) {
