@@ -139,8 +139,9 @@ function getUserStats(user) {
 // Calcular oro generado y potencial de un usuario
 function getUserGoldStats(user) {
     let goldPotential = 0;
-    let goldGenerated = 0;
     let cofresGastados = 0;
+    let oroCompletado = 0;
+    let cofresCompletados = 0;
 
     // Iterar sobre TODOS los personajes (sin límite)
     user.characters.forEach(character => {
@@ -150,17 +151,22 @@ function getUserGoldStats(user) {
 
             if (raid.gold) {
                 goldPotential += config.oro;
-                goldGenerated += config.oro;
+                if (raid.completion) {
+                    oroCompletado += config.oro;
+                }
             }
             
             if (raid.chest) {
                 goldPotential -= config.cofre;
                 cofresGastados += config.cofre;
+                if (raid.completion) {
+                    cofresCompletados += config.cofre;
+                }
             }
         });
     });
 
-    return { generated: (goldGenerated - cofresGastados), potential: goldPotential };
+    return { generated: (goldPotential - oroCompletado - (cofresGastados - cofresCompletados)), potential: goldPotential };
 }
 
 //Ordenar personajes por iLvl descendente
