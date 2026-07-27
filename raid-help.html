@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raids con ayuda - Raid Planner</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1e1e1e;
+            color: #f5f5f5;
+            padding: 24px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .page-header h1 {
+            margin: 0;
+            color: #64b5f6;
+            font-size: 28px;
+        }
+        .page-header a {
+            text-decoration: none;
+            background: #6a1b9a;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        .difficulty-section {
+            margin-bottom: 24px;
+            background: #2d2d2d;
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+        }
+        .difficulty-title {
+            margin: 0 0 12px;
+            color: #ffca28;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .raid-card {
+            background: #353535;
+            border-left: 4px solid #1a73e8;
+            border-radius: 8px;
+            padding: 14px;
+            margin-bottom: 12px;
+        }
+        .raid-card.need-help {
+            border-left-color: #f44336;
+        }
+        .raid-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .raid-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .raid-meta {
+            font-size: 13px;
+            color: #b0bec5;
+        }
+        .need-help-pill {
+            display: inline-block;
+            margin-left: 8px;
+            background: #f44336;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .account-item {
+            margin-top: 8px;
+            padding: 8px 10px;
+            background: #2a2a2a;
+            border-radius: 6px;
+        }
+        .account-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+        }
+        .account-name {
+            font-weight: bold;
+            color: #81c784;
+        }
+        .account-count {
+            color: #ffca28;
+            font-size: 13px;
+        }
+        .character-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .character-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: #424242;
+            color: #e0e0e0;
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-size: 13px;
+        }
+        .character-chip.need-help {
+            background: #5d1b1b;
+            color: #ffcccb;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #b0bec5;
+            background: #2d2d2d;
+            border-radius: 10px;
+        }
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>🆘 Raids que necesitan ayuda</h1>
+            <a href="index.html">⬅ Volver al planner</a>
+        </div>
+        <div id="raidHelpContent" class="loading">Cargando datos...</div>
+    </div>
+
+    <script type="module" src="./raid-help.js"></script>
+</body>
+</html>

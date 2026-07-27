@@ -30,6 +30,28 @@ const RAIDS_CONFIG = [
     { name: 'Aegir EX', difficulty: 'Nightmare', minILvl: 1770, oro: 45000, cofre: 0 }
 ];
 
+function normalizeRaid(raid) {
+    if (!raid) return raid;
+    raid.completion = Boolean(raid.completion);
+    raid.gold = Boolean(raid.gold);
+    raid.chest = Boolean(raid.chest);
+    raid.needHelp = raid.needHelp === true;
+    return raid;
+}
+
+function normalizeDataStructure() {
+    if (!Array.isArray(data)) return;
+
+    data.forEach(user => {
+        if (!user || !Array.isArray(user.characters)) return;
+
+        user.characters.forEach(character => {
+            if (!character || !Array.isArray(character.raids)) return;
+            character.raids.forEach(raid => normalizeRaid(raid));
+        });
+    });
+}
+
 // Verificar y ejecutar reset semanal (cada miércoles a las 9:00 AM UTC)
 function checkWeeklyReset() {
     const now = new Date();
@@ -88,6 +110,7 @@ function loadData() {
         console.log('Snapshot recibido:', snapshot.exists(), snapshot.val());
         if (snapshot.exists()) {
             data = snapshot.val();
+            normalizeDataStructure();
             renderTables();
         } else {
             console.log('No data available - La base de datos está vacía');
@@ -314,6 +337,23 @@ function renderTables() {
                         saveData();
                     });
                     container.appendChild(goldImg);
+
+                    // Icono de ayuda (mokoko)
+                    const helpImg = document.createElement('img');
+                    helpImg.src = 'mokoko.png';
+                    helpImg.className = 'help-icon';
+                    helpImg.title = raid.needHelp === true ? 'Necesita ayuda' : 'Sin ayuda';
+                    helpImg.style.opacity = raid.needHelp === true ? '1' : '0.3';
+                    helpImg.style.cursor = 'pointer';
+                    helpImg.style.width = '20px';
+                    helpImg.style.height = '20px';
+                    helpImg.addEventListener('click', () => {
+                        raid.needHelp = !raid.needHelp;
+                        helpImg.style.opacity = raid.needHelp ? '1' : '0.3';
+                        helpImg.title = raid.needHelp ? 'Necesita ayuda' : 'Sin ayuda';
+                        saveData();
+                    });
+                    container.appendChild(helpImg);
                     
                     cell.appendChild(container);
                 } else {
@@ -528,7 +568,8 @@ function handleRaidCheckboxChange(checkbox, character, diffsInRaid) {
                 difficulty: difficulty,
                 completion: false,
                 gold: false,
-                chest: false
+                chest: false,
+                needHelp: false
             });
             
             // Desactivar otros checkboxes de la misma raid
