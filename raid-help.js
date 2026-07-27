@@ -26,6 +26,14 @@ function normalizeRaid(raid) {
     return raid;
 }
 
+function compareRaidEntries(a, b) {
+    if (b.helpCount !== a.helpCount) return b.helpCount - a.helpCount;
+    if (b.availableCharacters !== a.availableCharacters) return b.availableCharacters - a.availableCharacters;
+    const nameCompare = RAIDS_ORDER.indexOf(a.name) - RAIDS_ORDER.indexOf(b.name);
+    if (nameCompare !== 0) return nameCompare;
+    return DIFFICULTY_ORDER.indexOf(a.difficulty) - DIFFICULTY_ORDER.indexOf(b.difficulty);
+}
+
 function buildRaidEntries(data) {
     const entries = [];
 
@@ -81,13 +89,7 @@ function buildRaidEntries(data) {
         });
     });
 
-    return entries.sort((a, b) => {
-        if (b.helpCount !== a.helpCount) return b.helpCount - a.helpCount;
-        if (b.availableCharacters !== a.availableCharacters) return b.availableCharacters - a.availableCharacters;
-        const nameCompare = RAIDS_ORDER.indexOf(a.name) - RAIDS_ORDER.indexOf(b.name);
-        if (nameCompare !== 0) return nameCompare;
-        return DIFFICULTY_ORDER.indexOf(a.difficulty) - DIFFICULTY_ORDER.indexOf(b.difficulty);
-    });
+    return entries.sort(compareRaidEntries);
 }
 
 function renderRaidHelp(data) {
@@ -99,46 +101,33 @@ function renderRaidHelp(data) {
         return;
     }
 
-    const grouped = entries.reduce((acc, entry) => {
-        if (!acc[entry.name]) acc[entry.name] = [];
-        acc[entry.name].push(entry);
-        return acc;
-    }, {});
-
     let html = '';
 
-    Object.keys(grouped).forEach(raidName => {
-        const raidEntries = grouped[raidName].sort((a, b) => {
-            const diffOrder = DIFFICULTY_ORDER.indexOf(a.difficulty) - DIFFICULTY_ORDER.indexOf(b.difficulty);
-            return diffOrder;
-        });
+    entries.forEach(entry => {
+        const helpBadge = entry.helpCount > 0 ? `<span class="need-help-pill">${entry.helpCount} solicita ayuda</span>` : '';
+        html += `
+            <div class="difficulty-section">
+                <h2 class="difficulty-title">${entry.name} (${entry.difficulty}) ${helpBadge}</h2>
+        `;
 
-        raidEntries.forEach(entry => {
-            const helpBadge = entry.helpCount > 0 ? `<span class="need-help-pill">${entry.helpCount} needHelp</span>` : '';
+        entry.accounts.forEach(account => {
+            const charactersHtml = account.characters.map(character => {
+                const helpClass = character.needHelp ? 'need-help' : '';
+                return `<span class="character-chip ${helpClass}">${character.name}${character.needHelp ? ' 🆘' : ''}</span>`;
+            }).join('');
+
             html += `
-                <div class="difficulty-section">
-                    <h2 class="difficulty-title">${entry.name} (${entry.difficulty}) ${helpBadge}</h2>
-            `;
-
-            entry.accounts.forEach(account => {
-                const charactersHtml = account.characters.map(character => {
-                    const helpClass = character.needHelp ? 'need-help' : '';
-                    return `<span class="character-chip ${helpClass}">${character.name}${character.needHelp ? ' 🆘' : ''}</span>`;
-                }).join('');
-
-                html += `
-                    <div class="raid-card ${entry.helpCount > 0 ? 'need-help' : ''}">
-                        <div class="raid-header">
-                            <div class="raid-title">${account.account}</div>
-                            <div class="raid-meta">${account.characters.length} personaje${account.characters.length === 1 ? '' : 's'} pendiente${account.characters.length === 1 ? '' : 's'}</div>
-                        </div>
-                        <div class="character-list">${charactersHtml}</div>
+                <div class="raid-card ${entry.helpCount > 0 ? 'need-help' : ''}">
+                    <div class="raid-header">
+                        <div class="raid-title">${account.account}</div>
+                        <div class="raid-meta">${account.characters.length} personaje${account.characters.length === 1 ? '' : 's'} pendiente${account.characters.length === 1 ? '' : 's'}</div>
                     </div>
-                `;
-            });
-
-            html += '</div>';
+                    <div class="character-list">${charactersHtml}</div>
+                </div>
+            `;
         });
+
+        html += '</div>';
     });
 
     content.innerHTML = html;
