@@ -14,7 +14,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kazeros', 'Serca', 'Catedral', 'Aegir EX'];
+const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kazeros', 'Serca', 'Catedral'];
 const DIFFICULTY_ORDER = ['Solo', 'Normal', 'Hard', 'Extreme', 'Nightmare'];
 
 function normalizeRaid(raid) {

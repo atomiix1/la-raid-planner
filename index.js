@@ -1,7 +1,7 @@
 let data = [];
 
 // Orden específico de las raids
-const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kazeros', 'Serca', 'Catedral', 'Aegir EX'];
+const RAIDS_ORDER = ['Behemoth', 'Aegir', 'Brelshaza', 'Mordum', 'Armoche', 'Kazeros', 'Serca', 'Catedral'];
 
 // Configuración de raids con iLvl mínimo requerido
 const RAIDS_CONFIG = [
@@ -12,22 +12,22 @@ const RAIDS_CONFIG = [
     { name: 'Brelshaza', difficulty: 'Solo', minILvl: 1670, oro: 19250, cofre: 5540 },
     { name: 'Brelshaza', difficulty: 'Normal', minILvl: 1670, oro: 19250, cofre: 5540 },
     { name: 'Brelshaza', difficulty: 'Hard', minILvl: 1690, oro: 23800, cofre: 7500 },
-    { name: 'Mordum', difficulty: 'Solo', minILvl: 1680, oro: 28000, cofre: 9800 },
-    { name: 'Mordum', difficulty: 'Normal', minILvl: 1680, oro: 28000, cofre: 9800 },
-    { name: 'Mordum', difficulty: 'Hard', minILvl: 1700, oro: 38000, cofre: 12600 },
-    { name: 'Armoche', difficulty: 'Normal', minILvl: 1700, oro: 33000, cofre: 10560 },
-    { name: 'Armoche', difficulty: 'Hard', minILvl: 1720, oro: 42000, cofre: 13440 },
-    { name: 'Kazeros', difficulty: 'Normal', minILvl: 1710, oro: 40000, cofre: 12800 },
-    { name: 'Kazeros', difficulty: 'Hard', minILvl: 1730, oro: 52000, cofre: 16640 },
-    { name: 'Serca', difficulty: 'Normal', minILvl: 1710, oro: 35000, cofre: 11200 },
+    { name: 'Mordum', difficulty: 'Solo', minILvl: 1680, oro: 28000, cofre: 7010 },
+    { name: 'Mordum', difficulty: 'Normal', minILvl: 1680, oro: 28000, cofre: 7010 },
+    { name: 'Mordum', difficulty: 'Hard', minILvl: 1700, oro: 38000, cofre: 8350 },
+    { name: 'Armoche', difficulty: 'Solo', minILvl: 1700, oro: 27000, cofre: 8640 },
+    { name: 'Armoche', difficulty: 'Normal', minILvl: 1700, oro: 27000, cofre: 8640 },
+    { name: 'Armoche', difficulty: 'Hard', minILvl: 1720, oro: 38000, cofre: 12160 },
+    { name: 'Kazeros', difficulty: 'Solo', minILvl: 1710, oro: 32000, cofre: 10240 },
+    { name: 'Kazeros', difficulty: 'Normal', minILvl: 1710, oro: 32000, cofre: 10240 },
+    { name: 'Kazeros', difficulty: 'Hard', minILvl: 1730, oro: 48000, cofre: 15360 },
+    { name: 'Serca', difficulty: 'Solo', minILvl: 1710, oro: 32000, cofre: 11200 },
+    { name: 'Serca', difficulty: 'Normal', minILvl: 1710, oro: 32000, cofre: 11200 },
     { name: 'Serca', difficulty: 'Hard', minILvl: 1730, oro: 44000, cofre: 14080 },
     { name: 'Serca', difficulty: 'Nightmare', minILvl: 1740, oro: 54000, cofre: 17280 },
     { name: 'Catedral', difficulty: 'Normal', minILvl: 1700, oro: 30000, cofre: 9600 },
     { name: 'Catedral', difficulty: 'Hard', minILvl: 1720, oro: 40000, cofre: 12800 },
-    { name: 'Catedral', difficulty: 'Nightmare', minILvl: 1750, oro: 50000, cofre: 16000 },
-    { name: 'Aegir EX', difficulty: 'Normal', minILvl: 1730, oro: 30000, cofre: 0 },
-    { name: 'Aegir EX', difficulty: 'Hard', minILvl: 1750, oro: 45000, cofre: 0 },
-    { name: 'Aegir EX', difficulty: 'Nightmare', minILvl: 1770, oro: 45000, cofre: 0 }
+    { name: 'Catedral', difficulty: 'Nightmare', minILvl: 1750, oro: 50000, cofre: 16000 }
 ];
 
 function normalizeRaid(raid) {
