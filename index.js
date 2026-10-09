@@ -232,11 +232,14 @@ function renderTables() {
     const content = document.getElementById('content');
     content.innerHTML = '';
     
-    data.forEach(user => {
+    const orderedUsers = [...data].sort((userA, userB) => {
+        const userAHasRaids = getUserRaidesWithDifficulty(userA).length > 0;
+        const userBHasRaids = getUserRaidesWithDifficulty(userB).length > 0;
+        return Number(userBHasRaids) - Number(userAHasRaids);
+    });
+
+    orderedUsers.forEach(user => {
         const raidesWithDifficulty = getUserRaidesWithDifficulty(user);
-        
-        // Si el usuario no tiene raids, no mostrar su tabla
-        if (raidesWithDifficulty.length === 0) return;
         
         const userStats = getUserStats(user);
         const goldStats = getUserGoldStats(user);
@@ -280,6 +283,17 @@ function renderTables() {
         
         // Crear cuerpo de la tabla
         const tbody = document.createElement('tbody');
+
+        if (raidesWithDifficulty.length === 0) {
+            const row = document.createElement('tr');
+            const emptyCell = document.createElement('td');
+            emptyCell.colSpan = user.characters.length + 1;
+            emptyCell.textContent = 'Sin raids seleccionadas. Haz clic en un personaje para activar sus raids.';
+            emptyCell.style.textAlign = 'center';
+            emptyCell.style.color = '#aaa';
+            row.appendChild(emptyCell);
+            tbody.appendChild(row);
+        }
         
         raidesWithDifficulty.forEach(raidInfo => {
             const raidStats = getRaidStats(user, raidInfo.name, raidInfo.difficulty);
